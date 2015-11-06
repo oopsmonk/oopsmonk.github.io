@@ -21,11 +21,11 @@ Python and Swing support (Optional)
     sudo apt-get install python-dev swig -y  
 
 ##Checkout and build libcec source code   
-The current version is libcec-3.0.1, but I was got some problem on it during make.  
+The current version is libcec-3.0.1, but I got an error as follows:  
 
     make[2]: *** No rule to make target '1', needed by 'src/libcec/libcec.so.3.0.1'.  Stop.  
 
-Using libcec-3.0.0 instead of libcec-3.0.1 and it's work properly.  
+Using libcec-3.0.0 instead of libcec-3.0.1, it's work properly.  
 
     git clone https://github.com/Pulse-Eight/libcec.git  
     cd libcec
