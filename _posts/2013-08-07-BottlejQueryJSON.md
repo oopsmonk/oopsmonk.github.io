@@ -15,32 +15,32 @@ date: 2013-08-07T01:53:31+08:00
 [jQuery Mobile][] base on jQuery for mobile device.  
 [jQuery vs. jQuery Mobile vs. jQuery UI](http://stackoverflow.com/questions/6636388/jquery-vs-jquery-mobile-vs-jquery-ui)  
 
-##Install bottle:  
+## Install bottle:  
 
 ```
 $ sudo apt-get install python-setuptools
 $ easy_install bottle
 ```
 
-##Demo server deployment   
+## Demo server deployment   
 
-###file structure:    
+### file structure:    
 ```
 BottlejQuery
 ├── bottleJQuery.py
 └── index.html
 ```
 
-###run command:  
+### run command:  
     $ ./bottleJQuery.py
 
-###connect to server:  
+### connect to server:  
     http://localhost:8080/bottle  
 
 
-##Building simple web server use bottle  
+## Building simple web server use bottle  
 
-###bottleJQuery.py
+### bottleJQuery.py
 
 ```python
 #!/usr/bin/env python
@@ -82,7 +82,7 @@ def testJsonPost():
 run(host='localhost', port=8080, reloader=True)
 ```  
 
-###Test GET request:  
+### Test GET request:  
 
 ```
 $ curl -i -X GET http://localhost:8080/bottle/jsontest
@@ -104,7 +104,7 @@ GET Header :
 localhost - - [08/Aug/2013 00:03:53] "GET /bottle/jsontest HTTP/1.1" 200 25
 ```
 
-###Test POST request:  
+### Test POST request:  
 
 ```
 $ curl -X POST -H "Content-Type: application/json" \ 
@@ -123,7 +123,7 @@ data : {u'pwd': u'abc', u'name': u'OopsMonk'}
 localhost - - [08/Aug/2013 00:04:56] "POST /bottle/jsontest HTTP/1.1" 200 22
 ```
 
-##Building simple web page  
+## Building simple web page  
 Create 4 buttons in the index.html file:  
 
 * __[jQuery.getJSON][jjson]__ : use jQuery.getJSON API.  

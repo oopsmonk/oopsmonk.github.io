@@ -11,7 +11,7 @@ image:
 date: 2013-08-23T01:53:31+08:00
 ---
 
-##clone MOC svn repository to github  
+## clone MOC svn repository to github  
 Ref: [Converting a Subversion repository to Git](http://john.albin.net/git/convert-subversion-to-git)  
 
 ```
@@ -34,7 +34,7 @@ $ cd ../moc-bare/moc-git.git
 $ git push --mirror https://github.com/oopsmonk/moc-git.git  
 ```
 
-##install develop package for MOC (Ubuntu)  
+## install develop package for MOC (Ubuntu)  
 
 ```
 $ sudo apt-get install build-essential libdb-dev gettext  
@@ -74,7 +74,7 @@ MIME magic:        yes
 -----------------------------------------------------------------------
 ```
 
-##install develop package for MOC (Raspberry Pi)  
+## install develop package for MOC (Raspberry Pi)  
 
 ```
 $ sudo apt-get install build-essential autoconf automake libtool
@@ -94,18 +94,18 @@ $ sudo make install
 
 ```
 
-##check out from repository  
+## check out from repository  
 
     $ svn co svn://daper.net/moc/trunk  moc-svn
 
-##Build step  
+## Build step  
 
     $ cd moc-svn  
     $ autoreconf 
     $ ./configure --enable-debug --perfix=/path/to/dev  
     $ make && make install  
 
-##Debugging  
+## Debugging  
 
     $cd /path/to/dev
     $ ./bin/mocp --debug  

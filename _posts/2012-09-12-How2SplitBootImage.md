@@ -15,7 +15,7 @@ boot\_cm9.img file from [mk802_legacy-compatibility_v1.zip](http://www.androidfi
 Device: Rikomagic MK802  
 Script files : [Split_bootimg.pl](http://zen-droid.googlecode.com/files/split_bootimg.pl) , extract-ikconfig ( in {kernel\_source}/script )
 
-###Split boot.img  
+## #Split boot.img  
 Copy boot\_cm9.img, Split\_bootimg.pl, extract-ikconfig into 'split\_boot'  
 
 ```
@@ -34,7 +34,7 @@ Writing boot_cm9.img-ramdisk.gz ... complete.
 
 Get kernel image (__boot_cm9.img-kernel__) and ramdisk (__boot_cm9.img-ramdisk.gz__)
 
-###Extract kernel config  
+## #Extract kernel config  
 
 ```
 $ dd if=boot_cm9.img-kernel of=dd_uImage bs=1024 skip=1
@@ -44,7 +44,7 @@ $ dd if=boot_cm9.img-kernel of=dd_uImage bs=1024 skip=1
 $./extract-ikconfig dd_uImage > kernel_config
 ```
 
-###Extract ramdisk  
+## #Extract ramdisk  
 
 ```
 $ mkdir ramdisk

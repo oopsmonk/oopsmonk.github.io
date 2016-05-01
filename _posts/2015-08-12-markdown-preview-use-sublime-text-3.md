@@ -11,11 +11,11 @@ image:
 date: "2015-08-12 19:03:54 +0800"
 ---
 
-##Download Sublime Text 3  
+## Download Sublime Text 3  
 
 http://www.sublimetext.com/3  
 
-##Install Package Control 
+## Install Package Control 
 
 https://packagecontrol.io/installation#st3  
 
@@ -28,7 +28,7 @@ Once finished installation, restart Sublime.
 
 ![](/images/2015-08-12/SublimeText3_06.jpg)  
 
-##Install Markdown Preview package  
+## Install Markdown Preview package  
 
 Open command palette via `Ctrl + Shift + p` or `Preferences > Package Control` from menu.  
 
@@ -41,7 +41,7 @@ After typing `install` and press `Enter`, it will pop-up a package menu.
 Then keep typing `markdown preview`, press `Enter`.  
 The package will be installed.  
 
-##Test Markdown Preview   
+## Test Markdown Preview   
 
 Open a Markdown file and make sure you choose right Build System.  
 

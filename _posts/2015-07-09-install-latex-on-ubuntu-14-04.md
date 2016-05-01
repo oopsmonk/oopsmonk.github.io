@@ -13,13 +13,13 @@ date: "2015-07-09 22:49:47 +0800"
 
 This is a How-To article that include installation and compile LaTeX file to PDF using Texmaker, Sublime Text 3, and Vim.  
 
-##Install TeX Live   
+## Install TeX Live   
 
 Install `texlive-latex-extra` instead of `texlive-latex-base`.  
 
     $sudo apt-get install texlive-latex-extra -y
 
-##Initial user tree in home directory  
+## Initial user tree in home directory  
 
 Before using `tlmgr` in user mode, you have to set up the user tree with the `init-usertree` action.  
 `tlmgr` is TeX Live package manager, you can run `tlmgr --help` for more detail.  
@@ -28,7 +28,7 @@ Before using `tlmgr` in user mode, you have to set up the user tree with the `in
     $ tlmgr init-usertree
     (running on Debian, switching to user mode!)
 
-##Install packages  
+## Install packages  
 
 Run `tlmgr install package-name` to install a package, if an error has occurred with following.  
 
@@ -58,7 +58,7 @@ If you have no problem with install a package
 
 [Manually install packages](https://help.ubuntu.com/community/LaTeX#Installing_packages_manually)  
 
-##Install Editor  
+## Install Editor  
 Here are some editors you can choose.  
 
 * [Texmaker]  
@@ -85,7 +85,7 @@ Here are some editors you can choose.
 [Package Control]: https://packagecontrol.io/installation  
 [Latex.sublime-build]: https://gist.github.com/lusentis/5092219#file-latex-sublime-build  
 
-##Hello LaTex  
+## Hello LaTex  
 
 {% highlight tex %}
 \documentclass[12pt]{article}

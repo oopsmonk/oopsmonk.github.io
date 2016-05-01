@@ -12,7 +12,7 @@ date: 2013-05-23T01:53:31+08:00
 ---
 
 <font color="red">
-####[2015-02-12]This article doesn't render properly since I switched from Google Blogger to Github Pages. I won't fix this problem.
+#### [2015-02-12]This article doesn't render properly since I switched from Google Blogger to Github Pages. I won't fix this problem.
 </font>
 Pandoc實現了基本的Markdown語法外, 還加了一些extention.   
 細節可參考:  
@@ -26,7 +26,7 @@ Pandoc實現了基本的Markdown語法外, 還加了一些extention.
 [mds]: http://daringfireball.net/projects/markdown/syntax  
 [MDcmpReST]: http://www.unexpected-vortices.com/doc-notes/markdown-and-rest-compared.html  
 
-##Headers (Setext and atx)  
+## Headers (Setext and atx)  
 Setext-style只有兩階也就是HTML語法裡的`h1`及`h2` tag,`-`跟`=`的個數沒有限制.     
 atx-style共有6階, `h1`~`h6`.
 
@@ -42,10 +42,10 @@ atx-style共有6階, `h1`~`h6`.
 
 Output: 
 
-###This is *H3* header.  
+### This is *H3* header.  
 
-##Inline Formatting  
-###Basic Emphasis  
+## Inline Formatting  
+### Basic Emphasis  
 斜體字: `*`, `_` , 粗體字: `**`, `__`, 
 
     *single asterisks*  
@@ -61,8 +61,8 @@ __double underscores__
 
 ---  
 
-###Pandoc Inline   
-####strikeout, superscript and subscript  
+### Pandoc Inline   
+#### strikeout, superscript and subscript  
 
     ~~~deleted text~~~  
     H~2~O is a liquid.  
@@ -76,7 +76,7 @@ H~2~O is a liquid.
 
 ---
 
-####Math  
+#### Math  
 
 Pandoc可以使用LaTeX來表示數學式子, 可參考[Getting Started with LaTeX](http://www.maths.tcd.ie/~dwilkins/LaTeXPrimer/)  
 
@@ -97,7 +97,7 @@ $$\[ \cos(\theta + \phi) = \cos \theta \cos \phi - \sin \theta \sin \phi \]$$
 $$\[ |y - x| < \delta \]$ then $\[ |f(y) - f(x)| < \epsilon. \]$$  
 $$\newcommand{\tuple}[1]{\langle #1 \rangle}\tuple{a, b, c}$$
 
-##Links  
+## Links  
 
     This is an automatic link <http://www.google.com>.  
     This is [inline link](http://example.com/ "Title") inline link with title.  
@@ -125,7 +125,7 @@ This is [Internal link].
 [reference link]: http://www.google.com  
 [Internal link]: #pandocs-markdown-reference  
 
-##Images  
+## Images  
 Markddown images sytax  
 
     ![](http://3.bp.bloGspot.com/-BLhmfBdELH0/UBT3uUd7r5I/AAAAAAAAADw/-rnn2kz5vjY/s220/oops_monk01_120.jpg "OopsMonk")
@@ -153,7 +153,7 @@ Output:
 <img src="http://3.bp.bloGspot.com/-BLhmfBdELH0/UBT3uUd7r5I/AAAAAAAAADw/-rnn2kz5vjY/s220/oops_monk01_120.jpg" width="100">
 
 
-##Embedded Video  
+## Embedded Video  
 Markdown沒有嵌入影片的語法, 需要使用HTML.  
 
     <iframe src="http://embed.ted.com/talks/lang/zh-tw/ken_robinson_how_to_escape_education_s_death_valley.html"
@@ -168,8 +168,8 @@ webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
 
 
-##Code block  
-###Basic Code block  
+## Code block  
+### Basic Code block  
 
     This is one line code block `function()`   
     ``There is a literal backtick (`) here.``  
@@ -193,8 +193,8 @@ Bellow is a code block:
 
 ---  
 
-###Pandoc Code Block  
-####Force code block(more then three `~`)  
+### Pandoc Code Block  
+#### Force code block(more then three `~`)  
 
 ~~~~~~~~~
 ~~~~~~~
@@ -214,7 +214,7 @@ if (a > 3) {
 
 ---  
 
-####Code Syntax highlight  
+#### Code Syntax highlight  
 
 ~~~
 ```python
@@ -240,7 +240,7 @@ def application(env, start_response):
 
 ---  
 
-####Line Number  
+#### Line Number  
 
 ~~~~~~  
 ~~~~ {#pycode .python .numberLines startFrom="10"}
@@ -264,7 +264,7 @@ def application(env, start_response):
     return "Hello WSGI!!"
 ~~~~
 
-##Blockquotes  
+## Blockquotes  
 
     > This is a block quote.
     >
@@ -281,9 +281,9 @@ Output:
 > > 
 > > > Nets.
 
-##Lists  
-###Basic list  
-####Unordered(Bulleted)  
+## Lists  
+### Basic list  
+#### Unordered(Bulleted)  
 
     * fruits
         + apples
@@ -308,7 +308,7 @@ Output:
 
 ---  
 
-####Ordered (Numbered)  
+#### Ordered (Numbered)  
 
     1. list1.
     1. list2.
@@ -322,8 +322,8 @@ Output:
 1. list3.
 1. list4.
 
-###Pandoc List Extension 
-####startnum  
+### Pandoc List Extension 
+#### startnum  
 
     5) Five
         i. 5-1
@@ -369,7 +369,7 @@ Output:
 
 ---  
 
-####Definition lists  
+#### Definition lists  
 語法中為`:`與`Definition`之間為 `TAB` 鍵.  
 
     Term 1
@@ -418,7 +418,7 @@ Term 2
 
 ---  
 
-####Example lists  
+#### Example lists  
 
     (@)  My first example will be numbered (1).
     (@)  My second example will be numbered (2).
@@ -445,7 +445,7 @@ Explanation of examples.
 As (@good) illustrates, ...
 
 
-##Pandoc Footnotes  
+## Pandoc Footnotes  
 註解會出現在文章的最後面.  
 
     Here is an inline note.^[Inlines notes are easier to write, since
@@ -494,10 +494,10 @@ belong to the previous footnote.
 This paragraph won't be part of the note, because it
 isn't indented.
 
-##Pandoc Table  
+## Pandoc Table  
 標準的Markdown沒有實現表格的標示.  
 
-###Simple tables  
+### Simple tables  
 
       Right     Left     Center     Default
     -------     ------ ----------   -------
@@ -515,7 +515,7 @@ Output:
 
 ---  
 
-###Multiline tables  
+### Multiline tables  
 
     --------------------------
      Centered   Default           Right Left
@@ -567,7 +567,7 @@ Output:
 
 ---  
 
-###Grid tables  
+### Grid tables  
 
 Grid table syntax:  
 

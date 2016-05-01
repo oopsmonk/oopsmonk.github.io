@@ -10,9 +10,9 @@ image:
   feature:
 date: 2013-05-21T08:53:31+08:00
 ---
-##Install uWSGI 
+## Install uWSGI 
 
-###Configure uWSGI  
+### Configure uWSGI  
 
 ```
 $ sudo apt-get install python-dev python-pip  
@@ -45,7 +45,7 @@ Cleaning up...
 $  
 ```
 
-###Test uWSGI  
+### Test uWSGI  
 Create test file called `hello.py`:   
 
 ```python
@@ -63,8 +63,9 @@ Open browser connect on port 8000.
     http://localhost:8000
 
     
-##Install Nginx
-###Configure nginx  
+## Install Nginx 
+
+### Configure nginx  
 
     $ sudo apt-get install nginx-full  
 

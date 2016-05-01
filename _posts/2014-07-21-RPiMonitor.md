@@ -13,7 +13,7 @@ date: 2014-07-21T01:53:31+08:00
 
 Use RRDTool monitor Raspberry Pi, include CPU temperture, Memory usage, Disk I/O, Network I/O...  
 
-##Install  
+## Install  
 install packages  
 
 ```
@@ -28,7 +28,7 @@ $sudo python setup.py install
 Download or clone rpi-monitor on github  
 [https://github.com/oopsmonk/rpi-monitor](https://github.com/oopsmonk/rpi-monitor)  
 
-##Setup Crontab
+## Setup Crontab
 By defualt, the `cron.log` is disabled in [Raspbian](http://www.raspbian.org/).
 To enable it:
 
@@ -57,37 +57,37 @@ Add schedule as below
 3 0 * * 1 /path/to/rpi-monitor/graphReport.py -1w
 ```
 
-##Report example  
-####Raspberry Pi Hardware    
+## Report example  
+#### Raspberry Pi Hardware    
 ![](/images/2014-07-21/20140721-RPi.jpg)  
 
 
-####CPU Temperture  
+#### CPU Temperture  
 __The temperture drop to 44 because I add a fan on CPU.__  
 ![](/images/2014-07-21/20140721-cpuTemp-2d.png)  
 
-####CPU Used Percentage  
+#### CPU Used Percentage  
 ![](/images/2014-07-21/20140721-cpuUsage-2d.png)  
 
-####PID Count  
+#### PID Count  
 ![](/images/2014-07-21/20140721-PIDs-2d.png)  
 
-####Memory Usage  
+#### Memory Usage  
 ![](/images/2014-07-21/20140721-memUsage-2d.png)  
 
-####Mount point Usage  
+#### Mount point Usage  
 ![](/images/2014-07-21/20140721-mountPoint-home-2d.png)  
 
-####Mount Point Percentage  
+#### Mount Point Percentage  
 ![](/images/2014-07-21/20140721-mountPointPercent-2d.png)  
 
-####HDD I/O  
+#### HDD I/O  
 ![](/images/2014-07-21/20140721-hdd-sda1-2d.png)  
 
-####eth0 I/O  
+#### eth0 I/O  
 ![](/images/2014-07-21/20140721-interface-eth0-2d.png)  
 
-####eth1 I/O  
+#### eth1 I/O  
 ![](/images/2014-07-21/20140721-interface-eth1-2d.png)  
 
 

@@ -16,7 +16,7 @@ Android full disk encryption use dm-crypt, which works with block devices. Pleas
 [Full Disk Encryption](https://source.android.com/security/encryption/)  
 
 
-##How to setup full disk encryption 
+## How to setup full disk encryption 
 Android support **forceencrypt** and **encryptable** encryption flags, and only support ext4 and f2fs file systems.  
 
 Setup forceencrypt [fstab.bullhead](http://androidxref.com/6.0.1_r10/xref/device/lge/bullhead/fstab.bullhead#8):  
@@ -32,7 +32,7 @@ Setup encryptable [fstab.hammerhead](http://androidxref.com/6.0.1_r10/xref/devic
 ```  
 
 
-##Related Properties and source code location  
+## Related Properties and source code location  
 
 Related source code:  
 * init.rc: `system/core/init/builtins.cpp`  
@@ -53,7 +53,7 @@ Properties:
 * ro.crypto.fs_crypto_blkdev: Set by **Vold** save the name of the crypto block device so we can mount it when restarting the framework.  
 
 
-##Encryptable flow   
+## Encryptable flow   
 As a encryptable device, you can use Settings to lunch a full disk encryption:  
 **Settings -> Security -> Encryption -> Encrypt (tablet/phone)**  
 
@@ -99,6 +99,6 @@ Attempt to mount the volume with default_password and succeeded
 Unmount tmpfs, and mount the real /data volume.  
 Set `vold.decrypt` to **trigger_restart_framework**  
 
-##Forceencrypt flow  
+## Forceencrypt flow  
 The difference with **encryptable** flag is that **forceencrypt** is auto encrypt at first boot, and no need to reboot during encrypt/decrypt.  
 

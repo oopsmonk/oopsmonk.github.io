@@ -15,7 +15,7 @@ date: 2014-12-04T01:53:31+08:00
 [sed](http://www.grymoire.com/Unix/Sed.html)  
 [awk](http://www.grymoire.com/Unix/Awk.html)  
 
-## [Internal Variables](http://tldp.org/LDP/abs/html/internalvariables.html)  
+##  [Internal Variables](http://tldp.org/LDP/abs/html/internalvariables.html)  
 
 ```bash
 #current parent pid
@@ -29,7 +29,7 @@ $BASHPID
 ```
 
 
-## [Arithmetic Expansion](http://tldp.org/LDP/abs/html/arithexp.html)  
+##  [Arithmetic Expansion](http://tldp.org/LDP/abs/html/arithexp.html)  
 
 ```bash
 a=12
@@ -45,7 +45,7 @@ let "b = $a + 3"
 declare -i b=$a+$a
 ```
 
-## [Manipulating Strings](http://www.thegeekstuff.com/2010/07/bash-string-manipulation/)
+##  [Manipulating Strings](http://www.thegeekstuff.com/2010/07/bash-string-manipulation/)
 
 * String is a number  
 
@@ -76,7 +76,7 @@ substr=$( echo $var | sed 's/.*there\(.*\)and.*/\1/' )
 substr=$( echo $var | grep -o -P '(?<=there).*(?=and)' )
 ```
 
-## Loop  
+##  Loop  
 
 * read variables  
 
@@ -128,7 +128,7 @@ do
 done
 ```
 
-## [Array](http://www.linuxjournal.com/content/bash-arrays)  
+##  [Array](http://www.linuxjournal.com/content/bash-arrays)  
 
 ```bash 
 
@@ -181,10 +181,10 @@ echo "${arrayB[*]}"     # 4aa 1 5a1c 2 3
 
 ```
 
-## [I/O redirection](http://www.tldp.org/LDP/abs/html/io-redirection.html)  
+##  [I/O redirection](http://www.tldp.org/LDP/abs/html/io-redirection.html)  
 
 
-## Forking Processes  
+##  Forking Processes  
 
 ```bash
 

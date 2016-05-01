@@ -11,7 +11,7 @@ image:
 date: "2015-11-03 14:44:47 +0800"
 ---
 
-##Install requirements  
+## Install requirements  
 
     sudo apt-get install build-essential autoconf liblockdev1-dev \
     libudev-dev git libtool pkg-config cmake libxrandr-dev -y  
@@ -20,7 +20,7 @@ Python and Swing support (Optional)
 
     sudo apt-get install python-dev swig -y  
 
-##Checkout and build libcec source code   
+## Checkout and build libcec source code   
 The current version is libcec-3.0.1, but I got an error as follows:  
 
     make[2]: *** No rule to make target '1', needed by 'src/libcec/libcec.so.3.0.1'.  Stop.  
@@ -90,7 +90,7 @@ Make and install library
 
     make && sudo make install 
 
-##Test libcec  
+## Test libcec  
 Testing Samsung UA46B6000VM  
 You can test via `cec-client` or `libcec/src/pyCecClient/pyCecClient.py`(if you built with python support). 
 `h` for help and `q` for exit cec-client.  

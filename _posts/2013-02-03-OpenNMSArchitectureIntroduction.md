@@ -15,10 +15,10 @@ OpenNMS Version : 1.10.7
 
 OpenNMS base on [TMN](http://en.wikipedia.org/wiki/Telecommunications_Management_Network) & [FCAPS](http://en.wikipedia.org/w/index.php?title=FCAPS&oldid=535214862) network management models.  
 
-###OpenNMS Block Diagram  
+### OpenNMS Block Diagram  
 ![](/images/2013-02-03/OpenNMSBlockArchitecture.png)  
 
-###Discovery & Monitor daemons  
+### Discovery & Monitor daemons  
 
 * [Eventd](http://www.opennms.org/wiki/Event_Configuration_How-To)  
     Event handling daemon  
@@ -65,7 +65,7 @@ Poller record Service data to RRDTool in /share/rrd/response/IP/\*,  Ex: icmp.jr
 OpenNMS configuration files:  
 http://www.opennms.org/wiki/Configuration_File_Index  
 
-###Discovery & Monitor Flow  
+### Discovery & Monitor Flow  
 Here is the event flow when press "Save and Restart Discovery" button on WebGUI.  
 ![Figure1](/images/2013-02-03/OpenNMSDiscoveryEventFlow.png "Figure1")  
 

@@ -23,7 +23,7 @@ Save configure to `iptables.rules`
 
     sudo iptables-save > /etc/iptables.rules  
 
-##Save Solution #1  
+## Save Solution #1  
 
 Configre `/etc/network/interfaces`  
 
@@ -32,7 +32,7 @@ iface eth0 inet dhcp
     pre-up iptables-restore < /etc/iptables.rules  
 ```
 
-##Save Solution #2  
+## Save Solution #2  
 
 Configure `/etc/network/if-pre-up.d/iptablesload`  
 

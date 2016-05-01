@@ -11,20 +11,20 @@ image:
 date: 2012-07-28
 ---
 
-###Install required packages  
+### Install required packages  
 ```
 # sudo apt-get install build-essential default-jdk git curl autoconf \
  unzip zip zlib1g-dev gawk gperf
 ```
 
-###Getting the Android SDK and NDK  
+### Getting the Android SDK and NDK  
 http://developer.android.com/sdk/index.html  
 SDK : [android-sdk_r20.0.1-linux.tgz](http://dl.google.com/android/android-sdk_r20.0.1-linux.tgz)  
 crystax-5 NDK with enabled support of C++ exceptions, RTTI and Standard C++ Library   
 http://www.crystax.net/en/android/ndk/7#download  
 NDK : [android-ndk-r7-crystax-5.beta2-linux-x86.tar.bz2](http://www.crystax.net/en/download/android-ndk-r7-crystax-5.beta2-linux-x86.tar.bz2)  
 
-###Installing Android SDK packages  
+### Installing Android SDK packages  
 \<android-sdk\> : $HOME/XBMC_Project/android-sdk-linux
 
 ```
@@ -32,7 +32,7 @@ NDK : [android-ndk-r7-crystax-5.beta2-linux-x86.tar.bz2](http://www.crystax.net/
 # ./android update sdk -u -t platform,platform-tool
 ```  
 
-###Setup the Android toolchain  
+### Setup the Android toolchain  
 \<android-ndk\> :  $HOME/XBMC_Project/android-ndk-r8b
 \<android-toolchain\> :  $HOME/XBMC_Project/android_toolchain/android-9
 
@@ -44,7 +44,7 @@ NDK : [android-ndk-r7-crystax-5.beta2-linux-x86.tar.bz2](http://www.crystax.net/
   --install-dir=<android-toolchain>/android-9 --platform=android-9
 ```
 
-###Create a (new) debug key to sign debug APKs  
+### Create a (new) debug key to sign debug APKs  
 All packages must be signed. The following command will generate a self-signed debug key. If the result is a cryptic error, it probably just means a debug key already existed, no cause for alarm.  
 
 ```
@@ -53,7 +53,7 @@ All packages must be signed. The following command will generate a self-signed d
   android -storepass android -keyalg RSA -keysize 2048 -validity 10000
 ```
 
-###Getting the source code  
+### Getting the source code  
 ```
 # cd $HOME/XBMC_Project
 # git clone git://github.com/xbmc/android.git xbmc-android-git
@@ -61,9 +61,9 @@ All packages must be signed. The following command will generate a self-signed d
 # git submodule update --init addons/skin.touched
 ```
 
-###Building dependencies  
+### Building dependencies  
 ```
- # cd $HOME/XBMC_Project/xbmc-android-git/tools/android/depends
+# cd $HOME/XBMC_Project/xbmc-android-git/tools/android/depends
 # ./bootstrap
 # ./configure --help
 #export XBMC_ANDROID_NDK=~/XBMC_Project/android-ndk-r7-crystax-5.beta2
@@ -102,7 +102,7 @@ make[1]: Leaving directory `/home/oopsmonk/XBMC_Project/xbmc-android-git/tools/a
 Dependencies built successfully.
 ```
 
-###Building XBMC  
+### Building XBMC  
 ```
 #cd ~/XBMC_Project/xbmc-android-git/tools/android/depends/xbmc
 #make -j4

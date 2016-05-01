@@ -11,7 +11,7 @@ image:
 date: 2014-12-12T01:53:31+08:00
 ---
 
-## [Generating SSH keys for GitHub](https://help.github.com/articles/generating-ssh-keys/)  
+##  [Generating SSH keys for GitHub](https://help.github.com/articles/generating-ssh-keys/)  
 
 Here are github account and work account. 
 
@@ -24,7 +24,7 @@ Here are github account and work account.
     Account: SamChen  
 
 
-## Add SSH config File  
+##  Add SSH config File  
 
 Modify **`~/.ssh/config`** 
 
@@ -42,7 +42,7 @@ Host work.gitserver.com
     IdentityFile ~/.ssh/work_id_rsa
 ```
 
-## Git Repository Configuation  
+##  Git Repository Configuation  
 
 * GitHub Project: 
 
@@ -66,7 +66,7 @@ $ git config user.email "SamChen@example.com.tw"
 
 **Now you can deal with git repositories using different accounts.** 
 
-## (Additional) Using [ssh-agent] to access GitHub without password     
+##  (Additional) Using [ssh-agent] to access GitHub without password     
 
 Check key list 
 

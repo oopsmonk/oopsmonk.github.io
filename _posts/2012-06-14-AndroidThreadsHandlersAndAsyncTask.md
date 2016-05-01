@@ -20,7 +20,7 @@ UI thread 如因大量運算或等待而blocked, 預設超過5秒ANR(Application
 * 不要在UI thread 之外使用UI component method.
 * 透過Thread, Handler and AsyncTask perform asynchronous processing, 避免UI thread block.
 
-##[Threads](http://developer.android.com/reference/java/lang/Thread.html)  
+## [Threads](http://developer.android.com/reference/java/lang/Thread.html)  
 Android 提供以下的method, 可在其它的thread 下調用 UI thread.  
 
 ```java
@@ -30,7 +30,7 @@ View.postDelayed(Runnable, long)
 ```  
 或是使用Handler or AsyncTasks class 達到同樣的效果.
 
-##[Handler](http://developer.android.com/reference/android/os/Handler.html)
+## [Handler](http://developer.android.com/reference/android/os/Handler.html)
 有2個主要用途:  
 
 1. message scheduling,  post action at specific point.
@@ -40,7 +40,7 @@ View.postDelayed(Runnable, long)
 執行Runnanble則是使用post() method.  
 一個Activity 只需有一個Handler instance.  
 
-##[AsyncTask](http://developer.android.com/reference/android/os/AsyncTask.html)  
+## [AsyncTask](http://developer.android.com/reference/android/os/AsyncTask.html)  
 使用AsyncTask必需繼承它, 且override doInBackground() method.  
 用法：  
 呼叫execute() 開始執行, 之後onPerExecute()接著自動被呼叫, 通常用來 initial status of task.  

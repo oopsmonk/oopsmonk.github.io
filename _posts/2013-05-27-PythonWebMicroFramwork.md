@@ -11,7 +11,7 @@ image:
 date: 2013-05-27T00:53:31+08:00
 ---
 
-##WSGI Micro Framworks  
+## WSGI Micro Framworks  
 這陣子一直在找適合的Micro Framwork玩第一次的Web Application.  
 最後選擇用[Bottle][], 原因是:  
 
@@ -38,7 +38,7 @@ date: 2013-05-27T00:53:31+08:00
 * [web.py][]  
     Makes web apps. A small RESTful library.  
 
-##Micro Framworks Battle  
+## Micro Framworks Battle  
 Rank | Framwork | Point 
 ----- | ----- | ----- 
 1 |  **Bottle** | 7 

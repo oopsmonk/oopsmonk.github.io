@@ -35,7 +35,7 @@ If you have no idea with these things, here are useful resources:
 [GitHub Pages](https://pages.github.com/)  
 [Getting started - Grunt](http://gruntjs.com/getting-started)  
 
-##Jekyll Installation  
+## Jekyll Installation  
 Because some packages are out of date in Raspberry Pi's repository, we are going to install packages manually.  
 Jekyll requirements:  
 
@@ -66,7 +66,7 @@ $ make
 $ sudo make install
 ```
 
-##Jekyll Theme Setup  
+## Jekyll Theme Setup  
 
 Install Jekyll Theme is pretty easy, download and do some modify in __\_config.yml__.  
 I use the [Minimal Mistake](https://mmistakes.github.io/minimal-mistakes/) for example, you can find the others on [Jekyll Themes](http://jekyllthemes.org/).  
@@ -108,7 +108,7 @@ Please report a bug if this causes problems.
 $ rm Gemfile.lock 
 ```
 
-##Post a new article  
+## Post a new article  
 The simplest way to post an article is create a file with date prefix in **\_post** folder and fill in header, but ~~as a lazy person like me~~ Minimal Mistake provide `octopress` command to create a new post. Personally, I use [vim-jekyll](https://github.com/parkr/vim-jekyll) instead.  
 __[Use octopress](https://mmistakes.github.io/minimal-mistakes/theme-setup/#new-post)__  
 __[Use vim-jekyll](https://github.com/parkr/vim-jekyll)__  
@@ -133,7 +133,7 @@ let g:jekyll_post_template = [
 \ '']
 {% endhighlight %}    
 
-##Images minimization  
+## Images minimization  
 Gruent is a JavaScript Task Runner performs repetitive tasks. Minimal Mistakes have a Gruntfile already, we can use it for minimizing images and JavaScript, but we have to install Gruent first and install dependencies via `npm install`. By default it minimizes all scripts into `scripts.min.js` and optimize .jpg, .png, and .svg files in the **images/** folder.  
 Alternatively, you can use `grunt imagemin` to minimize images only.
 
@@ -144,7 +144,7 @@ $ sudo npm install
 $ grunt 
 ```
 
-##Commit to GitHub  
+## Commit to GitHub  
 You can host your blog by your own or use GitHub Pages, how to work with GitHub Pages:  
 
 * Create a repository called __account.github.io__ (mine is __[oopsmonk.github.io](https://github.com/oopsmonk/oopsmonk.github.io)__)  
@@ -164,15 +164,15 @@ $ git push
 
 Then you can see your blog at https://account.github.io
 
-##Conclusion  
+## Conclusion  
 Create a Jekyll blog doesn't like Google Blogger, even use themes to build a blog, it's not ready to go after unboxing.You have to do some modifications, understanding HTML, CSS, and Jekyll is necessary. Here are Pros/Corns for using GitHub Pages with Jekyll.  
 
-####Pros  
+#### Pros  
 * Flexible customization  
 * Keep contents in local or on Internet  
 * Offline writing and preview  
 * Write in terminal  
      
-####Corn  
+#### Corn  
 * Learning curve  
 

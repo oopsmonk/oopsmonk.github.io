@@ -11,12 +11,12 @@ image:
 date: "2015-07-31 17:28:39 +0800"
 ---
 
-##First, check out and install the [depot_tools](https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html#_setting_up) package.  
+## First, check out and install the [depot_tools](https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html#_setting_up) package.  
 
     $ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
     $ export PATH=$PATH:/path/to/depot_tools
 
-##Checkout source code  
+## Checkout source code  
 
     $ mkdir ~/chromium_build && cd $_
     ~/chromium_build$ fetch --nohooks android 
@@ -26,7 +26,7 @@ date: "2015-07-31 17:28:39 +0800"
     //You may need to run this again when you have added new files, updated gyp files, or sync'ed your repository.
     ~/chromium_build$ gclient runhooks
 
-##Environment setup  
+## Environment setup  
 
     ~/chromium_build$ sudo apt-get install openjdk-7-jdk
     //config default JDK
@@ -41,7 +41,7 @@ date: "2015-07-31 17:28:39 +0800"
     // Install Google Play Services
     ~/chromium_build$ src/third_party/android_tools/sdk/tools/android update sdk --no-ui --filter 57
 
-##Build   
+## Build   
 
     ~/chromium_build$ cd ~/chromium_build/src
     //Full browser

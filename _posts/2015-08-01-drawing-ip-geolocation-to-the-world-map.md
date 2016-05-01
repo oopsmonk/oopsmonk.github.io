@@ -14,7 +14,7 @@ date: "2015-08-01 20:28:47 +0800"
 ![](/images/2015-08-01/mapquest-ipmap.jpg)  
 I found some mystery visitors in nginx's access log. I tried to figure out the location of those visitors and what they did.   
 
-##IP collection  
+## IP collection  
 First copy nginx's access log to a folder and save all logs into a single file.
 
     $ mkdir mysteryIPs && cd $_
@@ -31,7 +31,7 @@ Getting unique IP list.
 
     $ cat removeLAN.log | awk '{print $1}' | sort -u > uniqueIP 
 
-##Drawing visitors on the world map  
+## Drawing visitors on the world map  
 
 We have to know where are visitors from and mark them on map.  
 I found an example of plotting GeoIP on map, [PyGeoIpMap](https://github.com/pierrrrrrre/PyGeoIpMap). But it took too long on geolocation when I was trying to use it. So I modified it, I use [Geocoder](https://github.com/DenisCarriere/geocoder) instead of the original one.  
@@ -85,7 +85,7 @@ OSM
 Google  
 ![](/images/2015-08-01/google-ipmap.jpg)
 
-##Other information from access log  
+## Other information from access log  
 We can find more information from those logs, as follows.
 
 **Access counts per visitor**   

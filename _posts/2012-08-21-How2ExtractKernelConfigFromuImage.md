@@ -11,7 +11,7 @@ image:
 date: 2012-08-21
 ---
 
-###Get extract-ikconfig in kernel-source/scripts/  
+### Get extract-ikconfig in kernel-source/scripts/  
 
 ```
 $mkdir extreact-uImage
@@ -19,7 +19,7 @@ $cd extreact-uImage
 $cp {kernel-source}/scripts/extract-ikconfig .
 ```
 
-###Dump uImage skip 1024 bytes  
+### Dump uImage skip 1024 bytes  
 
 ```
 $cp {uImage/what/you/want} uImage
