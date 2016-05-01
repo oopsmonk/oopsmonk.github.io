@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Using Git With Multiple SSH Keys and Accounts"
 modified:
 categories: TechNotes

@@ -1,5 +1,5 @@
 ---
-layout: post-math
+layout: single
 title: "Pandoc's Markdown Reference"
 modified: 2015-02-11T010:53:31+08:00
 categories: TechNotes

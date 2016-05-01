@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "COMPUTEX TAIPEI 2012"
 modified:
 categories: TechNotes

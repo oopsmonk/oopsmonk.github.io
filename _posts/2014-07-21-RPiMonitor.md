@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Raspberry Pi Monitor" 
 modified:
 categories: TechNotes

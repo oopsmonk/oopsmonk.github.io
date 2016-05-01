@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "How to extract kernel config from uImage"
 modified:
 categories: TechNotes

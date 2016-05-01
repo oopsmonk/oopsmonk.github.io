@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "LibCEC on Raspberry Pi"
 modified: 
 categories: TechNotes

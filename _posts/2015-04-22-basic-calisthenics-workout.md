@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Basic Calisthenics Workout"
 modified: 
 categories: Vida

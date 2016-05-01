@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "How to split boot.img and get kernel config"
 modified:
 categories: TechNotes

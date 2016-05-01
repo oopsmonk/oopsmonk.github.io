@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Connect Oracle 10g Database use JDBC"
 modified:
 categories: TechNotes

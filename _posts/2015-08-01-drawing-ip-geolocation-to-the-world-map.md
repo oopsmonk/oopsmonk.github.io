@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Drawing IP Geolocation on World Map"
 modified: 
 categories: TechNotes 

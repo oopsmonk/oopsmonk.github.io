@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Web Micro Framework Battle"
 modified:
 categories: TechNotes

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Dependency src specified more than once"
 modified: 
 categories: TechNotes 

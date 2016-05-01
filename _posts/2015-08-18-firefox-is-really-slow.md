@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Firefox is Really Slow"
 modified: 
 categories: TechNotes

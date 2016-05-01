@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "AWS S3 Download Bucket Folder"
 modified:
 categories: TechNotes

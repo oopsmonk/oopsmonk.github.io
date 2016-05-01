@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Redirect and Save iptables on Ubuntu 12.04"
 modified:
 categories: TechNotes

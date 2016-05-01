@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Add Git SHA1 property in Apache ANT build.xml"
 modified:
 categories: TechNotes

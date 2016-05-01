@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "uWSGI & Nginx on Ubuntu"
 modified:
 categories: TechNotes

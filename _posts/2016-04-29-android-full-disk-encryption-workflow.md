@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Android Full Disk Encryption Workflow (default encryption)"
 modified: 
 categories: TechNotes

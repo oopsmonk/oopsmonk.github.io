@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "OpenNMS Architecture Introduction (Discovery & Monitor)"
 modified:
 categories: TechNotes

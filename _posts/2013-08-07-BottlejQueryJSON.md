@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Web dev example : JSON & jQuery Mobile & Bottle"
 modified:
 categories: TechNotes

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Markdown Preview Use Sublime Text 3"
 modified: 
 categories: TechNotes 

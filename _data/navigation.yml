@@ -1,16 +1,12 @@
-# Site navigation links
+# main links links
+main:
 
-- title: About
-  url: /about/
+  - title: "About"
+    url: /about/
 
-#- title: Articles
-  #url: /posts/
+  - title: "Categories"
+    url: /categories/
 
-- title: Categories
-  url: /categories/
+  - title: "Tags"
+    url: /tags/
 
-- title: Tags
-  url: /tags/
-
-- title: Feed
-  url: /feed.xml

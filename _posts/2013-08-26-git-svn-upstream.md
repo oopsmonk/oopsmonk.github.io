@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "GitHub SVN Upstream (on Ubuntu12.04)"
 modified:
 categories: TechNotes

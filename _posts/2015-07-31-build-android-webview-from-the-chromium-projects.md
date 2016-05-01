@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Build Android WebView From The Chromium Projects"
 modified: 
 categories: TechNotes 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Build A Blog with Jekyll and GitHub on Raspberry Pi"
 modified: 
 categories: TechNotes 

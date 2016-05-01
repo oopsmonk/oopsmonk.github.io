@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Android Threads, Handlers and AsyncTask"
 modified:
 categories: TechNotes

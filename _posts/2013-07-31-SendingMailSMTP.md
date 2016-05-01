@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Sending HTML Mail Using SMTP With Authorization"
 modified:
 categories: TechNotes

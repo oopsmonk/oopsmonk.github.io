@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "XBMC for Android on MK802"
 modified:
 categories: TechNotes

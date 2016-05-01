@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Install LaTeX on Ubuntu 14.04"
 modified: 
 categories: TechNotes

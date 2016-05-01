@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Build XBMC for Android on lubuntu 12.04"
 modified:
 categories: TechNotes
