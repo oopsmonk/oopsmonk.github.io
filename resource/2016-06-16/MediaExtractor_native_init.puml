@@ -1,0 +1,58 @@
+@startuml
+title MediaExtractor (Android M)
+== Initialization ==
+MediaExtractor.java -> android_media_MediaExtractor.cpp : native_init()
+activate  MediaExtractor.java
+android_media_MediaExtractor.cpp -> DataSource.cpp : android_media_MediaExtractor_native_init()
+DataSource.cpp -> DataSource.cpp : RegisterDefaultSniffers()
+deactivate MediaExtractor.java
+
+== New ==
+MediaExtractor.java -> android_media_MediaExtractor.cpp : native_setup()
+activate  MediaExtractor.java
+activate  android_media_MediaExtractor.cpp
+android_media_MediaExtractor.cpp -> android_media_MediaExtractor.cpp : android_media_MediaExtractor_native_setup()
+activate  android_media_MediaExtractor.cpp
+android_media_MediaExtractor.cpp -> android_media_MediaExtractor.cpp : new JMediaExtractor()
+android_media_MediaExtractor.cpp -> NuMediaExtractor.cpp : new NuMediaExtractor
+android_media_MediaExtractor.cpp -> android_media_MediaExtractor.cpp : setMediaExtractor(extractor)
+deactivate android_media_MediaExtractor.cpp
+deactivate android_media_MediaExtractor.cpp
+deactivate MediaExtractor.java
+
+== Release ==
+MediaExtractor.java -> android_media_MediaExtractor.cpp : release()
+activate  MediaExtractor.java
+activate  android_media_MediaExtractor.cpp
+android_media_MediaExtractor.cpp -> android_media_MediaExtractor.cpp : android_media_MediaExtractor_release()
+android_media_MediaExtractor.cpp -> android_media_MediaExtractor.cpp : setMediaExtractor(NULL)
+deactivate android_media_MediaExtractor.cpp
+deactivate  MediaExtractor.java
+
+== setDataSource ==
+MediaExtractor.java -> android_media_MediaExtractor.cpp : setDataSource(mp4_filepath)
+activate  MediaExtractor.java
+android_media_MediaExtractor.cpp -> android_media_MediaExtractor.cpp : android_media_MediaExtractor_setDataSource()
+activate  android_media_MediaExtractor.cpp
+android_media_MediaExtractor.cpp -> NuMediaExtractor.cpp : getMediaExtractor()
+android_media_MediaExtractor.cpp <-- NuMediaExtractor.cpp : extractor
+android_media_MediaExtractor.cpp -> NuMediaExtractor.cpp : setDataSource(httpService, path, &headers)
+activate  NuMediaExtractor.cpp
+NuMediaExtractor.cpp -> DataSource.cpp : CreateFromURI(httpService, path, headers)
+NuMediaExtractor.cpp -> MediaExtractor.cpp : Create()
+activate  MediaExtractor.cpp
+MediaExtractor.cpp -> DataSource.cpp : sniff()
+activate  DataSource.cpp
+DataSource.cpp --> MediaExtractor.cpp : mime = "audio/mp4"
+deactivate DataSource.cpp
+MediaExtractor.cpp -> MPEG4Extractor.cpp : new MPEG4Extractor(source)
+MPEG4Extractor.cpp --> MediaExtractor.cpp : extractor
+deactivate MediaExtractor.cpp
+MediaExtractor.cpp --> NuMediaExtractor.cpp : extractor
+android_media_MediaExtractor.cpp <-- NuMediaExtractor.cpp : extractor
+
+deactivate NuMediaExtractor.cpp
+deactivate android_media_MediaExtractor.cpp
+deactivate  MediaExtractor.java
+
+@enduml
