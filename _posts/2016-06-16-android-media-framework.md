@@ -5,7 +5,7 @@ modified:
 categories: TechNotes  
 comments: true
 excerpt:
-tags: []
+tags: [Android]
 image:
   feature:
 date: "2016-06-16 15:45:54 +0800"
