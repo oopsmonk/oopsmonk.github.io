@@ -19,7 +19,7 @@ Source Code Cross Reference: [Android 6.0.1_r10](http://androidxref.com/6.0.1_r1
 **Enable device mode:**  
 Settings -> Developer options -> Select USB Configuration -> MTP  
 UsbDeviceManager: Setting USB config to mtp  
-device/realtek/kylin/init.kylin.usb.rc : on property:sys.usb.config=mtp   
+device/lge/hammerhead/init.hammerhead.usb.rc : on property:sys.usb.config=mtp   
 system/core/rootdir/init.usb.configfs.rc: on property:sys.usb.config=mtp && property:sys.usb.configfs=1  
 
 **USB plug to PC:**  
@@ -98,7 +98,7 @@ frameworks/base/services/usb/java/com/android/server/usb/
 frameworks/base/media/java/android/mtp/  
 frameworks/base/media/jni/android_mtp_*  
 frameworks/av/media/mtp/  
-device/realtek/kylin/init.kylin.usb.rc  
+device/lge/hammerhead/init.hammerhead.usb.rc  
 system/core/rootdir/init.usb.configfs.rc  
 ```
 
