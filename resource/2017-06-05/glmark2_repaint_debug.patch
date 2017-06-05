@@ -1,0 +1,93 @@
+diff --git a/src/main-loop.cpp b/src/main-loop.cpp
+index 2bbd824..8c260c2 100644
+--- a/src/main-loop.cpp
++++ b/src/main-loop.cpp
+@@ -27,6 +27,24 @@
+ #include <string>
+ #include <sstream>
+ 
++#include<stdio.h>
++#include<sys/time.h>
++#include<unistd.h>
++int timestamp(char* buff, struct timeval tv){
++    //struct timeval tv;
++    struct tm *brokendown_time;
++    char string[128];
++
++    gettimeofday(&tv, NULL);
++    brokendown_time = localtime(&tv.tv_sec);
++    if (brokendown_time == NULL)
++        return sprintf(buff, "[(NULL)localtime] ");
++
++    strftime(string, sizeof string, "%H:%M:%S", brokendown_time);
++
++    return sprintf(buff, "[%s.%03li] ", string, tv.tv_usec/1000);
++}
++
+ /************
+  * MainLoop *
+  ************/
+@@ -104,8 +122,19 @@ MainLoop::step()
+ 
+     bool should_quit = canvas_.should_quit();
+ 
+-    if (scene_ ->running() && !should_quit)
++    struct timeval tv;
++    long int t_a, t_b;
++    char str_time[128];
++
++    if (scene_ ->running() && !should_quit){
++        gettimeofday(&tv, NULL);
++        t_a = tv.tv_sec*1000000 + tv.tv_usec;
+         draw();
++        gettimeofday(&tv, NULL);
++        timestamp(str_time, tv);
++        t_b = tv.tv_sec*1000000 + tv.tv_usec;
++        Log::info("%s glmark2_draw %ld \n", str_time, t_b - t_a);
++    }
+ 
+     /*
+      * Need to recheck whether the scene is still running, because code
+@@ -128,12 +157,42 @@ MainLoop::step()
+ void
+ MainLoop::draw()
+ {
++#if 0
++    canvas_.clear();
++
++    scene_->draw();
++    scene_->update();
++
++    canvas_.update();
++#endif
++
++    struct timeval tv;
++    long int t_a, t_b;
++    char str_time[128];
++
++    gettimeofday(&tv, NULL);
++    t_a = tv.tv_sec*1000000 + tv.tv_usec;
+     canvas_.clear();
++    gettimeofday(&tv, NULL);
++    timestamp(str_time, tv);
++    t_b = tv.tv_sec*1000000 + tv.tv_usec;
++    Log::info("%s canvas_clear %ld \n", str_time,  t_b - t_a);
+ 
+     scene_->draw();
++    gettimeofday(&tv, NULL);
++    timestamp(str_time, tv);
++    t_a = tv.tv_sec*1000000 + tv.tv_usec;
++    Log::info("%s scenc_draw %ld \n", str_time, t_a - t_b);
+     scene_->update();
++    gettimeofday(&tv, NULL);
++    t_b = tv.tv_sec*1000000 + tv.tv_usec;
++    Log::info("%s scenc_update %ld \n", str_time, t_b - t_a);
+ 
+     canvas_.update();
++    gettimeofday(&tv, NULL);
++    timestamp(str_time, tv);
++    t_a = tv.tv_sec*1000000 + tv.tv_usec;
++    Log::info("%s canvas_update %ld \n", str_time, t_a - t_b);
+ }
+ 
+ void
