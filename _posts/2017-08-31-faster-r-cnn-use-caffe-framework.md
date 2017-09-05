@@ -500,9 +500,9 @@ cp data/VOCdevkit2007/VOC2007/JPEGImages/???.jpg data/demo/
 
 ```
 
-![](/images/2017-08-31/demo1.jpg)
-![](/images/2017-08-31/demo2.jpg)
-![](/images/2017-08-31/demo3.jpg)
+![](/images/2017-08-31/demo4.jpg)
+![](/images/2017-08-31/demo5.jpg)
+![](/images/2017-08-31/demo6.jpg)
 
 ## Troubleshooting  
 
