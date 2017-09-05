@@ -1,0 +1,96 @@
+### CUDA
+wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64-deb
+sudo dpkg -i cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64-deb
+sudo apt-get update
+sudo apt-get install cuda
+echo 'export PATH=/usr/local/cuda/bin:$PATH' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
+source ~/.bashrc
+reboot system
+
+### Basic ### 
+sudo apt-get update  
+sudo apt-get upgrade  
+sudo apt-get install build-essential cmake g++ gfortran git pkg-config python-dev software-properties-common wget
+sudo apt-get autoremove 
+
+### Common Tools ### 
+sudo apt-get install -y libfreetype6-dev libpng12-dev
+pip install -U matplotlib ipython[all] jupyter pandas scikit-image
+
+
+### Python Packages ### 
+sudo apt-get update && sudo apt-get install -y python-numpy python-scipy python-nose \
+                                     python-h5py python-skimage python-matplotlib \
+                             python-pandas python-sklearn python-sympy
+sudo apt-get clean && sudo apt-get autoremove
+
+
+### OpenBLAS ### 
+mkdir ~/git
+cd ~/git
+git clone https://github.com/xianyi/OpenBLAS.git
+cd OpenBLAS
+make FC=gfortran -j $(($(nproc) + 1))
+sudo make PREFIX=/usr/local install
+
+echo 'export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH' >> ~/.bashrc
+
+
+### Caffe&pyCaffe ### 
+sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
+sudo apt-get install --no-install-recommends libboost-all-dev
+sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev
+
+cd ~/git
+git clone https://github.com/BVLC/caffe.git
+cd caffe
+vi Makefile  
+```
+diff --git a/Makefile b/Makefile
+index 598d28d..90000b2 100644
+--- a/Makefile
++++ b/Makefile
+@@ -178,7 +178,7 @@ ifneq ($(CPU_ONLY), 1)
+        LIBRARIES := cudart cublas curand
+ endif
+ 
+-LIBRARIES += glog gflags protobuf boost_system boost_filesystem m hdf5_hl hdf5
++LIBRARIES += glog gflags protobuf boost_system boost_filesystem m hdf5_serial_hl hdf5_serial
+ 
+ # handle IO dependencies
+ USE_LEVELDB ?= 1
+```
+cp Makefile.config.example Makefile.config
+
+sed -i 's/BLAS := atlas/BLAS := open/' Makefile.config
+
+sudo pip install -r python/requirements.txt
+make all -j $(($(nproc) + 1))
+make test -j $(($(nproc) + 1))
+make runtest -j $(($(nproc) + 1))
+
+### Faster R-CNN ### 
+git clone --recursive https://github.com/rbgirshick/py-faster-rcnn.git
+
+cd $FRCN_ROOT/lib
+make
+
+cd $FRCN_ROOT/caffe-fast-rcnn
+
+make -j8 && make pycaffe
+
+cd $FRCN_ROOT
+./data/scripts/fetch_faster_rcnn_models.sh
+
+cd $FRCN_ROOT
+./data/scripts/fetch_imagenet_models.sh
+
+### OpenCV ### 
+wget https://gist.githubusercontent.com/arthurbeggs/06df46af94af7f261513934e56103b30/raw/8a013aac83050f363cfd83ed0e4f2d3a75dc9c71/install-opencv-2.4.13-in-ubuntu.sh
+chmod a+x install-opencv-2.4.13-in-ubuntu.sh
+./install-opencv-2.4.13-in-ubuntu.sh 
+sudo -H pip install python-opencv
+sudo -H pip install opencv
+reboot system  
+
