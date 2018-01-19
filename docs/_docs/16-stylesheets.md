@@ -2,44 +2,73 @@
 title: "Stylesheets"
 permalink: /docs/stylesheets/
 excerpt: "Instructions for customizing and building the theme's stylesheets."
-modified: 2016-11-03T11:34:42-04:00
+last_modified_at: 2018-01-03T12:05:16-05:00
 ---
 
 The theme's `assets/css/main.css` file is built from several SCSS partials located in [`_sass/`](https://github.com/mmistakes/minimal-mistakes/tree/master/_sass) and is structured as follows:
 
 ```bash
-minimal mistakes
+minimal-mistakes
 ├── _sass
-|  ├── vendor               # vendor SCSS partials
-|  |   ├── breakpoint       # media query mixins
-|  |   ├── font-awesome     # Font Awesome icons
-|  |   ├── magnific-popup   # Magnific Popup lightbox
-|  |   └── susy             # Susy grid system
-|  ├── _animations.scss     # animations
-|  ├── _archive.scss        # archives (list, grid, feature views)
-|  ├── _base.scss           # base HTML elements
-|  ├── _buttons.scss        # buttons
-|  ├── _footer.scss         # footer
-|  ├── _masthead.scss       # masthead
-|  ├── _mixins.scss         # mixins (em function, clearfix)
-|  ├── _navigation.scss     # nav links (breadcrumb, priority+, toc, pagination, etc.)
-|  ├── _notices.scss        # notices
-|  ├── _page.scss           # pages
-|  ├── _print.scss          # print styles
-|  ├── _reset.scss          # reset
-|  ├── _sidebar.scss        # sidebar
-|  ├── _syntax.scss         # syntax highlighting
-|  ├── _tables.scss         # tables
-|  ├── _utilities.scss      # utility classes (text/image alignment)
-|  └── _variables.scss      # theme defaults (fonts, colors, etc.)
+|  └── minimal-mistakes
+|     ├── vendor               # vendor SCSS partials
+|     |   ├── breakpoint       # media query mixins
+|     |   ├── magnific-popup   # Magnific Popup lightbox
+|     |   └── susy             # Susy grid system
+|     ├── _animations.scss     # animations
+|     ├── _archive.scss        # archives (list, grid, feature views)
+|     ├── _base.scss           # base HTML elements
+|     ├── _buttons.scss        # buttons
+|     ├── _footer.scss         # footer
+|     ├── _masthead.scss       # masthead
+|     ├── _mixins.scss         # mixins (em function, clearfix)
+|     ├── _navigation.scss     # nav links (breadcrumb, priority+, toc, pagination, etc.)
+|     ├── _notices.scss        # notices
+|     ├── _page.scss           # pages
+|     ├── _print.scss          # print styles
+|     ├── _reset.scss          # reset
+|     ├── _sidebar.scss        # sidebar
+|     ├── _syntax.scss         # syntax highlighting
+|     ├── _tables.scss         # tables
+|     ├── _utilities.scss      # utility classes (text/image alignment)
+|     └── _variables.scss      # theme defaults (fonts, colors, etc.)
 ├── assets
 |  ├── css
-|  |  └── main.scss         # main stylesheet, loads SCSS partials in _sass
+|  |  └── main.scss            # main stylesheet, loads SCSS partials in _sass
 ```
 
 ## Customizing
 
-The variables and settings found in [`_sass/_variables.scss`](https://github.com/mmistakes/minimal-mistakes/blob/master/_sass/_variables.scss) can be used to modify the following aspects of the theme:
+To override the default [Sass](http://sass-lang.com/guide) (located in theme's 
+`_sass` directory), do one of the following:
+
+1. Copy directly from the Minimal Mistakes theme gem
+
+   - Go to your local Minimal Mistakes gem installation directory (run 
+     `bundle show minimal-mistakes-jekyll` to get the path to it).
+   - Copy the contents of `/assets/css/main.scss` from there to 
+     `<your_project>`.
+   - Customize what you want inside `<your_project>/assets/css/main.scss`.
+
+2. Copy from this repo.
+
+   - Copy the contents of [assets/css/main.scss](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss) 
+     to `<your_project>`.
+   - Customize what you want inside `<your_project/assets/css/main.scss`.
+
+**Note:** To make more extensive changes and customize the Sass partials bundled 
+in the gem. You will need to copy the complete contents of the `_sass` directory 
+to `<your_project>` due to the way Jekyll currently reads those files.
+
+To make basic tweaks to theme's style Sass variables can be overridden by adding 
+to `<your_project>/assets/css/main.scss`. For instance, to change the 
+link color used throughout the theme add:
+
+```scss
+$link-color: red;
+```
+
+Before any `@import` lines.
 
 ### Paragraph Indention 
 
@@ -54,16 +83,14 @@ The size of the indent can also be customized by changing the value of `$indent-
 
 ### Font Stacks
 
-By default the theme uses [system fonts](https://medium.com/designing-medium/system-shock-6b1dc6d6596f#.rb81vgn7i) for all of the font stacks (serif, sans-serif, and monospace). This is done in part to provide a clean base for you to build off of and to improve performance since we aren't loading any custom webfonts[^font-awesome] by default.
+By default the theme uses [system fonts](https://medium.com/designing-medium/system-shock-6b1dc6d6596f#.rb81vgn7i) for all of the font stacks (serif, sans-serif, and monospace). This is done in part to provide a clean base for you to build off of and to improve performance since we aren't loading any custom webfonts by default.
 
 ```scss
 /* system typefaces */
 $serif      : Georgia, Times, serif;
-$sans-serif : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$sans-serif : -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 $monospace  : Monaco, Consolas, "Lucida Console", monospace;
 ```
-
-[^font-awesome]: Apart from [Font Awesome](https://fortawesome.github.io/Font-Awesome/) icon webfonts.
 
 Sans-serif fonts have been used for most of the type, with serifs reserved for captions. If you wish to change this you'll need to poke around the various `SCSS` partials and modify `font-family` declarations.
 
@@ -80,11 +107,11 @@ Not a fan of the refreshed typography of the theme and want to revert back an ol
 <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic" rel="stylesheet" type="text/css">
 ```
 
-**2.** Update the following variables in `/_sass/_variables.scss`:
+**2.** Update the following SCSS variables:
 
 ```scss
 $serif              : "PT Serif", Georgia, Times, serif;
-$sans-serif-narrow  : "PT Sans Narrow", $sans-serif;
+$sans-serif-narrow  : "PT Sans Narrow", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 
 $global-font-family : $serif;
 $header-font-family : $sans-serif-narrow;
@@ -92,7 +119,7 @@ $header-font-family : $sans-serif-narrow;
 
 ### Type Scale
 
-Wherever possible type scale variables have been used instead of writing out fixed sizes. This makes updating much easier by changing values in one file, `_variables.scss`. 
+Wherever possible type scale variables have been used instead of writing out fixed sizes. This makes updating much easier by changing values in one file. 
 
 Example:
 
@@ -131,3 +158,12 @@ And `$susy` is used for setting [the grid](http://susy.oddbird.net/) the theme u
   <img src="{{ '/assets/images/mm-susy-grid-overlay.jpg' | absolute_url }}" alt="Susy grid overlay for debugging">
   <figcaption>Susy grid debug overlay enabled.</figcaption>
 </figure>
+
+### Disabling Animations
+
+You can disable either the fade-in intro animation, element transition animations, or both by overriding the corresponding variables. For example if you wanted to disable all animations you could include the following lines:
+
+```scss
+$intro-transition  : none;
+$global-transition : none;
+```

@@ -30,10 +30,11 @@ feature_row:
   - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
     title: "Placeholder 3"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
-modified: 2016-11-15T12:11:48-05:00
+last_modified_at: 2018-01-03T11:30:42-05:00
+toc: true
+toc_label: "Helpers"
+toc_icon: "gears"
 ---
-
-{% include toc icon="gears" title="Helpers" %}
 
 You can think of these Jekyll helpers as little shortcuts. Since GitHub Pages doesn't allow most plugins --- [custom tags](https://jekyllrb.com/docs/plugins/#tags) are out. Instead the theme leverages [**includes**](https://jekyllrb.com/docs/templates/#includes) to do something similar.
 
@@ -57,7 +58,7 @@ The Liquid based taxonomy archives found amongst the demo pages rely on this hel
 | Description                   |                          |                             |
 | -----------                   | ------------------------ | --------------------------- |
 | All posts grouped by category | [Source][category-array] | [Demo][category-array-demo] |
-| All posts grouped by tags     | [Source][tag-array]      | [Demo][tag-array-demo]      |
+| All posts grouped by tag     | [Source][tag-array]      | [Demo][tag-array-demo]      |
 
 [category-array]: https://github.com/{{ site.repository }}/blob/master/docs/_pages/category-archive.html
 [category-array-demo]: {{ "/categories/" | absolute_url }}
@@ -238,23 +239,56 @@ header:
 
 ## Table of Contents
 
-To include an [auto-generated table of contents](http://kramdown.rubyforge.org/converter/html.html#toc) for posts and pages, add the following helper before any actual content in your post or page.
+Auto-generated table of contents list for your posts and pages can be enabled using two methods.
+
+![table of contents example]({{ "/assets/images/mm-toc-helper-example.jpg" | absolute_url }})
+
+### Enabled via YAML Front Matter
+
+Add `toc: true` to the YAML Front Matter of any post or page.
+
+| Parameter   | Required | Description | Default |
+| ---------   | -------- | ----------- | ------- |
+| **toc**     | Optional | Show table of contents. (boolean) | `false` |
+| **toc_label** | Optional | Table of contents title. (string) | `toc_label` in UI Text data file. |
+| **toc_icon**  | Optional | Table of contents icon, displays before the title. (string) | [Font Awesome](https://fontawesome.com/icons?d=gallery&s=solid&m=free) <i class="fas fa-file-alt"></i> **file-alt** icon. Other FA icons can be used instead. |
+
+**TOC example with custom title and icon**
+
+```yaml
+---
+toc: true
+toc_label: "My Table of Contents"
+toc_icon: "cog"
+---
+```
+
+**Note:** using both methods will have unintended results. Be sure to remove `{% raw %}{% include toc %}{% endraw %}` placed table of contents from your content when using `toc: true`.
+{: .notice--warning }
+
+### Enabled via `toc` include (deprecated)
+
+To include a Kramdown [auto-generated table of contents](https://kramdown.gettalong.org/converter/html.html#toc) for posts and pages, add the following helper to your content.
 
 ```liquid
 {% raw %}{% include toc %}{% endraw %}
 ```
 
-![table of contents example]({{ "/assets/images/mm-toc-helper-example.jpg" | absolute_url }})
+**Note:** this method only works with Markdown files.
+{: .notice--warning}
+
+**Deprecated:** `toc` helper will be removed in the next major version of the theme. It is encouraged that you migrate to the YAML Front Matter method above.
+{: .notice--danger}
 
 | Parameter   | Required | Description | Default |
 | ---------   | -------- | ----------- | ------- |
-| **title**   | Optional | Table of contents title. | `toc_label` in UI Text data file. |
-| **icon**    | Optional | Table of contents icon (shows before the title). | [Font Awesome](https://fortawesome.github.io/Font-Awesome/icons/) <i class="fa fa-file-text"></i> **file-text** icon. Any other FA icon can be used instead. |
+| **title**   | Optional | Table of contents title. (string) | `toc_label` in UI Text data file. |
+| **icon**    | Optional | Table of contents icon, displays before the title. (string) | [Font Awesome](https://fontawesome.com/icons?d=gallery&s=solid&m=free) <i class="fas fa-file-alt"></i> **file-alt** icon. Other FA icons can be used instead. |
 
 **TOC example with custom title and icon**
 
 ```liquid
-{% raw %}{% include toc icon="gears" title="My Table of Contents" %}{% endraw %}
+{% raw %}{% include toc icon="cog" title="My Table of Contents" %}{% endraw %}
 ```
 
 ## Navigation List
@@ -315,7 +349,7 @@ sidebar:
 **ProTip:** If you're applying the same navigation list to several pages setting it as a [Front Matter default](https://jekyllrb.com/docs/configuration/#front-matter-defaults) is the better option.
 {: .notice--info}
 
-The theme's documentation is built with the `nav_list` helper so if you'd like an example to dissect take a look at `navigation.yml`, `_config.yml` and `_doc` collection in the [`/docs/`] folder(https://github.com/{{ site.repository }}/tree/master/docs/) of this repo.
+The theme's documentation is built with the `nav_list` helper so if you'd like an example to dissect take a look at `navigation.yml`, `_config.yml` and `_doc` collection in the [`/docs/` folder](https://github.com/{{ site.repository }}/tree/master/docs/) of this repo.
 
 To add a navigation list to a post or page's main content instead of the sidebar use the include this way:
 
