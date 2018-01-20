@@ -1,8 +1,284 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Sam Chen" />
+  <meta name="keywords" content="c, c++, java, javascript, python, html, xml, json, git, github, remote, android, embedded, arm, mali, aws, ec2, s3, arduino, raspberry pi, vi, vim, go, css, real-time operating system" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+  /*
+   * Copyright 2018 OopsMonk <oopsmonk@gmail.com>
+   *
+   */
+  
+  body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      width: 70%;
+      margin: auto;
+      background: #F3F6F6;
+      padding: 1% 5% 1% 5%;
+  }
+  
+  .author {
+      font-size: 55px;
+      color: #40514E;
+      text-align:center;
+      margin-bottom:0;
+      margin-top:1%;
+  }
+  
+  .contact {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+  }
+  .contact li {
+      float: right;
+      margin-right: 2%;
+  }
+  
+  .copyright {
+      text-align:center;
+      font-style:italic;
+      margin-top:5%;
+      margin-bottom:5%;
+  }
+  
+  
+  h1 {
+      font-size: 35px;
+      color: #11999E;
+      /*text-align:center;*/
+      margin-bottom:1%;
+  }
+  h1:before {
+      content: "";
+      display: inline-block;
+      margin-right:1%;
+      width: 5%;
+      height: 10px;
+      background-color: #30E3CA;
+  }
+  h1:after {
+      content: "";
+      display: inline-block;
+      margin-left:1%;
+      width: 5%;
+      height: 10px;
+      background-color: #30E3CA;
+  }
+  
+  h2 {
+      color: #40514E;
+  }
+  h2:before {
+      content: "";
+      display: inline-block;
+      margin-right:1%;
+      width: 16%;
+      height: 10px;
+      background-color: #F3F6F6;
+  }
+  h2:hover {
+      background-color: #40514E;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 1px #333;
+  }
+  
+  /* Definitions */
+  dt {
+      float: left;
+      clear: left;
+      /*width: 50%;*/
+      font-weight: bold;
+      margin-right:2%;
+  }
+  /*dd {*/
+      /*margin-left: 17%;*/
+  /*}*/
+  
+  p {
+      margin-top:0;
+      margin-bottom:1%;
+  }
+  
+  /* Blockquotes */
+  blockquote {
+      text-align: center
+  }
+  
+  /* Links */
+  a {
+      text-decoration: none;
+      color: #11999E;
+  }
+  a:hover, a:active {
+      background-color: #F3F6F6;
+      color: #40514E;
+      text-decoration: none;
+      text-shadow: 1px 1px 1px #333;
+  }
+  
+  </style>
+  <script src="https://use.fontawesome.com/fc4138f4cd.js"></script>
+</head>
 <body>
-    <div align="center">
-        <b>Coming soon...TODO before Feb 1st, 2018</b>
-    </div>
+<div>
+<div class="author">Sam Chen</div>
+<div>
+<ul class="contact">
+<li>
+<a target="_blank" href=mailto:oopsmonk@gmail.com><i class="fa fa-envelope fa-2x" aria-hidden="true"></i> Email</a>
+</li>
+<li>
+<a target="_blank" href=https://www.linkedin.com/in/oopsmonk><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i> LinkedIn</a>
+</li>
+<li>
+<a target="_blank" href=https://github.com/oopsmonk><i class="fa fa-github fa-2x" aria-hidden="true"></i> GitHub</a>
+</li>
+<li>
+<a href=http://oopsmonk.github.io/><i class="fa fa-home fa-2x" aria-hidden="true"></i> Blog</a>
+</li>
+</ul> 
+</div>
+</div>
+<h1 id="summary">Summary</h1>
+<p>A software engineer has wide knowledge of Android, embedded operating system, web frontend/backend development, and performance analysis, willing to adopt new technologies and interested in open source projects.<br />
+Experienced in: software architecture design, performance evaluation, system analysis, tool development, proof of concept, hardware debug.</p>
+<h1 id="experience">Experience</h1>
+<dl>
+<dt>Realtek Semiconductor Crop.</dt>
+<dd>Senior Software Engineer, <em>Jun. 2015 - present</em>
+</dd>
+</dl>
+<p>Worked in Android framework and co-work with both kernel team and hardware designer to verify new SoC(System on Chip).<br />
+Focused on system performance analysis in SoC, and verified HDMI-CEC, USB, and storage devices.</p>
+<ul>
+<li>Android Framework - Java, C/C++
+<ul>
+<li>Implemented sepolicy for new SoC in Android Oreo(8.x).<br />
+</li>
+<li>In charge of HDMI-CEC HAL implementation and CTS(Compatibility Test Suite) verification.</li>
+<li>Responsible for USB function verification include Storage/MTP/ADB.</li>
+</ul></li>
+<li>System Performance - Mali Graphics Debugger, DS-5 Streamline, Bandwidth-Monitor
+<ul>
+<li>Analyzed CPU/GPU performance in Android and Linux system.<br />
+</li>
+<li>Assisted hardware designer to validate new features of DRAM Controller.<br />
+</li>
+<li>Provided performance analysis report include Mali450/470/T820 GPU, Cortex-A53, and Cortex-A9 CPU.</li>
+</ul></li>
+<li>Tool Development - Python, C/C++, JavaScript, HTML, Java
+<ul>
+<li>Designed Bandwidth-Monitor, a client-server web application to monitor DDR threshold of hardware peripheral via DRAM Controller.<br />
+</li>
+<li>Implemented MediaAutoTester, an Android application to verify the correctness of video decoder automatically.<br />
+</li>
+<li>Developed BrunInTester, a long time stress test application to verify system stability in Android.</li>
+</ul></li>
+</ul>
+<dl>
+<dt>ZyXEL Communications Corp.</dt>
+<dd>Software Engineer, <em>Dec. 2012 - May 2015</em>
+</dd>
+</dl>
+<p>Researched on different cloud technologies and worked on poof of concept and implementation in cloud network controlling.</p>
+<ul>
+<li>Cloud Network Controller(CNC) - Python, C++, AWS(EC2, S3), PostgreSQL
+<ul>
+<li>Improved speed of device discovery 14 times faster.</li>
+<li>Developed new feature include device discovery, monitoring, and remote access in CNC.</li>
+</ul></li>
+</ul>
+<dl>
+<dt>Skyviia Crop.</dt>
+<dd>Software Engineer, <em>Jul. 2010 - Oct. 2012</em>
+</dd>
+</dl>
+<p>Worked on Android framework and Qt4.2 graphic library to improve the performance of media player.</p>
+<ul>
+<li>Digital Media Player(DMP) - Android, C/C++, Java, ARM DS-5 Streamline
+<ul>
+<li>Accelerated WebKit 2D graphic performance by 20% using hardware render in Android 4.2.<br />
+</li>
+<li>Implemented DVB-T/DVB-S2 middleware APIs and Digital TV applications in Android 4.2.<br />
+</li>
+<li>Built GUI template engine; accelerated GUI development speed.<br />
+</li>
+<li>Trained client to use Qt software development kit.</li>
+</ul></li>
+</ul>
+<dl>
+<dt>Aonvision Technology Corp.</dt>
+<dd>Software Engineer, <em>Apr. 2009 - Apr. 2010</em>
+</dd>
+</dl>
+<p>Developed new features on embedded Linux for Set-Top Box.</p>
+<ul>
+<li>Set-Top Box(STB) - Qt, C++
+<ul>
+<li>Implemented new features include YouTube, Picasa, and Internet Radio using Qt4.2.<br />
+</li>
+<li>Integrated a proprietary internet protocol on STB in digital signage project.</li>
+</ul></li>
+</ul>
+<dl>
+<dt>LEADDATA Inc.</dt>
+<dd>Software Engineer, <em>Jan. 2007 - Mar. 2009</em>
+</dd>
+</dl>
+<p>Helped Digital Photo Frame(DPF) production.</p>
+<ul>
+<li>Digital Photo Frame (DPF) - C/C++, eSOL/eCos RTOS, Hardware debug
+<ul>
+<li>Developed a multi-screen feature to connect Windows and DPF through USB.<br />
+</li>
+<li>Redesigned memory layout to reduce 10% memory usage on eSOL real-time embedded operating system.<br />
+</li>
+<li>Used oscilloscope and logic analyzer to debug SD card issues.</li>
+</ul></li>
+</ul>
+<h1 id="github-projects">GitHub Projects</h1>
+<p><strong>Contributor</strong></p>
+<dl>
+<dt><a href="https://github.com/hacdias/filemanager">filemanager</a></dt>
+<dd>Web File Manager which can be used as a middleware or standalone app. (Go)
+</dd>
+<dt><a href="https://github.com/mmistakes/minimal-mistakes">minimal-mistakes</a></dt>
+<dd>Minimal Mistakes is a flexible two-column Jekyll theme. (as a translator)
+</dd>
+</dl>
+<p><strong>Owner</strong></p>
+<dl>
+<dt><a href="https://github.com/oopsmonk/rpi-monitor">rpi-monitor</a></dt>
+<dd>A system monitor tool which is used to record CPU/Memory/Disk usage, CPU temperature, and network I/O on Ubuntu and Raspberry Pi. (Python, JavaScript, HTML, Raspberry Pi)
+</dd>
+<dt><a href="https://github.com/oopsmonk/pyWebMOC">pyWebMOC</a></dt>
+<dd>An application controls local music playback on Raspberry Pi. (Python, jQuery, Raspberry Pi)
+</dd>
+<dt><a href="https://github.com/oopsmonk/arduino-finger-dev">Fingerprint system</a></dt>
+<dd>Controlling digital door uses GTM5110 optical fingerprint module. (C++, Arduino)
+</dd>
+</dl>
+<h1 id="skills">Skills</h1>
+<p>C/C++, Java, Python, JavaScript, HTML, Go<br />
+Android framework, Embedded Linux, Performance Evaluation, System Analysis.</p>
+<h1 id="education">Education</h1>
+<dl>
+<dt>Southern Taiwan University of Science and Technology(STUST)</dt>
+<dd><em>Sep. 2003 - Jun. 2005</em><br />
+B.S. in Computer Science Engineering with Minor in Embedded system and Micro-Controller.
+</dd>
+</dl>
+<h1 id="languages">Languages</h1>
+<p>Mandarin(native), English(professional proficiency)</p>
+<div class="copyright">
+Auto-generated by <a href="https://github.com/oopsmonk/mkresume" target="_blank">mkresume</a>  at January 20, 2018 
+</div>
 </body>
 </html>
