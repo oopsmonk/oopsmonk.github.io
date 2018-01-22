@@ -2,23 +2,20 @@
 permalink: /about/
 layout: single
 author_profile: true
-title: 'About Viva La Vida'
+title: 'About OopsMonk'
 share: false
-modified: 2016-05-01
+modified: 2018-01-22
 ---
 
-Hi there, I'm OopsMonk. This is my blog - 'Vida La Vida'.  
-One of my favorite songs by [Coldplay][] which is full of enthusiasm and energy.
+I read books, wirte code, and workout regularly.  
+I believe the only thing that never changes is that everything changes.  
+I keep things simple.  
+I am a maker.  
 
-Currently, you can find two categories on this blog:
-
-* TechNotes: work experiences or ideas.  
-* Vida: I learn, cook, bake, roast, and do workout.
-
-Find me on [LinkedIn][] and [Twitter][].
+Here is my [resume](/resume/), you can find me on [LinkedIn][], [GitHub][], and [Twitter][].  
 
 {% if page.modified %} <small><i> Modified on <time datetime="{{ page.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ page.modified | date: "%B %d, %Y" }}</time></i></small>{% endif %}
 
-[Coldplay]: https://www.youtube.com/watch?v=dvgZkm1xWPE
-[LinkedIn]: http://linkedin.com/in/oopsmonk
-[Twitter]: http://twitter.com/oopsmonkTW
+[LinkedIn]: http://linkedin.com/in/oopsmonk  
+[GitHub]: https://github.com/oopsmonk  
+[Twitter]: http://twitter.com/oopsmonkTW  
