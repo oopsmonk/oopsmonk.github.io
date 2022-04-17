@@ -1,4 +1,4 @@
-baseURL: http://example.org/
+baseURL: https://oopsmonk.github.io/
 languageCode: en-us
 title: My New Hugo Site
 paginate: 5
@@ -112,14 +112,18 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: categories
-      name: categories
-      url: /categories/
+    - identifier: posts
+      name: posts
+      url: /posts/
       weight: 10
     - identifier: tags
       name: tags
       url: /tags/
       weight: 20
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 # pygmentsUseClasses: true
 # markup:
