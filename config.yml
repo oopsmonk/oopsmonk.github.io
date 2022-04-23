@@ -1,6 +1,6 @@
 baseURL: https://oopsmonk.github.io/
 languageCode: en-us
-title: My New Hugo Site
+title: Viva La Vida
 paginate: 7
 theme: PaperMod
 
@@ -9,7 +9,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-# googleAnalytics: UA-123-45
+googleAnalytics: UA-59507590-1
 
 minify:
   disableXML: true
@@ -24,12 +24,12 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "ExampleSite description"
+  title: Viva La Vida
+  description: ""
   keywords: [Blog, Portfolio]
   author: oopsmonk
   # author: ["Me", "You"] # multiple authors
-  images: ["<link or path of image for opengraph, twitter-cards>"]
+  images: ["images/bio-oopsmonk.jpg"]
   DateFormat: "January 2, 2006"
   defaultTheme: dark # auto, dark, light
   disableThemeToggle: false
@@ -38,7 +38,7 @@ params:
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
+  ShowCodeCopyButtons: true
   disableSpecial1stPost: false
   disableScrollToTop: false
   comments: false
@@ -47,29 +47,29 @@ params:
   showtoc: false
   tocopen: false
 
-  assets:
-    # disableHLJS: true # to disable highlight.js
-    # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+#  assets:
+#    # disableHLJS: true # to disable highlight.js
+#    # disableFingerprinting: true
+#    favicon: "<link / abs url>"
+#    favicon16x16: "<link / abs url>"
+#    favicon32x32: "<link / abs url>"
+#    apple_touch_icon: "<link / abs url>"
+#    safari_pinned_tab: "<link / abs url>"
 
   label:
     text: "Home"
-    icon: /apple-touch-icon.png
+    icon: /images/bio-oopsmonk.jpg
     iconHeight: 35
 
   # profile-mode
   profileMode:
     enabled: false # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
-    imageUrl: "<img location>"
+    title: oopsmonk
+    subtitle: ""
+    imageUrl: "/images/bio-oopsmonk.jpg"
     imageWidth: 120
     imageHeight: 120
-    imageTitle: my image
+    imageTitle: oopsmonk
     buttons:
       - name: Posts
         url: posts
@@ -78,16 +78,15 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
-
+    Title: "A father who likes making things simple and reseanable."
+    Content: ""
   socialIcons:
     - name: twitter
-      url: "https://twitter.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
+      url: "https://twitter.com/oops_monk"
     - name: github
-      url: "https://github.com/"
+      url: "https://github.com/oopsmonk"
+    - name: linkedin 
+      url: "https://www.linkedin.com/in/oopsmonk"
 
 #  analytics:
 #    google:
@@ -98,14 +97,14 @@ params:
 #      SiteVerificationTag: "XYZabc"
 
   cover:
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
+    hidden: false # hide everywhere but not in structured data
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
 
-#  editPost:
-#    URL: "https://github.com/<path_to_repo>/content"
-#    Text: "Suggest Changes" # edit text
-#    appendFilePath: true # to append file path to Edit link
+  editPost:
+    URL: "https://github.com/oopsmonk/oopsmonk.github.io/issues"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: false # to append file path to Edit link
 
   # for search
   # https://fusejs.io/api/options.html
