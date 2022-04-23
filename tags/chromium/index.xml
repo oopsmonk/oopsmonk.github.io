@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Chromium on oopsmonk</title>
+    <link>https://oopsmonk.github.io/tags/chromium/</link>
+    <description>Recent content in Chromium on oopsmonk</description>
+    <image>
+      <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
+      <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 31 Jul 2015 17:50:40 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/chromium/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dependency src specified more than once</title>
+      <link>https://oopsmonk.github.io/posts/2015-07-31-dependency-src-specified-more-than-once/</link>
+      <pubDate>Fri, 31 Jul 2015 17:50:40 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2015-07-31-dependency-src-specified-more-than-once/</guid>
+      <description>This problem appered when I was checking out older tag from the Chromium project.
+Working with Release Branches
+~/chromium_build/src$ git fetch --tags ~/chromium_build/src$ git checkout -b tag_35.0.1849.0 35.0.1849.0 ~/chromium_build/src$ gclient sync --with_branch_heads --jobs 16  Error log:
+Syncing projects: 100% ( 1/ 1) src src (ERROR) ---------------------------------------- [0:00:00] Started. ________ running &#39;git reset --hard HEAD&#39; in &#39;/home/sam.chen/chromium_source/src&#39; [0:00:00] HEAD is now at 77bd011 Publish DEPS for Chromium 35.0.1849.0 [0:00:00] _____ src : Attempting rebase onto 77bd011602b1799f715591e697806c55e7ef8b7f.</description>
+    </item>
+    
+    <item>
+      <title>Build Android WebView From The Chromium Projects</title>
+      <link>https://oopsmonk.github.io/posts/2015-07-31-build-android-webview-from-the-chromium-projects/</link>
+      <pubDate>Fri, 31 Jul 2015 17:28:39 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2015-07-31-build-android-webview-from-the-chromium-projects/</guid>
+      <description>First, check out and install the depot_tools package. $ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git $ export PATH=$PATH:/path/to/depot_tools  Checkout source code $ mkdir ~/chromium_build &amp;amp;&amp;amp; cd $_ ~/chromium_build$ fetch --nohooks android //Configure GYP ~/chromium_build$ echo &amp;quot;{ &#39;GYP_DEFINES&#39;: &#39;OS=android&#39;, }&amp;quot; &amp;gt; chromium.gyp_env //Update projects from gyp files. //You may need to run this again when you have added new files, updated gyp files, or sync&#39;ed your repository. ~/chromium_build$ gclient runhooks  Environment setup ~/chromium_build$ sudo apt-get install openjdk-7-jdk //config default JDK ~/chromium_build$ sudo update-alternatives --config javac ~/chromium_build$ sudo update-alternatives --config java ~/chromium_build$ sudo update-alternatives --config javaws ~/chromium_build$ sudo update-alternatives --config javap ~/chromium_build$ sudo update-alternatives --config jar ~/chromium_build$ sudo update-alternatives --config jarsigner //install build dependencies ~/chromium_build$ src/build/install-build-deps-android.</description>
+    </item>
+    
+  </channel>
+</rss>

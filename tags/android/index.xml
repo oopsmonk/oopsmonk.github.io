@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Android on oopsmonk</title>
+    <link>https://oopsmonk.github.io/tags/android/</link>
+    <description>Recent content in Android on oopsmonk</description>
+    <image>
+      <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
+      <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Dec 2017 11:54:18 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sepolicy for Android Treble</title>
+      <link>https://oopsmonk.github.io/posts/2017-12-20-sepolicy-for-android-treble/</link>
+      <pubDate>Wed, 20 Dec 2017 11:54:18 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2017-12-20-sepolicy-for-android-treble/</guid>
+      <description>A Note about sepolicy in Android Oreo.
+First thing first SELinux documents:
+ SELinux for Android 8.0 What is SELinux? What is SEAndroid? SELinux Policy Concepts and Overview  Android sepolicy files Policy path:  /system/sepolicy BOARD_SEPOLICY_DIR (device/$VENDOR/$DEVICE/sepolicy/, device/$VENDOR/$DEVICE/common/sepolicy/)  Policy Macros:  system/sepolicy/public/te_macros system/sepolicy/public/global_macros system/sepolicy/public/ioctl_macros system/sepolicy/public/neverallow_macros system/sepolicy/private/mls_macros system/sepolicy/reqd_mask/mls_macros  Security Context:  file_contexts, labeling files infilesystem. property_contexts, labeling android system/vendor properties genfs_contexts, Pre-file labeling for /proc files, generic filesystem security contexts.</description>
+    </item>
+    
+    <item>
+      <title>Policy Configuration of SELinux and SEAndroid</title>
+      <link>https://oopsmonk.github.io/posts/2017-11-17-policy-configuration-of-selinux-and-seandroid/</link>
+      <pubDate>Fri, 17 Nov 2017 08:12:13 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2017-11-17-policy-configuration-of-selinux-and-seandroid/</guid>
+      <description>A Note for SELinux and SEAndroid policy configuration.
+SEAndroid Security-Enhanced Linux in Android
+SELinux for Android 8 - Treble mode
+SEAndroid安全機制中的文件安全上下文關聯分析 - file_context
+SEAndroid安全機制中的進程安全上下文關聯分析 - process
+Android 8 Treble mode:  Kernel early mount PRODUCT_FULL_TREBLE, PRODUCT_FULL_TREBLE_OVERRIDE, BOARD_SEPOLICY_DIRS  Android 4.3 ~ 6 TE macro define: external/sepolicy/te_macros
+Android 8 TE macro define: system/sepolicy/te_macros
+##################################### # domain_trans(olddomain, type, newdomain) # Allow a transition from olddomain to newdomain # upon executing a file labeled with type.</description>
+    </item>
+    
+    <item>
+      <title>Building Different Android Version Using schroot</title>
+      <link>https://oopsmonk.github.io/posts/2017-10-24-building-different-android-version/</link>
+      <pubDate>Tue, 24 Oct 2017 10:07:29 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2017-10-24-building-different-android-version/</guid>
+      <description>I have a build environment with make4.1 and JDK8 for Android N/O, but JDK6 and make3.81 are required by Android KitKat.
+Here is a way to create a clean environment for Android KK.
+Create a new environment in current Ubuntu 16.04 install schroot and debootstrap
+sudo apt install schroot debootstrap
+if xenial no exist, update to latest version of debootstrap
+ls -l /usr/share/debootstrap/scripts/xenial
+Configure new environment edit /etc/schroot/schroot.conf
+[Build_KK] description=ubuntu16.04 Android_KK type=directory directory=/srv/chroot/Build_KK users=oopsmonk groups=oopsmonk root-groups=root profile=default Adding Mount points edit /etc/schroot/default/fstab</description>
+    </item>
+    
+    <item>
+      <title>Android USB Media Transfer Protocol(MPT)</title>
+      <link>https://oopsmonk.github.io/posts/2017-04-18-android-usb-media-transfer-protocol/</link>
+      <pubDate>Tue, 18 Apr 2017 11:55:32 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2017-04-18-android-usb-media-transfer-protocol/</guid>
+      <description>Study USB MTP Device and Host mode in Android M.
+Source Code Cross Reference: Android 6.0.1_r10
+MTP Device Mode Enable device mode:
+Settings -&amp;gt; Developer options -&amp;gt; Select USB Configuration -&amp;gt; MTP
+UsbDeviceManager: Setting USB config to mtp
+device/lge/hammerhead/init.hammerhead.usb.rc : on property:sys.usb.config=mtp
+system/core/rootdir/init.usb.configfs.rc: on property:sys.usb.config=mtp &amp;amp;&amp;amp; property:sys.usb.configfs=1
+USB plug to PC:
+MtpReceiver: listen to android.hardware.usb.action.USB_STATE and bring up MtpService
+UsbDeviceManager: get uevent USB_STATE=CONFIGURED from kernel
+MtpService: create MtpDatabase MtpDatabase: create volume and storage path</description>
+    </item>
+    
+    <item>
+      <title>Android Adoptable Storage</title>
+      <link>https://oopsmonk.github.io/posts/2017-02-13-android-adoptable-storage/</link>
+      <pubDate>Mon, 13 Feb 2017 10:08:28 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2017-02-13-android-adoptable-storage/</guid>
+      <description>A study of adoptable storage in Android Marshmallow and Nougat.
+How to Setup a Private Disk (External USB Storage) Android adoptable storage allow APP install to external storage that can reserve more internal space for other APPs.
+Create Adoptable Storage Using Settings GUI Settings -&amp;gt; Storage &amp;amp; USB -&amp;gt; Portable storage -&amp;gt; Settings -&amp;gt; Format as internal
+Use sm (Storage Manager) Command  Find disk id  # sm list-disks disk:8,16 disk:8,0  Format as internal  # sm partition disk:8,0 private # sm list-volumes all public:8,17 mounted 629C-FBAF emulated:8,2 unmounted null private mounted null emulated mounted null private:8,2 mounted 3f538e6e-e6a9-4163-ac1e-e4c6602b3c34 Now, it&amp;rsquo;s a private storage in system.</description>
+    </item>
+    
+    <item>
+      <title>Android Media Framework</title>
+      <link>https://oopsmonk.github.io/posts/2016-06-16-android-media-framework/</link>
+      <pubDate>Thu, 16 Jun 2016 15:45:54 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2016-06-16-android-media-framework/</guid>
+      <description>Android APIs for media playback: MediaPlayer and MediaCodec.
+ MediaPlayer  mediaPlayer.setDataSource(path); //fd or url mediaPlayer.setDisplay(SurfaceHolder sh); //SurfaceView or VideoView mediaPlayer.prepare(); // MediaPlayer.start(); //  MediaCodec   /* init use MediaExtractor to get mime data create decoder by mime type configure decoder by video format and surface view */ MediaExtractor mExtractor; MediaCodec mDecoder; mExtractor = new MediaExtractor(); mExtractor.setDataSource(filePath); MediaFormat format = mExtractor.getTrackFormat(track_index); String mime = format.getString(MediaFormat.KEY_MIME); if mime.startsWith(&amp;#34;video/&amp;#34;)  mExtractor.</description>
+    </item>
+    
+    <item>
+      <title>Android build error on Ubuntu 16.04 LTS</title>
+      <link>https://oopsmonk.github.io/posts/2016-06-07-android-build-error-on-ubuntu-16-04-lts/</link>
+      <pubDate>Tue, 07 Jun 2016 13:21:48 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2016-06-07-android-build-error-on-ubuntu-16-04-lts/</guid>
+      <description>After update system from Ubuntu 14.04 to 16.04, I got some problems, when I was building Android source code.
+openjdk-7-jdk is gone Add PPA for OpenJDK7
+sudo add-apt-repository ppa:openjdk-r/ppa sudo apt remove openjdk-* icedtea-* icedtea6-* sudo apt update &amp;amp;&amp;amp; sudo apt install openjdk-7-jdk git ccache automake lzop bison gperf build-essential zip curl zlib1g-dev zlib1g-dev:i386 g++-multilib python-networkx libxml2-utils bzip2 libbz2-dev libbz2-1.0 libghc-bzlib-dev squashfs-tools pngcrush schedtool dpkg-dev liblz4-tool make optipng maven If you have other java version in system, make sure your java version is correct.</description>
+    </item>
+    
+    <item>
+      <title>Android Full Disk Encryption Workflow (default encryption)</title>
+      <link>https://oopsmonk.github.io/posts/2016-04-29-android-full-disk-encryption-workflow/</link>
+      <pubDate>Fri, 29 Apr 2016 09:51:48 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2016-04-29-android-full-disk-encryption-workflow/</guid>
+      <description>This study is based on Android Marshmallow.
+Android full disk encryption use dm-crypt, which works with block devices. Please refer to the following docs for more detail:
+Full Disk Encryption
+How to setup full disk encryption Android support forceencrypt and encryptable encryption flags, and only support ext4 and f2fs file systems.
+Setup forceencrypt fstab.bullhead:
+/dev/block/platform/soc.0/f9824900.sdhci/by-name/userdata /data ext4 noatime,nosuid,nodev,barrier=1,data=ordered,nomblk_io_submit,noauto_da_alloc,errors=panic wait,check,forceencrypt=/dev/block/platform/soc.0/f9824900.sdhci/by-name/metadata Setup encryptable fstab.hammerhead:
+/dev/block/platform/msm_sdcc.1/by-name/userdata /data ext4 noatime,nosuid,nodev,barrier=1,data=ordered,nomblk_io_submit,noauto_da_alloc,errors=panic wait,check,encryptable=/dev/block/platform/msm_sdcc.1/by-name/metadata Related Properties and source code location Related source code:</description>
+    </item>
+    
+    <item>
+      <title>Dependency src specified more than once</title>
+      <link>https://oopsmonk.github.io/posts/2015-07-31-dependency-src-specified-more-than-once/</link>
+      <pubDate>Fri, 31 Jul 2015 17:50:40 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2015-07-31-dependency-src-specified-more-than-once/</guid>
+      <description>This problem appered when I was checking out older tag from the Chromium project.
+Working with Release Branches
+~/chromium_build/src$ git fetch --tags ~/chromium_build/src$ git checkout -b tag_35.0.1849.0 35.0.1849.0 ~/chromium_build/src$ gclient sync --with_branch_heads --jobs 16  Error log:
+Syncing projects: 100% ( 1/ 1) src src (ERROR) ---------------------------------------- [0:00:00] Started. ________ running &#39;git reset --hard HEAD&#39; in &#39;/home/sam.chen/chromium_source/src&#39; [0:00:00] HEAD is now at 77bd011 Publish DEPS for Chromium 35.0.1849.0 [0:00:00] _____ src : Attempting rebase onto 77bd011602b1799f715591e697806c55e7ef8b7f.</description>
+    </item>
+    
+    <item>
+      <title>Build Android WebView From The Chromium Projects</title>
+      <link>https://oopsmonk.github.io/posts/2015-07-31-build-android-webview-from-the-chromium-projects/</link>
+      <pubDate>Fri, 31 Jul 2015 17:28:39 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2015-07-31-build-android-webview-from-the-chromium-projects/</guid>
+      <description>First, check out and install the depot_tools package. $ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git $ export PATH=$PATH:/path/to/depot_tools  Checkout source code $ mkdir ~/chromium_build &amp;amp;&amp;amp; cd $_ ~/chromium_build$ fetch --nohooks android //Configure GYP ~/chromium_build$ echo &amp;quot;{ &#39;GYP_DEFINES&#39;: &#39;OS=android&#39;, }&amp;quot; &amp;gt; chromium.gyp_env //Update projects from gyp files. //You may need to run this again when you have added new files, updated gyp files, or sync&#39;ed your repository. ~/chromium_build$ gclient runhooks  Environment setup ~/chromium_build$ sudo apt-get install openjdk-7-jdk //config default JDK ~/chromium_build$ sudo update-alternatives --config javac ~/chromium_build$ sudo update-alternatives --config java ~/chromium_build$ sudo update-alternatives --config javaws ~/chromium_build$ sudo update-alternatives --config javap ~/chromium_build$ sudo update-alternatives --config jar ~/chromium_build$ sudo update-alternatives --config jarsigner //install build dependencies ~/chromium_build$ src/build/install-build-deps-android.</description>
+    </item>
+    
+    <item>
+      <title>How to split boot.img and get kernel config</title>
+      <link>https://oopsmonk.github.io/posts/2012-09-12-how2splitbootimage/</link>
+      <pubDate>Wed, 12 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2012-09-12-how2splitbootimage/</guid>
+      <description>boot_cm9.img file from mk802_legacy-compatibility_v1.zip
+Device: Rikomagic MK802
+Script files : Split_bootimg.pl , extract-ikconfig ( in {kernel_source}/script )
+Split boot.img Copy boot_cm9.img, Split_bootimg.pl, extract-ikconfig into &amp;lsquo;split_boot&amp;rsquo;
+$ mkdir split_boot $ cd split_boot $ ./split_bootimg.pl boot_cm9.img Page size: 2048 (0x00000800) Kernel size: 8094708 (0x007b83f4) Ramdisk size: 178940 (0x0002bafc) Second size: 0 (0x00000000) Board name: Command line: console=ttyS0,115200 rw init=/init loglevel=8 Writing boot_cm9.img-kernel ... complete. Writing boot_cm9.img-ramdisk.gz ... complete. Get kernel image (boot_cm9.img-kernel) and ramdisk (boot_cm9.</description>
+    </item>
+    
+    <item>
+      <title>How to extract kernel config from uImage</title>
+      <link>https://oopsmonk.github.io/posts/2012-08-21-how2extractkernelconfigfromuimage/</link>
+      <pubDate>Tue, 21 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2012-08-21-how2extractkernelconfigfromuimage/</guid>
+      <description>Get extract-ikconfig in kernel-source/scripts/ $mkdir extreact-uImage $cd extreact-uImage $cp {kernel-source}/scripts/extract-ikconfig . Dump uImage skip 1024 bytes $cp {uImage/what/you/want} uImage $dd if=uImage of=dd_uImage bs=1024 skip=1 $./extract-ikconfig dd_uImage &amp;gt; config </description>
+    </item>
+    
+    <item>
+      <title>XBMC for Android on MK802</title>
+      <link>https://oopsmonk.github.io/posts/2012-07-29-xbmc4androidonmk802/</link>
+      <pubDate>Sun, 29 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2012-07-29-xbmc4androidonmk802/</guid>
+      <description>XBMC announced XBMC for Android.
+不過並不打算放上Google Play, 需要自行compile及打包, 方法可參考:
+Build XBMC for Android on lubuntu 12.04
+在此記錄一下目前在MK802跑起來的情況.
+MK802介紹可參考:
+Android 4.0 mini PC 最小的主機MK802
+CPU : Allwinner A10 - ARM Cortex A8 SoC
+GPU : ARM Mali 400
+RAM : 1GB
+以公定價$79USD及讓人跌破眼鏡的入手價, 拿來玩真是夠本了.
+這次是要用Android 手機來控制 XBMC, 因為MK802沒有IR只能用滑鼠操作上有些不便.
+Google Play上有Official XBMC Remote可直接下載來用.
+中文設定: 切換到Appearance -&amp;gt; Setting -&amp;gt; International -&amp;gt; Language
+為了能透過HTTP連到MK802的XBMC, 需要將&amp;quot;網站伺服&amp;quot;的功能打開, 設定port number
+接著查看IP, 設定手機上的XBMC Remote如下:
+連線成功就會出現控制選項
+用手機上&amp;quot;Remote Control&amp;quot; Navigation, 測試播放USB裡的影片</description>
+    </item>
+    
+    <item>
+      <title>Build XBMC for Android on lubuntu 12.04</title>
+      <link>https://oopsmonk.github.io/posts/2012-07-28-buildxbmc/</link>
+      <pubDate>Sat, 28 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2012-07-28-buildxbmc/</guid>
+      <description>Install required packages # sudo apt-get install build-essential default-jdk git curl autoconf \ unzip zip zlib1g-dev gawk gperf Getting the Android SDK and NDK http://developer.android.com/sdk/index.html
+SDK : android-sdk_r20.0.1-linux.tgz
+crystax-5 NDK with enabled support of C++ exceptions, RTTI and Standard C++ Library
+http://www.crystax.net/en/android/ndk/7#download
+NDK : android-ndk-r7-crystax-5.beta2-linux-x86.tar.bz2
+Installing Android SDK packages &amp;lt;android-sdk&amp;gt; : $HOME/XBMC_Project/android-sdk-linux
+# cd &amp;lt;android-sdk&amp;gt;/tools # ./android update sdk -u -t platform,platform-tool Setup the Android toolchain &amp;lt;android-ndk&amp;gt; : $HOME/XBMC_Project/android-ndk-r8b &amp;lt;android-toolchain&amp;gt; : $HOME/XBMC_Project/android_toolchain/android-9</description>
+    </item>
+    
+    <item>
+      <title>Android Threads, Handlers and AsyncTask</title>
+      <link>https://oopsmonk.github.io/posts/2012-06-14-androidthreadshandlersandasynctask/</link>
+      <pubDate>Thu, 14 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2012-06-14-androidthreadshandlersandasynctask/</guid>
+      <description>先看過Processes and Threads會有比較清楚的概念, 當Adnroid Application 啟動後, 系統會建一個主要的thread 稱 &amp;ldquo;main thread&amp;rdquo; or &amp;ldquo;UI thread&amp;rdquo;, 所有的components 皆跑在這個UI thread, system calls 也是透過UI thread dispatched給各個component, ex: onKeyDown, touch event.
+UI thread 如因大量運算或等待而blocked, 預設超過5秒ANR(Application Not Responding)就會發生.
+且Android UI components 並非thread-safe, 使用上要特別小心.
+所以:
+ long time computation使用另外的thread, 不要寫在 UI Thread. 不要在UI thread 之外使用UI component method. 透過Thread, Handler and AsyncTask perform asynchronous processing, 避免UI thread block.  Threads Android 提供以下的method, 可在其它的thread 下調用 UI thread.
+Activity.runOnUiThread(Runnable) View.post(Runnable) &amp;lt;-- used in example code.</description>
+    </item>
+    
+  </channel>
+</rss>

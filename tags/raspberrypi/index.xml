@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>RaspberryPi on oopsmonk</title>
+    <link>https://oopsmonk.github.io/tags/raspberrypi/</link>
+    <description>Recent content in RaspberryPi on oopsmonk</description>
+    <image>
+      <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
+      <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Jun 2017 09:39:30 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/raspberrypi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RaspberryPi3: GLMark2 using weston with DRM backend</title>
+      <link>https://oopsmonk.github.io/posts/2017-06-05-raspberrypi3-glmark2-using-weston-with-drm-backend/</link>
+      <pubDate>Mon, 05 Jun 2017 09:39:30 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2017-06-05-raspberrypi3-glmark2-using-weston-with-drm-backend/</guid>
+      <description>How to use weston with DRM backend in Raspbian, and gets benchmark score by GLMark2.
+With regards to hardware acceleration, We can enable VC4 driver through raspi-config.
+# update system and raspi-config script $ sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade $ sudo apt-get install raspi-config # enable Broadcom VC4 driver $ sudo raspi-config Advanced Options -&amp;gt; GL Driver -&amp;gt; GL (Full KMS) Test environment:
+ 2017-04-10-raspbian-jessie-lite HDMI 1080P 60Hz CPU/GPU use default settings(no overclock)  Test packages:</description>
+    </item>
+    
+    <item>
+      <title>LibCEC on Raspberry Pi</title>
+      <link>https://oopsmonk.github.io/posts/2015-11-03-libcec-on-raspberry-pi/</link>
+      <pubDate>Tue, 03 Nov 2015 14:44:47 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2015-11-03-libcec-on-raspberry-pi/</guid>
+      <description>Install requirements sudo apt-get install build-essential autoconf liblockdev1-dev \ libudev-dev git libtool pkg-config cmake libxrandr-dev -y  Python and Swing support (Optional)
+sudo apt-get install python-dev swig -y  Checkout and build libcec source code The current version is libcec-3.0.1, but I got an error as follows:
+make[2]: *** No rule to make target &#39;1&#39;, needed by &#39;src/libcec/libcec.so.3.0.1&#39;. Stop.  Using libcec-3.0.0 instead of libcec-3.0.1, it&amp;rsquo;s work properly.
+git clone https://github.</description>
+    </item>
+    
+    <item>
+      <title>New Feature: Real-Time Monitoring</title>
+      <link>https://oopsmonk.github.io/posts/2015-07-04-new-feature-real-time-monitoring/</link>
+      <pubDate>Sat, 04 Jul 2015 17:37:31 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2015-07-04-new-feature-real-time-monitoring/</guid>
+      <description>Real-Time Monitor for rpi-monitor:
+ Update system status every 5 seconds. Two HTML layouts: change different layout via click Real-Time on navigation bar.  Project on github: rpi-monitor Layout 1(default):
+Layout 2:</description>
+    </item>
+    
+    <item>
+      <title>Build A Blog with Jekyll and GitHub on Raspberry Pi</title>
+      <link>https://oopsmonk.github.io/posts/2015-03-05-build-a-blog-with-jekyll-on-raspberry-pi/</link>
+      <pubDate>Thu, 05 Mar 2015 23:30:11 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2015-03-05-build-a-blog-with-jekyll-on-raspberry-pi/</guid>
+      <description>I recently switched my blog from Google Blogger to GitHub Pages, here is how I built my blog. I&amp;rsquo;ll go through the following:
+ Install Jekyll on Raspberry Pi Setup Jekyll Theme Post a new article Images minimization Commit to GitHub  Using Jekyll and Minimal Mistake build a blog and host on GitHub and Raspberry Pi(or Ubuntu).
+Requirements:
+ Raspberry Pi(or Ubuntu) GitHub account Jekyll 2.2+ Minimal Mistake Grunt  If you have no idea with these things, here are useful resources:</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi Monitor</title>
+      <link>https://oopsmonk.github.io/posts/2014-07-21-rpimonitor/</link>
+      <pubDate>Mon, 21 Jul 2014 01:53:31 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2014-07-21-rpimonitor/</guid>
+      <description>Use RRDTool monitor Raspberry Pi, include CPU temperture, Memory usage, Disk I/O, Network I/O&amp;hellip;
+Install install packages
+$sudo apt-get install libcairo2-dev libpango1.0-dev libglib2.0-dev libxml2-dev \ librrd-dev python2.7-dev rrdtool python-rrdtool $wget https://pypi.python.org/packages/source/p/psutil/psutil-2.1.1.tar.gz $tar xf psutil-2.1.1.tar.gz $cd psutil-2.1.1 $sudo python setup.py install Download or clone rpi-monitor on github
+https://github.com/oopsmonk/rpi-monitor
+Setup Crontab By defualt, the cron.log is disabled in Raspbian. To enable it:
+sudo vi /etc/rsyslog.conf  find the line and uncomment it.</description>
+    </item>
+    
+    <item>
+      <title>Building MOC</title>
+      <link>https://oopsmonk.github.io/posts/2013-08-23-mocbuilding/</link>
+      <pubDate>Fri, 23 Aug 2013 01:53:31 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2013-08-23-mocbuilding/</guid>
+      <description>clone MOC svn repository to github Ref: Converting a Subversion repository to Git
+$ sudo apt-get install subversion git-svn $ mkdir moc-svn $ cd moc-svn $ svn co svn://daper.net/moc/trunk $ svn log -q | awk -F &amp;#39;|&amp;#39; &amp;#39;/^r/ {sub(&amp;#34;^ &amp;#34;, &amp;#34;&amp;#34;, $2); sub(&amp;#34; $&amp;#34;, &amp;#34;&amp;#34;, $2); print $2&amp;#34; = &amp;#34;$2&amp;#34; &amp;lt;&amp;#34;$2&amp;#34;&amp;gt;&amp;#34;}&amp;#39; | sort -u &amp;gt; authors-transform.txt $ cd .. $ mkdir moc-git $ git svn clone svn://daper.net/moc/trunk --no-metadata -A ./moc-svn/authors-transform.txt .</description>
+    </item>
+    
+    <item>
+      <title>Remove the same files in two folders</title>
+      <link>https://oopsmonk.github.io/posts/2013-06-19-comparermfileintwofolder/</link>
+      <pubDate>Wed, 19 Jun 2013 01:53:31 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2013-06-19-comparermfileintwofolder/</guid>
+      <description>有時在整理照片或文件時, 需要比對2個資料匣, 把重覆的檔案拿掉.
+Dwonload Source Here
+function usage(){  echo &amp;#34;Find the same file in two folders and remove it.&amp;#34;  echo &amp;#34;usage : ./comp-rm.sh target-dir source-dir&amp;#34;  echo &amp;#34;remove the same files in target-dir.&amp;#34; }  if [ $# -ne 2 ]; then  usage  exit 1 fi  target_dir=$1 source_dir=$2 f_list1=$(find &amp;#34;$target_dir&amp;#34; -type f) f_list2=$(find &amp;#34;$source_dir&amp;#34; -type f)   for i in $f_list1; do  echo $f_list2 | grep $(basename $i) &amp;gt;/dev/null &amp;amp;&amp;amp; hit_str+=$i&amp;#34;;&amp;#34; done  if [ -z $hit_str ]; then  echo &amp;#34;list is empty.</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi Setup</title>
+      <link>https://oopsmonk.github.io/posts/2013-06-15-rpisetup/</link>
+      <pubDate>Sat, 15 Jun 2013 01:53:31 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2013-06-15-rpisetup/</guid>
+      <description>Install Raspbian &amp;ldquo;wheezy&amp;rdquo; image Download image from Raspberry Pi offical website
+Mount HOME to HDD Copy HOME data to disk $ sudo mkdir /media/new_home $ sudo mount /dev/sda1 /media/new_home $ sudo rsync -aXS /home/. /media/new_home/. $ sudo umount /media/new_home fstab #get disk UUID $ sudo blkid /dev/mmcblk0p1: SEC_TYPE=&amp;#34;msdos&amp;#34; LABEL=&amp;#34;boot&amp;#34; UUID=&amp;#34;936C-7122&amp;#34; TYPE=&amp;#34;vfat&amp;#34; /dev/mmcblk0p2: UUID=&amp;#34;c1198422-7a7c-4863-8a8f-45a1db26b4f2&amp;#34; TYPE=&amp;#34;ext4&amp;#34; /dev/sda1: UUID=&amp;#34;2cd990b5-6c27-4933-95d0-fd00b000fe77&amp;#34; TYPE=&amp;#34;ext4&amp;#34; #modify fstab $ echo &amp;#34;UUID=2cd880b5-6c27-4933-95d0-fd00b000fe77 /home ext4 defaults 0 2&amp;#34; | sudo tee --append /etc/fstab #mount HOMW without reboot.</description>
+    </item>
+    
+  </channel>
+</rss>

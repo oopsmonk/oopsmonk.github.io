@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ARM on oopsmonk</title>
+    <link>https://oopsmonk.github.io/tags/arm/</link>
+    <description>Recent content in ARM on oopsmonk</description>
+    <image>
+      <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
+      <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Nov 2017 19:14:00 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/arm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ARM Mali Profiling Metrics</title>
+      <link>https://oopsmonk.github.io/posts/2017-11-01-arm-mali-profiling-metrics/</link>
+      <pubDate>Wed, 01 Nov 2017 19:14:00 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2017-11-01-arm-mali-profiling-metrics/</guid>
+      <description>Some metrics for ARM Mali performance analysis in DS-5 Streamline or MGD.
+DS-5 Streamline Mali-470 (Utgard) GPU Bandwidth = (Words read, master + Words written, master) * Bus Width
+Overdraw = Fragments Passed Z/stencil count * Number of Cores / Resolution * FPS
+GPU Bandwidth = (38342943+38661456) * (128/8) = 1232070384 bytes/s = 1174.99 MB/s Overdraw = (79194586+79152584+79112550+79117609)/(1920x1080) = 152.67
+Mali-T820 (Midgard) Job Slots
+ JS0: fragment shading. JS1: vertex, geometry, compute, and tiling.</description>
+    </item>
+    
+  </channel>
+</rss>

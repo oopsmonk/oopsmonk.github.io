@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>MachineLearning on oopsmonk</title>
+    <link>https://oopsmonk.github.io/tags/machinelearning/</link>
+    <description>Recent content in MachineLearning on oopsmonk</description>
+    <image>
+      <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
+      <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 31 Aug 2017 10:00:10 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/machinelearning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Faster R-CNN Use Caffe Framework</title>
+      <link>https://oopsmonk.github.io/posts/2017-08-31-faster-r-cnn-use-caffe-framework/</link>
+      <pubDate>Thu, 31 Aug 2017 10:00:10 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2017-08-31-faster-r-cnn-use-caffe-framework/</guid>
+      <description>Install caffe framework and run Faster R-CNN demo on Ubuntu 16.04.
+Test environment CPU: Intel(R) Core(TM) i3-4130 CPU @ 3.40GHz 4-Cores
+GPU: ASUSTeK GeForce GTX 1060 with 6GB Memory
+HD: WDC WD5000AAKX
+OS: Ubuntu 16.04
+Test Flow  Install software requirement Video pre-processing: get jpeg images from source video Image Labeling Use Faster R-CNN to genrate trained model Run Faster R-CNN demo  Requirement Hardware:
+Good graphic card with large memory (6GB memory is okay, but it has problem in VGG traing.</description>
+    </item>
+    
+  </channel>
+</rss>

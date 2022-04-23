@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>WebDevs on oopsmonk</title>
+    <link>https://oopsmonk.github.io/tags/webdevs/</link>
+    <description>Recent content in WebDevs on oopsmonk</description>
+    <image>
+      <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
+      <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 Feb 2013 00:00:00 +0000</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/webdevs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenNMS Architecture Introduction (Discovery &amp; Monitor)</title>
+      <link>https://oopsmonk.github.io/posts/2013-02-03-opennmsarchitectureintroduction/</link>
+      <pubDate>Sun, 03 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2013-02-03-opennmsarchitectureintroduction/</guid>
+      <description>O.S. : Ubuntu12.04 LTS
+OpenNMS Version : 1.10.7
+OpenNMS base on TMN &amp;amp; FCAPS network management models.
+OpenNMS Block Diagram Discovery &amp;amp; Monitor daemons   Eventd
+Event handling daemon
+Configuration files:
+eventconf.xml -&amp;gt; Defines the UEI (Universal Event Identifiers).
+eventd-configuration.xml -&amp;gt; Defines operating parameters for eventd such as timeouts, listener threads and listener port.
+events-archiver-configuation.xml -&amp;gt; Configuration for event archive daemon.
+events.archiver.properties -&amp;gt; Fine tune events archive subsystem.
+etc/events/*.xml -&amp;gt; Vendor UEI define files.</description>
+    </item>
+    
+  </channel>
+</rss>

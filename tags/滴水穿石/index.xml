@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>滴水穿石 on oopsmonk</title>
+    <link>https://oopsmonk.github.io/tags/%E6%BB%B4%E6%B0%B4%E7%A9%BF%E7%9F%B3/</link>
+    <description>Recent content in 滴水穿石 on oopsmonk</description>
+    <image>
+      <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
+      <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Dec 2018 11:35:58 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/%E6%BB%B4%E6%B0%B4%E7%A9%BF%E7%9F%B3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RPi vs i5-8250U</title>
+      <link>https://oopsmonk.github.io/posts/2018-12-01-month12/</link>
+      <pubDate>Sat, 01 Dec 2018 11:35:58 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2018-12-01-month12/</guid>
+      <description>utarray benchmarking
+Week48~52 小筆記 bazel installation on Raspberry Pi Issue#1308
+$ sudo apt-get install build-essential openjdk-8-jdk python zip unzip $ wget https://github.com/bazelbuild/bazel/releases/download/0.19.2/bazel-0.19.2-dist.zip $ mkdir bazel-0.19.2 &amp;amp;&amp;amp; unzip ./bazel-0.19.2-dist.zip -d bazel-0.19.2 $ cd bazel-0.19.2 $ env BAZEL_JAVAC_OPTS=&amp;#34;-J-Xms384m -J-Xmx512m&amp;#34; bash ./compile.sh 🍃 Building Bazel from scratch...... 🍃 Building Bazel with Bazel. .WARNING: --batch mode is deprecated. Please instead explicitly shut down your Bazel server using the command &amp;#34;bazel shutdown&amp;#34;. INFO: Analysed target //src:bazel_nojdk (233 packages loaded, 10401 targets configured).</description>
+    </item>
+    
+    <item>
+      <title>RPi Home</title>
+      <link>https://oopsmonk.github.io/posts/2018-10-14-2018month10/</link>
+      <pubDate>Sun, 14 Oct 2018 20:40:28 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2018-10-14-2018month10/</guid>
+      <description>Test Google Asistant on Raspberry Pi.
+Week40~44 (10/01~10/31) 網路文章 Wi-Fi 6: What’s Different, and Why it Matters
+網路資源 Raspberry Pi BT setup
+Turn your Raspberry Pi into homemade Google Home
+Google Asistant SDK
+Google Asistant SDK C++ 使用Python lib常常會當機改用C++比較沒問題, 但C++版本有限制API使用的次數, 無法長期使用.</description>
+    </item>
+    
+    <item>
+      <title>How many pointers you can have?</title>
+      <link>https://oopsmonk.github.io/posts/2018-08-22-2018month8/</link>
+      <pubDate>Wed, 22 Aug 2018 21:10:01 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2018-08-22-2018month8/</guid>
+      <description>Pointers, again&amp;hellip;
+How many pointers you can have?
+C89: 12
+Week31~35 (07/29~08/31) 網路文章 What is the difference between const int*, const int * const, and int const *?
+Read it backwards (as driven by Clockwise/Spiral Rule):
+int* - pointer to int
+int const * - pointer to const int
+int * const - const pointer to int
+int const * const - const pointer to const int
+Now the first const can be on either side of the type so:</description>
+    </item>
+    
+    <item>
+      <title>Energetic People!</title>
+      <link>https://oopsmonk.github.io/posts/2018-06-30-2018month7/</link>
+      <pubDate>Sat, 30 Jun 2018 16:41:34 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2018-06-30-2018month7/</guid>
+      <description>It&amp;rsquo;s blocks and no chain, keep fighting!
+Week27~30 (07/01~27) 網路文章 IOTA Summer Summit 2018</description>
+    </item>
+    
+    <item>
+      <title>Hell Yeah! Keep Fighting</title>
+      <link>https://oopsmonk.github.io/posts/2018-05-29-2018month6/</link>
+      <pubDate>Tue, 29 May 2018 16:48:40 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2018-05-29-2018month6/</guid>
+      <description>More bad ideas + Generosity = Good ideas
+Week22~26 (06/01~29) 網路文章 Elon Musk emails employees about &amp;rsquo;extensive and damaging sabotage&amp;rsquo; by employee
+樹大招風&amp;hellip;.但內部管理是否有問題?
+溝通一直是最難處理的問題之一, 尤其是資訊不對等的情況下.
+網路資源 esp32-websocket
+websocket component for esp-idf.
+讀書心得 論文學習 </description>
+    </item>
+    
+    <item>
+      <title>What Does The Fox Say?</title>
+      <link>https://oopsmonk.github.io/posts/2018-04-30-2018month5/</link>
+      <pubDate>Tue, 01 May 2018 09:10:34 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2018-04-30-2018month5/</guid>
+      <description>Okinawa Churaumi Aquarium
+Kouri Bridge - The Longest Bridge in Okinawa
+Week18~21 (05/04~25) 網路文章 Students are being prepared for jobs that no longer exist. Here&amp;rsquo;s how that could change.
+NBC關於美國高中教育的深入報導, 提到現在的教育方式已經無法保證讓學生找到理想的工作，尤其是技職生. 文中提到几個點:
+ 高中準時畢業的人有84%, 後來70%直升大學. 雖然學校盡力教導讓學生面對未來, 但學校也不知將來會是如何, 因為計劃跟不上變化. “We’re preparing kids for these jobs of tomorrow, but we really don’t even know what they are,” 2016年的調查, 只有34%的高中生(12th-graders) 對學習感到興趣. 公立大學(University of Massachusetts Lowell)1年的學費大約37萬台幣($12,496USD), 私立大學(Elmhurst College)學費約140萬台幣($47,121USD), 另一所公立大學(University of Minnesota)學費約91萬台幣($30,514USD). 另外自己查了一下哈佛大學每年學費138萬台幣(46,340USD), 以上都是只有學費, 如果加上宿舍及雜費大約是202萬台幣($67,580USD). 至2017年底美國的學貸已高達1.</description>
+    </item>
+    
+    <item>
+      <title>Tangled</title>
+      <link>https://oopsmonk.github.io/posts/2018-04-02-2018month4/</link>
+      <pubDate>Mon, 30 Apr 2018 08:13:28 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2018-04-02-2018month4/</guid>
+      <description>Algorithm, Blockchain, Coursera
+真心推Coursera上的Data Structures and Algorithms Specialization, 挑有興趣的就好.
+2017年底至今拿了4張Certifications, Algorithms on Graphs是比較有趣的課程.
+其它3張是Algorithmic Toolbox, Data Structures, Algorithms on Strings
+Week14 (04/06) 讀書心得 Burrows-Wheeler Transform - data compression
+ Cyclic rotation Sorting Last column  Inverting Burrows-wheeler transform
+ Mark the occurrence of characters Putting sorted bwt string to frist column  Knuth–Morris–Pratt - string searching algorithm (or KMP algorithm)
+Suffix array - a sorted array of all suffixes of a string.</description>
+    </item>
+    
+    <item>
+      <title>Never Split the Difference</title>
+      <link>https://oopsmonk.github.io/posts/2018-03-01-2018month3/</link>
+      <pubDate>Thu, 01 Mar 2018 17:01:06 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2018-03-01-2018month3/</guid>
+      <description>Debug, Debug, Debug&amp;hellip;, Muscle Up Tips
+Week9 (03/02) 讀書心得 FBI談判協商術
+積極聆聽, 鏡像模仿, 極端錨點, 開放型/測試型/校準型問題, 對事不對人, 每個人都怕失去, 成見使人盲目, 假設提供指引.
+The power of &amp;ldquo;No&amp;rdquo;, Three types of &amp;ldquo;Yes&amp;rdquo;, The power of &amp;ldquo;Right&amp;rdquo;, Emotion is one of the keys, Be Honest.
+Thinking fast and slow.
+Week10 (03/09) 網路資源 Chris Voss: Never Split the Difference
+Week11 (03/16) 網路文章 Android Treble: blessing or trouble?
+Diving into SDCardFS: How Google’s FUSE Replacement Will Reduce I/O Overhead</description>
+    </item>
+    
+    <item>
+      <title>cache not cash...</title>
+      <link>https://oopsmonk.github.io/posts/2018-01-26-2018month2/</link>
+      <pubDate>Wed, 28 Feb 2018 15:14:51 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2018-01-26-2018month2/</guid>
+      <description>Android, Chinese New Year, blockchain, Cache miss
+Week5 (02/02) 這個月雖然有年假但比平常更忙！ 結論: 放假不一定放鬆, 想專心做事 :-)
+網路文章 Processor Pipeline
+Gallery of Processor Cache Effects
+Using Streamline to Guide Cache Optimization
+參考這篇分析Kodi17.6影片播放時的L1/L2 cache access情況, 播放2160p影片時L1/L2 data ratios不高分別在0.046/0.18, 使用Kodi18更少分別為0.041/0.16.
+另外Kodi18在記憶體使用上比17.6減少3.6%, cache miss 減少47~55%. Cache Refill Ratios算法
+L1 data ratio: $CacheDataRefill/$CacheDataAccess
+L2 data ratio: $CacheL2DataRefill/$CacheL2DataAccess
+網路資源 Blockchain Demo
+大略的介紹blockchain, 簡單明瞭.</description>
+    </item>
+    
+    <item>
+      <title>Is there a shortcut?</title>
+      <link>https://oopsmonk.github.io/posts/2018-01-02-2018month1/</link>
+      <pubDate>Fri, 26 Jan 2018 11:35:41 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2018-01-02-2018month1/</guid>
+      <description>Android, Algorithms
+Week1 (01/05) 讀書心得 Algorithms on Graphs - Week5 給出座標上n個點:
+ 找出最短路徑(the shortest path) 分群(Clustering)  為Minimun Spanning Tree相關問題, 可以使用Kruskal’s MST Algorithm 及Disjoint-set 來解.
+for all u ∈ V : MakeSet(v ) X ← empty set // a set with solution edges sort the edges E by weight for all {u, v } ∈ E in non-decreasing weight order: if Find(u) != Find(v): add {u, v } to X Union(u, v ) return X Week2 (01/12) 網路文章 Android编译系统中的Android.</description>
+    </item>
+    
+    <item>
+      <title>Resolution and Revolution! </title>
+      <link>https://oopsmonk.github.io/posts/2017-11-24-2017month12/</link>
+      <pubDate>Sun, 31 Dec 2017 09:52:02 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2017-11-24-2017month12/</guid>
+      <description>SEAndroid, Algorithms, Numpy
+Android N -&amp;gt; O 被自己的石頭砸到腳 對於晶片廠來說Android決解了軟體開發的問題, 也加速了ODM/OEM的開發時程.
+沒錯&amp;hellip;但對於手機/電視之外的應用..存在些問題.
+另外差異化及客制帶來些不定時炸彈.
+Sepolicy for Android Treble 使用numpy array修改pixel values. 網路資源 Machine Learning 101 - Jason Mayes
+New year&amp;rsquo;s resolutions  IELTS overall 6.5 Data Structures and Algorithms Specialization Master of Computer Science in Data Science  </description>
+    </item>
+    
+    <item>
+      <title>Preparing a preparation?! It&#39;s nonsense...</title>
+      <link>https://oopsmonk.github.io/posts/2017-10-27-2017month11/</link>
+      <pubDate>Fri, 24 Nov 2017 14:10:54 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2017-10-27-2017month11/</guid>
+      <description>SELinux, Arm Tech Symposia 2017 Taiwan, golang, IoT
+Week44 (11/03) 網路資源 Firmware Updates over Low-Power Wide Area Networks
+Enabling firmware updates over LPWAN
+ARMmbed/lorawan-fota-demo
+滿有趣的問題, IoT建置會預期device要能長達10年的壽命, 但10年間的變化是很大的.
+Week45 (11/10) 網路文章 Android SELinux Treble
+Android O 為了加速產品開發, 在framework上有重大的改變, 使用了Treble.
+Vender, ODM, OEM有各自需要維護的partitions.
+Week46 (11/17) 網路文章 Neural fuzzing: applying DNN to software security testing
+好奇其它的nural networks的應用, 常看到CNN.
+網路資源 hacdias/filemanager
+感覺不錯用的web filemanager, 目前很有活力, 送了一個PR不到1天就被merge了.
+讀書心得 因為把玩hacdias/filemanager看了一下A Tour of Go在語法上還不太能適應, 不過還滿容易上手的, Method跟Interface的用法還要再研究一下, Concurrency也要花一點時間了解, 必竟concurrency是最大的賣點吧!</description>
+    </item>
+    
+    <item>
+      <title>What&#39;s wrong with benchmarks?</title>
+      <link>https://oopsmonk.github.io/posts/2017-09-29-2017month10/</link>
+      <pubDate>Fri, 27 Oct 2017 09:34:49 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2017-09-29-2017month10/</guid>
+      <description>ARM performance, Algorithms
+In fact, there is no universal benchmark tool.
+Week40 (10/06) 網路文章 Why do we learn algorithms?
+Why do we need so many sorting algorithms?
+Why do we need to learn different sorting algorithms when the STL sort function is already available to us in C++?
+網路資源 The Algorithms
+不同程式語言演算法的實現.
+every-programmer-should-know
+Data Structure Visualizations
+演算法視覺化
+Week41 (10/13) 網路文章 GPU Processing Budget Approach to Game Development
+GPU budget是估算處理1 pixel的cycle cost, 單位是cycles/frame/pixel</description>
+    </item>
+    
+    <item>
+      <title>Waterline?</title>
+      <link>https://oopsmonk.github.io/posts/2017-08-29-2017month9/</link>
+      <pubDate>Fri, 29 Sep 2017 11:57:59 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2017-08-29-2017month9/</guid>
+      <description>Jigsaw Puzzle, Hidden layers, New SoC, Algorithm basics, HTC
+Week35 (09/01) 第一次完成520片的拼圖, 花了4個晚上的時間, 大約12小時吧?!
+下次記得顏色鮮明的圖會比較愜意些.
+Week36 (09/08) 網路文章 Credit firm Equifax says 143m Americans&amp;rsquo; social security numbers exposed in hack
+在新聞公開前高層就己賣掉市值1.8m的股票!!
+網路資源 Google Developer Documentation Style Guide
+Google公佈了內部文件撰寫的格式及注意事項.
+Neural Networks and Deep Learning - Week 3 Tuning hidden layer size
+iterations: 5000
+learning_rate: 1.2
+activation: sigmoid
+Accuracy for 1 hidden units: 67.5 % Accuracy for 2 hidden units: 67.25 % Accuracy for 3 hidden units: 90.</description>
+    </item>
+    
+    <item>
+      <title>Going Deep</title>
+      <link>https://oopsmonk.github.io/posts/2017-08-02-2017month8/</link>
+      <pubDate>Fri, 25 Aug 2017 19:34:48 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2017-08-02-2017month8/</guid>
+      <description>以前球隊在回防時, 教練總會說&amp;quot;快跑! 別回頭, 到定點再休息&amp;quot;.
+關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!
+Deep Learning &amp;lt;&amp;ndash;&amp;gt; keep learning
+Week31 (08/04) 網路文章 A Brief History of CNNs in Image Segmentation: From R-CNN to Mask R-CNN
+ R-CNN: https://arxiv.org/abs/1311.2524
+Visual Recognition就是從這裡爆發了&amp;hellip; 透過Selective Search找到Region後丢給修改過的AlexNet學習, 最後再給Support Vector Machine (SVM) 這層CNN.
+原本設計的R-CNN就只做這些:   用Selective Search找region 透過pre-trained AlexNet去算特徵後交給SVM看region裡的是什麼鬼東西 最後透過線性回歸(linear regression)畫出物件的座標  Fast R-CNN: https://arxiv.org/abs/1504.08083
+Region proposals using Selective Search.   RoI (Region of Interest) Pooling
+ Combine All Models into One Network</description>
+    </item>
+    
+    <item>
+      <title>Math</title>
+      <link>https://oopsmonk.github.io/posts/2017-07-03-2017month7/</link>
+      <pubDate>Fri, 28 Jul 2017 09:35:04 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2017-07-03-2017month7/</guid>
+      <description>以前球隊在回防時, 教練總會說&amp;quot;快跑! 別回頭, 到定點再休息&amp;quot;.
+關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!
+Week27 (07/07) 網路文章 Elon Musk: The world&amp;rsquo;s population is accelerating toward collapse and nobody cares
+網路資源 Barbara Oakley: &amp;ldquo;Learning How to Learn&amp;rdquo; | Talks at Google
+Week28 (07/14) 網路資源 Numpy Quick Start
+MathJax basic tutorial and quick reference
+MathJax語法速查及範例
+Week29 (07/21) 網路文章 Path Guide: A New Approach to Indoor Navigation
+讀書心得 The Numpy Stack in Python
+用簡短的方式介紹numpy, pandas, matplotlib, scipy.
+ numpy: 在matrix, vector處理會比ptython built-in還快很多且方便.</description>
+    </item>
+    
+    <item>
+      <title>OSDI</title>
+      <link>https://oopsmonk.github.io/posts/2017-05-31-2017month6/</link>
+      <pubDate>Fri, 30 Jun 2017 20:47:50 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2017-05-31-2017month6/</guid>
+      <description>以前球隊在回防時, 教練總會說&amp;quot;快跑! 別回頭, 到定點再休息&amp;quot;.
+關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!
+Week22 (06/02) 讀書心得 OSDI: Memory Management
+Kernel space的memory management, 要考慮到的問題, Internal/External fregmentation, physical/logical contiguous, buddy system, slab allocator.
+User space的memory管理, page fault handler, Red-Black Tree / AVL Tree.
+論文學習 FarmBeats: An IoT Platform for Data-Driven Agriculture PDF ,Slides
+FarmBeats這套系統提出了几個解決方法:
+ 遠距傳輸, 以往的解法是用satellite或是手機訊號, 這裡是使用TVWS(TV White Space)以減少硬體成本, TVWS是利用數位電視未使用的頻寬做傳輸, 屬於低頻有傳輸距離長, 穿透力強的優點. 天氣感知系統, 透過OpenWeather API的資料來規劃電量的使用及電池的充電與否. 風力輔助系統, 收集農地的風向及風力數據, 透過飛行演算法(Flight Planning Algorithm)規劃出適當的路線, 減少逆風造成的額外耗電量. 本地影像及資料壓縮, 一般Drone的航空影像(Aerial Imagery)或sensors資料都是直接傳到雲端, 透過Farmbeats的gateway做中繼站並壓縮影像及sensors資料, 可支援1星期的在網路無法使用情況.  Week23 (06/09) 網路文章 When should we use mutex and when should we use semaphore</description>
+    </item>
+    
+    <item>
+      <title>LGS Hell</title>
+      <link>https://oopsmonk.github.io/posts/2017-05-31-2017month5/</link>
+      <pubDate>Wed, 31 May 2017 08:11:10 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2017-05-31-2017month5/</guid>
+      <description>以前球隊在回防時, 教練總會說&amp;quot;快跑! 別回頭, 到定點再休息&amp;quot;.
+關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!
+主要在了解linux graphic system架構, 並分析wayland weston compositor/glmark2的repaint flow.
+Week18 (05/05) 網路文章 和百年公斤原器說再見！七大國際單位制將改頭換面
+原來用抽像來定義實體早己行之有年.
+網路資源 C++ Language Interface Foundation (CLIF)
+Google 做了一個C++ wrapper generator, 目前看來只for Python, 目標是支援更多的語言.
+Week19 (05/12) 網路文章 Weston repaint scheduling
+Week20 (05/19) Wayland的weston compositor可透過wesgr來分析repaint過程. glmark2-es2-wayland 加入debug去看glmark repaint過程
+[18:50:21.959] canvas_clear 1510 us [18:50:21.960] scenc_draw 389 us [18:50:21.960] scenc_update 159 us [18:50:21.960] weston weston_output_repaint[+] [18:50:21.960] weston surface_flush_damage [18:50:21.960] weston surface_flush_damage [18:50:21.961] weston surface_flush_damage [18:50:21.961] weston surface_flush_damage [18:50:21.</description>
+    </item>
+    
+    <item>
+      <title>失速列車</title>
+      <link>https://oopsmonk.github.io/posts/2017-04-01-2017month4/</link>
+      <pubDate>Fri, 28 Apr 2017 09:27:35 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2017-04-01-2017month4/</guid>
+      <description>以前球隊在回防時, 教練總會說&amp;quot;快跑! 別回頭, 到定點再休息&amp;quot;.
+關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!
+失速的這個月
+Week14 (04/07) 網路文章   Adding A New System Service To Android 5: Tips and How To
+由下到上打造一個android system service. HW -&amp;gt; HAL -&amp;gt; JNI -&amp;gt; Service -&amp;gt; Manager -&amp;gt; Registering.
+  Adding New System Service in Android
+Native system service.
+  33 Foods that Starve Cancer
+滿有趣的論點, 細胞沒有supplement會死亡沒錯, 但microscopic cancers能否自己生出新的血管?
+大部份的癌症無關基因, 超過40歲體內難免會有microscopic cells, 並可能轉變成cancer cells?
+  Week15 (04/14) img2ascii.</description>
+    </item>
+    
+    <item>
+      <title>Slow and Fast</title>
+      <link>https://oopsmonk.github.io/posts/2017-03-01-2017month3/</link>
+      <pubDate>Fri, 31 Mar 2017 13:21:57 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2017-03-01-2017month3/</guid>
+      <description>以前球隊在回防時, 教練總會說&amp;quot;快跑! 別回頭, 到定點再休息&amp;quot;.
+關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!
+Week9 (03/03) 228的4天連假讓這週過的特別快.
+網路文章  What Americans can learn from other food cultures Google breaks SHA-1 web crypto for good but Torvalds plays down impact on Git Announcing the first SHA1 collision 
+Google 公怖與CWI Amsterdam合作生出了第一個SHA-1 collision, 對於使用SHA-1的Git來說會有什麼影響?
+目前看來是影響不大, 主因如下:  Git remote 與 local 發生衝突時local並不會被override. 相較於Git, PDF檔是較容易被破解的. Git可能會計劃使用SHA3-256為新的hash algorithm.
+為什麼不選SHA256? &amp;ldquo;SHA256 acceleration is mainly an ARM thing&amp;rdquo; - Torvalds    網路資源  Math is Fun: Common Core Standards: 基本數學.</description>
+    </item>
+    
+    <item>
+      <title>新章</title>
+      <link>https://oopsmonk.github.io/posts/2017-02-28-2017month2/</link>
+      <pubDate>Thu, 16 Feb 2017 15:48:32 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2017-02-28-2017month2/</guid>
+      <description>以前球隊在回防時, 教練總會說&amp;quot;快跑! 別回頭, 到定點再休息&amp;quot;.
+關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!
+Week7 (02/17) 發現minimal-mistakes上缺了繁中, 便開了個PR#838 沒想到很快就被merge, 效率真快.
+試玩BeautifulSoup 寫了個簡單的ck101Comics.py用來下載卡提諾×揪漫畫.
+網路文章  Diving Into Android &amp;lsquo;M&amp;rsquo; Doze &amp;amp; Diving into Doze Mode for Developers
+Android Doze在Nougat多了Light-Doze, Light-Doze的Maintenance Windows較短為了避免不同步問題, 當進入Deep-Doze(原本Marshmallow的Doze), Light-Doze會進入OVERRIDE不做任何事.  網路資源  E-book: Python for Informatics  讀書心得  Tuesdays with Morrie
+讀完The Classroom, 直到這章節都是在講Mitch離開大學後的生活及偶然聽到電視上提到Morrie, 師生俩如何再度搭上線. Morrie對Mitch有很深的情感, Mitch稱他為&amp;rsquo;Coach&amp;rsquo;.  &amp;ldquo;Dying,&amp;rdquo; Morrie suddenly said, &amp;ldquo;is only one thing to be sad over, Mitch. Living unhappily is something else.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>jQuery on oopsmonk</title>
+    <link>https://oopsmonk.github.io/tags/jquery/</link>
+    <description>Recent content in jQuery on oopsmonk</description>
+    <image>
+      <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
+      <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 07 Aug 2013 01:53:31 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web dev example : JSON &amp; jQuery Mobile &amp; Bottle</title>
+      <link>https://oopsmonk.github.io/posts/2013-08-07-bottlejqueryjson/</link>
+      <pubDate>Wed, 07 Aug 2013 01:53:31 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2013-08-07-bottlejqueryjson/</guid>
+      <description>Bottle is a fast, simple and lightweight WSGI micro web-framework for Python.
+jQuery Mobile base on jQuery for mobile device.
+jQuery vs. jQuery Mobile vs. jQuery UI
+Install bottle: $ sudo apt-get install python-setuptools $ easy_install bottle Demo server deployment file structure: BottlejQuery ├── bottleJQuery.py └── index.html run command: $ ./bottleJQuery.py  connect to server: http://localhost:8080/bottle  Building simple web server use bottle bottleJQuery.py #!/usr/bin/env python from bottle import route, static_file, debug, run, get, redirect from bottle import post, request import os, inspect, json  #enable bottle debug debug(True)  # WebApp route path routePath = &amp;#39;/bottle&amp;#39; # get directory of WebApp (bottleJQuery.</description>
+    </item>
+    
+  </channel>
+</rss>
