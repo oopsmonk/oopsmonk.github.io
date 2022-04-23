@@ -58,13 +58,13 @@ params:
 
   label:
     text: "Home"
-    icon: /images/bio-oopsmonk.jpg
-    iconHeight: 35
+#    icon: /images/bio-oopsmonk.jpg
+#    iconHeight: 35
 
   # profile-mode
   profileMode:
-    enabled: false # needs to be explicitly set
-    title: oopsmonk
+    enabled: true # needs to be explicitly set
+    title: "Father ★ Software Engineer ★ Baking Hobbyist likes making things simple"
     subtitle: ""
     imageUrl: "/images/bio-oopsmonk.jpg"
     imageWidth: 120
@@ -75,10 +75,12 @@ params:
         url: posts
       - name: Tags
         url: tags
+      - name: Archives
+        url: archives
 
   # home-info mode
   homeInfoParams:
-    Title: "A father who likes making things simple and reseanable."
+    title: "Father ★ Software Engineer ★ Baking Hobbyist likes making things simple"
     Content: ""
   socialIcons:
     - name: twitter
