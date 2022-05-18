@@ -10,7 +10,18 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Dec 2018 11:35:58 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Apr 2022 18:27:21 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Perf on Ubuntu 20.04</title>
+      <link>https://oopsmonk.github.io/posts/2022-04-28-perf/</link>
+      <pubDate>Thu, 28 Apr 2022 18:27:21 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2022-04-28-perf/</guid>
+      <description>What is Perf? Perf or perf-event is a Linux profiler and is part of the Linux Kernel which can help you solve advanced performance and troubleshooting functions. It covers hardware level (CPU/PMU, Performance Monitoring Unit) features and software features (software counters, tracepoints) as well.
+Install on Ubuntu If perf has not installed on the system
+$ perf WARNING: perf not found for kernel 5.4.0-109   You may need to install the following packages for this specific kernel:  linux-tools-5.</description>
+    </item>
+    
     <item>
       <title>RPi vs i5-8250U</title>
       <link>https://oopsmonk.github.io/posts/2018-12-01-month12/</link>
