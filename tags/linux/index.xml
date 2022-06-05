@@ -10,7 +10,18 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Apr 2022 18:27:21 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Jun 2022 13:01:48 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Note-taking and file sharing with Syncthing and Joplin</title>
+      <link>https://oopsmonk.github.io/posts/2022-06-05-syncthin-joplin/</link>
+      <pubDate>Sun, 05 Jun 2022 13:01:48 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2022-06-05-syncthin-joplin/</guid>
+      <description>You can find many note-taking services, like, Evernote, Google Keep, Notion, Obsidian and online storage services such as, Dropbox, Google Drive, OneDrive, iCloud. They are easy to use and secure. But, secure is not equal to private! A way to keep privacy is host private services by self.
+Edward Snowden’s Privacy Tips: “Get Rid Of Dropbox,” Avoid Facebook And Google
+This is how I share/edit notes and files with different devices which service providers are unable to peek and analyze my private contents.</description>
+    </item>
+    
     <item>
       <title>Install Perf on Ubuntu 20.04</title>
       <link>https://oopsmonk.github.io/posts/2022-04-28-perf/</link>

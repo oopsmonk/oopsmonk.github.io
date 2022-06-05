@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://oopsmonk.github.io/posts/2022-04-28-perf/</loc>
-    <lastmod>2022-04-28T18:27:21+08:00</lastmod>
-  </url><url>
     <loc>https://oopsmonk.github.io/tags/linux/</loc>
-    <lastmod>2022-04-28T18:27:21+08:00</lastmod>
+    <lastmod>2022-06-05T13:01:48+08:00</lastmod>
+  </url><url>
+    <loc>https://oopsmonk.github.io/posts/2022-06-05-syncthin-joplin/</loc>
+    <lastmod>2022-06-05T13:01:48+08:00</lastmod>
   </url><url>
     <loc>https://oopsmonk.github.io/</loc>
-    <lastmod>2022-04-28T18:27:21+08:00</lastmod>
+    <lastmod>2022-06-05T13:01:48+08:00</lastmod>
   </url><url>
     <loc>https://oopsmonk.github.io/posts/</loc>
-    <lastmod>2022-04-28T18:27:21+08:00</lastmod>
+    <lastmod>2022-06-05T13:01:48+08:00</lastmod>
+  </url><url>
+    <loc>https://oopsmonk.github.io/tags/raspberrypi/</loc>
+    <lastmod>2022-06-05T13:01:48+08:00</lastmod>
   </url><url>
     <loc>https://oopsmonk.github.io/tags/</loc>
+    <lastmod>2022-06-05T13:01:48+08:00</lastmod>
+  </url><url>
+    <loc>https://oopsmonk.github.io/posts/2022-04-28-perf/</loc>
     <lastmod>2022-04-28T18:27:21+08:00</lastmod>
   </url><url>
     <loc>https://oopsmonk.github.io/posts/2018-12-01-month12/</loc>
@@ -100,9 +106,6 @@
   </url><url>
     <loc>https://oopsmonk.github.io/posts/2017-06-13-linux-memory-management/</loc>
     <lastmod>2017-06-13T14:47:22+08:00</lastmod>
-  </url><url>
-    <loc>https://oopsmonk.github.io/tags/raspberrypi/</loc>
-    <lastmod>2017-06-05T09:39:30+08:00</lastmod>
   </url><url>
     <loc>https://oopsmonk.github.io/posts/2017-06-05-raspberrypi3-glmark2-using-weston-with-drm-backend/</loc>
     <lastmod>2017-06-05T09:39:30+08:00</lastmod>
