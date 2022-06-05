@@ -22,7 +22,7 @@ DS-5 Streamline Mali-470 (Utgard) GPU Bandwidth = (Words read, master + Words wr
 Overdraw = Fragments Passed Z/stencil count * Number of Cores / Resolution * FPS
 GPU Bandwidth = (38342943+38661456) * (128/8) = 1232070384 bytes/s = 1174.99 MB/s Overdraw = (79194586+79152584+79112550+79117609)/(1920x1080) = 152.67
 Mali-T820 (Midgard) Job Slots
- JS0: fragment shading. JS1: vertex, geometry, compute, and tiling.</description>
+JS0: fragment shading. JS1: vertex, geometry, compute, and tiling.</description>
     </item>
     
   </channel>

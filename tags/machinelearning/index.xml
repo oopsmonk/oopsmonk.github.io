@@ -22,7 +22,7 @@ Test environment CPU: Intel(R) Core(TM) i3-4130 CPU @ 3.40GHz 4-Cores
 GPU: ASUSTeK GeForce GTX 1060 with 6GB Memory
 HD: WDC WD5000AAKX
 OS: Ubuntu 16.04
-Test Flow  Install software requirement Video pre-processing: get jpeg images from source video Image Labeling Use Faster R-CNN to genrate trained model Run Faster R-CNN demo  Requirement Hardware:
+Test Flow Install software requirement Video pre-processing: get jpeg images from source video Image Labeling Use Faster R-CNN to genrate trained model Run Faster R-CNN demo Requirement Hardware:
 Good graphic card with large memory (6GB memory is okay, but it has problem in VGG traing.</description>
     </item>
     

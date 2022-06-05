@@ -39,7 +39,7 @@ Xubuntu 14.04 LTS 64-bit
 Linux 3.16.0-45-generic #60~14.04.1-Ubuntu SMP Fri Jul 24 21:16:23 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
 After I turned off hardware acceleration, everything is fine.
 Type this in the browser&amp;rsquo;s address bar to trun it off:
-about:preferences#advanced  </description>
+about:preferences#advanced </description>
     </item>
     
     <item>
@@ -50,7 +50,7 @@ about:preferences#advanced  </description>
       <guid>https://oopsmonk.github.io/posts/2015-08-01-drawing-ip-geolocation-to-the-world-map/</guid>
       <description>I found some mystery visitors in nginx&amp;rsquo;s access log. I tried to figure out the location of those visitors and what they did.
 IP collection First copy nginx&amp;rsquo;s access log to a folder and save all logs into a single file.
-$ mkdir mysteryIPs &amp;amp;&amp;amp; cd $_ $ sudo cp /var/log/nginx/access.log.* . $ zcat access.log.* &amp;gt; access-gz.log $ cat access.log.1 &amp;gt;&amp;gt; access-gz.log $ cat access.log &amp;gt;&amp;gt; access-gz.log  Remove LAN accesses from log file, for example my subnet IP rang is 192.</description>
+$ mkdir mysteryIPs &amp;amp;&amp;amp; cd $_ $ sudo cp /var/log/nginx/access.log.* . $ zcat access.log.* &amp;gt; access-gz.log $ cat access.log.1 &amp;gt;&amp;gt; access-gz.log $ cat access.log &amp;gt;&amp;gt; access-gz.log Remove LAN accesses from log file, for example my subnet IP rang is 192.</description>
     </item>
     
     <item>
@@ -61,7 +61,7 @@ $ mkdir mysteryIPs &amp;amp;&amp;amp; cd $_ $ sudo cp /var/log/nginx/access.log.
       <guid>https://oopsmonk.github.io/posts/2015-07-09-install-latex-on-ubuntu-14-04/</guid>
       <description>This is a How-To article that include installation and compile LaTeX file to PDF using Texmaker, Sublime Text 3, and Vim.
 Install TeX Live Install texlive-latex-extra instead of texlive-latex-base.
-$sudo apt-get install texlive-latex-extra -y  Initial user tree in home directory Before using tlmgr in user mode, you have to set up the user tree with the init-usertree action.
+$sudo apt-get install texlive-latex-extra -y Initial user tree in home directory Before using tlmgr in user mode, you have to set up the user tree with the init-usertree action.
 tlmgr is TeX Live package manager, you can run tlmgr --help for more detail.</description>
     </item>
     
@@ -72,7 +72,7 @@ tlmgr is TeX Live package manager, you can run tlmgr --help for more detail.</de
       
       <guid>https://oopsmonk.github.io/posts/2015-07-04-new-feature-real-time-monitoring/</guid>
       <description>Real-Time Monitor for rpi-monitor:
- Update system status every 5 seconds. Two HTML layouts: change different layout via click Real-Time on navigation bar.  Project on github: rpi-monitor Layout 1(default):
+Update system status every 5 seconds. Two HTML layouts: change different layout via click Real-Time on navigation bar. Project on github: rpi-monitor Layout 1(default):
 Layout 2:</description>
     </item>
     
@@ -83,9 +83,9 @@ Layout 2:</description>
       
       <guid>https://oopsmonk.github.io/posts/2015-03-05-build-a-blog-with-jekyll-on-raspberry-pi/</guid>
       <description>I recently switched my blog from Google Blogger to GitHub Pages, here is how I built my blog. I&amp;rsquo;ll go through the following:
- Install Jekyll on Raspberry Pi Setup Jekyll Theme Post a new article Images minimization Commit to GitHub  Using Jekyll and Minimal Mistake build a blog and host on GitHub and Raspberry Pi(or Ubuntu).
+Install Jekyll on Raspberry Pi Setup Jekyll Theme Post a new article Images minimization Commit to GitHub Using Jekyll and Minimal Mistake build a blog and host on GitHub and Raspberry Pi(or Ubuntu).
 Requirements:
- Raspberry Pi(or Ubuntu) GitHub account Jekyll 2.2+ Minimal Mistake Grunt  If you have no idea with these things, here are useful resources:</description>
+Raspberry Pi(or Ubuntu) GitHub account Jekyll 2.2+ Minimal Mistake Grunt If you have no idea with these things, here are useful resources:</description>
     </item>
     
     <item>
@@ -95,12 +95,12 @@ Requirements:
       
       <guid>https://oopsmonk.github.io/posts/2013-07-05-savingiptables/</guid>
       <description>Redirect port 8080 to 80
-sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080  Check iptables setting
-sudo iptables -t nat -L  Save configure to iptables.rules
-sudo iptables-save &amp;gt; /etc/iptables.rules  Save Solution #1 Configre /etc/network/interfaces
-iface eth0 inet dhcp  pre-up iptables-restore &amp;lt; /etc/iptables.rules Save Solution #2 Configure /etc/network/if-pre-up.d/iptablesload
+sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080 Check iptables setting
+sudo iptables -t nat -L Save configure to iptables.rules
+sudo iptables-save &amp;gt; /etc/iptables.rules Save Solution #1 Configre /etc/network/interfaces
+iface eth0 inet dhcp pre-up iptables-restore &amp;lt; /etc/iptables.rules Save Solution #2 Configure /etc/network/if-pre-up.d/iptablesload
 #!/bin/sh iptables-restore &amp;lt; /etc/iptables.rules exit 0 Configure /etc/network/if-post-down.d/iptablessave
-#!/bin/sh iptables-save -c &amp;gt; /etc/iptables.rules if [ -f /etc/iptables.</description>
+#!/bin/sh iptables-save -c &amp;gt; /etc/iptables.rules if [ -f /etc/iptables.downrules ]; then iptables-restore &amp;lt; /etc/iptables.</description>
     </item>
     
     <item>

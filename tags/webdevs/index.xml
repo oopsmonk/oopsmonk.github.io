@@ -20,7 +20,7 @@
       <description>O.S. : Ubuntu12.04 LTS
 OpenNMS Version : 1.10.7
 OpenNMS base on TMN &amp;amp; FCAPS network management models.
-OpenNMS Block Diagram Discovery &amp;amp; Monitor daemons   Eventd
+OpenNMS Block Diagram Discovery &amp;amp; Monitor daemons Eventd
 Event handling daemon
 Configuration files:
 eventconf.xml -&amp;gt; Defines the UEI (Universal Event Identifiers).

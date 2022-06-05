@@ -19,7 +19,7 @@
       <guid>https://oopsmonk.github.io/posts/2017-03-03-the-first-sha1-collision/</guid>
       <description>CWI Institute in Amsterdam and Google genrate two PDF documents with the same SHA-1 digest.
 Google security blog - Announcing the first SHA1 collision
-SHA-1 collistion and Git If a file A with X hash in local repository and with X hash in remote (SHA-1 collistion between local and remote), would overwrite the local version?  Nope. If it has the same SHA1, it means that when we receive the object from the other end, we will not overwrite the object we already have.</description>
+SHA-1 collistion and Git If a file A with X hash in local repository and with X hash in remote (SHA-1 collistion between local and remote), would overwrite the local version? Nope. If it has the same SHA1, it means that when we receive the object from the other end, we will not overwrite the object we already have.</description>
     </item>
     
     <item>
@@ -29,14 +29,14 @@ SHA-1 collistion and Git If a file A with X hash in local repository and with X 
       
       <guid>https://oopsmonk.github.io/posts/2014-12-12-multiplesshkeyswithgithub/</guid>
       <description>Generating SSH keys for GitHub Here are github account and work account.
-  GitHub:
+GitHub:
 SSH Key: github_id_rsa
 Account: oopsmonk
-  Work:
+Work:
 SSH Key: work_id_rsa
 Account: SamChen
-  Add SSH config File Modify ~/.ssh/config
-# Default github Host github.com HostName github.com PreferredAuthentications publickey IdentityFile ~/.ssh/github_id_rsa # Work git server Host work.gitserver.com HostName work.gitserver.com PreferredAuthentications publickey IdentityFile ~/.ssh/work_id_rsa Git Repository Configuation  GitHub Project:  $ git clone https://github.com/abc/projectA.git $ cd projectA #github account $ git config user.</description>
+Add SSH config File Modify ~/.ssh/config
+# Default github Host github.com HostName github.com PreferredAuthentications publickey IdentityFile ~/.ssh/github_id_rsa # Work git server Host work.gitserver.com HostName work.gitserver.com PreferredAuthentications publickey IdentityFile ~/.ssh/work_id_rsa Git Repository Configuation GitHub Project: $ git clone https://github.com/abc/projectA.git $ cd projectA #github account $ git config user.</description>
     </item>
     
     <item>
@@ -48,8 +48,8 @@ Account: SamChen
       <description>This is a git tutorial, create svn upstream on GitHub.
 Use MOC project as a example.
 #Checkout SVN and push to GitHub. Install packages
-$ sudo apt-get install subversion git-svn  Create git repository (it will take a long time)
-$ git svn clone svn://daper.net/moc/trunk --no-metadata ./moc-svn-git $ cat moc-svn-git/.git/config [core] repositoryformatversion = 0 filemode = true bare = false logallrefupdates = true [svn-remote &amp;#34;svn&amp;#34;] noMetadata = 1 url = svn://daper.</description>
+$ sudo apt-get install subversion git-svn Create git repository (it will take a long time)
+$ git svn clone svn://daper.net/moc/trunk --no-metadata ./moc-svn-git $ cat moc-svn-git/.git/config [core] repositoryformatversion = 0 filemode = true bare = false logallrefupdates = true [svn-remote &amp;#34;svn&amp;#34;] noMetadata = 1 url = svn://daper.net/moc/trunk fetch = :refs/remotes/git-svn Update SVN repository</description>
     </item>
     
     <item>
@@ -59,7 +59,8 @@ $ git svn clone svn://daper.net/moc/trunk --no-metadata ./moc-svn-git $ cat moc-
       
       <guid>https://oopsmonk.github.io/posts/2013-06-13-getgitinfoinant/</guid>
       <description>Create git.SHA1 property in build.xml file.
-&amp;lt;available file=&amp;#34;.git&amp;#34; type=&amp;#34;dir&amp;#34; property=&amp;#34;git.present&amp;#34;/&amp;gt; &amp;lt;target name=&amp;#34;git.info&amp;#34; description=&amp;#34;Store git info&amp;#34; if=&amp;#34;git.present&amp;#34;&amp;gt;   &amp;lt;exec executable=&amp;#34;git&amp;#34; outputproperty=&amp;#34;git.SHA1&amp;#34; failifexecutionfails=&amp;#34;false&amp;#34; errorproperty=&amp;#34;&amp;#34;&amp;gt;  &amp;lt;arg value=&amp;#34;log&amp;#34;/&amp;gt;  &amp;lt;arg value=&amp;#34;--pretty=oneline&amp;#34;/&amp;gt;  &amp;lt;arg value=&amp;#34;-n1&amp;#34;/&amp;gt;  &amp;lt;/exec&amp;gt;  &amp;lt;condition property=&amp;#34;git.version&amp;#34; value=&amp;#34;${git.SHA1}&amp;#34; else=&amp;#34;unknown&amp;#34;&amp;gt;  &amp;lt;and&amp;gt;  &amp;lt;isset property=&amp;#34;git.SHA1&amp;#34;/&amp;gt;  &amp;lt;length string=&amp;#34;${git.SHA1}&amp;#34; trim=&amp;#34;yes&amp;#34; length=&amp;#34;0&amp;#34; when=&amp;#34;greater&amp;#34;/&amp;gt;  &amp;lt;/and&amp;gt;  &amp;lt;/condition&amp;gt;   &amp;lt;echo message=&amp;#34;print git log : &amp;#34; /&amp;gt;  &amp;lt;echo message=&amp;#34;${git.SHA1}&amp;#34; /&amp;gt;  &amp;lt;/target&amp;gt; Reference:</description>
+&amp;lt;available file=&amp;#34;.git&amp;#34; type=&amp;#34;dir&amp;#34; property=&amp;#34;git.present&amp;#34;/&amp;gt; &amp;lt;target name=&amp;#34;git.info&amp;#34; description=&amp;#34;Store git info&amp;#34; if=&amp;#34;git.present&amp;#34;&amp;gt; &amp;lt;exec executable=&amp;#34;git&amp;#34; outputproperty=&amp;#34;git.SHA1&amp;#34; failifexecutionfails=&amp;#34;false&amp;#34; errorproperty=&amp;#34;&amp;#34;&amp;gt; &amp;lt;arg value=&amp;#34;log&amp;#34;/&amp;gt; &amp;lt;arg value=&amp;#34;--pretty=oneline&amp;#34;/&amp;gt; &amp;lt;arg value=&amp;#34;-n1&amp;#34;/&amp;gt; &amp;lt;/exec&amp;gt; &amp;lt;condition property=&amp;#34;git.version&amp;#34; value=&amp;#34;${git.SHA1}&amp;#34; else=&amp;#34;unknown&amp;#34;&amp;gt; &amp;lt;and&amp;gt; &amp;lt;isset property=&amp;#34;git.SHA1&amp;#34;/&amp;gt; &amp;lt;length string=&amp;#34;${git.SHA1}&amp;#34; trim=&amp;#34;yes&amp;#34; length=&amp;#34;0&amp;#34; when=&amp;#34;greater&amp;#34;/&amp;gt; &amp;lt;/and&amp;gt; &amp;lt;/condition&amp;gt; &amp;lt;echo message=&amp;#34;print git log : &amp;#34; /&amp;gt; &amp;lt;echo message=&amp;#34;${git.SHA1}&amp;#34; /&amp;gt; &amp;lt;/target&amp;gt; Reference:
+How to lookup the latest git commit hash from an ant build script</description>
     </item>
     
   </channel>

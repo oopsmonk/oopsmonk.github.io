@@ -19,7 +19,7 @@
       <guid>https://oopsmonk.github.io/posts/2022-04-28-perf/</guid>
       <description>What is Perf? Perf or perf-event is a Linux profiler and is part of the Linux Kernel which can help you solve advanced performance and troubleshooting functions. It covers hardware level (CPU/PMU, Performance Monitoring Unit) features and software features (software counters, tracepoints) as well.
 Install on Ubuntu If perf has not installed on the system
-$ perf WARNING: perf not found for kernel 5.4.0-109   You may need to install the following packages for this specific kernel:  linux-tools-5.</description>
+$ perf WARNING: perf not found for kernel 5.4.0-109 You may need to install the following packages for this specific kernel: linux-tools-5.</description>
     </item>
     
     <item>
@@ -33,7 +33,7 @@ SEAndroid Security-Enhanced Linux in Android
 SELinux for Android 8 - Treble mode
 SEAndroid安全機制中的文件安全上下文關聯分析 - file_context
 SEAndroid安全機制中的進程安全上下文關聯分析 - process
-Android 8 Treble mode:  Kernel early mount PRODUCT_FULL_TREBLE, PRODUCT_FULL_TREBLE_OVERRIDE, BOARD_SEPOLICY_DIRS  Android 4.3 ~ 6 TE macro define: external/sepolicy/te_macros
+Android 8 Treble mode: Kernel early mount PRODUCT_FULL_TREBLE, PRODUCT_FULL_TREBLE_OVERRIDE, BOARD_SEPOLICY_DIRS Android 4.3 ~ 6 TE macro define: external/sepolicy/te_macros
 Android 8 TE macro define: system/sepolicy/te_macros
 ##################################### # domain_trans(olddomain, type, newdomain) # Allow a transition from olddomain to newdomain # upon executing a file labeled with type.</description>
     </item>
@@ -49,7 +49,7 @@ Test environment CPU: Intel(R) Core(TM) i3-4130 CPU @ 3.40GHz 4-Cores
 GPU: ASUSTeK GeForce GTX 1060 with 6GB Memory
 HD: WDC WD5000AAKX
 OS: Ubuntu 16.04
-Test Flow  Install software requirement Video pre-processing: get jpeg images from source video Image Labeling Use Faster R-CNN to genrate trained model Run Faster R-CNN demo  Requirement Hardware:
+Test Flow Install software requirement Video pre-processing: get jpeg images from source video Image Labeling Use Faster R-CNN to genrate trained model Run Faster R-CNN demo Requirement Hardware:
 Good graphic card with large memory (6GB memory is okay, but it has problem in VGG traing.</description>
     </item>
     
@@ -68,7 +68,7 @@ Memory Bugs 5種bugs存在mm: memory error, checking, concurrency, logic and pro
 大部份memory leak並不是因為忘了free, 而是錯誤的page fault handling和 free page的計算.
 MM較大的問題是很難去track正確的狀態.
 Memory optimization 定義3種optimization patches
- data structure: 避免nested data structure. Scalability的實現, scalability問題是因為locking for atomic access to shared data structures.</description>
+data structure: 避免nested data structure. Scalability的實現, scalability問題是因為locking for atomic access to shared data structures.</description>
     </item>
     
     <item>
@@ -78,20 +78,23 @@ Memory optimization 定義3種optimization patches
       
       <guid>https://oopsmonk.github.io/posts/2017-05-30-linux-graphic-stack/</guid>
       <description>Linux graphic 架構還滿複雜的, 在看時需要大略了解几個名詞及之間的關係.
-  X Window System:
+X Window System:
 目前來到第11版本所以叫X11, 是以X window System Core protocol為基礎的window system.
-  wayland:
+wayland:
 由於X11太過複雜且在embbeded system中的效能不佳, 用來取代X window System Core protocol.
-  weston (wayland compositor):
+weston (wayland compositor):
 以wayland protocol來實做的compositor做為參考的範例, 實用上會用Westeros, Clutter&amp;hellip;等.
-  KMS/UMS:
+KMS/UMS:
 Kernel mode-setting 及User mode-setting.
-  OpenGL: 由Khronos Group制定的跨平台graphic API.
-  GLX:
+OpenGL: 由Khronos Group制定的跨平台graphic API.
+GLX:
 是一個extension, 做為OpenGL與X window system之間的橋樑. 就像embedded system的EGL, MacOS的AGL.
-  DRM(Direct Rendering Manager):
+DRM(Direct Rendering Manager):
 為了防止世界被破壞, 保護世界的和平. 防止同時使用graphic buffer.
-  DRI(Direct Rendering Infrastructure):</description>
+DRI(Direct Rendering Infrastructure):
+Mesa及DRM之間的橋樑. Ref: Introduction to the Direct Rendering Infrastructure
+CRTC (CRT Controller):
+Crtc is in charge of reading the framebuffer memory and routes the data to an encoder.</description>
     </item>
     
     <item>
@@ -117,7 +120,7 @@ Reference: Using vi-mode in your shell</description>
       <guid>https://oopsmonk.github.io/posts/2017-03-03-the-first-sha1-collision/</guid>
       <description>CWI Institute in Amsterdam and Google genrate two PDF documents with the same SHA-1 digest.
 Google security blog - Announcing the first SHA1 collision
-SHA-1 collistion and Git If a file A with X hash in local repository and with X hash in remote (SHA-1 collistion between local and remote), would overwrite the local version?  Nope. If it has the same SHA1, it means that when we receive the object from the other end, we will not overwrite the object we already have.</description>
+SHA-1 collistion and Git If a file A with X hash in local repository and with X hash in remote (SHA-1 collistion between local and remote), would overwrite the local version? Nope. If it has the same SHA1, it means that when we receive the object from the other end, we will not overwrite the object we already have.</description>
     </item>
     
     <item>
@@ -129,7 +132,7 @@ SHA-1 collistion and Git If a file A with X hash in local repository and with X 
       <description>Advanced Bash-Scripting Guide
 sed
 awk
-Internal Variables #current parent pid $$ #last background process pid $! #last exit status $? #current instance pid, Bash 4.x above. $BASHPID Arithmetic Expansion a=12 b=$(($a + 10))  b=`expr $a + 1` b=$(expr $a + 1)  let b=$a+3 #let b=$a + 3 #incorrect  let &amp;#34;b = $a+ 3&amp;#34;  declare -i b=$a+$a Manipulating Strings  String is a number  if [[ $var =~ ^-?</description>
+Internal Variables #current parent pid $$ #last background process pid $! #last exit status $? #current instance pid, Bash 4.x above. $BASHPID Arithmetic Expansion a=12 b=$(($a + 10)) b=`expr $a + 1` b=$(expr $a + 1) let b=$a+3 #let b=$a + 3 #incorrect let &amp;#34;b = $a + 3&amp;#34; declare -i b=$a+$a Manipulating Strings String is a number if [[ $var =~ ^-?[0-9]+$ ]]; then echo &amp;#34;$var is a number&amp;#34; fi if [[ !</description>
     </item>
     
     <item>
@@ -149,12 +152,12 @@ $ sudo apt-get install subversion git-svn $ mkdir moc-svn $ cd moc-svn $ svn co 
       
       <guid>https://oopsmonk.github.io/posts/2013-07-05-savingiptables/</guid>
       <description>Redirect port 8080 to 80
-sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080  Check iptables setting
-sudo iptables -t nat -L  Save configure to iptables.rules
-sudo iptables-save &amp;gt; /etc/iptables.rules  Save Solution #1 Configre /etc/network/interfaces
-iface eth0 inet dhcp  pre-up iptables-restore &amp;lt; /etc/iptables.rules Save Solution #2 Configure /etc/network/if-pre-up.d/iptablesload
+sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080 Check iptables setting
+sudo iptables -t nat -L Save configure to iptables.rules
+sudo iptables-save &amp;gt; /etc/iptables.rules Save Solution #1 Configre /etc/network/interfaces
+iface eth0 inet dhcp pre-up iptables-restore &amp;lt; /etc/iptables.rules Save Solution #2 Configure /etc/network/if-pre-up.d/iptablesload
 #!/bin/sh iptables-restore &amp;lt; /etc/iptables.rules exit 0 Configure /etc/network/if-post-down.d/iptablessave
-#!/bin/sh iptables-save -c &amp;gt; /etc/iptables.rules if [ -f /etc/iptables.</description>
+#!/bin/sh iptables-save -c &amp;gt; /etc/iptables.rules if [ -f /etc/iptables.downrules ]; then iptables-restore &amp;lt; /etc/iptables.</description>
     </item>
     
     <item>
@@ -177,7 +180,7 @@ install g++-mltilib and JDK $ sudo apt-get install g++-multilib $ chmod +x j2sdk
       <guid>https://oopsmonk.github.io/posts/2013-06-19-comparermfileintwofolder/</guid>
       <description>有時在整理照片或文件時, 需要比對2個資料匣, 把重覆的檔案拿掉.
 Dwonload Source Here
-function usage(){  echo &amp;#34;Find the same file in two folders and remove it.&amp;#34;  echo &amp;#34;usage : ./comp-rm.sh target-dir source-dir&amp;#34;  echo &amp;#34;remove the same files in target-dir.&amp;#34; }  if [ $# -ne 2 ]; then  usage  exit 1 fi  target_dir=$1 source_dir=$2 f_list1=$(find &amp;#34;$target_dir&amp;#34; -type f) f_list2=$(find &amp;#34;$source_dir&amp;#34; -type f)   for i in $f_list1; do  echo $f_list2 | grep $(basename $i) &amp;gt;/dev/null &amp;amp;&amp;amp; hit_str+=$i&amp;#34;;&amp;#34; done  if [ -z $hit_str ]; then  echo &amp;#34;list is empty.</description>
+function usage(){ echo &amp;#34;Find the same file in two folders and remove it.&amp;#34; echo &amp;#34;usage : ./comp-rm.sh target-dir source-dir&amp;#34; echo &amp;#34;remove the same files in target-dir.&amp;#34; } if [ $# -ne 2 ]; then usage exit 1 fi target_dir=$1 source_dir=$2 f_list1=$(find &amp;#34;$target_dir&amp;#34; -type f) f_list2=$(find &amp;#34;$source_dir&amp;#34; -type f) for i in $f_list1; do echo $f_list2 | grep $(basename $i) &amp;gt;/dev/null &amp;amp;&amp;amp; hit_str+=$i&amp;#34;;&amp;#34; done if [ -z $hit_str ]; then echo &amp;#34;list is empty.</description>
     </item>
     
     <item>
@@ -227,7 +230,7 @@ Installing Android SDK packages &amp;lt;android-sdk&amp;gt; : $HOME/XBMC_Project
 UI thread 如因大量運算或等待而blocked, 預設超過5秒ANR(Application Not Responding)就會發生.
 且Android UI components 並非thread-safe, 使用上要特別小心.
 所以:
- long time computation使用另外的thread, 不要寫在 UI Thread. 不要在UI thread 之外使用UI component method. 透過Thread, Handler and AsyncTask perform asynchronous processing, 避免UI thread block.  Threads Android 提供以下的method, 可在其它的thread 下調用 UI thread.
+long time computation使用另外的thread, 不要寫在 UI Thread. 不要在UI thread 之外使用UI component method. 透過Thread, Handler and AsyncTask perform asynchronous processing, 避免UI thread block. Threads Android 提供以下的method, 可在其它的thread 下調用 UI thread.
 Activity.runOnUiThread(Runnable) View.post(Runnable) &amp;lt;-- used in example code.</description>
     </item>
     

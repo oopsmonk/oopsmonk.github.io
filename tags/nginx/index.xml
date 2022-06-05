@@ -34,7 +34,7 @@ location /rpi { proxy_pass http://127.0.0.1:9999/RpiMonitor; gzip on; gzip_types
       <guid>https://oopsmonk.github.io/posts/2015-08-01-drawing-ip-geolocation-to-the-world-map/</guid>
       <description>I found some mystery visitors in nginx&amp;rsquo;s access log. I tried to figure out the location of those visitors and what they did.
 IP collection First copy nginx&amp;rsquo;s access log to a folder and save all logs into a single file.
-$ mkdir mysteryIPs &amp;amp;&amp;amp; cd $_ $ sudo cp /var/log/nginx/access.log.* . $ zcat access.log.* &amp;gt; access-gz.log $ cat access.log.1 &amp;gt;&amp;gt; access-gz.log $ cat access.log &amp;gt;&amp;gt; access-gz.log  Remove LAN accesses from log file, for example my subnet IP rang is 192.</description>
+$ mkdir mysteryIPs &amp;amp;&amp;amp; cd $_ $ sudo cp /var/log/nginx/access.log.* . $ zcat access.log.* &amp;gt; access-gz.log $ cat access.log.1 &amp;gt;&amp;gt; access-gz.log $ cat access.log &amp;gt;&amp;gt; access-gz.log Remove LAN accesses from log file, for example my subnet IP rang is 192.</description>
     </item>
     
     <item>
@@ -48,10 +48,10 @@ Default nginx accepted body size limitation is 1MB.
 You can add client_max_body_size in nginx.conf.
 This parameter can put in http, server and location sections of configutation file.
 Enlarge body size to 10MB
-client_max_body_size 10M  Or just disable it
-client_max_body_size 0  For example enlarge body size to 10MB
+client_max_body_size 10M Or just disable it
+client_max_body_size 0 For example enlarge body size to 10MB
 Add to http section:
-$ sudo vi /etc/nginx/nginx.conf  http {   ##  # Basic Settings  ##   sendfile on;  tcp_nopush on;  tcp_nodelay on;  keepalive_timeout 65;  types_hash_max_size 2048;  client_max_body_size 10M;  # server_tokens off;   # server_names_hash_bucket_size 64;  # server_name_in_redirect off;   include /etc/nginx/mime.</description>
+$ sudo vi /etc/nginx/nginx.conf http { ## # Basic Settings ## sendfile on; tcp_nopush on; tcp_nodelay on; keepalive_timeout 65; types_hash_max_size 2048; client_max_body_size 10M; # server_tokens off; # server_names_hash_bucket_size 64; # server_name_in_redirect off; include /etc/nginx/mime.</description>
     </item>
     
     <item>

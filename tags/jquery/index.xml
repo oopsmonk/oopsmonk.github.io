@@ -20,7 +20,7 @@
       <description>Bottle is a fast, simple and lightweight WSGI micro web-framework for Python.
 jQuery Mobile base on jQuery for mobile device.
 jQuery vs. jQuery Mobile vs. jQuery UI
-Install bottle: $ sudo apt-get install python-setuptools $ easy_install bottle Demo server deployment file structure: BottlejQuery ├── bottleJQuery.py └── index.html run command: $ ./bottleJQuery.py  connect to server: http://localhost:8080/bottle  Building simple web server use bottle bottleJQuery.py #!/usr/bin/env python from bottle import route, static_file, debug, run, get, redirect from bottle import post, request import os, inspect, json  #enable bottle debug debug(True)  # WebApp route path routePath = &amp;#39;/bottle&amp;#39; # get directory of WebApp (bottleJQuery.</description>
+Install bottle: $ sudo apt-get install python-setuptools $ easy_install bottle Demo server deployment file structure: BottlejQuery ├── bottleJQuery.py └── index.html run command: $ ./bottleJQuery.py connect to server: http://localhost:8080/bottle Building simple web server use bottle bottleJQuery.py #!/usr/bin/env python from bottle import route, static_file, debug, run, get, redirect from bottle import post, request import os, inspect, json #enable bottle debug debug(True) # WebApp route path routePath = &amp;#39;/bottle&amp;#39; # get directory of WebApp (bottleJQuery.</description>
     </item>
     
   </channel>

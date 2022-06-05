@@ -18,14 +18,14 @@
       
       <guid>https://oopsmonk.github.io/posts/2014-12-12-multiplesshkeyswithgithub/</guid>
       <description>Generating SSH keys for GitHub Here are github account and work account.
-  GitHub:
+GitHub:
 SSH Key: github_id_rsa
 Account: oopsmonk
-  Work:
+Work:
 SSH Key: work_id_rsa
 Account: SamChen
-  Add SSH config File Modify ~/.ssh/config
-# Default github Host github.com HostName github.com PreferredAuthentications publickey IdentityFile ~/.ssh/github_id_rsa # Work git server Host work.gitserver.com HostName work.gitserver.com PreferredAuthentications publickey IdentityFile ~/.ssh/work_id_rsa Git Repository Configuation  GitHub Project:  $ git clone https://github.com/abc/projectA.git $ cd projectA #github account $ git config user.</description>
+Add SSH config File Modify ~/.ssh/config
+# Default github Host github.com HostName github.com PreferredAuthentications publickey IdentityFile ~/.ssh/github_id_rsa # Work git server Host work.gitserver.com HostName work.gitserver.com PreferredAuthentications publickey IdentityFile ~/.ssh/work_id_rsa Git Repository Configuation GitHub Project: $ git clone https://github.com/abc/projectA.git $ cd projectA #github account $ git config user.</description>
     </item>
     
   </channel>

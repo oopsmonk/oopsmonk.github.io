@@ -19,7 +19,7 @@
       <guid>https://oopsmonk.github.io/posts/2022-04-28-perf/</guid>
       <description>What is Perf? Perf or perf-event is a Linux profiler and is part of the Linux Kernel which can help you solve advanced performance and troubleshooting functions. It covers hardware level (CPU/PMU, Performance Monitoring Unit) features and software features (software counters, tracepoints) as well.
 Install on Ubuntu If perf has not installed on the system
-$ perf WARNING: perf not found for kernel 5.4.0-109   You may need to install the following packages for this specific kernel:  linux-tools-5.</description>
+$ perf WARNING: perf not found for kernel 5.4.0-109 You may need to install the following packages for this specific kernel: linux-tools-5.</description>
     </item>
     
     <item>
@@ -100,7 +100,7 @@ websocket component for esp-idf.
 Kouri Bridge - The Longest Bridge in Okinawa
 Week18~21 (05/04~25) 網路文章 Students are being prepared for jobs that no longer exist. Here&amp;rsquo;s how that could change.
 NBC關於美國高中教育的深入報導, 提到現在的教育方式已經無法保證讓學生找到理想的工作，尤其是技職生. 文中提到几個點:
- 高中準時畢業的人有84%, 後來70%直升大學. 雖然學校盡力教導讓學生面對未來, 但學校也不知將來會是如何, 因為計劃跟不上變化. “We’re preparing kids for these jobs of tomorrow, but we really don’t even know what they are,” 2016年的調查, 只有34%的高中生(12th-graders) 對學習感到興趣. 公立大學(University of Massachusetts Lowell)1年的學費大約37萬台幣($12,496USD), 私立大學(Elmhurst College)學費約140萬台幣($47,121USD), 另一所公立大學(University of Minnesota)學費約91萬台幣($30,514USD). 另外自己查了一下哈佛大學每年學費138萬台幣(46,340USD), 以上都是只有學費, 如果加上宿舍及雜費大約是202萬台幣($67,580USD). 至2017年底美國的學貸已高達1.</description>
+高中準時畢業的人有84%, 後來70%直升大學. 雖然學校盡力教導讓學生面對未來, 但學校也不知將來會是如何, 因為計劃跟不上變化. “We’re preparing kids for these jobs of tomorrow, but we really don’t even know what they are,” 2016年的調查, 只有34%的高中生(12th-graders) 對學習感到興趣. 公立大學(University of Massachusetts Lowell)1年的學費大約37萬台幣($12,496USD), 私立大學(Elmhurst College)學費約140萬台幣($47,121USD), 另一所公立大學(University of Minnesota)學費約91萬台幣($30,514USD). 另外自己查了一下哈佛大學每年學費138萬台幣(46,340USD), 以上都是只有學費, 如果加上宿舍及雜費大約是202萬台幣($67,580USD). 至2017年底美國的學貸已高達1.38兆美元, 房貸8.</description>
     </item>
     
     <item>
@@ -114,9 +114,10 @@ NBC關於美國高中教育的深入報導, 提到現在的教育方式已經無
 2017年底至今拿了4張Certifications, Algorithms on Graphs是比較有趣的課程.
 其它3張是Algorithmic Toolbox, Data Structures, Algorithms on Strings
 Week14 (04/06) 讀書心得 Burrows-Wheeler Transform - data compression
- Cyclic rotation Sorting Last column  Inverting Burrows-wheeler transform
- Mark the occurrence of characters Putting sorted bwt string to frist column  Knuth–Morris–Pratt - string searching algorithm (or KMP algorithm)
-Suffix array - a sorted array of all suffixes of a string.</description>
+Cyclic rotation Sorting Last column Inverting Burrows-wheeler transform
+Mark the occurrence of characters Putting sorted bwt string to frist column Knuth–Morris–Pratt - string searching algorithm (or KMP algorithm)
+Suffix array - a sorted array of all suffixes of a string.
+Week15 (04/13) Week16 (04/20) Week17 (04/27) 網路文章 World’s first IOTA Smart Charging Station</description>
     </item>
     
     <item>
@@ -162,7 +163,7 @@ L2 data ratio: $CacheL2DataRefill/$CacheL2DataAccess
       <guid>https://oopsmonk.github.io/posts/2018-01-02-2018month1/</guid>
       <description>Android, Algorithms
 Week1 (01/05) 讀書心得 Algorithms on Graphs - Week5 給出座標上n個點:
- 找出最短路徑(the shortest path) 分群(Clustering)  為Minimun Spanning Tree相關問題, 可以使用Kruskal’s MST Algorithm 及Disjoint-set 來解.
+找出最短路徑(the shortest path) 分群(Clustering) 為Minimun Spanning Tree相關問題, 可以使用Kruskal’s MST Algorithm 及Disjoint-set 來解.
 for all u ∈ V : MakeSet(v ) X ← empty set // a set with solution edges sort the edges E by weight for all {u, v } ∈ E in non-decreasing weight order: if Find(u) != Find(v): add {u, v } to X Union(u, v ) return X Week2 (01/12) 網路文章 Android编译系统中的Android.</description>
     </item>
     
@@ -177,7 +178,7 @@ Android N -&amp;gt; O 被自己的石頭砸到腳 對於晶片廠來說Android�
 沒錯&amp;hellip;但對於手機/電視之外的應用..存在些問題.
 另外差異化及客制帶來些不定時炸彈.
 Sepolicy for Android Treble 使用numpy array修改pixel values. 網路資源 Machine Learning 101 - Jason Mayes
-New year&amp;rsquo;s resolutions  IELTS overall 6.5 Data Structures and Algorithms Specialization Master of Computer Science in Data Science  </description>
+New year&amp;rsquo;s resolutions IELTS overall 6.5 Data Structures and Algorithms Specialization Master of Computer Science in Data Science </description>
     </item>
     
     <item>
@@ -188,7 +189,7 @@ New year&amp;rsquo;s resolutions  IELTS overall 6.5 Data Structures and Algorith
       <guid>https://oopsmonk.github.io/posts/2017-12-20-sepolicy-for-android-treble/</guid>
       <description>A Note about sepolicy in Android Oreo.
 First thing first SELinux documents:
- SELinux for Android 8.0 What is SELinux? What is SEAndroid? SELinux Policy Concepts and Overview  Android sepolicy files Policy path:  /system/sepolicy BOARD_SEPOLICY_DIR (device/$VENDOR/$DEVICE/sepolicy/, device/$VENDOR/$DEVICE/common/sepolicy/)  Policy Macros:  system/sepolicy/public/te_macros system/sepolicy/public/global_macros system/sepolicy/public/ioctl_macros system/sepolicy/public/neverallow_macros system/sepolicy/private/mls_macros system/sepolicy/reqd_mask/mls_macros  Security Context:  file_contexts, labeling files infilesystem. property_contexts, labeling android system/vendor properties genfs_contexts, Pre-file labeling for /proc files, generic filesystem security contexts.</description>
+SELinux for Android 8.0 What is SELinux? What is SEAndroid? SELinux Policy Concepts and Overview Android sepolicy files Policy path: /system/sepolicy BOARD_SEPOLICY_DIR (device/$VENDOR/$DEVICE/sepolicy/, device/$VENDOR/$DEVICE/common/sepolicy/) Policy Macros: system/sepolicy/public/te_macros system/sepolicy/public/global_macros system/sepolicy/public/ioctl_macros system/sepolicy/public/neverallow_macros system/sepolicy/private/mls_macros system/sepolicy/reqd_mask/mls_macros Security Context: file_contexts, labeling files infilesystem. property_contexts, labeling android system/vendor properties genfs_contexts, Pre-file labeling for /proc files, generic filesystem security contexts. seapp_contexts, used by zygote and installd via libselinux, mapping app UID andseinfofor /data/data directory hwservice_contexts, for hwservice manager to check vndservice_contestx, for vndservice manager to check service_contexts, for service manager to check Type Enforcement *.</description>
     </item>
     
     <item>
@@ -223,7 +224,7 @@ SEAndroid Security-Enhanced Linux in Android
 SELinux for Android 8 - Treble mode
 SEAndroid安全機制中的文件安全上下文關聯分析 - file_context
 SEAndroid安全機制中的進程安全上下文關聯分析 - process
-Android 8 Treble mode:  Kernel early mount PRODUCT_FULL_TREBLE, PRODUCT_FULL_TREBLE_OVERRIDE, BOARD_SEPOLICY_DIRS  Android 4.3 ~ 6 TE macro define: external/sepolicy/te_macros
+Android 8 Treble mode: Kernel early mount PRODUCT_FULL_TREBLE, PRODUCT_FULL_TREBLE_OVERRIDE, BOARD_SEPOLICY_DIRS Android 4.3 ~ 6 TE macro define: external/sepolicy/te_macros
 Android 8 TE macro define: system/sepolicy/te_macros
 ##################################### # domain_trans(olddomain, type, newdomain) # Allow a transition from olddomain to newdomain # upon executing a file labeled with type.</description>
     </item>
@@ -239,7 +240,7 @@ DS-5 Streamline Mali-470 (Utgard) GPU Bandwidth = (Words read, master + Words wr
 Overdraw = Fragments Passed Z/stencil count * Number of Cores / Resolution * FPS
 GPU Bandwidth = (38342943+38661456) * (128/8) = 1232070384 bytes/s = 1174.99 MB/s Overdraw = (79194586+79152584+79112550+79117609)/(1920x1080) = 152.67
 Mali-T820 (Midgard) Job Slots
- JS0: fragment shading. JS1: vertex, geometry, compute, and tiling.</description>
+JS0: fragment shading. JS1: vertex, geometry, compute, and tiling.</description>
     </item>
     
     <item>
@@ -309,7 +310,7 @@ Test environment CPU: Intel(R) Core(TM) i3-4130 CPU @ 3.40GHz 4-Cores
 GPU: ASUSTeK GeForce GTX 1060 with 6GB Memory
 HD: WDC WD5000AAKX
 OS: Ubuntu 16.04
-Test Flow  Install software requirement Video pre-processing: get jpeg images from source video Image Labeling Use Faster R-CNN to genrate trained model Run Faster R-CNN demo  Requirement Hardware:
+Test Flow Install software requirement Video pre-processing: get jpeg images from source video Image Labeling Use Faster R-CNN to genrate trained model Run Faster R-CNN demo Requirement Hardware:
 Good graphic card with large memory (6GB memory is okay, but it has problem in VGG traing.</description>
     </item>
     
@@ -323,11 +324,12 @@ Good graphic card with large memory (6GB memory is okay, but it has problem in V
 關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!
 Deep Learning &amp;lt;&amp;ndash;&amp;gt; keep learning
 Week31 (08/04) 網路文章 A Brief History of CNNs in Image Segmentation: From R-CNN to Mask R-CNN
- R-CNN: https://arxiv.org/abs/1311.2524
+R-CNN: https://arxiv.org/abs/1311.2524
 Visual Recognition就是從這裡爆發了&amp;hellip; 透過Selective Search找到Region後丢給修改過的AlexNet學習, 最後再給Support Vector Machine (SVM) 這層CNN.
-原本設計的R-CNN就只做這些:   用Selective Search找region 透過pre-trained AlexNet去算特徵後交給SVM看region裡的是什麼鬼東西 最後透過線性回歸(linear regression)畫出物件的座標  Fast R-CNN: https://arxiv.org/abs/1504.08083
-Region proposals using Selective Search.   RoI (Region of Interest) Pooling
- Combine All Models into One Network</description>
+原本設計的R-CNN就只做這些: 用Selective Search找region 透過pre-trained AlexNet去算特徵後交給SVM看region裡的是什麼鬼東西 最後透過線性回歸(linear regression)畫出物件的座標 Fast R-CNN: https://arxiv.org/abs/1504.08083
+Region proposals using Selective Search. RoI (Region of Interest) Pooling
+Combine All Models into One Network
+將R-CNN的AlexNet, SVM, Regressor整合在一起變成單一個network Fast R-CNN instead used a single network to compute the extract image features (CNN), classify (SVM), and tighten bounding boxes (regressor).</description>
     </item>
     
     <item>
@@ -346,7 +348,7 @@ MathJax語法速查及範例
 Week29 (07/21) 網路文章 Path Guide: A New Approach to Indoor Navigation
 讀書心得 The Numpy Stack in Python
 用簡短的方式介紹numpy, pandas, matplotlib, scipy.
- numpy: 在matrix, vector處理會比ptython built-in還快很多且方便.</description>
+numpy: 在matrix, vector處理會比ptython built-in還快很多且方便.</description>
     </item>
     
     <item>
@@ -362,7 +364,7 @@ Kernel space的memory management, 要考慮到的問題, Internal/External fregm
 User space的memory管理, page fault handler, Red-Black Tree / AVL Tree.
 論文學習 FarmBeats: An IoT Platform for Data-Driven Agriculture PDF ,Slides
 FarmBeats這套系統提出了几個解決方法:
- 遠距傳輸, 以往的解法是用satellite或是手機訊號, 這裡是使用TVWS(TV White Space)以減少硬體成本, TVWS是利用數位電視未使用的頻寬做傳輸, 屬於低頻有傳輸距離長, 穿透力強的優點. 天氣感知系統, 透過OpenWeather API的資料來規劃電量的使用及電池的充電與否. 風力輔助系統, 收集農地的風向及風力數據, 透過飛行演算法(Flight Planning Algorithm)規劃出適當的路線, 減少逆風造成的額外耗電量. 本地影像及資料壓縮, 一般Drone的航空影像(Aerial Imagery)或sensors資料都是直接傳到雲端, 透過Farmbeats的gateway做中繼站並壓縮影像及sensors資料, 可支援1星期的在網路無法使用情況.  Week23 (06/09) 網路文章 When should we use mutex and when should we use semaphore</description>
+遠距傳輸, 以往的解法是用satellite或是手機訊號, 這裡是使用TVWS(TV White Space)以減少硬體成本, TVWS是利用數位電視未使用的頻寬做傳輸, 屬於低頻有傳輸距離長, 穿透力強的優點. 天氣感知系統, 透過OpenWeather API的資料來規劃電量的使用及電池的充電與否. 風力輔助系統, 收集農地的風向及風力數據, 透過飛行演算法(Flight Planning Algorithm)規劃出適當的路線, 減少逆風造成的額外耗電量. 本地影像及資料壓縮, 一般Drone的航空影像(Aerial Imagery)或sensors資料都是直接傳到雲端, 透過Farmbeats的gateway做中繼站並壓縮影像及sensors資料, 可支援1星期的在網路無法使用情況. Week23 (06/09) 網路文章 When should we use mutex and when should we use semaphore</description>
     </item>
     
     <item>
@@ -380,7 +382,7 @@ Memory Bugs 5種bugs存在mm: memory error, checking, concurrency, logic and pro
 大部份memory leak並不是因為忘了free, 而是錯誤的page fault handling和 free page的計算.
 MM較大的問題是很難去track正確的狀態.
 Memory optimization 定義3種optimization patches
- data structure: 避免nested data structure. Scalability的實現, scalability問題是因為locking for atomic access to shared data structures.</description>
+data structure: 避免nested data structure. Scalability的實現, scalability問題是因為locking for atomic access to shared data structures.</description>
     </item>
     
     <item>
@@ -392,7 +394,7 @@ Memory optimization 定義3種optimization patches
       <description>How to use weston with DRM backend in Raspbian, and gets benchmark score by GLMark2.
 With regards to hardware acceleration, We can enable VC4 driver through raspi-config.
 # update system and raspi-config script $ sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade $ sudo apt-get install raspi-config # enable Broadcom VC4 driver $ sudo raspi-config Advanced Options -&amp;gt; GL Driver -&amp;gt; GL (Full KMS) Test environment:
- 2017-04-10-raspbian-jessie-lite HDMI 1080P 60Hz CPU/GPU use default settings(no overclock)  Test packages:</description>
+2017-04-10-raspbian-jessie-lite HDMI 1080P 60Hz CPU/GPU use default settings(no overclock) Test packages:</description>
     </item>
     
     <item>
@@ -420,20 +422,23 @@ Week20 (05/19) Wayland的weston compositor可透過wesgr來分析repaint過程. 
       
       <guid>https://oopsmonk.github.io/posts/2017-05-30-linux-graphic-stack/</guid>
       <description>Linux graphic 架構還滿複雜的, 在看時需要大略了解几個名詞及之間的關係.
-  X Window System:
+X Window System:
 目前來到第11版本所以叫X11, 是以X window System Core protocol為基礎的window system.
-  wayland:
+wayland:
 由於X11太過複雜且在embbeded system中的效能不佳, 用來取代X window System Core protocol.
-  weston (wayland compositor):
+weston (wayland compositor):
 以wayland protocol來實做的compositor做為參考的範例, 實用上會用Westeros, Clutter&amp;hellip;等.
-  KMS/UMS:
+KMS/UMS:
 Kernel mode-setting 及User mode-setting.
-  OpenGL: 由Khronos Group制定的跨平台graphic API.
-  GLX:
+OpenGL: 由Khronos Group制定的跨平台graphic API.
+GLX:
 是一個extension, 做為OpenGL與X window system之間的橋樑. 就像embedded system的EGL, MacOS的AGL.
-  DRM(Direct Rendering Manager):
+DRM(Direct Rendering Manager):
 為了防止世界被破壞, 保護世界的和平. 防止同時使用graphic buffer.
-  DRI(Direct Rendering Infrastructure):</description>
+DRI(Direct Rendering Infrastructure):
+Mesa及DRM之間的橋樑. Ref: Introduction to the Direct Rendering Infrastructure
+CRTC (CRT Controller):
+Crtc is in charge of reading the framebuffer memory and routes the data to an encoder.</description>
     </item>
     
     <item>
@@ -460,14 +465,15 @@ location /rpi { proxy_pass http://127.0.0.1:9999/RpiMonitor; gzip on; gzip_types
       <description>以前球隊在回防時, 教練總會說&amp;quot;快跑! 別回頭, 到定點再休息&amp;quot;.
 關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!
 失速的這個月
-Week14 (04/07) 網路文章   Adding A New System Service To Android 5: Tips and How To
+Week14 (04/07) 網路文章 Adding A New System Service To Android 5: Tips and How To
 由下到上打造一個android system service. HW -&amp;gt; HAL -&amp;gt; JNI -&amp;gt; Service -&amp;gt; Manager -&amp;gt; Registering.
-  Adding New System Service in Android
+Adding New System Service in Android
 Native system service.
-  33 Foods that Starve Cancer
+33 Foods that Starve Cancer
 滿有趣的論點, 細胞沒有supplement會死亡沒錯, 但microscopic cancers能否自己生出新的血管?
 大部份的癌症無關基因, 超過40歲體內難免會有microscopic cells, 並可能轉變成cancer cells?
-  Week15 (04/14) img2ascii.</description>
+Week15 (04/14) img2ascii.py 參考網路上的做法, 加了些參數方便調整輸出的內容. pillow提供便利的API.
+網路文章 Every attempt to manage academia makes it worse</description>
     </item>
     
     <item>
@@ -498,10 +504,9 @@ MtpService: create MtpDatabase MtpDatabase: create volume and storage path</desc
       <description>以前球隊在回防時, 教練總會說&amp;quot;快跑! 別回頭, 到定點再休息&amp;quot;.
 關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!
 Week9 (03/03) 228的4天連假讓這週過的特別快.
-網路文章  What Americans can learn from other food cultures Google breaks SHA-1 web crypto for good but Torvalds plays down impact on Git Announcing the first SHA1 collision 
-Google 公怖與CWI Amsterdam合作生出了第一個SHA-1 collision, 對於使用SHA-1的Git來說會有什麼影響?
-目前看來是影響不大, 主因如下:  Git remote 與 local 發生衝突時local並不會被override. 相較於Git, PDF檔是較容易被破解的. Git可能會計劃使用SHA3-256為新的hash algorithm.
-為什麼不選SHA256? &amp;ldquo;SHA256 acceleration is mainly an ARM thing&amp;rdquo; - Torvalds    網路資源  Math is Fun: Common Core Standards: 基本數學.</description>
+網路文章 What Americans can learn from other food cultures Google breaks SHA-1 web crypto for good but Torvalds plays down impact on Git Announcing the first SHA1 collision Google 公怖與CWI Amsterdam合作生出了第一個SHA-1 collision, 對於使用SHA-1的Git來說會有什麼影響?
+目前看來是影響不大, 主因如下: Git remote 與 local 發生衝突時local並不會被override. 相較於Git, PDF檔是較容易被破解的. Git可能會計劃使用SHA3-256為新的hash algorithm.
+為什麼不選SHA256? &amp;ldquo;SHA256 acceleration is mainly an ARM thing&amp;rdquo; - Torvalds 網路資源 Math is Fun: Common Core Standards: 基本數學.</description>
     </item>
     
     <item>
@@ -527,7 +532,7 @@ Reference: Using vi-mode in your shell</description>
       <guid>https://oopsmonk.github.io/posts/2017-03-03-the-first-sha1-collision/</guid>
       <description>CWI Institute in Amsterdam and Google genrate two PDF documents with the same SHA-1 digest.
 Google security blog - Announcing the first SHA1 collision
-SHA-1 collistion and Git If a file A with X hash in local repository and with X hash in remote (SHA-1 collistion between local and remote), would overwrite the local version?  Nope. If it has the same SHA1, it means that when we receive the object from the other end, we will not overwrite the object we already have.</description>
+SHA-1 collistion and Git If a file A with X hash in local repository and with X hash in remote (SHA-1 collistion between local and remote), would overwrite the local version? Nope. If it has the same SHA1, it means that when we receive the object from the other end, we will not overwrite the object we already have.</description>
     </item>
     
     <item>
@@ -540,9 +545,9 @@ SHA-1 collistion and Git If a file A with X hash in local repository and with X 
 關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!
 Week7 (02/17) 發現minimal-mistakes上缺了繁中, 便開了個PR#838 沒想到很快就被merge, 效率真快.
 試玩BeautifulSoup 寫了個簡單的ck101Comics.py用來下載卡提諾×揪漫畫.
-網路文章  Diving Into Android &amp;lsquo;M&amp;rsquo; Doze &amp;amp; Diving into Doze Mode for Developers
-Android Doze在Nougat多了Light-Doze, Light-Doze的Maintenance Windows較短為了避免不同步問題, 當進入Deep-Doze(原本Marshmallow的Doze), Light-Doze會進入OVERRIDE不做任何事.  網路資源  E-book: Python for Informatics  讀書心得  Tuesdays with Morrie
-讀完The Classroom, 直到這章節都是在講Mitch離開大學後的生活及偶然聽到電視上提到Morrie, 師生俩如何再度搭上線. Morrie對Mitch有很深的情感, Mitch稱他為&amp;rsquo;Coach&amp;rsquo;.  &amp;ldquo;Dying,&amp;rdquo; Morrie suddenly said, &amp;ldquo;is only one thing to be sad over, Mitch. Living unhappily is something else.</description>
+網路文章 Diving Into Android &amp;lsquo;M&amp;rsquo; Doze &amp;amp; Diving into Doze Mode for Developers
+Android Doze在Nougat多了Light-Doze, Light-Doze的Maintenance Windows較短為了避免不同步問題, 當進入Deep-Doze(原本Marshmallow的Doze), Light-Doze會進入OVERRIDE不做任何事. 網路資源 E-book: Python for Informatics 讀書心得 Tuesdays with Morrie
+讀完The Classroom, 直到這章節都是在講Mitch離開大學後的生活及偶然聽到電視上提到Morrie, 師生俩如何再度搭上線. Morrie對Mitch有很深的情感, Mitch稱他為&amp;rsquo;Coach&amp;rsquo;. &amp;ldquo;Dying,&amp;rdquo; Morrie suddenly said, &amp;ldquo;is only one thing to be sad over, Mitch. Living unhappily is something else. So many of the people who come to visit me are unhappy.</description>
     </item>
     
     <item>
@@ -554,7 +559,7 @@ Android Doze在Nougat多了Light-Doze, Light-Doze的Maintenance Windows較短為
       <description>A study of adoptable storage in Android Marshmallow and Nougat.
 How to Setup a Private Disk (External USB Storage) Android adoptable storage allow APP install to external storage that can reserve more internal space for other APPs.
 Create Adoptable Storage Using Settings GUI Settings -&amp;gt; Storage &amp;amp; USB -&amp;gt; Portable storage -&amp;gt; Settings -&amp;gt; Format as internal
-Use sm (Storage Manager) Command  Find disk id  # sm list-disks disk:8,16 disk:8,0  Format as internal  # sm partition disk:8,0 private # sm list-volumes all public:8,17 mounted 629C-FBAF emulated:8,2 unmounted null private mounted null emulated mounted null private:8,2 mounted 3f538e6e-e6a9-4163-ac1e-e4c6602b3c34 Now, it&amp;rsquo;s a private storage in system.</description>
+Use sm (Storage Manager) Command Find disk id # sm list-disks disk:8,16 disk:8,0 Format as internal # sm partition disk:8,0 private # sm list-volumes all public:8,17 mounted 629C-FBAF emulated:8,2 unmounted null private mounted null emulated mounted null private:8,2 mounted 3f538e6e-e6a9-4163-ac1e-e4c6602b3c34 Now, it&amp;rsquo;s a private storage in system.</description>
     </item>
     
     <item>
@@ -564,7 +569,7 @@ Use sm (Storage Manager) Command  Find disk id  # sm list-disks disk:8,16 disk:8
       
       <guid>https://oopsmonk.github.io/posts/2016-06-16-android-media-framework/</guid>
       <description>Android APIs for media playback: MediaPlayer and MediaCodec.
- MediaPlayer  mediaPlayer.setDataSource(path); //fd or url mediaPlayer.setDisplay(SurfaceHolder sh); //SurfaceView or VideoView mediaPlayer.prepare(); // MediaPlayer.start(); //  MediaCodec   /* init use MediaExtractor to get mime data create decoder by mime type configure decoder by video format and surface view */ MediaExtractor mExtractor; MediaCodec mDecoder; mExtractor = new MediaExtractor(); mExtractor.setDataSource(filePath); MediaFormat format = mExtractor.getTrackFormat(track_index); String mime = format.getString(MediaFormat.KEY_MIME); if mime.startsWith(&amp;#34;video/&amp;#34;)  mExtractor.</description>
+MediaPlayer mediaPlayer.setDataSource(path); //fd or url mediaPlayer.setDisplay(SurfaceHolder sh); //SurfaceView or VideoView mediaPlayer.prepare(); // MediaPlayer.start(); // MediaCodec /* init use MediaExtractor to get mime data create decoder by mime type configure decoder by video format and surface view */ MediaExtractor mExtractor; MediaCodec mDecoder; mExtractor = new MediaExtractor(); mExtractor.setDataSource(filePath); MediaFormat format = mExtractor.getTrackFormat(track_index); String mime = format.getString(MediaFormat.KEY_MIME); if mime.startsWith(&amp;#34;video/&amp;#34;) mExtractor.selectTrack(track_index); mDecoder = MediaCodec.createDecoderByType(mime); mDecoder.configure(format, surface, null, 0 /* Decoder */); mDecoder.</description>
     </item>
     
     <item>
@@ -599,10 +604,10 @@ Setup forceencrypt fstab.bullhead:
       <pubDate>Tue, 03 Nov 2015 14:44:47 +0800</pubDate>
       
       <guid>https://oopsmonk.github.io/posts/2015-11-03-libcec-on-raspberry-pi/</guid>
-      <description>Install requirements sudo apt-get install build-essential autoconf liblockdev1-dev \ libudev-dev git libtool pkg-config cmake libxrandr-dev -y  Python and Swing support (Optional)
-sudo apt-get install python-dev swig -y  Checkout and build libcec source code The current version is libcec-3.0.1, but I got an error as follows:
-make[2]: *** No rule to make target &#39;1&#39;, needed by &#39;src/libcec/libcec.so.3.0.1&#39;. Stop.  Using libcec-3.0.0 instead of libcec-3.0.1, it&amp;rsquo;s work properly.
-git clone https://github.</description>
+      <description>Install requirements sudo apt-get install build-essential autoconf liblockdev1-dev \ libudev-dev git libtool pkg-config cmake libxrandr-dev -y Python and Swing support (Optional)
+sudo apt-get install python-dev swig -y Checkout and build libcec source code The current version is libcec-3.0.1, but I got an error as follows:
+make[2]: *** No rule to make target &#39;1&#39;, needed by &#39;src/libcec/libcec.so.3.0.1&#39;. Stop. Using libcec-3.0.0 instead of libcec-3.0.1, it&amp;rsquo;s work properly.
+git clone https://github.com/Pulse-Eight/libcec.git cd libcec git checkout libcec-3.</description>
     </item>
     
     <item>
@@ -617,7 +622,7 @@ Xubuntu 14.04 LTS 64-bit
 Linux 3.16.0-45-generic #60~14.04.1-Ubuntu SMP Fri Jul 24 21:16:23 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
 After I turned off hardware acceleration, everything is fine.
 Type this in the browser&amp;rsquo;s address bar to trun it off:
-about:preferences#advanced  </description>
+about:preferences#advanced </description>
     </item>
     
     <item>
@@ -628,7 +633,7 @@ about:preferences#advanced  </description>
       <guid>https://oopsmonk.github.io/posts/2015-08-12-markdown-preview-use-sublime-text-3/</guid>
       <description>Download Sublime Text 3 http://www.sublimetext.com/3
 Install Package Control https://packagecontrol.io/installation#st3
-Use Ctrl + `  or View &amp;gt; Show Console open the Sublime Text console.
+Use Ctrl + ` or View &amp;gt; Show Console open the Sublime Text console.
 Copy the text into console and press Enter to install Package Control.
 Once finished installation, restart Sublime.
 Install Markdown Preview package Open command palette via Ctrl + Shift + p or Preferences &amp;gt; Package Control from menu.
@@ -643,7 +648,7 @@ After typing install and press Enter, it will pop-up a package menu.</descriptio
       <guid>https://oopsmonk.github.io/posts/2015-08-01-drawing-ip-geolocation-to-the-world-map/</guid>
       <description>I found some mystery visitors in nginx&amp;rsquo;s access log. I tried to figure out the location of those visitors and what they did.
 IP collection First copy nginx&amp;rsquo;s access log to a folder and save all logs into a single file.
-$ mkdir mysteryIPs &amp;amp;&amp;amp; cd $_ $ sudo cp /var/log/nginx/access.log.* . $ zcat access.log.* &amp;gt; access-gz.log $ cat access.log.1 &amp;gt;&amp;gt; access-gz.log $ cat access.log &amp;gt;&amp;gt; access-gz.log  Remove LAN accesses from log file, for example my subnet IP rang is 192.</description>
+$ mkdir mysteryIPs &amp;amp;&amp;amp; cd $_ $ sudo cp /var/log/nginx/access.log.* . $ zcat access.log.* &amp;gt; access-gz.log $ cat access.log.1 &amp;gt;&amp;gt; access-gz.log $ cat access.log &amp;gt;&amp;gt; access-gz.log Remove LAN accesses from log file, for example my subnet IP rang is 192.</description>
     </item>
     
     <item>
@@ -654,7 +659,7 @@ $ mkdir mysteryIPs &amp;amp;&amp;amp; cd $_ $ sudo cp /var/log/nginx/access.log.
       <guid>https://oopsmonk.github.io/posts/2015-07-31-dependency-src-specified-more-than-once/</guid>
       <description>This problem appered when I was checking out older tag from the Chromium project.
 Working with Release Branches
-~/chromium_build/src$ git fetch --tags ~/chromium_build/src$ git checkout -b tag_35.0.1849.0 35.0.1849.0 ~/chromium_build/src$ gclient sync --with_branch_heads --jobs 16  Error log:
+~/chromium_build/src$ git fetch --tags ~/chromium_build/src$ git checkout -b tag_35.0.1849.0 35.0.1849.0 ~/chromium_build/src$ gclient sync --with_branch_heads --jobs 16 Error log:
 Syncing projects: 100% ( 1/ 1) src src (ERROR) ---------------------------------------- [0:00:00] Started. ________ running &#39;git reset --hard HEAD&#39; in &#39;/home/sam.chen/chromium_source/src&#39; [0:00:00] HEAD is now at 77bd011 Publish DEPS for Chromium 35.0.1849.0 [0:00:00] _____ src : Attempting rebase onto 77bd011602b1799f715591e697806c55e7ef8b7f.</description>
     </item>
     
@@ -664,7 +669,7 @@ Syncing projects: 100% ( 1/ 1) src src (ERROR) ---------------------------------
       <pubDate>Fri, 31 Jul 2015 17:28:39 +0800</pubDate>
       
       <guid>https://oopsmonk.github.io/posts/2015-07-31-build-android-webview-from-the-chromium-projects/</guid>
-      <description>First, check out and install the depot_tools package. $ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git $ export PATH=$PATH:/path/to/depot_tools  Checkout source code $ mkdir ~/chromium_build &amp;amp;&amp;amp; cd $_ ~/chromium_build$ fetch --nohooks android //Configure GYP ~/chromium_build$ echo &amp;quot;{ &#39;GYP_DEFINES&#39;: &#39;OS=android&#39;, }&amp;quot; &amp;gt; chromium.gyp_env //Update projects from gyp files. //You may need to run this again when you have added new files, updated gyp files, or sync&#39;ed your repository. ~/chromium_build$ gclient runhooks  Environment setup ~/chromium_build$ sudo apt-get install openjdk-7-jdk //config default JDK ~/chromium_build$ sudo update-alternatives --config javac ~/chromium_build$ sudo update-alternatives --config java ~/chromium_build$ sudo update-alternatives --config javaws ~/chromium_build$ sudo update-alternatives --config javap ~/chromium_build$ sudo update-alternatives --config jar ~/chromium_build$ sudo update-alternatives --config jarsigner //install build dependencies ~/chromium_build$ src/build/install-build-deps-android.</description>
+      <description>First, check out and install the depot_tools package. $ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git $ export PATH=$PATH:/path/to/depot_tools Checkout source code $ mkdir ~/chromium_build &amp;amp;&amp;amp; cd $_ ~/chromium_build$ fetch --nohooks android //Configure GYP ~/chromium_build$ echo &amp;quot;{ &#39;GYP_DEFINES&#39;: &#39;OS=android&#39;, }&amp;quot; &amp;gt; chromium.gyp_env //Update projects from gyp files. //You may need to run this again when you have added new files, updated gyp files, or sync&#39;ed your repository. ~/chromium_build$ gclient runhooks Environment setup ~/chromium_build$ sudo apt-get install openjdk-7-jdk //config default JDK ~/chromium_build$ sudo update-alternatives --config javac ~/chromium_build$ sudo update-alternatives --config java ~/chromium_build$ sudo update-alternatives --config javaws ~/chromium_build$ sudo update-alternatives --config javap ~/chromium_build$ sudo update-alternatives --config jar ~/chromium_build$ sudo update-alternatives --config jarsigner //install build dependencies ~/chromium_build$ src/build/install-build-deps-android.</description>
     </item>
     
     <item>
@@ -675,7 +680,7 @@ Syncing projects: 100% ( 1/ 1) src src (ERROR) ---------------------------------
       <guid>https://oopsmonk.github.io/posts/2015-07-09-install-latex-on-ubuntu-14-04/</guid>
       <description>This is a How-To article that include installation and compile LaTeX file to PDF using Texmaker, Sublime Text 3, and Vim.
 Install TeX Live Install texlive-latex-extra instead of texlive-latex-base.
-$sudo apt-get install texlive-latex-extra -y  Initial user tree in home directory Before using tlmgr in user mode, you have to set up the user tree with the init-usertree action.
+$sudo apt-get install texlive-latex-extra -y Initial user tree in home directory Before using tlmgr in user mode, you have to set up the user tree with the init-usertree action.
 tlmgr is TeX Live package manager, you can run tlmgr --help for more detail.</description>
     </item>
     
@@ -686,7 +691,7 @@ tlmgr is TeX Live package manager, you can run tlmgr --help for more detail.</de
       
       <guid>https://oopsmonk.github.io/posts/2015-07-04-new-feature-real-time-monitoring/</guid>
       <description>Real-Time Monitor for rpi-monitor:
- Update system status every 5 seconds. Two HTML layouts: change different layout via click Real-Time on navigation bar.  Project on github: rpi-monitor Layout 1(default):
+Update system status every 5 seconds. Two HTML layouts: change different layout via click Real-Time on navigation bar. Project on github: rpi-monitor Layout 1(default):
 Layout 2:</description>
     </item>
     
@@ -697,18 +702,18 @@ Layout 2:</description>
       
       <guid>https://oopsmonk.github.io/posts/2015-04-22-basic-calisthenics-workout/</guid>
       <description>Core Hollow Body Hold
- Plank Variation
- L Sit
-   Upper Chest/Push up Exercises &amp;amp; Variations
- Pull-up
- Dips
- Lower Lower Back
- Leg workout
- Other resources Full Body workout
- Core beginner to advanced
- Push beginner to advanced
- Push beginner to advanced
- Comprehensive handstand tutorial</description>
+Plank Variation
+L Sit
+Upper Chest/Push up Exercises &amp;amp; Variations
+Pull-up
+Dips
+Lower Lower Back
+Leg workout
+Other resources Full Body workout
+Core beginner to advanced
+Push beginner to advanced
+Push beginner to advanced
+Comprehensive handstand tutorial</description>
     </item>
     
     <item>
@@ -718,9 +723,9 @@ Layout 2:</description>
       
       <guid>https://oopsmonk.github.io/posts/2015-03-05-build-a-blog-with-jekyll-on-raspberry-pi/</guid>
       <description>I recently switched my blog from Google Blogger to GitHub Pages, here is how I built my blog. I&amp;rsquo;ll go through the following:
- Install Jekyll on Raspberry Pi Setup Jekyll Theme Post a new article Images minimization Commit to GitHub  Using Jekyll and Minimal Mistake build a blog and host on GitHub and Raspberry Pi(or Ubuntu).
+Install Jekyll on Raspberry Pi Setup Jekyll Theme Post a new article Images minimization Commit to GitHub Using Jekyll and Minimal Mistake build a blog and host on GitHub and Raspberry Pi(or Ubuntu).
 Requirements:
- Raspberry Pi(or Ubuntu) GitHub account Jekyll 2.2+ Minimal Mistake Grunt  If you have no idea with these things, here are useful resources:</description>
+Raspberry Pi(or Ubuntu) GitHub account Jekyll 2.2+ Minimal Mistake Grunt If you have no idea with these things, here are useful resources:</description>
     </item>
     
     <item>
@@ -739,14 +744,14 @@ Requirements:
       
       <guid>https://oopsmonk.github.io/posts/2014-12-12-multiplesshkeyswithgithub/</guid>
       <description>Generating SSH keys for GitHub Here are github account and work account.
-  GitHub:
+GitHub:
 SSH Key: github_id_rsa
 Account: oopsmonk
-  Work:
+Work:
 SSH Key: work_id_rsa
 Account: SamChen
-  Add SSH config File Modify ~/.ssh/config
-# Default github Host github.com HostName github.com PreferredAuthentications publickey IdentityFile ~/.ssh/github_id_rsa # Work git server Host work.gitserver.com HostName work.gitserver.com PreferredAuthentications publickey IdentityFile ~/.ssh/work_id_rsa Git Repository Configuation  GitHub Project:  $ git clone https://github.com/abc/projectA.git $ cd projectA #github account $ git config user.</description>
+Add SSH config File Modify ~/.ssh/config
+# Default github Host github.com HostName github.com PreferredAuthentications publickey IdentityFile ~/.ssh/github_id_rsa # Work git server Host work.gitserver.com HostName work.gitserver.com PreferredAuthentications publickey IdentityFile ~/.ssh/work_id_rsa Git Repository Configuation GitHub Project: $ git clone https://github.com/abc/projectA.git $ cd projectA #github account $ git config user.</description>
     </item>
     
     <item>
@@ -755,7 +760,7 @@ Account: SamChen
       <pubDate>Wed, 10 Dec 2014 01:53:31 +0800</pubDate>
       
       <guid>https://oopsmonk.github.io/posts/2014-12-10-pyenv/</guid>
-      <description>installation Requirements $ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \ libreadline-dev libsqlite3-dev wget curl llvm install pyenv $ cd ~ $ git clone git://github.com/yyuu/pyenv.git .pyenv $ echo &amp;#39;export PYENV_ROOT=&amp;#34;$HOME/.pyenv&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc $ echo &amp;#39;export PATH=&amp;#34;$PYENV_ROOT/bin:$PATH&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc $ echo &amp;#39;eval &amp;#34;$(pyenv init -)&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc install pyenv-virtualenv $ git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv $ echo &amp;#39;eval &amp;#34;$(pyenv virtualenv-init -)&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc $ exec $SHELL Common Usage (Command Reference) List all available versions $ pyenv version -l  Install python2.</description>
+      <description>installation Requirements $ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \ libreadline-dev libsqlite3-dev wget curl llvm install pyenv $ cd ~ $ git clone git://github.com/yyuu/pyenv.git .pyenv $ echo &amp;#39;export PYENV_ROOT=&amp;#34;$HOME/.pyenv&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc $ echo &amp;#39;export PATH=&amp;#34;$PYENV_ROOT/bin:$PATH&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc $ echo &amp;#39;eval &amp;#34;$(pyenv init -)&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc install pyenv-virtualenv $ git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv $ echo &amp;#39;eval &amp;#34;$(pyenv virtualenv-init -)&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc $ exec $SHELL Common Usage (Command Reference) List all available versions $ pyenv version -l Install python2.</description>
     </item>
     
     <item>
@@ -767,7 +772,7 @@ Account: SamChen
       <description>Advanced Bash-Scripting Guide
 sed
 awk
-Internal Variables #current parent pid $$ #last background process pid $! #last exit status $? #current instance pid, Bash 4.x above. $BASHPID Arithmetic Expansion a=12 b=$(($a + 10))  b=`expr $a + 1` b=$(expr $a + 1)  let b=$a+3 #let b=$a + 3 #incorrect  let &amp;#34;b = $a+ 3&amp;#34;  declare -i b=$a+$a Manipulating Strings  String is a number  if [[ $var =~ ^-?</description>
+Internal Variables #current parent pid $$ #last background process pid $! #last exit status $? #current instance pid, Bash 4.x above. $BASHPID Arithmetic Expansion a=12 b=$(($a + 10)) b=`expr $a + 1` b=$(expr $a + 1) let b=$a+3 #let b=$a + 3 #incorrect let &amp;#34;b = $a + 3&amp;#34; declare -i b=$a+$a Manipulating Strings String is a number if [[ $var =~ ^-?[0-9]+$ ]]; then echo &amp;#34;$var is a number&amp;#34; fi if [[ !</description>
     </item>
     
     <item>
@@ -781,7 +786,8 @@ Install install packages
 $sudo apt-get install libcairo2-dev libpango1.0-dev libglib2.0-dev libxml2-dev \ librrd-dev python2.7-dev rrdtool python-rrdtool $wget https://pypi.python.org/packages/source/p/psutil/psutil-2.1.1.tar.gz $tar xf psutil-2.1.1.tar.gz $cd psutil-2.1.1 $sudo python setup.py install Download or clone rpi-monitor on github
 https://github.com/oopsmonk/rpi-monitor
 Setup Crontab By defualt, the cron.log is disabled in Raspbian. To enable it:
-sudo vi /etc/rsyslog.conf  find the line and uncomment it.</description>
+sudo vi /etc/rsyslog.conf find the line and uncomment it.
+# cron.</description>
     </item>
     
     <item>
@@ -802,8 +808,8 @@ sudo vi /etc/rsyslog.conf  find the line and uncomment it.</description>
       <description>This is a git tutorial, create svn upstream on GitHub.
 Use MOC project as a example.
 #Checkout SVN and push to GitHub. Install packages
-$ sudo apt-get install subversion git-svn  Create git repository (it will take a long time)
-$ git svn clone svn://daper.net/moc/trunk --no-metadata ./moc-svn-git $ cat moc-svn-git/.git/config [core] repositoryformatversion = 0 filemode = true bare = false logallrefupdates = true [svn-remote &amp;#34;svn&amp;#34;] noMetadata = 1 url = svn://daper.</description>
+$ sudo apt-get install subversion git-svn Create git repository (it will take a long time)
+$ git svn clone svn://daper.net/moc/trunk --no-metadata ./moc-svn-git $ cat moc-svn-git/.git/config [core] repositoryformatversion = 0 filemode = true bare = false logallrefupdates = true [svn-remote &amp;#34;svn&amp;#34;] noMetadata = 1 url = svn://daper.net/moc/trunk fetch = :refs/remotes/git-svn Update SVN repository</description>
     </item>
     
     <item>
@@ -825,7 +831,7 @@ $ sudo apt-get install subversion git-svn $ mkdir moc-svn $ cd moc-svn $ svn co 
       <description>Bottle is a fast, simple and lightweight WSGI micro web-framework for Python.
 jQuery Mobile base on jQuery for mobile device.
 jQuery vs. jQuery Mobile vs. jQuery UI
-Install bottle: $ sudo apt-get install python-setuptools $ easy_install bottle Demo server deployment file structure: BottlejQuery ├── bottleJQuery.py └── index.html run command: $ ./bottleJQuery.py  connect to server: http://localhost:8080/bottle  Building simple web server use bottle bottleJQuery.py #!/usr/bin/env python from bottle import route, static_file, debug, run, get, redirect from bottle import post, request import os, inspect, json  #enable bottle debug debug(True)  # WebApp route path routePath = &amp;#39;/bottle&amp;#39; # get directory of WebApp (bottleJQuery.</description>
+Install bottle: $ sudo apt-get install python-setuptools $ easy_install bottle Demo server deployment file structure: BottlejQuery ├── bottleJQuery.py └── index.html run command: $ ./bottleJQuery.py connect to server: http://localhost:8080/bottle Building simple web server use bottle bottleJQuery.py #!/usr/bin/env python from bottle import route, static_file, debug, run, get, redirect from bottle import post, request import os, inspect, json #enable bottle debug debug(True) # WebApp route path routePath = &amp;#39;/bottle&amp;#39; # get directory of WebApp (bottleJQuery.</description>
     </item>
     
     <item>
@@ -836,7 +842,7 @@ Install bottle: $ sudo apt-get install python-setuptools $ easy_install bottle D
       <guid>https://oopsmonk.github.io/posts/2013-07-31-sendingmailsmtp/</guid>
       <description>Here is a text/plain MIME type parts in official exmaple code.
 I remove it from my sample code, because it&amp;rsquo;s not show up in mail at Office Outlook 2010.
-#!/usr/bin/env python &amp;#34;&amp;#34;&amp;#34; File name: sendMail.py Python send HTML mail using SMTP with authorization Usage : ./sendMail.py to@gmail.com Subtitle [ FilePath | txt ] &amp;#34;&amp;#34;&amp;#34;  import smtplib import sys,traceback from email.mime.multipart import MIMEMultipart from email.mime.text import MIMEText from time import gmtime, strftime  #log file location log_path = &amp;#34;.</description>
+#!/usr/bin/env python &amp;#34;&amp;#34;&amp;#34; File name: sendMail.py Python send HTML mail using SMTP with authorization Usage : ./sendMail.py to@gmail.com Subtitle [ FilePath | txt ] &amp;#34;&amp;#34;&amp;#34; import smtplib import sys,traceback from email.mime.multipart import MIMEMultipart from email.mime.text import MIMEText from time import gmtime, strftime #log file location log_path = &amp;#34;.</description>
     </item>
     
     <item>
@@ -846,12 +852,12 @@ I remove it from my sample code, because it&amp;rsquo;s not show up in mail at O
       
       <guid>https://oopsmonk.github.io/posts/2013-07-05-savingiptables/</guid>
       <description>Redirect port 8080 to 80
-sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080  Check iptables setting
-sudo iptables -t nat -L  Save configure to iptables.rules
-sudo iptables-save &amp;gt; /etc/iptables.rules  Save Solution #1 Configre /etc/network/interfaces
-iface eth0 inet dhcp  pre-up iptables-restore &amp;lt; /etc/iptables.rules Save Solution #2 Configure /etc/network/if-pre-up.d/iptablesload
+sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080 Check iptables setting
+sudo iptables -t nat -L Save configure to iptables.rules
+sudo iptables-save &amp;gt; /etc/iptables.rules Save Solution #1 Configre /etc/network/interfaces
+iface eth0 inet dhcp pre-up iptables-restore &amp;lt; /etc/iptables.rules Save Solution #2 Configure /etc/network/if-pre-up.d/iptablesload
 #!/bin/sh iptables-restore &amp;lt; /etc/iptables.rules exit 0 Configure /etc/network/if-post-down.d/iptablessave
-#!/bin/sh iptables-save -c &amp;gt; /etc/iptables.rules if [ -f /etc/iptables.</description>
+#!/bin/sh iptables-save -c &amp;gt; /etc/iptables.rules if [ -f /etc/iptables.downrules ]; then iptables-restore &amp;lt; /etc/iptables.</description>
     </item>
     
     <item>
@@ -861,7 +867,7 @@ iface eth0 inet dhcp  pre-up iptables-restore &amp;lt; /etc/iptables.rules Save 
       
       <guid>https://oopsmonk.github.io/posts/2013-06-24-oracle10gpython/</guid>
       <description>install jayDeBeApi &amp;amp; jpype
-$ sudo apt-get install python-setuptools $ sudo easy_install JayDeBeApi $ sudo easy_install jpype  Download Oracle JDBC Drivers ojdbc6.jar to local.
+$ sudo apt-get install python-setuptools $ sudo easy_install JayDeBeApi $ sudo easy_install jpype Download Oracle JDBC Drivers ojdbc6.jar to local.
 import jpype import jaydebeapi jHome = jpype.getDefaultJVMPath() print jHome jpype.startJVM(jHome, &amp;#39;-Djava.class.path=/path/to/ojdbc6.jar&amp;#39;) conn = jaydebeapi.connect(&amp;#39;oracle.jdbc.driver.OracleDriver&amp;#39;, &amp;#39;jdbc:oracle:thin:user/password@DB_HOST_IP:1521:DB_NAME&amp;#39;) curs = conn.cursor() curs.execute(&amp;#34;select * from ACCOUNT&amp;#34;) acc = curs.fetchall() curs.close() conn.close() jpype.shutdownJVM() print acc Reference:
 https://pypi.python.org/pypi/JayDeBeApi
 http://wiki.python.org/moin/Oracle</description>
@@ -887,7 +893,7 @@ install g++-mltilib and JDK $ sudo apt-get install g++-multilib $ chmod +x j2sdk
       <guid>https://oopsmonk.github.io/posts/2013-06-19-comparermfileintwofolder/</guid>
       <description>有時在整理照片或文件時, 需要比對2個資料匣, 把重覆的檔案拿掉.
 Dwonload Source Here
-function usage(){  echo &amp;#34;Find the same file in two folders and remove it.&amp;#34;  echo &amp;#34;usage : ./comp-rm.sh target-dir source-dir&amp;#34;  echo &amp;#34;remove the same files in target-dir.&amp;#34; }  if [ $# -ne 2 ]; then  usage  exit 1 fi  target_dir=$1 source_dir=$2 f_list1=$(find &amp;#34;$target_dir&amp;#34; -type f) f_list2=$(find &amp;#34;$source_dir&amp;#34; -type f)   for i in $f_list1; do  echo $f_list2 | grep $(basename $i) &amp;gt;/dev/null &amp;amp;&amp;amp; hit_str+=$i&amp;#34;;&amp;#34; done  if [ -z $hit_str ]; then  echo &amp;#34;list is empty.</description>
+function usage(){ echo &amp;#34;Find the same file in two folders and remove it.&amp;#34; echo &amp;#34;usage : ./comp-rm.sh target-dir source-dir&amp;#34; echo &amp;#34;remove the same files in target-dir.&amp;#34; } if [ $# -ne 2 ]; then usage exit 1 fi target_dir=$1 source_dir=$2 f_list1=$(find &amp;#34;$target_dir&amp;#34; -type f) f_list2=$(find &amp;#34;$source_dir&amp;#34; -type f) for i in $f_list1; do echo $f_list2 | grep $(basename $i) &amp;gt;/dev/null &amp;amp;&amp;amp; hit_str+=$i&amp;#34;;&amp;#34; done if [ -z $hit_str ]; then echo &amp;#34;list is empty.</description>
     </item>
     
     <item>
@@ -907,7 +913,8 @@ Mount HOME to HDD Copy HOME data to disk $ sudo mkdir /media/new_home $ sudo mou
       
       <guid>https://oopsmonk.github.io/posts/2013-06-13-getgitinfoinant/</guid>
       <description>Create git.SHA1 property in build.xml file.
-&amp;lt;available file=&amp;#34;.git&amp;#34; type=&amp;#34;dir&amp;#34; property=&amp;#34;git.present&amp;#34;/&amp;gt; &amp;lt;target name=&amp;#34;git.info&amp;#34; description=&amp;#34;Store git info&amp;#34; if=&amp;#34;git.present&amp;#34;&amp;gt;   &amp;lt;exec executable=&amp;#34;git&amp;#34; outputproperty=&amp;#34;git.SHA1&amp;#34; failifexecutionfails=&amp;#34;false&amp;#34; errorproperty=&amp;#34;&amp;#34;&amp;gt;  &amp;lt;arg value=&amp;#34;log&amp;#34;/&amp;gt;  &amp;lt;arg value=&amp;#34;--pretty=oneline&amp;#34;/&amp;gt;  &amp;lt;arg value=&amp;#34;-n1&amp;#34;/&amp;gt;  &amp;lt;/exec&amp;gt;  &amp;lt;condition property=&amp;#34;git.version&amp;#34; value=&amp;#34;${git.SHA1}&amp;#34; else=&amp;#34;unknown&amp;#34;&amp;gt;  &amp;lt;and&amp;gt;  &amp;lt;isset property=&amp;#34;git.SHA1&amp;#34;/&amp;gt;  &amp;lt;length string=&amp;#34;${git.SHA1}&amp;#34; trim=&amp;#34;yes&amp;#34; length=&amp;#34;0&amp;#34; when=&amp;#34;greater&amp;#34;/&amp;gt;  &amp;lt;/and&amp;gt;  &amp;lt;/condition&amp;gt;   &amp;lt;echo message=&amp;#34;print git log : &amp;#34; /&amp;gt;  &amp;lt;echo message=&amp;#34;${git.SHA1}&amp;#34; /&amp;gt;  &amp;lt;/target&amp;gt; Reference:</description>
+&amp;lt;available file=&amp;#34;.git&amp;#34; type=&amp;#34;dir&amp;#34; property=&amp;#34;git.present&amp;#34;/&amp;gt; &amp;lt;target name=&amp;#34;git.info&amp;#34; description=&amp;#34;Store git info&amp;#34; if=&amp;#34;git.present&amp;#34;&amp;gt; &amp;lt;exec executable=&amp;#34;git&amp;#34; outputproperty=&amp;#34;git.SHA1&amp;#34; failifexecutionfails=&amp;#34;false&amp;#34; errorproperty=&amp;#34;&amp;#34;&amp;gt; &amp;lt;arg value=&amp;#34;log&amp;#34;/&amp;gt; &amp;lt;arg value=&amp;#34;--pretty=oneline&amp;#34;/&amp;gt; &amp;lt;arg value=&amp;#34;-n1&amp;#34;/&amp;gt; &amp;lt;/exec&amp;gt; &amp;lt;condition property=&amp;#34;git.version&amp;#34; value=&amp;#34;${git.SHA1}&amp;#34; else=&amp;#34;unknown&amp;#34;&amp;gt; &amp;lt;and&amp;gt; &amp;lt;isset property=&amp;#34;git.SHA1&amp;#34;/&amp;gt; &amp;lt;length string=&amp;#34;${git.SHA1}&amp;#34; trim=&amp;#34;yes&amp;#34; length=&amp;#34;0&amp;#34; when=&amp;#34;greater&amp;#34;/&amp;gt; &amp;lt;/and&amp;gt; &amp;lt;/condition&amp;gt; &amp;lt;echo message=&amp;#34;print git log : &amp;#34; /&amp;gt; &amp;lt;echo message=&amp;#34;${git.SHA1}&amp;#34; /&amp;gt; &amp;lt;/target&amp;gt; Reference:
+How to lookup the latest git commit hash from an ant build script</description>
     </item>
     
     <item>
@@ -921,10 +928,10 @@ Default nginx accepted body size limitation is 1MB.
 You can add client_max_body_size in nginx.conf.
 This parameter can put in http, server and location sections of configutation file.
 Enlarge body size to 10MB
-client_max_body_size 10M  Or just disable it
-client_max_body_size 0  For example enlarge body size to 10MB
+client_max_body_size 10M Or just disable it
+client_max_body_size 0 For example enlarge body size to 10MB
 Add to http section:
-$ sudo vi /etc/nginx/nginx.conf  http {   ##  # Basic Settings  ##   sendfile on;  tcp_nopush on;  tcp_nodelay on;  keepalive_timeout 65;  types_hash_max_size 2048;  client_max_body_size 10M;  # server_tokens off;   # server_names_hash_bucket_size 64;  # server_name_in_redirect off;   include /etc/nginx/mime.</description>
+$ sudo vi /etc/nginx/nginx.conf http { ## # Basic Settings ## sendfile on; tcp_nopush on; tcp_nodelay on; keepalive_timeout 65; types_hash_max_size 2048; client_max_body_size 10M; # server_tokens off; # server_names_hash_bucket_size 64; # server_name_in_redirect off; include /etc/nginx/mime.</description>
     </item>
     
     <item>
@@ -948,11 +955,11 @@ Uploading and Downloading Files to and from Amazon S3</description>
       <guid>https://oopsmonk.github.io/posts/2013-05-27-pythonwebmicroframwork/</guid>
       <description>WSGI Micro Framworks 這陣子一直在找適合的Micro Framwork玩第一次的Web Application.
 最後選擇用Bottle, 原因是:
- Single file module, no dependencies with other library. Document  但是好不好用又是另一回事, 用了就知道..XD
+Single file module, no dependencies with other library. Document 但是好不好用又是另一回事, 用了就知道..XD
 以下是由WSGI.org列出的Micro Framwork:
-  bobo
+bobo
 Bobo is a light-weight framework. Its goal is to be easy to use and remember.
-  Bottle
+Bottle
 Bottle is a fast and simple micro-framework for small web-applications. It offers request dispatching (Routes) with url parameter support, Templates, key/value Databases, a build-in HTTP Server and adapters for many third party WSGI/HTTP-server and template engines.</description>
     </item>
     
@@ -964,15 +971,15 @@ Bottle is a fast and simple micro-framework for small web-applications. It offer
       <guid>https://oopsmonk.github.io/posts/2013-05-23-pandocmarkdownref/</guid>
       <description>Headers (Setext and atx) Setext-style只有兩階也就是HTML語法裡的h1及h2 tag,-跟=的個數沒有限制.
 atx-style共有6階, h1~h6.
-# This is H1. ## This is H2. ### This is H3. #### ... ###### This is H6.  除了階層較多之外, atx-style還可以使用Markdown syntax.
-###This is *H3* header.  Output:
+# This is H1. ## This is H2. ### This is H3. #### ... ###### This is H6. 除了階層較多之外, atx-style還可以使用Markdown syntax.
+###This is *H3* header. Output:
 This is H3 header. Inline Formatting Basic Emphasis 斜體字: *, _ , 粗體字: **, __,
-*single asterisks* _single underscores_ **double asterisks** __double underscores__  Output:
+*single asterisks* _single underscores_ **double asterisks** __double underscores__ Output:
 single asterisks
 single underscores
 double asterisks
 double underscores
- Pandoc Inline strikeout, superscript and subscript ~~~deleted text~~~ H~2~O is a liquid.</description>
+Pandoc Inline strikeout, superscript and subscript ~~~deleted text~~~ H~2~O is a liquid.</description>
     </item>
     
     <item>
@@ -993,11 +1000,11 @@ double underscores
       <description>Markup Language 寫文件或blog最困擾的就是排版, 大略看一下目前較流行的Markdown &amp;amp; reStructuredText, 決定用Markdown來寫, rst給我的感覺就是要再學另一種語言, 雖然強大, 但我只要夠用就好, 必竟都有人用Markdown寫書了 XD.
 Markdown Setup 目前是用Vim + Pandoc來寫Markdown, 網路上也有Web editor, 或是windows平台的Markdownpad, 但Web用起來不順手, Markdownpad不能跨平台. 用Vim麻煩的是preview, 寫完要手動用Pandoc轉成html, 之後直接將轉出來的html, 直接貼到blogger.
 一般沒有CSS的用法:
-$ pandoc README.md -o out.html  加入CSS依文件的方法是:
-$ pandoc -c markdown.css README.md -o out.html  但是會有一個問題, 貼上blogger時會無法正常顯示, 原因在於html裡是這樣寫的:
-&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;markdown.css&amp;quot; type=&amp;quot;text/css&amp;quot; /&amp;gt;  後來想到了一個workaround, 用-H參數將CSS放入Header, 但也不是直接帶入, 需要將一般的CSS file用style tag包起來, 如下:
-&amp;lt;style type=&amp;quot;text/css&amp;quot;&amp;gt; Your CSS syntax.... &amp;lt;/style&amp;gt;  另存成pandoc-markdown.css, 如此才是真正的__fully standalone__.
-$ pandoc -H pandoc-markdown.</description>
+$ pandoc README.md -o out.html 加入CSS依文件的方法是:
+$ pandoc -c markdown.css README.md -o out.html 但是會有一個問題, 貼上blogger時會無法正常顯示, 原因在於html裡是這樣寫的:
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;markdown.css&amp;quot; type=&amp;quot;text/css&amp;quot; /&amp;gt; 後來想到了一個workaround, 用-H參數將CSS放入Header, 但也不是直接帶入, 需要將一般的CSS file用style tag包起來, 如下:
+&amp;lt;style type=&amp;quot;text/css&amp;quot;&amp;gt; Your CSS syntax.... &amp;lt;/style&amp;gt; 另存成pandoc-markdown.css, 如此才是真正的__fully standalone__.
+$ pandoc -H pandoc-markdown.css README.md -o out.</description>
     </item>
     
     <item>
@@ -1009,7 +1016,7 @@ $ pandoc -H pandoc-markdown.</description>
       <description>O.S. : Ubuntu12.04 LTS
 OpenNMS Version : 1.10.7
 OpenNMS base on TMN &amp;amp; FCAPS network management models.
-OpenNMS Block Diagram Discovery &amp;amp; Monitor daemons   Eventd
+OpenNMS Block Diagram Discovery &amp;amp; Monitor daemons Eventd
 Event handling daemon
 Configuration files:
 eventconf.xml -&amp;gt; Defines the UEI (Universal Event Identifiers).
@@ -1034,9 +1041,10 @@ Google什麼是yeast(Active dry, Instant dry, Fresh)?
 結果烤到第五條吐司, 才__接近滿模__.
 失敗品之一:
 接著白吐司太無聊了, 所以做了其它嚐試
-全麥鮪魚麵包  高粉 270g 全麥粉 30g Instant dry 3/4t 奶油 20g 塩 1/2t 糖 20g 水 185g  整形參考: 蒔蘿鮪魚麵包
+全麥鮪魚麵包 高粉 270g 全麥粉 30g Instant dry 3/4t 奶油 20g 塩 1/2t 糖 20g 水 185g 整形參考: 蒔蘿鮪魚麵包
 海蒂的白麵包 配方跟做法參考 【肉桂打噴嚏】海蒂的白麵包
-全麥豆漿枸杞葡萄乾  高粉 270g 全麥粉 30g Instant dry 3/4t 奶油 20g 塩 1/2t 糖 20g 豆漿 185g 枸杞 + 葡萄乾 適量.  No-Knead Bread 做了這些後, 深深感到&amp;hellip;</description>
+全麥豆漿枸杞葡萄乾 高粉 270g 全麥粉 30g Instant dry 3/4t 奶油 20g 塩 1/2t 糖 20g 豆漿 185g 枸杞 + 葡萄乾 適量. No-Knead Bread 做了這些後, 深深感到&amp;hellip;
+萬能的雙手真的累人又吵, 尤其吐司要揉到完成階段.</description>
     </item>
     
     <item>
@@ -1111,7 +1119,7 @@ Installing Android SDK packages &amp;lt;android-sdk&amp;gt; : $HOME/XBMC_Project
 UI thread 如因大量運算或等待而blocked, 預設超過5秒ANR(Application Not Responding)就會發生.
 且Android UI components 並非thread-safe, 使用上要特別小心.
 所以:
- long time computation使用另外的thread, 不要寫在 UI Thread. 不要在UI thread 之外使用UI component method. 透過Thread, Handler and AsyncTask perform asynchronous processing, 避免UI thread block.  Threads Android 提供以下的method, 可在其它的thread 下調用 UI thread.
+long time computation使用另外的thread, 不要寫在 UI Thread. 不要在UI thread 之外使用UI component method. 透過Thread, Handler and AsyncTask perform asynchronous processing, 避免UI thread block. Threads Android 提供以下的method, 可在其它的thread 下調用 UI thread.
 Activity.runOnUiThread(Runnable) View.post(Runnable) &amp;lt;-- used in example code.</description>
     </item>
     
@@ -1128,7 +1136,7 @@ LITEMAX(晶達光電) 的 Spanpixel Resizing LCD透過獨特的面板切割技�
 Genius 在2011年推出全球首款Ring Mouse, 今年又推出新一代的Ring Presenter. 用的是2.4GHz無線.
 精傑電子, 主要強調3D graphic處理能力, 應用在3D presentations, 用transparent panel. 總覺得與磐儀科技推的行動醫療平板很像.
 規格如下:
- CPU: AMD G-Series T56N Dual Core GPU: AMD Radeon HD6320 Screen: 10.</description>
+CPU: AMD G-Series T56N Dual Core GPU: AMD Radeon HD6320 Screen: 10.</description>
     </item>
     
   </channel>

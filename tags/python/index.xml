@@ -17,7 +17,7 @@
       <pubDate>Wed, 10 Dec 2014 01:53:31 +0800</pubDate>
       
       <guid>https://oopsmonk.github.io/posts/2014-12-10-pyenv/</guid>
-      <description>installation Requirements $ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \ libreadline-dev libsqlite3-dev wget curl llvm install pyenv $ cd ~ $ git clone git://github.com/yyuu/pyenv.git .pyenv $ echo &amp;#39;export PYENV_ROOT=&amp;#34;$HOME/.pyenv&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc $ echo &amp;#39;export PATH=&amp;#34;$PYENV_ROOT/bin:$PATH&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc $ echo &amp;#39;eval &amp;#34;$(pyenv init -)&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc install pyenv-virtualenv $ git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv $ echo &amp;#39;eval &amp;#34;$(pyenv virtualenv-init -)&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc $ exec $SHELL Common Usage (Command Reference) List all available versions $ pyenv version -l  Install python2.</description>
+      <description>installation Requirements $ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \ libreadline-dev libsqlite3-dev wget curl llvm install pyenv $ cd ~ $ git clone git://github.com/yyuu/pyenv.git .pyenv $ echo &amp;#39;export PYENV_ROOT=&amp;#34;$HOME/.pyenv&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc $ echo &amp;#39;export PATH=&amp;#34;$PYENV_ROOT/bin:$PATH&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc $ echo &amp;#39;eval &amp;#34;$(pyenv init -)&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc install pyenv-virtualenv $ git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv $ echo &amp;#39;eval &amp;#34;$(pyenv virtualenv-init -)&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc $ exec $SHELL Common Usage (Command Reference) List all available versions $ pyenv version -l Install python2.</description>
     </item>
     
     <item>
@@ -29,7 +29,7 @@
       <description>Bottle is a fast, simple and lightweight WSGI micro web-framework for Python.
 jQuery Mobile base on jQuery for mobile device.
 jQuery vs. jQuery Mobile vs. jQuery UI
-Install bottle: $ sudo apt-get install python-setuptools $ easy_install bottle Demo server deployment file structure: BottlejQuery ├── bottleJQuery.py └── index.html run command: $ ./bottleJQuery.py  connect to server: http://localhost:8080/bottle  Building simple web server use bottle bottleJQuery.py #!/usr/bin/env python from bottle import route, static_file, debug, run, get, redirect from bottle import post, request import os, inspect, json  #enable bottle debug debug(True)  # WebApp route path routePath = &amp;#39;/bottle&amp;#39; # get directory of WebApp (bottleJQuery.</description>
+Install bottle: $ sudo apt-get install python-setuptools $ easy_install bottle Demo server deployment file structure: BottlejQuery ├── bottleJQuery.py └── index.html run command: $ ./bottleJQuery.py connect to server: http://localhost:8080/bottle Building simple web server use bottle bottleJQuery.py #!/usr/bin/env python from bottle import route, static_file, debug, run, get, redirect from bottle import post, request import os, inspect, json #enable bottle debug debug(True) # WebApp route path routePath = &amp;#39;/bottle&amp;#39; # get directory of WebApp (bottleJQuery.</description>
     </item>
     
     <item>
@@ -40,7 +40,7 @@ Install bottle: $ sudo apt-get install python-setuptools $ easy_install bottle D
       <guid>https://oopsmonk.github.io/posts/2013-07-31-sendingmailsmtp/</guid>
       <description>Here is a text/plain MIME type parts in official exmaple code.
 I remove it from my sample code, because it&amp;rsquo;s not show up in mail at Office Outlook 2010.
-#!/usr/bin/env python &amp;#34;&amp;#34;&amp;#34; File name: sendMail.py Python send HTML mail using SMTP with authorization Usage : ./sendMail.py to@gmail.com Subtitle [ FilePath | txt ] &amp;#34;&amp;#34;&amp;#34;  import smtplib import sys,traceback from email.mime.multipart import MIMEMultipart from email.mime.text import MIMEText from time import gmtime, strftime  #log file location log_path = &amp;#34;.</description>
+#!/usr/bin/env python &amp;#34;&amp;#34;&amp;#34; File name: sendMail.py Python send HTML mail using SMTP with authorization Usage : ./sendMail.py to@gmail.com Subtitle [ FilePath | txt ] &amp;#34;&amp;#34;&amp;#34; import smtplib import sys,traceback from email.mime.multipart import MIMEMultipart from email.mime.text import MIMEText from time import gmtime, strftime #log file location log_path = &amp;#34;.</description>
     </item>
     
     <item>
@@ -54,10 +54,10 @@ Default nginx accepted body size limitation is 1MB.
 You can add client_max_body_size in nginx.conf.
 This parameter can put in http, server and location sections of configutation file.
 Enlarge body size to 10MB
-client_max_body_size 10M  Or just disable it
-client_max_body_size 0  For example enlarge body size to 10MB
+client_max_body_size 10M Or just disable it
+client_max_body_size 0 For example enlarge body size to 10MB
 Add to http section:
-$ sudo vi /etc/nginx/nginx.conf  http {   ##  # Basic Settings  ##   sendfile on;  tcp_nopush on;  tcp_nodelay on;  keepalive_timeout 65;  types_hash_max_size 2048;  client_max_body_size 10M;  # server_tokens off;   # server_names_hash_bucket_size 64;  # server_name_in_redirect off;   include /etc/nginx/mime.</description>
+$ sudo vi /etc/nginx/nginx.conf http { ## # Basic Settings ## sendfile on; tcp_nopush on; tcp_nodelay on; keepalive_timeout 65; types_hash_max_size 2048; client_max_body_size 10M; # server_tokens off; # server_names_hash_bucket_size 64; # server_name_in_redirect off; include /etc/nginx/mime.</description>
     </item>
     
     <item>
@@ -68,11 +68,11 @@ $ sudo vi /etc/nginx/nginx.conf  http {   ##  # Basic Settings  ##   sendfile on
       <guid>https://oopsmonk.github.io/posts/2013-05-27-pythonwebmicroframwork/</guid>
       <description>WSGI Micro Framworks 這陣子一直在找適合的Micro Framwork玩第一次的Web Application.
 最後選擇用Bottle, 原因是:
- Single file module, no dependencies with other library. Document  但是好不好用又是另一回事, 用了就知道..XD
+Single file module, no dependencies with other library. Document 但是好不好用又是另一回事, 用了就知道..XD
 以下是由WSGI.org列出的Micro Framwork:
-  bobo
+bobo
 Bobo is a light-weight framework. Its goal is to be easy to use and remember.
-  Bottle
+Bottle
 Bottle is a fast and simple micro-framework for small web-applications. It offers request dispatching (Routes) with url parameter support, Templates, key/value Databases, a build-in HTTP Server and adapters for many third party WSGI/HTTP-server and template engines.</description>
     </item>
     

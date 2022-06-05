@@ -89,7 +89,7 @@ websocket component for esp-idf.
 Kouri Bridge - The Longest Bridge in Okinawa
 Week18~21 (05/04~25) 網路文章 Students are being prepared for jobs that no longer exist. Here&amp;rsquo;s how that could change.
 NBC關於美國高中教育的深入報導, 提到現在的教育方式已經無法保證讓學生找到理想的工作，尤其是技職生. 文中提到几個點:
- 高中準時畢業的人有84%, 後來70%直升大學. 雖然學校盡力教導讓學生面對未來, 但學校也不知將來會是如何, 因為計劃跟不上變化. “We’re preparing kids for these jobs of tomorrow, but we really don’t even know what they are,” 2016年的調查, 只有34%的高中生(12th-graders) 對學習感到興趣. 公立大學(University of Massachusetts Lowell)1年的學費大約37萬台幣($12,496USD), 私立大學(Elmhurst College)學費約140萬台幣($47,121USD), 另一所公立大學(University of Minnesota)學費約91萬台幣($30,514USD). 另外自己查了一下哈佛大學每年學費138萬台幣(46,340USD), 以上都是只有學費, 如果加上宿舍及雜費大約是202萬台幣($67,580USD). 至2017年底美國的學貸已高達1.</description>
+高中準時畢業的人有84%, 後來70%直升大學. 雖然學校盡力教導讓學生面對未來, 但學校也不知將來會是如何, 因為計劃跟不上變化. “We’re preparing kids for these jobs of tomorrow, but we really don’t even know what they are,” 2016年的調查, 只有34%的高中生(12th-graders) 對學習感到興趣. 公立大學(University of Massachusetts Lowell)1年的學費大約37萬台幣($12,496USD), 私立大學(Elmhurst College)學費約140萬台幣($47,121USD), 另一所公立大學(University of Minnesota)學費約91萬台幣($30,514USD). 另外自己查了一下哈佛大學每年學費138萬台幣(46,340USD), 以上都是只有學費, 如果加上宿舍及雜費大約是202萬台幣($67,580USD). 至2017年底美國的學貸已高達1.38兆美元, 房貸8.</description>
     </item>
     
     <item>
@@ -103,9 +103,10 @@ NBC關於美國高中教育的深入報導, 提到現在的教育方式已經無
 2017年底至今拿了4張Certifications, Algorithms on Graphs是比較有趣的課程.
 其它3張是Algorithmic Toolbox, Data Structures, Algorithms on Strings
 Week14 (04/06) 讀書心得 Burrows-Wheeler Transform - data compression
- Cyclic rotation Sorting Last column  Inverting Burrows-wheeler transform
- Mark the occurrence of characters Putting sorted bwt string to frist column  Knuth–Morris–Pratt - string searching algorithm (or KMP algorithm)
-Suffix array - a sorted array of all suffixes of a string.</description>
+Cyclic rotation Sorting Last column Inverting Burrows-wheeler transform
+Mark the occurrence of characters Putting sorted bwt string to frist column Knuth–Morris–Pratt - string searching algorithm (or KMP algorithm)
+Suffix array - a sorted array of all suffixes of a string.
+Week15 (04/13) Week16 (04/20) Week17 (04/27) 網路文章 World’s first IOTA Smart Charging Station</description>
     </item>
     
     <item>
@@ -151,7 +152,7 @@ L2 data ratio: $CacheL2DataRefill/$CacheL2DataAccess
       <guid>https://oopsmonk.github.io/posts/2018-01-02-2018month1/</guid>
       <description>Android, Algorithms
 Week1 (01/05) 讀書心得 Algorithms on Graphs - Week5 給出座標上n個點:
- 找出最短路徑(the shortest path) 分群(Clustering)  為Minimun Spanning Tree相關問題, 可以使用Kruskal’s MST Algorithm 及Disjoint-set 來解.
+找出最短路徑(the shortest path) 分群(Clustering) 為Minimun Spanning Tree相關問題, 可以使用Kruskal’s MST Algorithm 及Disjoint-set 來解.
 for all u ∈ V : MakeSet(v ) X ← empty set // a set with solution edges sort the edges E by weight for all {u, v } ∈ E in non-decreasing weight order: if Find(u) != Find(v): add {u, v } to X Union(u, v ) return X Week2 (01/12) 網路文章 Android编译系统中的Android.</description>
     </item>
     
@@ -166,7 +167,7 @@ Android N -&amp;gt; O 被自己的石頭砸到腳 對於晶片廠來說Android�
 沒錯&amp;hellip;但對於手機/電視之外的應用..存在些問題.
 另外差異化及客制帶來些不定時炸彈.
 Sepolicy for Android Treble 使用numpy array修改pixel values. 網路資源 Machine Learning 101 - Jason Mayes
-New year&amp;rsquo;s resolutions  IELTS overall 6.5 Data Structures and Algorithms Specialization Master of Computer Science in Data Science  </description>
+New year&amp;rsquo;s resolutions IELTS overall 6.5 Data Structures and Algorithms Specialization Master of Computer Science in Data Science </description>
     </item>
     
     <item>
@@ -240,11 +241,12 @@ Accuracy for 1 hidden units: 67.5 % Accuracy for 2 hidden units: 67.25 % Accurac
 關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!
 Deep Learning &amp;lt;&amp;ndash;&amp;gt; keep learning
 Week31 (08/04) 網路文章 A Brief History of CNNs in Image Segmentation: From R-CNN to Mask R-CNN
- R-CNN: https://arxiv.org/abs/1311.2524
+R-CNN: https://arxiv.org/abs/1311.2524
 Visual Recognition就是從這裡爆發了&amp;hellip; 透過Selective Search找到Region後丢給修改過的AlexNet學習, 最後再給Support Vector Machine (SVM) 這層CNN.
-原本設計的R-CNN就只做這些:   用Selective Search找region 透過pre-trained AlexNet去算特徵後交給SVM看region裡的是什麼鬼東西 最後透過線性回歸(linear regression)畫出物件的座標  Fast R-CNN: https://arxiv.org/abs/1504.08083
-Region proposals using Selective Search.   RoI (Region of Interest) Pooling
- Combine All Models into One Network</description>
+原本設計的R-CNN就只做這些: 用Selective Search找region 透過pre-trained AlexNet去算特徵後交給SVM看region裡的是什麼鬼東西 最後透過線性回歸(linear regression)畫出物件的座標 Fast R-CNN: https://arxiv.org/abs/1504.08083
+Region proposals using Selective Search. RoI (Region of Interest) Pooling
+Combine All Models into One Network
+將R-CNN的AlexNet, SVM, Regressor整合在一起變成單一個network Fast R-CNN instead used a single network to compute the extract image features (CNN), classify (SVM), and tighten bounding boxes (regressor).</description>
     </item>
     
     <item>
@@ -263,7 +265,7 @@ MathJax語法速查及範例
 Week29 (07/21) 網路文章 Path Guide: A New Approach to Indoor Navigation
 讀書心得 The Numpy Stack in Python
 用簡短的方式介紹numpy, pandas, matplotlib, scipy.
- numpy: 在matrix, vector處理會比ptython built-in還快很多且方便.</description>
+numpy: 在matrix, vector處理會比ptython built-in還快很多且方便.</description>
     </item>
     
     <item>
@@ -279,7 +281,7 @@ Kernel space的memory management, 要考慮到的問題, Internal/External fregm
 User space的memory管理, page fault handler, Red-Black Tree / AVL Tree.
 論文學習 FarmBeats: An IoT Platform for Data-Driven Agriculture PDF ,Slides
 FarmBeats這套系統提出了几個解決方法:
- 遠距傳輸, 以往的解法是用satellite或是手機訊號, 這裡是使用TVWS(TV White Space)以減少硬體成本, TVWS是利用數位電視未使用的頻寬做傳輸, 屬於低頻有傳輸距離長, 穿透力強的優點. 天氣感知系統, 透過OpenWeather API的資料來規劃電量的使用及電池的充電與否. 風力輔助系統, 收集農地的風向及風力數據, 透過飛行演算法(Flight Planning Algorithm)規劃出適當的路線, 減少逆風造成的額外耗電量. 本地影像及資料壓縮, 一般Drone的航空影像(Aerial Imagery)或sensors資料都是直接傳到雲端, 透過Farmbeats的gateway做中繼站並壓縮影像及sensors資料, 可支援1星期的在網路無法使用情況.  Week23 (06/09) 網路文章 When should we use mutex and when should we use semaphore</description>
+遠距傳輸, 以往的解法是用satellite或是手機訊號, 這裡是使用TVWS(TV White Space)以減少硬體成本, TVWS是利用數位電視未使用的頻寬做傳輸, 屬於低頻有傳輸距離長, 穿透力強的優點. 天氣感知系統, 透過OpenWeather API的資料來規劃電量的使用及電池的充電與否. 風力輔助系統, 收集農地的風向及風力數據, 透過飛行演算法(Flight Planning Algorithm)規劃出適當的路線, 減少逆風造成的額外耗電量. 本地影像及資料壓縮, 一般Drone的航空影像(Aerial Imagery)或sensors資料都是直接傳到雲端, 透過Farmbeats的gateway做中繼站並壓縮影像及sensors資料, 可支援1星期的在網路無法使用情況. Week23 (06/09) 網路文章 When should we use mutex and when should we use semaphore</description>
     </item>
     
     <item>
@@ -309,14 +311,15 @@ Week20 (05/19) Wayland的weston compositor可透過wesgr來分析repaint過程. 
       <description>以前球隊在回防時, 教練總會說&amp;quot;快跑! 別回頭, 到定點再休息&amp;quot;.
 關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!
 失速的這個月
-Week14 (04/07) 網路文章   Adding A New System Service To Android 5: Tips and How To
+Week14 (04/07) 網路文章 Adding A New System Service To Android 5: Tips and How To
 由下到上打造一個android system service. HW -&amp;gt; HAL -&amp;gt; JNI -&amp;gt; Service -&amp;gt; Manager -&amp;gt; Registering.
-  Adding New System Service in Android
+Adding New System Service in Android
 Native system service.
-  33 Foods that Starve Cancer
+33 Foods that Starve Cancer
 滿有趣的論點, 細胞沒有supplement會死亡沒錯, 但microscopic cancers能否自己生出新的血管?
 大部份的癌症無關基因, 超過40歲體內難免會有microscopic cells, 並可能轉變成cancer cells?
-  Week15 (04/14) img2ascii.</description>
+Week15 (04/14) img2ascii.py 參考網路上的做法, 加了些參數方便調整輸出的內容. pillow提供便利的API.
+網路文章 Every attempt to manage academia makes it worse</description>
     </item>
     
     <item>
@@ -328,10 +331,9 @@ Native system service.
       <description>以前球隊在回防時, 教練總會說&amp;quot;快跑! 別回頭, 到定點再休息&amp;quot;.
 關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!
 Week9 (03/03) 228的4天連假讓這週過的特別快.
-網路文章  What Americans can learn from other food cultures Google breaks SHA-1 web crypto for good but Torvalds plays down impact on Git Announcing the first SHA1 collision 
-Google 公怖與CWI Amsterdam合作生出了第一個SHA-1 collision, 對於使用SHA-1的Git來說會有什麼影響?
-目前看來是影響不大, 主因如下:  Git remote 與 local 發生衝突時local並不會被override. 相較於Git, PDF檔是較容易被破解的. Git可能會計劃使用SHA3-256為新的hash algorithm.
-為什麼不選SHA256? &amp;ldquo;SHA256 acceleration is mainly an ARM thing&amp;rdquo; - Torvalds    網路資源  Math is Fun: Common Core Standards: 基本數學.</description>
+網路文章 What Americans can learn from other food cultures Google breaks SHA-1 web crypto for good but Torvalds plays down impact on Git Announcing the first SHA1 collision Google 公怖與CWI Amsterdam合作生出了第一個SHA-1 collision, 對於使用SHA-1的Git來說會有什麼影響?
+目前看來是影響不大, 主因如下: Git remote 與 local 發生衝突時local並不會被override. 相較於Git, PDF檔是較容易被破解的. Git可能會計劃使用SHA3-256為新的hash algorithm.
+為什麼不選SHA256? &amp;ldquo;SHA256 acceleration is mainly an ARM thing&amp;rdquo; - Torvalds 網路資源 Math is Fun: Common Core Standards: 基本數學.</description>
     </item>
     
     <item>
@@ -344,9 +346,9 @@ Google 公怖與CWI Amsterdam合作生出了第一個SHA-1 collision, 對於使�
 關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!
 Week7 (02/17) 發現minimal-mistakes上缺了繁中, 便開了個PR#838 沒想到很快就被merge, 效率真快.
 試玩BeautifulSoup 寫了個簡單的ck101Comics.py用來下載卡提諾×揪漫畫.
-網路文章  Diving Into Android &amp;lsquo;M&amp;rsquo; Doze &amp;amp; Diving into Doze Mode for Developers
-Android Doze在Nougat多了Light-Doze, Light-Doze的Maintenance Windows較短為了避免不同步問題, 當進入Deep-Doze(原本Marshmallow的Doze), Light-Doze會進入OVERRIDE不做任何事.  網路資源  E-book: Python for Informatics  讀書心得  Tuesdays with Morrie
-讀完The Classroom, 直到這章節都是在講Mitch離開大學後的生活及偶然聽到電視上提到Morrie, 師生俩如何再度搭上線. Morrie對Mitch有很深的情感, Mitch稱他為&amp;rsquo;Coach&amp;rsquo;.  &amp;ldquo;Dying,&amp;rdquo; Morrie suddenly said, &amp;ldquo;is only one thing to be sad over, Mitch. Living unhappily is something else.</description>
+網路文章 Diving Into Android &amp;lsquo;M&amp;rsquo; Doze &amp;amp; Diving into Doze Mode for Developers
+Android Doze在Nougat多了Light-Doze, Light-Doze的Maintenance Windows較短為了避免不同步問題, 當進入Deep-Doze(原本Marshmallow的Doze), Light-Doze會進入OVERRIDE不做任何事. 網路資源 E-book: Python for Informatics 讀書心得 Tuesdays with Morrie
+讀完The Classroom, 直到這章節都是在講Mitch離開大學後的生活及偶然聽到電視上提到Morrie, 師生俩如何再度搭上線. Morrie對Mitch有很深的情感, Mitch稱他為&amp;rsquo;Coach&amp;rsquo;. &amp;ldquo;Dying,&amp;rdquo; Morrie suddenly said, &amp;ldquo;is only one thing to be sad over, Mitch. Living unhappily is something else. So many of the people who come to visit me are unhappy.</description>
     </item>
     
   </channel>

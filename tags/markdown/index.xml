@@ -19,7 +19,7 @@
       <guid>https://oopsmonk.github.io/posts/2015-08-12-markdown-preview-use-sublime-text-3/</guid>
       <description>Download Sublime Text 3 http://www.sublimetext.com/3
 Install Package Control https://packagecontrol.io/installation#st3
-Use Ctrl + `  or View &amp;gt; Show Console open the Sublime Text console.
+Use Ctrl + ` or View &amp;gt; Show Console open the Sublime Text console.
 Copy the text into console and press Enter to install Package Control.
 Once finished installation, restart Sublime.
 Install Markdown Preview package Open command palette via Ctrl + Shift + p or Preferences &amp;gt; Package Control from menu.
@@ -34,15 +34,15 @@ After typing install and press Enter, it will pop-up a package menu.</descriptio
       <guid>https://oopsmonk.github.io/posts/2013-05-23-pandocmarkdownref/</guid>
       <description>Headers (Setext and atx) Setext-style只有兩階也就是HTML語法裡的h1及h2 tag,-跟=的個數沒有限制.
 atx-style共有6階, h1~h6.
-# This is H1. ## This is H2. ### This is H3. #### ... ###### This is H6.  除了階層較多之外, atx-style還可以使用Markdown syntax.
-###This is *H3* header.  Output:
+# This is H1. ## This is H2. ### This is H3. #### ... ###### This is H6. 除了階層較多之外, atx-style還可以使用Markdown syntax.
+###This is *H3* header. Output:
 This is H3 header. Inline Formatting Basic Emphasis 斜體字: *, _ , 粗體字: **, __,
-*single asterisks* _single underscores_ **double asterisks** __double underscores__  Output:
+*single asterisks* _single underscores_ **double asterisks** __double underscores__ Output:
 single asterisks
 single underscores
 double asterisks
 double underscores
- Pandoc Inline strikeout, superscript and subscript ~~~deleted text~~~ H~2~O is a liquid.</description>
+Pandoc Inline strikeout, superscript and subscript ~~~deleted text~~~ H~2~O is a liquid.</description>
     </item>
     
     <item>
@@ -54,11 +54,11 @@ double underscores
       <description>Markup Language 寫文件或blog最困擾的就是排版, 大略看一下目前較流行的Markdown &amp;amp; reStructuredText, 決定用Markdown來寫, rst給我的感覺就是要再學另一種語言, 雖然強大, 但我只要夠用就好, 必竟都有人用Markdown寫書了 XD.
 Markdown Setup 目前是用Vim + Pandoc來寫Markdown, 網路上也有Web editor, 或是windows平台的Markdownpad, 但Web用起來不順手, Markdownpad不能跨平台. 用Vim麻煩的是preview, 寫完要手動用Pandoc轉成html, 之後直接將轉出來的html, 直接貼到blogger.
 一般沒有CSS的用法:
-$ pandoc README.md -o out.html  加入CSS依文件的方法是:
-$ pandoc -c markdown.css README.md -o out.html  但是會有一個問題, 貼上blogger時會無法正常顯示, 原因在於html裡是這樣寫的:
-&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;markdown.css&amp;quot; type=&amp;quot;text/css&amp;quot; /&amp;gt;  後來想到了一個workaround, 用-H參數將CSS放入Header, 但也不是直接帶入, 需要將一般的CSS file用style tag包起來, 如下:
-&amp;lt;style type=&amp;quot;text/css&amp;quot;&amp;gt; Your CSS syntax.... &amp;lt;/style&amp;gt;  另存成pandoc-markdown.css, 如此才是真正的__fully standalone__.
-$ pandoc -H pandoc-markdown.</description>
+$ pandoc README.md -o out.html 加入CSS依文件的方法是:
+$ pandoc -c markdown.css README.md -o out.html 但是會有一個問題, 貼上blogger時會無法正常顯示, 原因在於html裡是這樣寫的:
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;markdown.css&amp;quot; type=&amp;quot;text/css&amp;quot; /&amp;gt; 後來想到了一個workaround, 用-H參數將CSS放入Header, 但也不是直接帶入, 需要將一般的CSS file用style tag包起來, 如下:
+&amp;lt;style type=&amp;quot;text/css&amp;quot;&amp;gt; Your CSS syntax.... &amp;lt;/style&amp;gt; 另存成pandoc-markdown.css, 如此才是真正的__fully standalone__.
+$ pandoc -H pandoc-markdown.css README.md -o out.</description>
     </item>
     
   </channel>
