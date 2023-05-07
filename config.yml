@@ -9,7 +9,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-googleAnalytics: UA-59507590-1
+googleAnalytics: 364511140
 
 minify:
   disableXML: true
@@ -63,9 +63,9 @@ params:
 
   # profile-mode
   profileMode:
-    enabled: true # needs to be explicitly set
-    title: "Father ★ Software Engineer ★ Baking Hobbyist likes making things simple"
-    subtitle: ""
+    # enabled: true # needs to be explicitly set
+    title: "like making things simple and keep learning"
+    subtitle: "Father ★ Software Engineer ★ Home Baker"
     imageUrl: "/images/bio-oopsmonk.jpg"
     imageWidth: 120
     imageHeight: 120
@@ -80,8 +80,9 @@ params:
 
   # home-info mode
   homeInfoParams:
-    title: "Father ★ Software Engineer ★ Baking Hobbyist likes making things simple"
-    Content: ""
+    enabled: true # needs to be explicitly set
+    title: "like making things simple and keep learning"
+    Content: "Father ★ Software Engineer ★ Home Baker"
   socialIcons:
     - name: twitter
       url: "https://twitter.com/oops_monk"
