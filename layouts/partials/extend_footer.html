@@ -1,0 +1,17 @@
+{{ if .Param "img_zoom" }}
+  <!-- source: https://cdnjs.com/libraries/medium-zoom -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.8/medium-zoom.min.js" integrity="sha512-J3G1KdOKUuj92x5w2mV/7AmPckHbiTQdoPXd6qaeHemfcNOsuwFVQm851m+lLuJR33sGuz9TAzWtccXZOsFE0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+  const images = Array.from(document.querySelectorAll(".post-content img"));
+  images.forEach(img => {
+    mediumZoom(img, {
+      background: "#808B96",
+      margin: 30, /* The space outside the zoomed image */
+      scrollOffset: 30, /* The number of pixels to scroll to close the zoom */
+      container: null, /* The viewport to render the zoom in */
+      template: null /* The template element to display on zoom */
+    });
+  });
+  </script>
+{{ end }}
+

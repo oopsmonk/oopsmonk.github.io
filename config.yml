@@ -46,6 +46,7 @@ params:
   hideSummary: false
   showtoc: false
   tocopen: false
+  img_zoom: true # True to enable medium_zoom for images
 
 #  assets:
 #    # disableHLJS: true # to disable highlight.js
