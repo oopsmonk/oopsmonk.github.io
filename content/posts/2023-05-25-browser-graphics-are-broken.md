@@ -24,6 +24,8 @@ Since an Ubuntu update on 2023-05-24, graphics seem to be broken on Chrome and M
 
 ![](/images/2023-05-25/Ubuntu-browser-1.png)
 
+## Method 1
+
 A workaround is to remove the `GPUCache` folder in `.config`
 
 Google Chrome
@@ -36,5 +38,27 @@ Microsoft Edge
 rm -rf ~/.config/microsoft-edge/Default/GPUCache
 ```
 
-Reference: [Since 23 May 2023 Ubuntu 22.04 Mesa updates, Chrome won't display website graphics](https://askubuntu.com/questions/1469116/since-23-may-2023-ubuntu-22-04-mesa-updates-chrome-wont-display-website-graphi)
+## Method 2
+
+If the browser still act weirdly, just remove all configuration and caches in the local.
+
+![](/images/2023-05-25/Ubuntu-browser-2.png)
+
+**You will need to start from fresh, make sure you keep or sync bookmarks**
+
+Google Chrome
+```shell
+rm -rf ~/.cache/google-chrome
+rm -rf ~/.config/google-chrome
+```
+
+Microsoft Edge
+```shell
+rm -rf ~/.cache/microsoft-edge
+rm -rf ~/.config/microsoft-edge
+```
+
+Reference: 
+- [Since 23 May 2023 Ubuntu 22.04 Mesa updates, Chrome won't display website graphics](https://askubuntu.com/questions/1469116/since-23-may-2023-ubuntu-22-04-mesa-updates-chrome-wont-display-website-graphi)
+- [After mesa upgrades, Chrome won't show graphics](https://bugs.launchpad.net/ubuntu/+source/mesa/+bug/2020604)
 
