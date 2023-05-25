@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Dec 2022 17:58:21 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 May 2023 12:00:25 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Browser Graphics Are Broken</title>
+      <link>https://oopsmonk.github.io/posts/2023-05-25-browser-graphics-are-broken/</link>
+      <pubDate>Thu, 25 May 2023 12:00:25 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2023-05-25-browser-graphics-are-broken/</guid>
+      <description>Cannot see graphics in browsers on Ubuntu</description>
+    </item>
+    
     <item>
       <title>Fcitx5 倉頡輸入法 on Ubuntu 22.04</title>
       <link>https://oopsmonk.github.io/posts/2022-12-19-fcitx5/</link>

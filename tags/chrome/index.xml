@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Chrome on oopsmonk</title>
+    <link>https://oopsmonk.github.io/tags/chrome/</link>
+    <description>Recent content in Chrome on oopsmonk</description>
+    <image>
+      <title>oopsmonk</title>
+      <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
+      <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 May 2023 12:00:25 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/chrome/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Browser Graphics Are Broken</title>
+      <link>https://oopsmonk.github.io/posts/2023-05-25-browser-graphics-are-broken/</link>
+      <pubDate>Thu, 25 May 2023 12:00:25 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2023-05-25-browser-graphics-are-broken/</guid>
+      <description>Cannot see graphics in browsers on Ubuntu</description>
+    </item>
+    
+  </channel>
+</rss>
