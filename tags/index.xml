@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 May 2023 12:00:25 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Aug 2023 14:15:05 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS</title>
+      <link>https://oopsmonk.github.io/tags/aws/</link>
+      <pubDate>Fri, 11 Aug 2023 14:15:05 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/tags/aws/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Chrome</title>
       <link>https://oopsmonk.github.io/tags/chrome/</link>
@@ -189,15 +198,6 @@
       <pubDate>Mon, 24 Jun 2013 01:53:31 +0800</pubDate>
       
       <guid>https://oopsmonk.github.io/tags/database/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AWS</title>
-      <link>https://oopsmonk.github.io/tags/aws/</link>
-      <pubDate>Tue, 28 May 2013 01:53:31 +0800</pubDate>
-      
-      <guid>https://oopsmonk.github.io/tags/aws/</guid>
       <description></description>
     </item>
     

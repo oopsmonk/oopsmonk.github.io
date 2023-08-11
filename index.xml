@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 May 2023 12:00:25 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Aug 2023 14:15:05 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Extend Volume Size on AWS EC2</title>
+      <link>https://oopsmonk.github.io/posts/2023-08-11-ec2-extend-volume-size/</link>
+      <pubDate>Fri, 11 Aug 2023 14:15:05 +0800</pubDate>
+      
+      <guid>https://oopsmonk.github.io/posts/2023-08-11-ec2-extend-volume-size/</guid>
+      <description>Extend EBS size on EC2 instance</description>
+    </item>
+    
     <item>
       <title>Browser Graphics Are Broken</title>
       <link>https://oopsmonk.github.io/posts/2023-05-25-browser-graphics-are-broken/</link>
