@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://oopsmonk.github.io/tags/arm/</loc>
+    <lastmod>2024-01-17T10:39:45+08:00</lastmod>
+  </url><url>
+    <loc>https://oopsmonk.github.io/posts/2024-01-17-arm-amba/</loc>
+    <lastmod>2024-01-17T10:39:45+08:00</lastmod>
+  </url><url>
+    <loc>https://oopsmonk.github.io/</loc>
+    <lastmod>2024-01-17T10:39:45+08:00</lastmod>
+  </url><url>
+    <loc>https://oopsmonk.github.io/posts/</loc>
+    <lastmod>2024-01-17T10:39:45+08:00</lastmod>
+  </url><url>
+    <loc>https://oopsmonk.github.io/tags/</loc>
+    <lastmod>2024-01-17T10:39:45+08:00</lastmod>
+  </url><url>
     <loc>https://oopsmonk.github.io/tags/aws/</loc>
     <lastmod>2023-08-11T14:15:05+08:00</lastmod>
   </url><url>
     <loc>https://oopsmonk.github.io/posts/2023-08-11-ec2-extend-volume-size/</loc>
-    <lastmod>2023-08-11T14:15:05+08:00</lastmod>
-  </url><url>
-    <loc>https://oopsmonk.github.io/</loc>
-    <lastmod>2023-08-11T14:15:05+08:00</lastmod>
-  </url><url>
-    <loc>https://oopsmonk.github.io/posts/</loc>
-    <lastmod>2023-08-11T14:15:05+08:00</lastmod>
-  </url><url>
-    <loc>https://oopsmonk.github.io/tags/</loc>
     <lastmod>2023-08-11T14:15:05+08:00</lastmod>
   </url><url>
     <loc>https://oopsmonk.github.io/posts/2023-05-25-browser-graphics-are-broken/</loc>
@@ -94,9 +100,6 @@
   </url><url>
     <loc>https://oopsmonk.github.io/posts/2017-11-17-policy-configuration-of-selinux-and-seandroid/</loc>
     <lastmod>2017-11-17T08:12:13+08:00</lastmod>
-  </url><url>
-    <loc>https://oopsmonk.github.io/tags/arm/</loc>
-    <lastmod>2017-11-01T19:14:00+08:00</lastmod>
   </url><url>
     <loc>https://oopsmonk.github.io/posts/2017-11-01-arm-mali-profiling-metrics/</loc>
     <lastmod>2017-11-01T19:14:00+08:00</lastmod>

@@ -11,8 +11,21 @@
     </image>
     <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Aug 2023 14:15:05 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jan 2024 10:39:45 +0800</lastBuildDate>
     <atom:link href="https://oopsmonk.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ARM AMBA</title>
+      <link>https://oopsmonk.github.io/posts/2024-01-17-arm-amba/</link>
+      <pubDate>Wed, 17 Jan 2024 10:39:45 +0800</pubDate>
+      <guid>https://oopsmonk.github.io/posts/2024-01-17-arm-amba/</guid>
+      <description>&lt;h2 id=&#34;advanced-microcontroller-bus-architectureambahttpswwwarmcomenarchitecturesystem-architecturesamba&#34;&gt;Advanced Microcontroller Bus Architecture(&lt;a href=&#34;https://www.arm.com/en/architecture/system-architectures/amba&#34;&gt;AMBA&lt;/a&gt;)&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;2024-01-17&lt;/strong&gt;
+AMBA 5 is the latest generation of the freely available &lt;code&gt;AMBA protocol specifications&lt;/code&gt;. It introduces the &lt;code&gt;Coherent Hub Interface&lt;/code&gt; (CHI) architecture, which defines the interfaces to connect fully coherent processors and high-performance interconnects. AMBA 5 also introduces the AXI5, ACE5 and AHB5 protocols, which extend prior generations to include a number of performances and scalability features, and to align and complement CHI.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2024-01-17/AMBA-System-Diagram.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;AMBA 5 Protocols&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Extend Volume Size on AWS EC2</title>
       <link>https://oopsmonk.github.io/posts/2023-08-11-ec2-extend-volume-size/</link>
