@@ -1,6 +1,6 @@
 ---
 title: "Pandoc's Markdown Reference"
-modified: 2015-02-11T010:53:31+08:00
+modified: 2015-02-11T10:53:31+08:00
 tags: ["Markdown"]
 date: 2013-05-23T01:53:31+08:00
 ---
