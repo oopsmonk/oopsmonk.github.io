@@ -9,215 +9,170 @@
       <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
       <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Aug 2023 14:15:05 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Aug 2023 14:15:05 +0800</lastBuildDate>
+    <atom:link href="https://oopsmonk.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AWS</title>
       <link>https://oopsmonk.github.io/tags/aws/</link>
       <pubDate>Fri, 11 Aug 2023 14:15:05 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/tags/aws/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Chrome</title>
       <link>https://oopsmonk.github.io/tags/chrome/</link>
       <pubDate>Thu, 25 May 2023 12:00:25 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/tags/chrome/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Ubuntu</title>
       <link>https://oopsmonk.github.io/tags/ubuntu/</link>
       <pubDate>Thu, 25 May 2023 12:00:25 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/tags/ubuntu/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Vim</title>
       <link>https://oopsmonk.github.io/tags/vim/</link>
       <pubDate>Sat, 06 May 2023 22:23:26 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/tags/vim/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Linux</title>
       <link>https://oopsmonk.github.io/tags/linux/</link>
       <pubDate>Sun, 05 Jun 2022 13:01:48 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/tags/linux/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>RaspberryPi</title>
       <link>https://oopsmonk.github.io/tags/raspberrypi/</link>
       <pubDate>Sun, 05 Jun 2022 13:01:48 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/tags/raspberrypi/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>滴水穿石</title>
       <link>https://oopsmonk.github.io/tags/%E6%BB%B4%E6%B0%B4%E7%A9%BF%E7%9F%B3/</link>
       <pubDate>Sat, 01 Dec 2018 11:35:58 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/tags/%E6%BB%B4%E6%B0%B4%E7%A9%BF%E7%9F%B3/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Android</title>
       <link>https://oopsmonk.github.io/tags/android/</link>
       <pubDate>Wed, 20 Dec 2017 11:54:18 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/tags/android/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ARM</title>
       <link>https://oopsmonk.github.io/tags/arm/</link>
       <pubDate>Wed, 01 Nov 2017 19:14:00 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/tags/arm/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>MachineLearning</title>
       <link>https://oopsmonk.github.io/tags/machinelearning/</link>
       <pubDate>Thu, 31 Aug 2017 10:00:10 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/tags/machinelearning/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Nginx</title>
       <link>https://oopsmonk.github.io/tags/nginx/</link>
       <pubDate>Fri, 19 May 2017 15:21:10 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/tags/nginx/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>git</title>
+      <title>Git</title>
       <link>https://oopsmonk.github.io/tags/git/</link>
       <pubDate>Fri, 03 Mar 2017 09:44:13 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/tags/git/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Markdown</title>
       <link>https://oopsmonk.github.io/tags/markdown/</link>
       <pubDate>Wed, 12 Aug 2015 19:03:54 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/tags/markdown/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Chromium</title>
       <link>https://oopsmonk.github.io/tags/chromium/</link>
       <pubDate>Fri, 31 Jul 2015 17:50:40 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/tags/chromium/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>WebDev</title>
       <link>https://oopsmonk.github.io/tags/webdev/</link>
       <pubDate>Sat, 04 Jul 2015 17:37:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/tags/webdev/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Calisthenics</title>
       <link>https://oopsmonk.github.io/tags/calisthenics/</link>
       <pubDate>Wed, 22 Apr 2015 18:49:37 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/tags/calisthenics/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Baking</title>
       <link>https://oopsmonk.github.io/tags/baking/</link>
       <pubDate>Wed, 31 Dec 2014 19:11:23 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/tags/baking/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>ssh</title>
+      <title>Ssh</title>
       <link>https://oopsmonk.github.io/tags/ssh/</link>
       <pubDate>Fri, 12 Dec 2014 01:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/tags/ssh/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Python</title>
       <link>https://oopsmonk.github.io/tags/python/</link>
       <pubDate>Wed, 10 Dec 2014 01:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/tags/python/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>jQuery</title>
+      <title>JQuery</title>
       <link>https://oopsmonk.github.io/tags/jquery/</link>
       <pubDate>Wed, 07 Aug 2013 01:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/tags/jquery/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Database</title>
       <link>https://oopsmonk.github.io/tags/database/</link>
       <pubDate>Mon, 24 Jun 2013 01:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/tags/database/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>WebDevs</title>
       <link>https://oopsmonk.github.io/tags/webdevs/</link>
       <pubDate>Sun, 03 Feb 2013 00:00:00 +0000</pubDate>
-      
       <guid>https://oopsmonk.github.io/tags/webdevs/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>events</title>
+      <title>Events</title>
       <link>https://oopsmonk.github.io/tags/events/</link>
       <pubDate>Sun, 10 Jun 2012 00:00:00 +0000</pubDate>
-      
       <guid>https://oopsmonk.github.io/tags/events/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

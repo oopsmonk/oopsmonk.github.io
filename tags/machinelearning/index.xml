@@ -9,23 +9,33 @@
       <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
       <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 31 Aug 2017 10:00:10 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/machinelearning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 31 Aug 2017 10:00:10 +0800</lastBuildDate>
+    <atom:link href="https://oopsmonk.github.io/tags/machinelearning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Faster R-CNN Use Caffe Framework</title>
       <link>https://oopsmonk.github.io/posts/2017-08-31-faster-r-cnn-use-caffe-framework/</link>
       <pubDate>Thu, 31 Aug 2017 10:00:10 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-08-31-faster-r-cnn-use-caffe-framework/</guid>
-      <description>Install caffe framework and run Faster R-CNN demo on Ubuntu 16.04.
-Test environment CPU: Intel(R) Core(TM) i3-4130 CPU @ 3.40GHz 4-Cores
-GPU: ASUSTeK GeForce GTX 1060 with 6GB Memory
-HD: WDC WD5000AAKX
-OS: Ubuntu 16.04
-Test Flow Install software requirement Video pre-processing: get jpeg images from source video Image Labeling Use Faster R-CNN to genrate trained model Run Faster R-CNN demo Requirement Hardware:
-Good graphic card with large memory (6GB memory is okay, but it has problem in VGG traing.</description>
+      <description>&lt;p&gt;Install caffe framework and run Faster R-CNN demo on Ubuntu 16.04.&lt;/p&gt;
+&lt;h3 id=&#34;test-environment&#34;&gt;Test environment&lt;/h3&gt;
+&lt;p&gt;CPU: Intel(R) Core(TM) i3-4130 CPU @ 3.40GHz 4-Cores&lt;br&gt;
+GPU: ASUSTeK GeForce GTX 1060 with 6GB Memory&lt;br&gt;
+HD: WDC WD5000AAKX&lt;br&gt;
+OS: Ubuntu 16.04&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2017-08-31/GPU_Info.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;test-flow&#34;&gt;Test Flow&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Install software requirement&lt;/li&gt;
+&lt;li&gt;Video pre-processing: get jpeg images from source video&lt;/li&gt;
+&lt;li&gt;Image Labeling&lt;/li&gt;
+&lt;li&gt;Use Faster R-CNN to genrate trained model&lt;/li&gt;
+&lt;li&gt;Run Faster R-CNN demo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;requirement&#34;&gt;Requirement&lt;/h3&gt;
+&lt;p&gt;Hardware:&lt;br&gt;
+Good graphic card with large memory (6GB memory is okay, but it has problem in VGG traing.)&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

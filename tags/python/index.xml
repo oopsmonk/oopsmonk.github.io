@@ -9,73 +9,367 @@
       <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
       <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Dec 2014 01:53:31 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Dec 2014 01:53:31 +0800</lastBuildDate>
+    <atom:link href="https://oopsmonk.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>pyenv Quick Start (Utunbu 14.04)</title>
       <link>https://oopsmonk.github.io/posts/2014-12-10-pyenv/</link>
       <pubDate>Wed, 10 Dec 2014 01:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2014-12-10-pyenv/</guid>
-      <description>installation Requirements $ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \ libreadline-dev libsqlite3-dev wget curl llvm install pyenv $ cd ~ $ git clone git://github.com/yyuu/pyenv.git .pyenv $ echo &amp;#39;export PYENV_ROOT=&amp;#34;$HOME/.pyenv&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc $ echo &amp;#39;export PATH=&amp;#34;$PYENV_ROOT/bin:$PATH&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc $ echo &amp;#39;eval &amp;#34;$(pyenv init -)&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc install pyenv-virtualenv $ git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv $ echo &amp;#39;eval &amp;#34;$(pyenv virtualenv-init -)&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc $ exec $SHELL Common Usage (Command Reference) List all available versions $ pyenv version -l Install python2.</description>
+      <description>&lt;h2 id=&#34;installation&#34;&gt;installation&lt;/h2&gt;
+&lt;h3 id=&#34;requirements&#34;&gt;Requirements&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev wget curl llvm
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;install-pyenvhttpsgithubcomyyuupyenvblobmasterreadmemd&#34;&gt;&lt;a href=&#34;https://github.com/yyuu/pyenv/blob/master/README.md&#34;&gt;install pyenv&lt;/a&gt;&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ cd ~
+$ git clone git://github.com/yyuu/pyenv.git .pyenv
+$ echo &amp;#39;export PYENV_ROOT=&amp;#34;$HOME/.pyenv&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc
+$ echo &amp;#39;export PATH=&amp;#34;$PYENV_ROOT/bin:$PATH&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc
+$ echo &amp;#39;eval &amp;#34;$(pyenv init -)&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;install-pyenv-virtualenvhttpsgithubcomyyuupyenv-virtualenvblobmasterreadmemd&#34;&gt;&lt;a href=&#34;https://github.com/yyuu/pyenv-virtualenv/blob/master/README.md&#34;&gt;install pyenv-virtualenv&lt;/a&gt;&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv 
+$ echo &amp;#39;eval &amp;#34;$(pyenv virtualenv-init -)&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc
+$ exec $SHELL
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;common-usage-command-referencehttpsrawgithubusercontentcomyyuupyenvmastercommandsmd&#34;&gt;Common Usage (&lt;a href=&#34;https://raw.githubusercontent.com/yyuu/pyenv/master/COMMANDS.md&#34;&gt;Command Reference&lt;/a&gt;)&lt;/h2&gt;
+&lt;h3 id=&#34;list-all-available-versions&#34;&gt;List all available versions&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;$ pyenv version -l  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;install-python278-to-pyenv&#34;&gt;Install python2.7.8 to pyenv&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;$ pyenv install 2.7.8  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;list-installed-versions&#34;&gt;List installed versions&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ pyenv versions
+* system (set by /home/oopsmonk/.pyenv/version)
+  2.7.8
+  3.4.2
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;creating-a-virtualenv&#34;&gt;Creating a virtualenv&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;$ pyenv virtualenv 2.7.8 mypy-2.7.8
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;list-virtualenvs&#34;&gt;List virtualenvs&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ pyenv virtualenvs
+  mypy-2.7.8 (created from /home/oopsmonk/.pyenv/versions/2.7.8)
+  mypy-3.4.2 (created from /home/oopsmonk/.pyenv/versions/3.4.2)
+
+# current versions 
+$ pyenv versions
+  * system (set by /home/oopsmonk/.pyenv/version)
+  2.7.8
+  3.4.2
+  mypy-2.7.8
+  mypy-3.4.2
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;use-python-via-virtualenv&#34;&gt;Use python via virtualenv&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# show current version
+oopsmonk@VBox:~/markdown-note$ python --version
+Python 2.7.6
+
+# Change to other version
+oopsmonk@VBox:~/markdown-note$ pyenv activate mypy-2.7.8
+(mypy-2.7.8)oopsmonk@VBox:~/markdown-note$ python --version
+Python 2.7.8
+
+# Deactivate
+(mypy-2.7.8)oopsmonk@oopsmonk-VBox:~/markdown-note$ pyenv deactivate
+oopsmonk@oopsmonk-VBox:~/markdown-note$  python --version
+Python 2.7.8
+# Why current version is 2.7.8? it&amp;#39;s supposed to 2.7.6.
+
+oopsmonk@oopsmonk-VBox:~/markdown-note$ pyenv activate mypy-3.4.2
+(mypy-3.4.2) oopsmonk@oopsmonk-VBox:~/markdown-note$ pyenv deactivate
+oopsmonk@oopsmonk-VBox:~/markdown-note$ python --version
+Python 3.4.2
+
+oopsmonk@oopsmonk-VBox:~/markdown-note$ pyenv versions
+  system
+  2.7.8
+  3.4.2
+  mypy-2.7.8
+* mypy-3.4.2 (set by PYENV_VERSION environment variable)
+
+# delete a virtualenv   
+$ pyenv uninstall mypy-2.7.8
+
+# Go back to original system version  
+$ alias pyenv_deactivate=&amp;#39;pyenv deactivate &amp;amp;&amp;amp; unset PYENV_VERSION&amp;#39;
+oopsmonk@oopsmonk-VBox:~/markdown-note$ pyenv activate mypy-3.4.2
+(mypy-3.4.2) oopsmonk@oopsmonk-VBox:~/markdown-note$ pyenv_deactivate
+oopsmonk@oopsmonk-VBox:~/markdown-note$ python --version
+Python 2.7.6
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;use-python-via-pyenv&#34;&gt;Use python via pyenv&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# Global python version
+$ pyenv global 
+
+# python version in current folder
+oopsmonk@oopsmonk-VBox:~/markdown-note$ pyenv local mypy-3.4.2
+oopsmonk@oopsmonk-VBox:~/markdown-note$ pyenv version
+mypy-3.4.2 (set by /home/oopsmonk/markdown-note/.python-version)
+oopsmonk@oopsmonk-VBox:~/markdown-note$ cd ..
+oopsmonk@oopsmonk-VBox:~$ pyenv version
+system (set by /home/oopsmonk/.pyenv/version)
+oopsmonk@oopsmonk-VBox:~$ cd -
+/home/oopsmonk/markdown-note
+oopsmonk@oopsmonk-VBox:~/markdown-note$ pyenv version
+mypy-3.4.2 (set by /home/oopsmonk/markdown-note/.python-version)
+oopsmonk@oopsmonk-VBox:~/markdown-note$ pyenv local --unset
+oopsmonk@oopsmonk-VBox:~/markdown-note$ pyenv version
+system (set by /home/oopsmonk/.pyenv/version)
+
+# python version in current shell 
+oopsmonk@oopsmonk-VBox:~/markdown-note$ pyenv shell mypy-3.4.2
+oopsmonk@oopsmonk-VBox:~/markdown-note$ pyenv version
+mypy-3.4.2 (set by PYENV_VERSION environment variable)
+oopsmonk@oopsmonk-VBox:~/markdown-note$ cd -
+/home/oopsmonk
+oopsmonk@oopsmonk-VBox:~$ pyenv version
+mypy-3.4.2 (set by PYENV_VERSION environment variable)
+oopsmonk@oopsmonk-VBox:~$ pyenv shell --unset
+oopsmonk@oopsmonk-VBox:~$ pyenv version
+system (set by /home/oopsmonk/.pyenv/version)
+oopsmonk@oopsmonk-VBox:~$ cd -
+/home/oopsmonk/markdown-note
+oopsmonk@oopsmonk-VBox:~/markdown-note$ pyenv version
+system (set by /home/oopsmonk/.pyenv/version)
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
-    
     <item>
       <title>Web dev example : JSON &amp; jQuery Mobile &amp; Bottle</title>
       <link>https://oopsmonk.github.io/posts/2013-08-07-bottlejqueryjson/</link>
       <pubDate>Wed, 07 Aug 2013 01:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2013-08-07-bottlejqueryjson/</guid>
-      <description>Bottle is a fast, simple and lightweight WSGI micro web-framework for Python.
-jQuery Mobile base on jQuery for mobile device.
-jQuery vs. jQuery Mobile vs. jQuery UI
-Install bottle: $ sudo apt-get install python-setuptools $ easy_install bottle Demo server deployment file structure: BottlejQuery ├── bottleJQuery.py └── index.html run command: $ ./bottleJQuery.py connect to server: http://localhost:8080/bottle Building simple web server use bottle bottleJQuery.py #!/usr/bin/env python from bottle import route, static_file, debug, run, get, redirect from bottle import post, request import os, inspect, json #enable bottle debug debug(True) # WebApp route path routePath = &amp;#39;/bottle&amp;#39; # get directory of WebApp (bottleJQuery.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://bottlepy.org/docs/dev/&#34;&gt;Bottle&lt;/a&gt; is a fast, simple and lightweight WSGI micro web-framework for Python.&lt;br&gt;
+&lt;a href=&#34;http://jquerymobile.com/&#34;&gt;jQuery Mobile&lt;/a&gt; base on jQuery for mobile device.&lt;br&gt;
+&lt;a href=&#34;http://stackoverflow.com/questions/6636388/jquery-vs-jquery-mobile-vs-jquery-ui&#34;&gt;jQuery vs. jQuery Mobile vs. jQuery UI&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;install-bottle&#34;&gt;Install bottle:&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt-get install python-setuptools
+$ easy_install bottle
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;demo-server-deployment&#34;&gt;Demo server deployment&lt;/h2&gt;
+&lt;h3 id=&#34;file-structure&#34;&gt;file structure:&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;BottlejQuery
+├── bottleJQuery.py
+└── index.html
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;run-command&#34;&gt;run command:&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;$ ./bottleJQuery.py
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;connect-to-server&#34;&gt;connect to server:&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;http://localhost:8080/bottle  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;building-simple-web-server-use-bottle&#34;&gt;Building simple web server use bottle&lt;/h2&gt;
+&lt;h3 id=&#34;bottlejquerypy&#34;&gt;bottleJQuery.py&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/usr/bin/env python&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; bottle &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; route, static_file, debug, run, get, redirect
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; bottle &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; post, request
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; os&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; inspect&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; json
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#enable bottle debug&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;debug(&lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# WebApp route path&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;routePath &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/bottle&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# get directory of WebApp (bottleJQuery.py&amp;#39;s dir)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rootPath &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; os&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;path&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;dirname(os&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;path&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;abspath(inspect&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;getfile(inspect&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;currentframe())))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@route&lt;/span&gt;(routePath)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;rootHome&lt;/span&gt;():
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; redirect(routePath&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/index.html&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@route&lt;/span&gt;(routePath &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/&amp;lt;filename:re:.*\.html&amp;gt;&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;html_file&lt;/span&gt;(filename):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; static_file(filename, root&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;rootPath)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@get&lt;/span&gt;(routePath &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/jsontest&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;testJsonGET&lt;/span&gt;():
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;GET Header : &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt; dict(request&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;headers) &lt;span style=&#34;color:#75715e&#34;&gt;#for debug header&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Jone&amp;#34;&lt;/span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@post&lt;/span&gt;(routePath &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/jsontest&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;testJsonPost&lt;/span&gt;():
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;POST Header : &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt; dict(request&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;headers) &lt;span style=&#34;color:#75715e&#34;&gt;#for debug header&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; request&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;json
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;data : &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt; data 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; data &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;None&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; json&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;dumps({&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Status&amp;#39;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Failed!&amp;#34;&lt;/span&gt;})
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; json&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;dumps({&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Status&amp;#39;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Success!&amp;#34;&lt;/span&gt;})
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;run(host&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;localhost&amp;#39;&lt;/span&gt;, port&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;8080&lt;/span&gt;, reloader&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;test-get-request&#34;&gt;Test GET request:&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ curl -i -X GET http://localhost:8080/bottle/jsontest
+
+HTTP/1.0 200 OK
+Date: Wed, 07 Aug 2013 16:03:53 GMT
+Server: WSGIServer/0.1 Python/2.7.3
+Content-Length: 25
+Content-Type: application/json
+
+{&amp;#34;id&amp;#34;: 2, &amp;#34;name&amp;#34;: &amp;#34;Jone&amp;#34;}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;em&gt;bottle debug message:&lt;/em&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Sending HTML Mail Using SMTP With Authorization</title>
       <link>https://oopsmonk.github.io/posts/2013-07-31-sendingmailsmtp/</link>
       <pubDate>Wed, 31 Jul 2013 01:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2013-07-31-sendingmailsmtp/</guid>
-      <description>Here is a text/plain MIME type parts in official exmaple code.
-I remove it from my sample code, because it&amp;rsquo;s not show up in mail at Office Outlook 2010.
-#!/usr/bin/env python &amp;#34;&amp;#34;&amp;#34; File name: sendMail.py Python send HTML mail using SMTP with authorization Usage : ./sendMail.py to@gmail.com Subtitle [ FilePath | txt ] &amp;#34;&amp;#34;&amp;#34; import smtplib import sys,traceback from email.mime.multipart import MIMEMultipart from email.mime.text import MIMEText from time import gmtime, strftime #log file location log_path = &amp;#34;.</description>
+      <description>&lt;p&gt;Here is a  &lt;em&gt;&lt;strong&gt;text/plain&lt;/strong&gt;&lt;/em&gt; MIME type parts in official exmaple code.&lt;br&gt;
+I remove it from my sample code, because it&amp;rsquo;s not show up in mail at Office Outlook 2010.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/usr/bin/env python&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;File name: sendMail.py
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Python send HTML mail using SMTP with authorization
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Usage :
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;./sendMail.py to@gmail.com Subtitle [ FilePath | txt ]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; smtplib
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; sys&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;traceback
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; email.mime.multipart &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; MIMEMultipart
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; email.mime.text &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; MIMEText
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; time &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; gmtime, strftime
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#log file location&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;log_path &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;./mail-log&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#log timestamp format&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;logger_tstamp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;%Y-%m-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%d&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; %H:%M:%S&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#SMPT server&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;smtp_server &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;smtp.gmail.com&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#gmail 465 or 578&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;smtp_port &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;587&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#mail from &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;user &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;from@gmail.com&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pwd &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;password&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# log method&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Logger&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    file &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    err &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ContentType&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    file &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    txt &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#select log method &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;debug_log &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Logger&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;err
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#select content type&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;content_type &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ContentType&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;txt
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;debug&lt;/span&gt;(msg):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; debug_log &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; Logger&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;file:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; open(log_path, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;a&amp;#39;&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; log_file:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            log_file&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;write(strftime(logger_tstamp, gmtime()) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; msg)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        log_file&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;close()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;elif&lt;/span&gt; debug_log &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; Logger&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;err:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        sys&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;stderr&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;write(strftime(logger_tstamp, gmtime()) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; msg)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;: 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        print(strftime(logger_tstamp, gmtime()) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; msg)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#check argument number&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;arg_count &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; len(sys&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;argv)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; arg_count &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    debug(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[Error]: invalid argument&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    sys&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;exit(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;try&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    mail_to &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sys&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;argv[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    subject &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sys&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;argv[&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; content_type &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; ContentType&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;file:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        content_path &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sys&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;argv[&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; open(content_path, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;r&amp;#39;&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; f_content:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            content &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; f_content&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        f_content&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;close()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        content &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sys&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;argv[&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    serv &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; smtplib&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;SMTP(smtp_server, smtp_port)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#    serv.ehlo()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    serv&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;starttls()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#    serv.ehlo()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    serv&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;login(user, pwd);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    msg &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; MIMEMultipart(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;alternative&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    msg[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Subject&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; subject
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    msg[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;From&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; user
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    msg[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;To&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mail_to
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    part1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; MIMEText(content, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;html&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    msg&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;attach(part1)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    serv&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sendmail(user, mail_to, msg&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;as_string())
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    serv&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;quit()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    debug(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[Debug] subject : &amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; subject &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;except&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    debug(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[Error]: send mail error&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    debug(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[Error]:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; traceback&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;format_exc())
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    sys&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;exit(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Reference:&lt;br&gt;
+&lt;a href=&#34;http://docs.python.org/2/library/email-examples.html&#34;&gt;email: Examples&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://docs.python.org/2/library/smtplib.html&#34;&gt;smtplib&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://www.mkyong.com/python/how-do-send-email-in-python-via-smtplib/&#34;&gt;How to send email in Python via SMTPLIB&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Nginx Error - 413 Request Entity Too Large</title>
       <link>https://oopsmonk.github.io/posts/2013-06-05-nginxerror413/</link>
       <pubDate>Wed, 05 Jun 2013 01:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2013-06-05-nginxerror413/</guid>
-      <description>nginx version: nginx/1.1.19, OS: Ubuntu12.04
-Default nginx accepted body size limitation is 1MB.
-You can add client_max_body_size in nginx.conf.
-This parameter can put in http, server and location sections of configutation file.
-Enlarge body size to 10MB
-client_max_body_size 10M Or just disable it
-client_max_body_size 0 For example enlarge body size to 10MB
-Add to http section:
-$ sudo vi /etc/nginx/nginx.conf http { ## # Basic Settings ## sendfile on; tcp_nopush on; tcp_nodelay on; keepalive_timeout 65; types_hash_max_size 2048; client_max_body_size 10M; # server_tokens off; # server_names_hash_bucket_size 64; # server_name_in_redirect off; include /etc/nginx/mime.</description>
+      <description>&lt;p&gt;&lt;strong&gt;nginx version: nginx/1.1.19, OS: Ubuntu12.04&lt;/strong&gt;&lt;br&gt;
+Default nginx accepted body size limitation is 1MB.&lt;br&gt;
+You can add &lt;a href=&#34;http://wiki.nginx.org/HttpCoreModule#client_max_body_size&#34;&gt;client_max_body_size&lt;/a&gt; in &lt;code&gt;nginx.conf&lt;/code&gt;.&lt;br&gt;
+This parameter can put in &lt;code&gt;http&lt;/code&gt;, &lt;code&gt;server&lt;/code&gt; and &lt;code&gt;location&lt;/code&gt; sections of configutation file.&lt;br&gt;
+Enlarge body size to 10MB&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;client_max_body_size 10M  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or just disable it&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;client_max_body_size 0  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For example enlarge body size to 10MB&lt;br&gt;
+Add to &lt;code&gt;http&lt;/code&gt; section:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ sudo vi /etc/nginx/nginx.conf  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;http &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;##&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;# Basic Settings&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;##&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        sendfile on;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        tcp_nopush on;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        tcp_nodelay on;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        keepalive_timeout 65;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        types_hash_max_size 2048;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        client_max_body_size 10M;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;# server_tokens off;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;# server_names_hash_bucket_size 64;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;# server_name_in_redirect off;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        include /etc/nginx/mime.types;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        default_type application/octet-stream;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Or modify &lt;code&gt;server&lt;/code&gt; and &lt;code&gt;location&lt;/code&gt; section&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Web Micro Framework Battle</title>
       <link>https://oopsmonk.github.io/posts/2013-05-27-pythonwebmicroframwork/</link>
       <pubDate>Mon, 27 May 2013 00:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2013-05-27-pythonwebmicroframwork/</guid>
-      <description>WSGI Micro Framworks 這陣子一直在找適合的Micro Framwork玩第一次的Web Application.
-最後選擇用Bottle, 原因是:
-Single file module, no dependencies with other library. Document 但是好不好用又是另一回事, 用了就知道..XD
-以下是由WSGI.org列出的Micro Framwork:
-bobo
-Bobo is a light-weight framework. Its goal is to be easy to use and remember.
-Bottle
-Bottle is a fast and simple micro-framework for small web-applications. It offers request dispatching (Routes) with url parameter support, Templates, key/value Databases, a build-in HTTP Server and adapters for many third party WSGI/HTTP-server and template engines.</description>
+      <description>&lt;h2 id=&#34;wsgi-micro-framworks&#34;&gt;WSGI Micro Framworks&lt;/h2&gt;
+&lt;p&gt;這陣子一直在找適合的Micro Framwork玩第一次的Web Application.&lt;br&gt;
+最後選擇用&lt;a href=&#34;http://bottle.paws.de/&#34;&gt;Bottle&lt;/a&gt;, 原因是:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Single file module, no dependencies with other library.&lt;/li&gt;
+&lt;li&gt;Document&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;但是好不好用又是另一回事, 用了就知道..XD&lt;/p&gt;
+&lt;p&gt;以下是由&lt;a href=&#34;http://wsgi.readthedocs.org/en/latest/index.html&#34;&gt;WSGI.org&lt;/a&gt;列出的Micro &lt;a href=&#34;http://wsgi.readthedocs.org/en/latest/frameworks.html&#34;&gt;Framwork&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://bobo.digicool.com/&#34;&gt;bobo&lt;/a&gt;&lt;br&gt;
+Bobo is a light-weight framework. Its goal is to be easy to use and remember.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://bottle.paws.de/&#34;&gt;Bottle&lt;/a&gt;&lt;br&gt;
+Bottle is a fast and simple micro-framework for small web-applications. It offers request dispatching (Routes) with url parameter support, Templates, key/value Databases, a build-in HTTP Server and adapters for many third party WSGI/HTTP-server and template engines. All in a single file and with no dependencies other than the Python Standard Library.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

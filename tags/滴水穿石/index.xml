@@ -9,348 +9,635 @@
       <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
       <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Dec 2018 11:35:58 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/%E6%BB%B4%E6%B0%B4%E7%A9%BF%E7%9F%B3/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Dec 2018 11:35:58 +0800</lastBuildDate>
+    <atom:link href="https://oopsmonk.github.io/tags/%E6%BB%B4%E6%B0%B4%E7%A9%BF%E7%9F%B3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RPi vs i5-8250U</title>
       <link>https://oopsmonk.github.io/posts/2018-12-01-month12/</link>
       <pubDate>Sat, 01 Dec 2018 11:35:58 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2018-12-01-month12/</guid>
-      <description>utarray benchmarking
-Week48~52 小筆記 bazel installation on Raspberry Pi Issue#1308
-$ sudo apt-get install build-essential openjdk-8-jdk python zip unzip $ wget https://github.com/bazelbuild/bazel/releases/download/0.19.2/bazel-0.19.2-dist.zip $ mkdir bazel-0.19.2 &amp;amp;&amp;amp; unzip ./bazel-0.19.2-dist.zip -d bazel-0.19.2 $ cd bazel-0.19.2 $ env BAZEL_JAVAC_OPTS=&amp;#34;-J-Xms384m -J-Xmx512m&amp;#34; bash ./compile.sh 🍃 Building Bazel from scratch...... 🍃 Building Bazel with Bazel. .WARNING: --batch mode is deprecated. Please instead explicitly shut down your Bazel server using the command &amp;#34;bazel shutdown&amp;#34;. INFO: Analysed target //src:bazel_nojdk (233 packages loaded, 10401 targets configured).</description>
+      <description>&lt;p&gt;utarray benchmarking&lt;/p&gt;
+&lt;h1 id=&#34;week4852&#34;&gt;Week48~52&lt;/h1&gt;
+&lt;h2 id=&#34;小筆記&#34;&gt;小筆記&lt;/h2&gt;
+&lt;h3 id=&#34;bazel-installation-on-raspberry-pi&#34;&gt;bazel installation on Raspberry Pi&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/bazelbuild/bazel/issues/1308#issuecomment-221405546&#34;&gt;Issue#1308&lt;/a&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt-get install build-essential openjdk-8-jdk python zip unzip
+$ wget https://github.com/bazelbuild/bazel/releases/download/0.19.2/bazel-0.19.2-dist.zip 
+$ mkdir bazel-0.19.2 &amp;amp;&amp;amp; unzip ./bazel-0.19.2-dist.zip -d bazel-0.19.2
+$ cd bazel-0.19.2
+$ env BAZEL_JAVAC_OPTS=&amp;#34;-J-Xms384m -J-Xmx512m&amp;#34; bash ./compile.sh
+🍃  Building Bazel from scratch......
+🍃  Building Bazel with Bazel.
+.WARNING: --batch mode is deprecated. Please instead explicitly shut down your Bazel server using the command &amp;#34;bazel shutdown&amp;#34;.
+INFO: Analysed target //src:bazel_nojdk (233 packages loaded, 10401 targets configured).
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;workaround-for-vs-code-middle-click-paste&#34;&gt;Workaround for VS Code middle click paste.&lt;/h3&gt;
+&lt;p&gt;VS Code在Ubuntu裡滑鼠中鍵的複製貼上功能會造成看程式時的困擾&lt;br&gt;
+&lt;a href=&#34;https://github.com/Microsoft/vscode/issues/49305&#34;&gt;Issue#49305&lt;/a&gt;&lt;br&gt;
+It cause a problem when browsing source code in VS code, here is an alternative solution.
+&lt;a href=&#34;https://wiki.ubuntu.com/X/Config/Input#Example%3a_Disabling_middle-mouse_button_paste_on_a_scrollwheel_mouse&#34;&gt;&lt;strong&gt;Disable middle paste on Xubuntu 18.04&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>RPi Home</title>
       <link>https://oopsmonk.github.io/posts/2018-10-14-2018month10/</link>
       <pubDate>Sun, 14 Oct 2018 20:40:28 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2018-10-14-2018month10/</guid>
-      <description>Test Google Asistant on Raspberry Pi.
-Week40~44 (10/01~10/31) 網路文章 Wi-Fi 6: What’s Different, and Why it Matters
-網路資源 Raspberry Pi BT setup
-Turn your Raspberry Pi into homemade Google Home
-Google Asistant SDK
-Google Asistant SDK C++ 使用Python lib常常會當機改用C++比較沒問題, 但C++版本有限制API使用的次數, 無法長期使用.</description>
+      <description>&lt;p&gt;Test Google Asistant on Raspberry Pi.&lt;/p&gt;
+&lt;h1 id=&#34;week4044-10011031&#34;&gt;Week40&lt;del&gt;44 (10/01&lt;/del&gt;10/31)&lt;/h1&gt;
+&lt;h2 id=&#34;網路文章&#34;&gt;網路文章&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.howtogeek.com/368332/wi-fi-6-what%E2%80%99s-different-and-why-it-matters/&#34;&gt;Wi-Fi 6: What’s Different, and Why it Matters&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;網路資源&#34;&gt;網路資源&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://ma-za.blogspot.com/2018/01/raspberry-bluetooth-pulseaudio-and-alexa.html&#34;&gt;Raspberry Pi BT setup&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://medium.com/@kevalpatel2106/turn-your-raspberry-pi-into-homemade-google-home-9e29ad220075&#34;&gt;Turn your Raspberry Pi into homemade Google Home&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://developers.google.com/assistant/sdk/overview&#34;&gt;Google Asistant SDK&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://github.com/googlesamples/assistant-sdk-cpp&#34;&gt;Google Asistant SDK C++&lt;/a&gt;
+使用Python lib常常會當機改用C++比較沒問題, 但C++版本有限制API使用的次數, 無法長期使用.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>How many pointers you can have?</title>
       <link>https://oopsmonk.github.io/posts/2018-08-22-2018month8/</link>
       <pubDate>Wed, 22 Aug 2018 21:10:01 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2018-08-22-2018month8/</guid>
-      <description>Pointers, again&amp;hellip;
-How many pointers you can have?
-C89: 12
-Week31~35 (07/29~08/31) 網路文章 What is the difference between const int*, const int * const, and int const *?
-Read it backwards (as driven by Clockwise/Spiral Rule):
-int* - pointer to int
-int const * - pointer to const int
-int * const - const pointer to int
-int const * const - const pointer to const int
-Now the first const can be on either side of the type so:</description>
+      <description>&lt;p&gt;Pointers, again&amp;hellip;&lt;br&gt;
+How many pointers you can have?&lt;br&gt;
+C89: 12&lt;/p&gt;
+&lt;h1 id=&#34;week3135-07290831&#34;&gt;Week31&lt;del&gt;35 (07/29&lt;/del&gt;08/31)&lt;/h1&gt;
+&lt;h2 id=&#34;網路文章&#34;&gt;網路文章&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://stackoverflow.com/questions/1143262/what-is-the-difference-between-const-int-const-int-const-and-int-const&#34;&gt;What is the difference between const int*, const int * const, and int const *?&lt;/a&gt;&lt;br&gt;
+Read it backwards (as driven by &lt;a href=&#34;http://c-faq.com/decl/spiral.anderson.html&#34;&gt;Clockwise/Spiral Rule&lt;/a&gt;):&lt;br&gt;
+&lt;code&gt;int*&lt;/code&gt; - pointer to int&lt;br&gt;
+&lt;code&gt;int const *&lt;/code&gt; - pointer to const int&lt;br&gt;
+&lt;code&gt;int * const&lt;/code&gt; - const pointer to int&lt;br&gt;
+&lt;code&gt;int const *&lt;/code&gt; const - const pointer to const int&lt;/p&gt;
+&lt;p&gt;Now the first const can be on either side of the type so:&lt;br&gt;
+&lt;code&gt;const int *&lt;/code&gt; == &lt;code&gt;int const *&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;const int * const&lt;/code&gt; == &lt;code&gt;int const * const&lt;/code&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Energetic People!</title>
       <link>https://oopsmonk.github.io/posts/2018-06-30-2018month7/</link>
       <pubDate>Sat, 30 Jun 2018 16:41:34 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2018-06-30-2018month7/</guid>
-      <description>It&amp;rsquo;s blocks and no chain, keep fighting!
-Week27~30 (07/01~27) 網路文章 IOTA Summer Summit 2018</description>
+      <description>&lt;p&gt;It&amp;rsquo;s blocks and no chain, keep fighting!&lt;/p&gt;
+&lt;h1 id=&#34;week2730-070127&#34;&gt;Week27&lt;del&gt;30 (07/01&lt;/del&gt;27)&lt;/h1&gt;
+&lt;h2 id=&#34;網路文章&#34;&gt;網路文章&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.iota.org/iota-summer-summit-2018-9f9ced6ec1fe&#34;&gt;IOTA Summer Summit 2018&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2018-Month7/DSCF8012_re.JPG&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hell Yeah! Keep Fighting</title>
       <link>https://oopsmonk.github.io/posts/2018-05-29-2018month6/</link>
       <pubDate>Tue, 29 May 2018 16:48:40 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2018-05-29-2018month6/</guid>
-      <description>More bad ideas + Generosity = Good ideas
-Week22~26 (06/01~29) 網路文章 Elon Musk emails employees about &amp;rsquo;extensive and damaging sabotage&amp;rsquo; by employee
-樹大招風&amp;hellip;.但內部管理是否有問題?
-溝通一直是最難處理的問題之一, 尤其是資訊不對等的情況下.
-網路資源 esp32-websocket
-websocket component for esp-idf.
-讀書心得 論文學習 </description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://seths.blog/2018/06/the-two-simple-secrets-to-good-ideas/&#34;&gt;More bad ideas + Generosity = Good ideas&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;week2226-060129&#34;&gt;Week22&lt;del&gt;26 (06/01&lt;/del&gt;29)&lt;/h1&gt;
+&lt;h2 id=&#34;網路文章&#34;&gt;網路文章&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.cnbc.com/2018/06/18/elon-musk-email-employee-conducted-extensive-and-damaging-sabotage.html&#34;&gt;Elon Musk emails employees about &amp;rsquo;extensive and damaging sabotage&amp;rsquo; by employee&lt;/a&gt;&lt;br&gt;
+樹大招風&amp;hellip;.但內部管理是否有問題?&lt;br&gt;
+溝通一直是最難處理的問題之一, 尤其是資訊不對等的情況下.&lt;/p&gt;
+&lt;h2 id=&#34;網路資源&#34;&gt;網路資源&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Molorius/esp32-websocket&#34;&gt;esp32-websocket&lt;/a&gt;&lt;br&gt;
+websocket component for esp-idf.&lt;/p&gt;
+&lt;h2 id=&#34;讀書心得&#34;&gt;讀書心得&lt;/h2&gt;
+&lt;h2 id=&#34;論文學習&#34;&gt;論文學習&lt;/h2&gt;</description>
     </item>
-    
     <item>
       <title>What Does The Fox Say?</title>
       <link>https://oopsmonk.github.io/posts/2018-04-30-2018month5/</link>
       <pubDate>Tue, 01 May 2018 09:10:34 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2018-04-30-2018month5/</guid>
-      <description>Okinawa Churaumi Aquarium
-Kouri Bridge - The Longest Bridge in Okinawa
-Week18~21 (05/04~25) 網路文章 Students are being prepared for jobs that no longer exist. Here&amp;rsquo;s how that could change.
-NBC關於美國高中教育的深入報導, 提到現在的教育方式已經無法保證讓學生找到理想的工作，尤其是技職生. 文中提到几個點:
-高中準時畢業的人有84%, 後來70%直升大學. 雖然學校盡力教導讓學生面對未來, 但學校也不知將來會是如何, 因為計劃跟不上變化. “We’re preparing kids for these jobs of tomorrow, but we really don’t even know what they are,” 2016年的調查, 只有34%的高中生(12th-graders) 對學習感到興趣. 公立大學(University of Massachusetts Lowell)1年的學費大約37萬台幣($12,496USD), 私立大學(Elmhurst College)學費約140萬台幣($47,121USD), 另一所公立大學(University of Minnesota)學費約91萬台幣($30,514USD). 另外自己查了一下哈佛大學每年學費138萬台幣(46,340USD), 以上都是只有學費, 如果加上宿舍及雜費大約是202萬台幣($67,580USD). 至2017年底美國的學貸已高達1.38兆美元, 房貸8.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Okinawa Churaumi Aquarium&lt;/strong&gt;&lt;br&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2018-Month5/20180521_OkinawaChuraumiAquarium.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Kouri Bridge - The Longest Bridge in Okinawa&lt;/strong&gt;&lt;br&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2018-Month5/20180521_KouriBridge.png&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;week1821-050425&#34;&gt;Week18&lt;del&gt;21 (05/04&lt;/del&gt;25)&lt;/h1&gt;
+&lt;h2 id=&#34;網路文章&#34;&gt;網路文章&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.nbcnews.com/news/us-news/students-are-being-prepared-jobs-no-longer-exist-here-s-n865096&#34;&gt;Students are being prepared for jobs that no longer exist. Here&amp;rsquo;s how that could change.&lt;/a&gt;&lt;br&gt;
+NBC關於美國高中教育的深入報導, 提到現在的教育方式已經無法保證讓學生找到理想的工作，尤其是技職生.
+文中提到几個點:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;高中準時畢業的人有84%, 後來70%直升大學.&lt;/li&gt;
+&lt;li&gt;雖然學校盡力教導讓學生面對未來, 但學校也不知將來會是如何, 因為計劃跟不上變化. “We’re preparing kids for these jobs of tomorrow, but we really don’t even know what they are,”&lt;/li&gt;
+&lt;li&gt;2016年的調查, 只有34%的高中生(12th-graders) 對學習感到興趣.&lt;/li&gt;
+&lt;li&gt;公立大學(University of Massachusetts Lowell)1年的學費大約37萬台幣($12,496USD), 私立大學(Elmhurst College)學費約140萬台幣($47,121USD), 另一所公立大學(University of Minnesota)學費約91萬台幣($30,514USD). 另外自己查了一下哈佛大學每年學費138萬台幣(46,340USD), 以上都是只有學費, 如果加上宿舍及雜費大約是202萬台幣($67,580USD).&lt;/li&gt;
+&lt;li&gt;至2017年底美國的學貸已高達1.38兆美元, 房貸8.88兆美元, 信用卡債8340億美元. 53%大學生有學貸. Ref: &lt;a href=&#34;https://www.newyorkfed.org/newsevents/news/research/2018/rp180213&#34;&gt;https://www.newyorkfed.org/newsevents/news/research/2018/rp180213&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;醫護助理平均年薪67萬台幣($22,600USD), 2017年金融保險業年薪中位數約306萬台幣($102，510), 科技業約303萬台幣($101，430), 政府單位約295萬台幣($98,830), 所有職業中位數約113萬台幣($37,690). Ref: &lt;a href=&#34;https://www.bls.gov/ooh/math/actuaries.htm#tab-5&#34;&gt;https://www.bls.gov/ooh/math/actuaries.htm#tab-5&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;網路資源&#34;&gt;網路資源&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://syscalls.kernelgrok.com/&#34;&gt;Linux Syscall Reference&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Tangled</title>
       <link>https://oopsmonk.github.io/posts/2018-04-02-2018month4/</link>
       <pubDate>Mon, 30 Apr 2018 08:13:28 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2018-04-02-2018month4/</guid>
-      <description>Algorithm, Blockchain, Coursera
-真心推Coursera上的Data Structures and Algorithms Specialization, 挑有興趣的就好.
-2017年底至今拿了4張Certifications, Algorithms on Graphs是比較有趣的課程.
-其它3張是Algorithmic Toolbox, Data Structures, Algorithms on Strings
-Week14 (04/06) 讀書心得 Burrows-Wheeler Transform - data compression
-Cyclic rotation Sorting Last column Inverting Burrows-wheeler transform
-Mark the occurrence of characters Putting sorted bwt string to frist column Knuth–Morris–Pratt - string searching algorithm (or KMP algorithm)
-Suffix array - a sorted array of all suffixes of a string.
-Week15 (04/13) Week16 (04/20) Week17 (04/27) 網路文章 World’s first IOTA Smart Charging Station</description>
+      <description>&lt;p&gt;Algorithm, Blockchain, Coursera&lt;/p&gt;
+&lt;p&gt;真心推Coursera上的&lt;a href=&#34;https://www.coursera.org/specializations/data-structures-algorithms&#34;&gt;Data Structures and Algorithms Specialization&lt;/a&gt;, 挑有興趣的就好.&lt;br&gt;
+2017年底至今拿了4張Certifications, &lt;a href=&#34;https://www.coursera.org/account/accomplishments/verify/77SDSNEQDSYP&#34;&gt;Algorithms on Graphs&lt;/a&gt;是比較有趣的課程.&lt;br&gt;
+其它3張是&lt;a href=&#34;https://www.coursera.org/account/accomplishments/verify/BCQY4DC476JA&#34;&gt;Algorithmic Toolbox&lt;/a&gt;, &lt;a href=&#34;https://www.coursera.org/account/accomplishments/verify/22F5PWDGVM72&#34;&gt;Data Structures&lt;/a&gt;, &lt;a href=&#34;https://www.coursera.org/account/accomplishments/verify/4HRLWX5A8HFV&#34;&gt;Algorithms on Strings&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;week14-0406&#34;&gt;Week14 (04/06)&lt;/h1&gt;
+&lt;h2 id=&#34;讀書心得&#34;&gt;讀書心得&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Burrows%E2%80%93Wheeler_transform&#34;&gt;Burrows-Wheeler Transform&lt;/a&gt; - data compression&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cyclic rotation&lt;/li&gt;
+&lt;li&gt;Sorting&lt;/li&gt;
+&lt;li&gt;Last column&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2018-Month4/bwt.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Inverting Burrows-wheeler transform&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mark the occurrence of characters&lt;/li&gt;
+&lt;li&gt;Putting sorted bwt string to frist column&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2018-Month4/ibwt.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm&#34;&gt;Knuth–Morris–Pratt&lt;/a&gt; - string searching algorithm (or KMP algorithm)&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2018-Month4/kmp.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2018-Month4/kmp1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Suffix_array&#34;&gt;Suffix array&lt;/a&gt; - a sorted array of all suffixes of a string.&lt;/p&gt;
+&lt;h1 id=&#34;week15-0413&#34;&gt;Week15 (04/13)&lt;/h1&gt;
+&lt;h1 id=&#34;week16-0420&#34;&gt;Week16 (04/20)&lt;/h1&gt;
+&lt;h1 id=&#34;week17-0427&#34;&gt;Week17 (04/27)&lt;/h1&gt;
+&lt;h2 id=&#34;網路文章&#34;&gt;網路文章&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.iota.org/worlds-first-iota-smart-charging-station-52f9024db788&#34;&gt;World’s first IOTA Smart Charging Station&lt;/a&gt;&lt;br&gt;
+哦哦哦！M2M.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Never Split the Difference</title>
       <link>https://oopsmonk.github.io/posts/2018-03-01-2018month3/</link>
       <pubDate>Thu, 01 Mar 2018 17:01:06 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2018-03-01-2018month3/</guid>
-      <description>Debug, Debug, Debug&amp;hellip;, Muscle Up Tips
-Week9 (03/02) 讀書心得 FBI談判協商術
-積極聆聽, 鏡像模仿, 極端錨點, 開放型/測試型/校準型問題, 對事不對人, 每個人都怕失去, 成見使人盲目, 假設提供指引.
-The power of &amp;ldquo;No&amp;rdquo;, Three types of &amp;ldquo;Yes&amp;rdquo;, The power of &amp;ldquo;Right&amp;rdquo;, Emotion is one of the keys, Be Honest.
-Thinking fast and slow.
-Week10 (03/09) 網路資源 Chris Voss: Never Split the Difference
-Week11 (03/16) 網路文章 Android Treble: blessing or trouble?
-Diving into SDCardFS: How Google’s FUSE Replacement Will Reduce I/O Overhead</description>
+      <description>&lt;p&gt;Debug, Debug, Debug&amp;hellip;, Muscle Up Tips&lt;/p&gt;
+&lt;h1 id=&#34;week9-0302&#34;&gt;Week9 (03/02)&lt;/h1&gt;
+&lt;h2 id=&#34;讀書心得&#34;&gt;讀書心得&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.books.com.tw/products/0010725672&#34;&gt;FBI談判協商術&lt;/a&gt;&lt;br&gt;
+積極聆聽, 鏡像模仿, 極端錨點, 開放型/測試型/校準型問題, 對事不對人, 每個人都怕失去, 成見使人盲目, 假設提供指引.&lt;br&gt;
+The power of &amp;ldquo;No&amp;rdquo;, Three types of &amp;ldquo;Yes&amp;rdquo;, The power of &amp;ldquo;Right&amp;rdquo;, Emotion is one of the keys, Be Honest.&lt;br&gt;
+Thinking fast and slow.&lt;/p&gt;
+&lt;h1 id=&#34;week10-0309&#34;&gt;Week10 (03/09)&lt;/h1&gt;
+&lt;h2 id=&#34;網路資源&#34;&gt;網路資源&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=guZa7mQV1l0&#34;&gt;Chris Voss: Never Split the Difference&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;week11-0316&#34;&gt;Week11 (03/16)&lt;/h1&gt;
+&lt;h2 id=&#34;網路文章&#34;&gt;網路文章&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.hatchmfg.com/android-treble-blessing-or-trouble-part-iv/&#34;&gt;Android Treble: blessing or trouble?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.xda-developers.com/diving-into-sdcardfs-how-googles-fuse-replacement-will-reduce-io-overhead/&#34;&gt;Diving into SDCardFS: How Google’s FUSE Replacement Will Reduce I/O Overhead&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>cache not cash...</title>
       <link>https://oopsmonk.github.io/posts/2018-01-26-2018month2/</link>
       <pubDate>Wed, 28 Feb 2018 15:14:51 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2018-01-26-2018month2/</guid>
-      <description>Android, Chinese New Year, blockchain, Cache miss
-Week5 (02/02) 這個月雖然有年假但比平常更忙！ 結論: 放假不一定放鬆, 想專心做事 :-)
-網路文章 Processor Pipeline
-Gallery of Processor Cache Effects
-Using Streamline to Guide Cache Optimization
-參考這篇分析Kodi17.6影片播放時的L1/L2 cache access情況, 播放2160p影片時L1/L2 data ratios不高分別在0.046/0.18, 使用Kodi18更少分別為0.041/0.16.
-另外Kodi18在記憶體使用上比17.6減少3.6%, cache miss 減少47~55%. Cache Refill Ratios算法
-L1 data ratio: $CacheDataRefill/$CacheDataAccess
-L2 data ratio: $CacheL2DataRefill/$CacheL2DataAccess
-網路資源 Blockchain Demo
-大略的介紹blockchain, 簡單明瞭.</description>
+      <description>&lt;p&gt;Android, Chinese New Year, blockchain, Cache miss&lt;/p&gt;
+&lt;h1 id=&#34;week5-0202&#34;&gt;Week5 (02/02)&lt;/h1&gt;
+&lt;p&gt;這個月雖然有年假但比平常更忙！ 結論: 放假不一定放鬆, 想專心做事 :-)&lt;/p&gt;
+&lt;h2 id=&#34;網路文章&#34;&gt;網路文章&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.slideshare.net/siddiqueibrahim37/pipelining-41608675&#34;&gt;Processor Pipeline&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://igoro.com/archive/gallery-of-processor-cache-effects/&#34;&gt;Gallery of Processor Cache Effects&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://community.arm.com/tools/b/blog/posts/using-streamline-to-guide-cache-optimization&#34;&gt;Using Streamline to Guide Cache Optimization&lt;/a&gt;&lt;br&gt;
+參考這篇分析Kodi17.6影片播放時的L1/L2 cache access情況, 播放2160p影片時L1/L2 data ratios不高分別在0.046/0.18, 使用Kodi18更少分別為0.041/0.16.&lt;br&gt;
+另外Kodi18在記憶體使用上比17.6減少3.6%, cache miss 減少47~55%.
+Cache Refill Ratios算法&lt;br&gt;
+L1 data ratio: $CacheDataRefill/$CacheDataAccess&lt;br&gt;
+L2 data ratio: $CacheL2DataRefill/$CacheL2DataAccess&lt;/p&gt;
+&lt;h2 id=&#34;網路資源&#34;&gt;網路資源&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://anders.com/blockchain/&#34;&gt;Blockchain Demo&lt;/a&gt;&lt;br&gt;
+大略的介紹blockchain, 簡單明瞭.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Is there a shortcut?</title>
       <link>https://oopsmonk.github.io/posts/2018-01-02-2018month1/</link>
       <pubDate>Fri, 26 Jan 2018 11:35:41 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2018-01-02-2018month1/</guid>
-      <description>Android, Algorithms
-Week1 (01/05) 讀書心得 Algorithms on Graphs - Week5 給出座標上n個點:
-找出最短路徑(the shortest path) 分群(Clustering) 為Minimun Spanning Tree相關問題, 可以使用Kruskal’s MST Algorithm 及Disjoint-set 來解.
-for all u ∈ V : MakeSet(v ) X ← empty set // a set with solution edges sort the edges E by weight for all {u, v } ∈ E in non-decreasing weight order: if Find(u) != Find(v): add {u, v } to X Union(u, v ) return X Week2 (01/12) 網路文章 Android编译系统中的Android.</description>
+      <description>&lt;p&gt;Android, Algorithms&lt;/p&gt;
+&lt;h1 id=&#34;week1-0105&#34;&gt;Week1 (01/05)&lt;/h1&gt;
+&lt;h2 id=&#34;讀書心得&#34;&gt;讀書心得&lt;/h2&gt;
+&lt;h3 id=&#34;algorithms-on-graphs---week5httpswwwcourseraorglearnalgorithms-on-graphs&#34;&gt;&lt;a href=&#34;https://www.coursera.org/learn/algorithms-on-graphs&#34;&gt;Algorithms on Graphs - Week5&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;給出座標上n個點:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;找出最短路徑(the shortest path)&lt;/li&gt;
+&lt;li&gt;分群(Clustering)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;為Minimun Spanning Tree相關問題, 可以使用Kruskal’s MST Algorithm 及&lt;a href=&#34;https://en.wikipedia.org/wiki/Disjoint-set_data_structure&#34;&gt;Disjoint-set&lt;/a&gt; 來解.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;for all u ∈ V :
+    MakeSet(v )
+X ← empty set 	// a set with solution edges
+sort the edges E by weight
+for all {u, v } ∈ E in non-decreasing
+    weight order:
+    if Find(u) != Find(v):
+	add {u, v } to X
+	Union(u, v )
+return X
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;week2-0112&#34;&gt;Week2 (01/12)&lt;/h1&gt;
+&lt;h2 id=&#34;網路文章&#34;&gt;網路文章&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://note.qidong.name/2017/08/android-blueprint/&#34;&gt;Android编译系统中的Android.bp、Blueprint与Soong&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Resolution and Revolution! </title>
       <link>https://oopsmonk.github.io/posts/2017-11-24-2017month12/</link>
       <pubDate>Sun, 31 Dec 2017 09:52:02 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-11-24-2017month12/</guid>
-      <description>SEAndroid, Algorithms, Numpy
-Android N -&amp;gt; O 被自己的石頭砸到腳 對於晶片廠來說Android決解了軟體開發的問題, 也加速了ODM/OEM的開發時程.
-沒錯&amp;hellip;但對於手機/電視之外的應用..存在些問題.
-另外差異化及客制帶來些不定時炸彈.
-Sepolicy for Android Treble 使用numpy array修改pixel values. 網路資源 Machine Learning 101 - Jason Mayes
-New year&amp;rsquo;s resolutions IELTS overall 6.5 Data Structures and Algorithms Specialization Master of Computer Science in Data Science </description>
+      <description>&lt;p&gt;SEAndroid, Algorithms, Numpy&lt;/p&gt;
+&lt;h2 id=&#34;android-n---o-被自己的石頭砸到腳&#34;&gt;Android N -&amp;gt; O 被自己的石頭砸到腳&lt;/h2&gt;
+&lt;p&gt;對於晶片廠來說Android決解了軟體開發的問題, 也加速了ODM/OEM的開發時程.&lt;br&gt;
+沒錯&amp;hellip;但對於手機/電視之外的應用..存在些問題.&lt;br&gt;
+另外差異化及客制帶來些不定時炸彈.&lt;/p&gt;
+&lt;h2 id=&#34;sepolicy-for-android-trebleblog20171220sepolicy-for-android-treble&#34;&gt;&lt;a href=&#34;https://oopsmonk.github.io/blog/2017/12/20/sepolicy-for-android-treble&#34;&gt;Sepolicy for Android Treble&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;使用numpy-array修改pixel-values&#34;&gt;使用numpy array修改pixel values.&lt;/h2&gt;
+&lt;script src=&#34;https://gist.github.com/oopsmonk/8da2a513882b4f9a8ce9cbffbc63193a.js&#34;&gt;&lt;/script&gt;
+&lt;h2 id=&#34;網路資源&#34;&gt;網路資源&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1kSuQyW5DTnkVaZEjGYCkfOxvzCqGEFzWBy4e9Uedd9k/preview?slide=id.g168a3288f7_0_58&#34;&gt;Machine Learning 101 - Jason Mayes&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;new-years-resolutions&#34;&gt;New year&amp;rsquo;s resolutions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;IELTS overall 6.5&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.coursera.org/specializations/data-structures-algorithms&#34;&gt;Data Structures and Algorithms Specialization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.coursera.org/degrees/masters-in-computer-data-science&#34;&gt;Master of Computer Science in Data Science&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>Preparing a preparation?! It&#39;s nonsense...</title>
       <link>https://oopsmonk.github.io/posts/2017-10-27-2017month11/</link>
       <pubDate>Fri, 24 Nov 2017 14:10:54 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-10-27-2017month11/</guid>
-      <description>SELinux, Arm Tech Symposia 2017 Taiwan, golang, IoT
-Week44 (11/03) 網路資源 Firmware Updates over Low-Power Wide Area Networks
-Enabling firmware updates over LPWAN
-ARMmbed/lorawan-fota-demo
-滿有趣的問題, IoT建置會預期device要能長達10年的壽命, 但10年間的變化是很大的.
-Week45 (11/10) 網路文章 Android SELinux Treble
-Android O 為了加速產品開發, 在framework上有重大的改變, 使用了Treble.
-Vender, ODM, OEM有各自需要維護的partitions.
-Week46 (11/17) 網路文章 Neural fuzzing: applying DNN to software security testing
-好奇其它的nural networks的應用, 常看到CNN.
-網路資源 hacdias/filemanager
-感覺不錯用的web filemanager, 目前很有活力, 送了一個PR不到1天就被merge了.
-讀書心得 因為把玩hacdias/filemanager看了一下A Tour of Go在語法上還不太能適應, 不過還滿容易上手的, Method跟Interface的用法還要再研究一下, Concurrency也要花一點時間了解, 必竟concurrency是最大的賣點吧!</description>
+      <description>&lt;p&gt;SELinux, Arm Tech Symposia 2017 Taiwan, golang, IoT&lt;/p&gt;
+&lt;h1 id=&#34;week44-1103&#34;&gt;Week44 (11/03)&lt;/h1&gt;
+&lt;h2 id=&#34;網路資源&#34;&gt;網路資源&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.thethingsnetwork.org/article/firmware-updates-over-low-power-wide-area-networks&#34;&gt;Firmware Updates over Low-Power Wide Area Networks&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://www.slideshare.net/janjongboom/enabling-firmware-updates-over-lpwan-tech-symposia-2017-taiwan&#34;&gt;Enabling firmware updates over LPWAN&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://github.com/ARMmbed/lorawan-fota-demo&#34;&gt;ARMmbed/lorawan-fota-demo&lt;/a&gt;&lt;br&gt;
+滿有趣的問題, IoT建置會預期device要能長達10年的壽命, 但10年間的變化是很大的.&lt;/p&gt;
+&lt;h1 id=&#34;week45-1110&#34;&gt;Week45 (11/10)&lt;/h1&gt;
+&lt;h2 id=&#34;網路文章&#34;&gt;網路文章&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://source.android.com/security/selinux/images/SELinux_Treble.pdf&#34;&gt;Android SELinux Treble&lt;/a&gt;&lt;br&gt;
+Android O 為了加速產品開發, 在framework上有重大的改變, 使用了Treble.&lt;br&gt;
+Vender, ODM, OEM有各自需要維護的partitions.&lt;br&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2017-Month11/AndroidO_partitions.png&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;week46-1117&#34;&gt;Week46 (11/17)&lt;/h1&gt;
+&lt;h2 id=&#34;網路文章-1&#34;&gt;網路文章&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.microsoft.com/en-us/research/blog/neural-fuzzing/&#34;&gt;Neural fuzzing: applying DNN to software security testing&lt;/a&gt;&lt;br&gt;
+好奇其它的nural networks的應用, 常看到CNN.&lt;/p&gt;
+&lt;h2 id=&#34;網路資源-1&#34;&gt;網路資源&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/hacdias/filemanager&#34;&gt;hacdias/filemanager&lt;/a&gt;&lt;br&gt;
+感覺不錯用的web filemanager, 目前很有活力, 送了一個PR不到1天就被merge了.&lt;/p&gt;
+&lt;h2 id=&#34;讀書心得&#34;&gt;讀書心得&lt;/h2&gt;
+&lt;p&gt;因為把玩&lt;a href=&#34;https://github.com/hacdias/filemanager&#34;&gt;hacdias/filemanager&lt;/a&gt;看了一下&lt;a href=&#34;https://tour.golang.org&#34;&gt;A Tour of Go&lt;/a&gt;在語法上還不太能適應, 不過還滿容易上手的, Method跟Interface的用法還要再研究一下, Concurrency也要花一點時間了解, 必竟concurrency是最大的賣點吧!&lt;br&gt;
+還有python使用上會有package dependency問題有點頭痛, golang編成binray的方式可以省掉這個麻煩, but 要如何方便的debug web front-end? 這可能要看一下&lt;a href=&#34;https://github.com/GeertJohan/go.rice&#34;&gt;go.rice&lt;/a&gt;.&lt;br&gt;
+但魚與熊掌仍不可兼得&amp;hellip;package dependency, cross-platform, realtime debug.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>What&#39;s wrong with benchmarks?</title>
       <link>https://oopsmonk.github.io/posts/2017-09-29-2017month10/</link>
       <pubDate>Fri, 27 Oct 2017 09:34:49 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-09-29-2017month10/</guid>
-      <description>ARM performance, Algorithms
-In fact, there is no universal benchmark tool.
-Week40 (10/06) 網路文章 Why do we learn algorithms?
-Why do we need so many sorting algorithms?
-Why do we need to learn different sorting algorithms when the STL sort function is already available to us in C++?
-網路資源 The Algorithms
-不同程式語言演算法的實現.
-every-programmer-should-know
-Data Structure Visualizations
-演算法視覺化
-Week41 (10/13) 網路文章 GPU Processing Budget Approach to Game Development
-GPU budget是估算處理1 pixel的cycle cost, 單位是cycles/frame/pixel</description>
+      <description>&lt;p&gt;ARM performance,  Algorithms&lt;/p&gt;
+&lt;p&gt;In fact, there is no universal benchmark tool.&lt;/p&gt;
+&lt;h1 id=&#34;week40-1006&#34;&gt;Week40 (10/06)&lt;/h1&gt;
+&lt;h2 id=&#34;網路文章&#34;&gt;網路文章&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Why do we learn algorithms?&lt;/strong&gt;&lt;br&gt;
+&lt;a href=&#34;https://www.quora.com/Why-do-we-need-so-many-sorting-algorithms&#34;&gt;Why do we need so many sorting algorithms?&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://www.quora.com/Why-do-we-need-to-learn-different-sorting-algorithms-when-the-STL-sort-function-is-already-available-to-us-in-C++&#34;&gt;Why do we need to learn different sorting algorithms when the STL sort function is already available to us in C++?&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;網路資源&#34;&gt;網路資源&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/TheAlgorithms&#34;&gt;The Algorithms&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;
+不同程式語言演算法的實現.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/mr-mig/every-programmer-should-know&#34;&gt;every-programmer-should-know&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.cs.usfca.edu/~galles/visualization/Algorithms.html&#34;&gt;Data Structure Visualizations&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;
+演算法視覺化&lt;/p&gt;
+&lt;h1 id=&#34;week41-1013&#34;&gt;Week41 (10/13)&lt;/h1&gt;
+&lt;h2 id=&#34;網路文章-1&#34;&gt;網路文章&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://community.arm.com/graphics/b/blog/posts/gpu-processing-budget-approach-to-game-development&#34;&gt;GPU Processing Budget Approach to Game Development&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;
+GPU budget是估算處理1 pixel的cycle cost, 單位是cycles/frame/pixel&lt;br&gt;
+先估算fragment/vertex budget理論值再透過MGD分析當下的budget做比較, 如MGD算出來的budget較高, 表示GPU loading過重.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Waterline?</title>
       <link>https://oopsmonk.github.io/posts/2017-08-29-2017month9/</link>
       <pubDate>Fri, 29 Sep 2017 11:57:59 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-08-29-2017month9/</guid>
-      <description>Jigsaw Puzzle, Hidden layers, New SoC, Algorithm basics, HTC
-Week35 (09/01) 第一次完成520片的拼圖, 花了4個晚上的時間, 大約12小時吧?!
-下次記得顏色鮮明的圖會比較愜意些.
-Week36 (09/08) 網路文章 Credit firm Equifax says 143m Americans&amp;rsquo; social security numbers exposed in hack
-在新聞公開前高層就己賣掉市值1.8m的股票!!
-網路資源 Google Developer Documentation Style Guide
-Google公佈了內部文件撰寫的格式及注意事項.
-Neural Networks and Deep Learning - Week 3 Tuning hidden layer size
-iterations: 5000
-learning_rate: 1.2
-activation: sigmoid
-Accuracy for 1 hidden units: 67.5 % Accuracy for 2 hidden units: 67.25 % Accuracy for 3 hidden units: 90.</description>
+      <description>&lt;p&gt;Jigsaw Puzzle, Hidden layers, New SoC, Algorithm basics, HTC&lt;/p&gt;
+&lt;h1 id=&#34;week35-0901&#34;&gt;Week35 (09/01)&lt;/h1&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2017-Month9/jigsaw_puzzle_520pieces.jpg&#34;&gt;&lt;br&gt;
+第一次完成520片的拼圖, 花了4個晚上的時間, 大約12小時吧?!&lt;br&gt;
+下次記得顏色鮮明的圖會比較愜意些.&lt;/p&gt;
+&lt;h1 id=&#34;week36-0908&#34;&gt;Week36 (09/08)&lt;/h1&gt;
+&lt;h2 id=&#34;網路文章&#34;&gt;網路文章&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.theguardian.com/us-news/2017/sep/07/equifax-credit-breach-hack-social-security&#34;&gt;Credit firm Equifax says 143m Americans&amp;rsquo; social security numbers exposed in hack&lt;/a&gt;&lt;br&gt;
+在新聞公開前高層就己賣掉市值1.8m的股票!!&lt;/p&gt;
+&lt;h2 id=&#34;網路資源&#34;&gt;網路資源&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://developers.google.com/style/&#34;&gt;Google Developer Documentation Style Guide&lt;/a&gt;&lt;br&gt;
+Google公佈了內部文件撰寫的格式及注意事項.&lt;/p&gt;
+&lt;h3 id=&#34;neural-networks-and-deep-learning---week-3&#34;&gt;Neural Networks and Deep Learning - Week 3&lt;/h3&gt;
+&lt;p&gt;Tuning hidden layer size&lt;br&gt;
+&lt;strong&gt;iterations&lt;/strong&gt;: 5000&lt;br&gt;
+&lt;strong&gt;learning_rate&lt;/strong&gt;: 1.2&lt;br&gt;
+&lt;strong&gt;activation&lt;/strong&gt;: sigmoid&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Accuracy for 1 hidden units: 67.5 %
+Accuracy for 2 hidden units: 67.25 %
+Accuracy for 3 hidden units: 90.75 %
+Accuracy for 4 hidden units: 90.5 %
+Accuracy for 5 hidden units: 91.25 %
+Accuracy for 20 hidden units: 90.0 %
+Accuracy for 50 hidden units: 90.25 %
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2017-Month9/DL_tuning_hidden_layer.png&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Going Deep</title>
       <link>https://oopsmonk.github.io/posts/2017-08-02-2017month8/</link>
       <pubDate>Fri, 25 Aug 2017 19:34:48 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-08-02-2017month8/</guid>
-      <description>以前球隊在回防時, 教練總會說&amp;quot;快跑! 別回頭, 到定點再休息&amp;quot;.
-關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!
-Deep Learning &amp;lt;&amp;ndash;&amp;gt; keep learning
-Week31 (08/04) 網路文章 A Brief History of CNNs in Image Segmentation: From R-CNN to Mask R-CNN
-R-CNN: https://arxiv.org/abs/1311.2524
-Visual Recognition就是從這裡爆發了&amp;hellip; 透過Selective Search找到Region後丢給修改過的AlexNet學習, 最後再給Support Vector Machine (SVM) 這層CNN.
-原本設計的R-CNN就只做這些: 用Selective Search找region 透過pre-trained AlexNet去算特徵後交給SVM看region裡的是什麼鬼東西 最後透過線性回歸(linear regression)畫出物件的座標 Fast R-CNN: https://arxiv.org/abs/1504.08083
-Region proposals using Selective Search. RoI (Region of Interest) Pooling
-Combine All Models into One Network
-將R-CNN的AlexNet, SVM, Regressor整合在一起變成單一個network Fast R-CNN instead used a single network to compute the extract image features (CNN), classify (SVM), and tighten bounding boxes (regressor).</description>
+      <description>&lt;p&gt;以前球隊在回防時, 教練總會說&amp;quot;快跑! 別回頭, 到定點再休息&amp;quot;.&lt;br&gt;
+關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!&lt;/p&gt;
+&lt;p&gt;Deep Learning &amp;lt;&amp;ndash;&amp;gt; keep learning&lt;/p&gt;
+&lt;h1 id=&#34;week31-0804&#34;&gt;Week31 (08/04)&lt;/h1&gt;
+&lt;h2 id=&#34;網路文章&#34;&gt;網路文章&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://blog.athelas.com/a-brief-history-of-cnns-in-image-segmentation-from-r-cnn-to-mask-r-cnn-34ea83205de4&#34;&gt;A Brief History of CNNs in Image Segmentation: From R-CNN to Mask R-CNN&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;R-CNN: &lt;a href=&#34;https://arxiv.org/abs/1311.2524&#34;&gt;https://arxiv.org/abs/1311.2524&lt;/a&gt;&lt;br&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2017-Month8/R-CNN_ObjectDetection.png&#34;&gt;&lt;br&gt;
+Visual Recognition就是從這裡爆發了&amp;hellip;
+透過Selective Search找到Region後丢給修改過的AlexNet學習, 最後再給Support Vector Machine (SVM) 這層CNN.&lt;br&gt;
+原本設計的R-CNN就只做這些:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;用Selective Search找region&lt;/li&gt;
+&lt;li&gt;透過pre-trained AlexNet去算特徵後交給SVM看region裡的是什麼鬼東西&lt;/li&gt;
+&lt;li&gt;最後透過線性回歸(linear regression)畫出物件的座標&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Fast R-CNN: &lt;a href=&#34;https://arxiv.org/abs/1504.08083&#34;&gt;https://arxiv.org/abs/1504.08083&lt;/a&gt;&lt;br&gt;
+Region proposals using Selective Search.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;RoI (Region of Interest) Pooling&lt;br&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2017-Month8/RoI_pooling_animated.gif&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Combine All Models into One Network&lt;br&gt;
+將R-CNN的AlexNet, SVM, Regressor整合在一起變成單一個network
+Fast R-CNN instead used a single network to compute the extract image features (CNN), classify (SVM), and tighten bounding boxes (regressor).&lt;br&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2017-Month8/FastR-CNN-Framework.png&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Faster R-CNN: &lt;a href=&#34;https://arxiv.org/abs/1506.01497&#34;&gt;https://arxiv.org/abs/1506.01497&lt;/a&gt;&lt;br&gt;
+用SS找region的方法太慢, 又重覆計算, 改由RPN後, 整個framework只要訓練一個CNN.&lt;br&gt;
+Speeding Up Region Proposal: Selective Search is too slow.&lt;br&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2017-Month8/FasterRCNNTrain.png&#34;&gt;&lt;br&gt;
+A single CNN is used to both carry out region proposals and classification.&lt;br&gt;
+&lt;strong&gt;only one CNN needs to be trained&lt;/strong&gt;&lt;br&gt;
+Region Proposal Network(&lt;strong&gt;RPN&lt;/strong&gt;) - How the Regions are Generated&lt;br&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2017-Month8/RPN_Network.png&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Math</title>
       <link>https://oopsmonk.github.io/posts/2017-07-03-2017month7/</link>
       <pubDate>Fri, 28 Jul 2017 09:35:04 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-07-03-2017month7/</guid>
-      <description>以前球隊在回防時, 教練總會說&amp;quot;快跑! 別回頭, 到定點再休息&amp;quot;.
-關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!
-Week27 (07/07) 網路文章 Elon Musk: The world&amp;rsquo;s population is accelerating toward collapse and nobody cares
-網路資源 Barbara Oakley: &amp;ldquo;Learning How to Learn&amp;rdquo; | Talks at Google
-Week28 (07/14) 網路資源 Numpy Quick Start
-MathJax basic tutorial and quick reference
-MathJax語法速查及範例
-Week29 (07/21) 網路文章 Path Guide: A New Approach to Indoor Navigation
-讀書心得 The Numpy Stack in Python
-用簡短的方式介紹numpy, pandas, matplotlib, scipy.
-numpy: 在matrix, vector處理會比ptython built-in還快很多且方便.</description>
+      <description>&lt;p&gt;以前球隊在回防時, 教練總會說&amp;quot;快跑! 別回頭, 到定點再休息&amp;quot;.&lt;br&gt;
+關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!&lt;/p&gt;
+&lt;h1 id=&#34;week27-0707&#34;&gt;Week27 (07/07)&lt;/h1&gt;
+&lt;h2 id=&#34;網路文章&#34;&gt;網路文章&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.cnbc.com/2017/07/06/elon-musk-the-worlds-population-is-accelerating-toward-collapse-and-nobody-cares.html&#34;&gt;Elon Musk: The world&amp;rsquo;s population is accelerating toward collapse and nobody cares&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;網路資源&#34;&gt;網路資源&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=vd2dtkMINIw&#34;&gt;Barbara Oakley: &amp;ldquo;Learning How to Learn&amp;rdquo; | Talks at Google&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;iframe width=&#34;320&#34; height=&#34;240&#34; src=&#34;https://www.youtube.com/embed/vd2dtkMINIw&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;  
+&lt;h1 id=&#34;week28-0714&#34;&gt;Week28 (07/14)&lt;/h1&gt;
+&lt;h2 id=&#34;網路資源-1&#34;&gt;網路資源&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://docs.scipy.org/doc/numpy-1.13.0/user/quickstart.html&#34;&gt;Numpy Quick Start&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference&#34;&gt;MathJax basic tutorial and quick reference&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;
+MathJax語法速查及範例&lt;/p&gt;
+&lt;h1 id=&#34;week29-0721&#34;&gt;Week29 (07/21)&lt;/h1&gt;
+&lt;h2 id=&#34;網路文章-1&#34;&gt;網路文章&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://www.microsoft.com/en-us/research/blog/path-guide-new-approach-indoor-navigation/&#34;&gt;Path Guide: A New Approach to Indoor Navigation&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;讀書心得&#34;&gt;讀書心得&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python/&#34;&gt;The Numpy Stack in Python&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;
+用簡短的方式介紹numpy, pandas, matplotlib, scipy.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.numpy.org/&#34;&gt;numpy&lt;/a&gt;: 在matrix, vector處理會比ptython built-in還快很多且方便. 主要的object type是numpy.array, 可以跟list object互相轉換.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://pandas.pydata.org/&#34;&gt;pandas&lt;/a&gt;: 強大的DataFrames在處理csv files時可輕鬆取出及處理想要的內容. pandas.DataFrame與pandas.Series是很重要的object.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://matplotlib.org/&#34;&gt;matplotlib&lt;/a&gt;: 把資料圖形化&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scipy.org/&#34;&gt;scipy&lt;/a&gt;: 介紹了常態分佈(normal distribution)又稱高斯分佈(Gaussian distribution).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;week30-0728&#34;&gt;Week30 (07/28)&lt;/h1&gt;
+&lt;h2 id=&#34;網路文章-2&#34;&gt;網路文章&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://iamtrask.github.io/2015/07/12/basic-python-network/&#34;&gt;A Neural Network in 11 lines of Python&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;
+詳細的說明ANN的實現方法, 但沒提到bias??&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>OSDI</title>
       <link>https://oopsmonk.github.io/posts/2017-05-31-2017month6/</link>
       <pubDate>Fri, 30 Jun 2017 20:47:50 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-05-31-2017month6/</guid>
-      <description>以前球隊在回防時, 教練總會說&amp;quot;快跑! 別回頭, 到定點再休息&amp;quot;.
-關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!
-Week22 (06/02) 讀書心得 OSDI: Memory Management
-Kernel space的memory management, 要考慮到的問題, Internal/External fregmentation, physical/logical contiguous, buddy system, slab allocator.
-User space的memory管理, page fault handler, Red-Black Tree / AVL Tree.
-論文學習 FarmBeats: An IoT Platform for Data-Driven Agriculture PDF ,Slides
-FarmBeats這套系統提出了几個解決方法:
-遠距傳輸, 以往的解法是用satellite或是手機訊號, 這裡是使用TVWS(TV White Space)以減少硬體成本, TVWS是利用數位電視未使用的頻寬做傳輸, 屬於低頻有傳輸距離長, 穿透力強的優點. 天氣感知系統, 透過OpenWeather API的資料來規劃電量的使用及電池的充電與否. 風力輔助系統, 收集農地的風向及風力數據, 透過飛行演算法(Flight Planning Algorithm)規劃出適當的路線, 減少逆風造成的額外耗電量. 本地影像及資料壓縮, 一般Drone的航空影像(Aerial Imagery)或sensors資料都是直接傳到雲端, 透過Farmbeats的gateway做中繼站並壓縮影像及sensors資料, 可支援1星期的在網路無法使用情況. Week23 (06/09) 網路文章 When should we use mutex and when should we use semaphore</description>
+      <description>&lt;p&gt;以前球隊在回防時, 教練總會說&amp;quot;快跑! 別回頭, 到定點再休息&amp;quot;.&lt;br&gt;
+關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!&lt;/p&gt;
+&lt;h1 id=&#34;week22-0602&#34;&gt;Week22 (06/02)&lt;/h1&gt;
+&lt;h2 id=&#34;讀書心得&#34;&gt;讀書心得&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;OSDI: Memory Management&lt;/strong&gt;&lt;br&gt;
+Kernel space的memory management, 要考慮到的問題, Internal/External fregmentation, physical/logical contiguous, buddy system, slab allocator.&lt;br&gt;
+User space的memory管理, page fault handler, Red-Black Tree / AVL Tree.&lt;/p&gt;
+&lt;h2 id=&#34;論文學習&#34;&gt;論文學習&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/vasisht&#34;&gt;FarmBeats: An IoT Platform for Data-Driven Agriculture&lt;/a&gt; &lt;a href=&#34;https://www.usenix.org/system/files/conference/nsdi17/nsdi17-vasisht.pdf&#34;&gt;PDF&lt;/a&gt; ,&lt;a href=&#34;https://www.usenix.org/sites/default/files/conference/protected-files/nsdi17_slides_vasisht.pdf&#34;&gt;Slides&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;
+FarmBeats這套系統提出了几個解決方法:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;遠距傳輸, 以往的解法是用satellite或是手機訊號, 這裡是使用TVWS(TV White Space)以減少硬體成本, TVWS是利用數位電視未使用的頻寬做傳輸, 屬於低頻有傳輸距離長, 穿透力強的優點.&lt;/li&gt;
+&lt;li&gt;天氣感知系統, 透過OpenWeather API的資料來規劃電量的使用及電池的充電與否.&lt;/li&gt;
+&lt;li&gt;風力輔助系統, 收集農地的風向及風力數據, 透過飛行演算法(Flight Planning Algorithm)規劃出適當的路線, 減少逆風造成的額外耗電量.&lt;/li&gt;
+&lt;li&gt;本地影像及資料壓縮, 一般Drone的航空影像(Aerial Imagery)或sensors資料都是直接傳到雲端, 透過Farmbeats的gateway做中繼站並壓縮影像及sensors資料, 可支援1星期的在網路無法使用情況.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2017-Month6/FarmBeatsSystemOverview.png&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;week23-0609&#34;&gt;Week23 (06/09)&lt;/h1&gt;
+&lt;h2 id=&#34;網路文章&#34;&gt;網路文章&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://stackoverflow.com/questions/4039899/when-should-we-use-mutex-and-when-should-we-use-semaphore&#34;&gt;When should we use mutex and when should we use semaphore&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>LGS Hell</title>
       <link>https://oopsmonk.github.io/posts/2017-05-31-2017month5/</link>
       <pubDate>Wed, 31 May 2017 08:11:10 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-05-31-2017month5/</guid>
-      <description>以前球隊在回防時, 教練總會說&amp;quot;快跑! 別回頭, 到定點再休息&amp;quot;.
-關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!
-主要在了解linux graphic system架構, 並分析wayland weston compositor/glmark2的repaint flow.
-Week18 (05/05) 網路文章 和百年公斤原器說再見！七大國際單位制將改頭換面
-原來用抽像來定義實體早己行之有年.
-網路資源 C++ Language Interface Foundation (CLIF)
-Google 做了一個C++ wrapper generator, 目前看來只for Python, 目標是支援更多的語言.
-Week19 (05/12) 網路文章 Weston repaint scheduling
-Week20 (05/19) Wayland的weston compositor可透過wesgr來分析repaint過程. glmark2-es2-wayland 加入debug去看glmark repaint過程
-[18:50:21.959] canvas_clear 1510 us [18:50:21.960] scenc_draw 389 us [18:50:21.960] scenc_update 159 us [18:50:21.960] weston weston_output_repaint[+] [18:50:21.960] weston surface_flush_damage [18:50:21.960] weston surface_flush_damage [18:50:21.961] weston surface_flush_damage [18:50:21.961] weston surface_flush_damage [18:50:21.</description>
+      <description>&lt;p&gt;以前球隊在回防時, 教練總會說&amp;quot;快跑! 別回頭, 到定點再休息&amp;quot;.&lt;br&gt;
+關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!&lt;/p&gt;
+&lt;p&gt;主要在了解linux graphic system架構, 並分析wayland weston compositor/glmark2的repaint flow.&lt;/p&gt;
+&lt;h1 id=&#34;week18-0505&#34;&gt;Week18 (05/05)&lt;/h1&gt;
+&lt;h2 id=&#34;網路文章&#34;&gt;網路文章&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://pansci.asia/archives/111737&#34;&gt;和百年公斤原器說再見！七大國際單位制將改頭換面&lt;/a&gt;&lt;br&gt;
+原來用抽像來定義實體早己行之有年.&lt;/p&gt;
+&lt;h2 id=&#34;網路資源&#34;&gt;網路資源&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/google/clif&#34;&gt;C++ Language Interface Foundation (CLIF)&lt;/a&gt;&lt;br&gt;
+Google 做了一個C++ wrapper generator, 目前看來只for Python, 目標是支援更多的語言.&lt;/p&gt;
+&lt;h1 id=&#34;week19-0512&#34;&gt;Week19 (05/12)&lt;/h1&gt;
+&lt;h2 id=&#34;網路文章-1&#34;&gt;網路文章&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://ppaalanen.blogspot.tw/2015/02/weston-repaint-scheduling.html&#34;&gt;Weston repaint scheduling&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;week20-0519&#34;&gt;Week20 (05/19)&lt;/h1&gt;
+&lt;p&gt;Wayland的weston compositor可透過&lt;a href=&#34;https://github.com/ppaalanen/wesgr&#34;&gt;wesgr&lt;/a&gt;來分析repaint過程.
+glmark2-es2-wayland 加入debug去看glmark repaint過程&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[18:50:21.959]  canvas_clear 1510 us
+[18:50:21.960]  scenc_draw 389 us
+[18:50:21.960]  scenc_update 159 us
+[18:50:21.960] weston weston_output_repaint[+]
+[18:50:21.960] weston surface_flush_damage
+[18:50:21.960]  weston surface_flush_damage
+[18:50:21.961] weston surface_flush_damage
+[18:50:21.961] weston surface_flush_damage
+[18:50:21.969] weston weston_output_repaint[-]
+[18:50:21.970] weston weston_output_finish_frame
+[18:50:21.972] weston weston_surface_commit_state
+[18:50:21.972] weston core_repaint_req
+[18:50:21.972] canvas_update 12193 us
+[18:50:21.972]  glmark2 draw 14443 us
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;網路文章-2&#34;&gt;網路文章&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://engineering.linkedin.com/blog/2017/05/boosting-site-speed-using-brotli-compression&#34;&gt;Boosting Site Speed Using Brotli Compression&lt;/a&gt;&lt;br&gt;
+LinkedIn 使用Brotli 壓縮提高網頁的瀏覽速度, 並使用JavaScript檔案做了Brotli, Zopfli, and gzip演算法比較,&lt;br&gt;
+壓縮後的空間以&lt;code&gt;gzip -6&lt;/code&gt;為基準&lt;code&gt;Brotil -11&lt;/code&gt;結省30%, &lt;code&gt;Brotli -5&lt;/code&gt;結省14%左右, &lt;code&gt;Zopfli -1000&lt;/code&gt;結省約5%.&lt;br&gt;
+時間上&lt;code&gt;gzip -6&lt;/code&gt; 壓縮169ms, 解壓35ms, &lt;code&gt;Brotli -11&lt;/code&gt; 壓縮11913ms, 解壓22ms, Brotli壓縮時間花的較長, 但解壓及壓縮率完勝.&lt;br&gt;
+最終的A/B Test, 網頁在美國地區快了2&lt;del&gt;3.6%, 印度地區快了6&lt;/del&gt;6.5%.&lt;br&gt;
+LinkedIn 計劃採用Dynamic Brotli 處理動態資料(Base HTML document, JSON API responses, etc.), 也需要改善gzip以配合不支援Brotli的Browser.&lt;br&gt;
+Browser support:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>失速列車</title>
       <link>https://oopsmonk.github.io/posts/2017-04-01-2017month4/</link>
       <pubDate>Fri, 28 Apr 2017 09:27:35 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-04-01-2017month4/</guid>
-      <description>以前球隊在回防時, 教練總會說&amp;quot;快跑! 別回頭, 到定點再休息&amp;quot;.
-關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!
-失速的這個月
-Week14 (04/07) 網路文章 Adding A New System Service To Android 5: Tips and How To
-由下到上打造一個android system service. HW -&amp;gt; HAL -&amp;gt; JNI -&amp;gt; Service -&amp;gt; Manager -&amp;gt; Registering.
-Adding New System Service in Android
-Native system service.
-33 Foods that Starve Cancer
-滿有趣的論點, 細胞沒有supplement會死亡沒錯, 但microscopic cancers能否自己生出新的血管?
-大部份的癌症無關基因, 超過40歲體內難免會有microscopic cells, 並可能轉變成cancer cells?
-Week15 (04/14) img2ascii.py 參考網路上的做法, 加了些參數方便調整輸出的內容. pillow提供便利的API.
-網路文章 Every attempt to manage academia makes it worse</description>
+      <description>&lt;p&gt;以前球隊在回防時, 教練總會說&amp;quot;快跑! 別回頭, 到定點再休息&amp;quot;.&lt;br&gt;
+關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;失速的這個月&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;week14-0407&#34;&gt;Week14 (04/07)&lt;/h1&gt;
+&lt;h2 id=&#34;網路文章&#34;&gt;網路文章&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.linaro.org/blog/adding-a-new-system-service-to-android-5-tips-and-how-to/&#34;&gt;Adding A New System Service To Android 5: Tips and How To&lt;/a&gt;&lt;br&gt;
+由下到上打造一個android system service. HW -&amp;gt; HAL -&amp;gt; JNI -&amp;gt; Service -&amp;gt; Manager -&amp;gt; Registering.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://shriduttkothari.blogspot.tw/2013/05/adding-new-system-service-in-android_24.html&#34;&gt;Adding New System Service in Android&lt;/a&gt;&lt;br&gt;
+Native system service.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.thealternativedaily.com/33-foods-starve-cancer/&#34;&gt;33 Foods that Starve Cancer&lt;/a&gt;&lt;br&gt;
+滿有趣的論點, 細胞沒有supplement會死亡沒錯, 但microscopic cancers能否自己生出新的血管?&lt;br&gt;
+大部份的癌症無關基因, 超過40歲體內難免會有microscopic cells, 並可能轉變成cancer cells?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;week15-0414&#34;&gt;Week15 (04/14)&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/oopsmonk/PiPlayground/tree/master/img2ascii&#34;&gt;img2ascii.py&lt;/a&gt; 參考網路上的做法, 加了些參數方便調整輸出的內容. &lt;a href=&#34;https://python-pillow.org/&#34;&gt;pillow&lt;/a&gt;提供便利的API.&lt;/p&gt;
+&lt;h2 id=&#34;網路文章-1&#34;&gt;網路文章&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://svpow.com/2017/03/17/every-attempt-to-manage-academia-makes-it-worse/&#34;&gt;Every attempt to manage academia makes it worse&lt;/a&gt;&lt;br&gt;
+Goodhart’s Law： &amp;ldquo;When a measure becomes a target, it ceases to be a good measure.&amp;rdquo;&lt;br&gt;
+為了打分數而訂出的評分系統, 不就是考試?!&lt;br&gt;
+衡量對錯本來就很難（也許本身就是個假議題）, 就像&amp;quot;找到一個對的人做對的事&amp;quot;.&lt;br&gt;
+The Cobra Effect： 在大公司應該是無可避免的.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;網路資源&#34;&gt;網路資源&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://python.libhunt.com/&#34;&gt;Python libhunt&lt;/a&gt;&lt;br&gt;
+可用找lib, 比較lib之間的活躍程度, Code Quality L1是較差, L5較佳.&lt;br&gt;
+除了python之外, 還有&lt;a href=&#34;https://cpp.libhunt.com/&#34;&gt;C++&lt;/a&gt;, &lt;a href=&#34;https://android.libhunt.com&#34;&gt;Android&lt;/a&gt;, &lt;a href=&#34;https://java.libhunt.com/&#34;&gt;Java&lt;/a&gt;, &lt;a href=&#34;https://js.libhunt.com/&#34;&gt;Javascript&lt;/a&gt;&amp;hellip;等.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;讀書心得&#34;&gt;讀書心得&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://breakingmuscle.com/category/tags/the-handstand-builder-for-women&#34;&gt;The Handstand Builder For Women - Week1&lt;/a&gt;&lt;br&gt;
+Recap Week1, 有些人說Handstand不太需要flexibility, 我的經驗是stretches也是很重要的, 靈活的關節/彈性的肌肉能避免運動傷害.
+Reverse Plank: 有助於倒立時開胸姿態&lt;br&gt;
+Handstand against the wall: 讓身體習慣倒立姿態&lt;br&gt;
+Crescent Lunge/Seated Hamstring Stretch: 腿離地時腳筋的柔軟度很重要, 柔軟度不夠需要更大的肌力做平衡.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;week16-0421&#34;&gt;Week16 (04/21)&lt;/h1&gt;
+&lt;h2 id=&#34;網路文章-2&#34;&gt;網路文章&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe&#34;&gt;What is the difference between venv, pyvenv, pyenv, virtualenv, virtualenvwrapper, pipenv, etc?&lt;/a&gt;&lt;br&gt;
+一般是用&lt;a href=&#34;http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/&#34;&gt;virtualenv&lt;/a&gt;測試module需要哪些python packages, &lt;a href=&#34;https://github.com/pyenv/pyenv&#34;&gt;pyenv&lt;/a&gt;來測試module在不同的python2.6, python2.7, python3.5, python3.6是否正常.&lt;br&gt;
+&lt;a href=&#34;https://virtualenvwrapper.readthedocs.io/en/latest/index.html&#34;&gt;virtualenvwrapper&lt;/a&gt;是加強virtualenv的plugin, 將不同的環境放在同一個目錄方便管理.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Slow and Fast</title>
       <link>https://oopsmonk.github.io/posts/2017-03-01-2017month3/</link>
       <pubDate>Fri, 31 Mar 2017 13:21:57 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-03-01-2017month3/</guid>
-      <description>以前球隊在回防時, 教練總會說&amp;quot;快跑! 別回頭, 到定點再休息&amp;quot;.
-關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!
-Week9 (03/03) 228的4天連假讓這週過的特別快.
-網路文章 What Americans can learn from other food cultures Google breaks SHA-1 web crypto for good but Torvalds plays down impact on Git Announcing the first SHA1 collision Google 公怖與CWI Amsterdam合作生出了第一個SHA-1 collision, 對於使用SHA-1的Git來說會有什麼影響?
-目前看來是影響不大, 主因如下: Git remote 與 local 發生衝突時local並不會被override. 相較於Git, PDF檔是較容易被破解的. Git可能會計劃使用SHA3-256為新的hash algorithm.
-為什麼不選SHA256? &amp;ldquo;SHA256 acceleration is mainly an ARM thing&amp;rdquo; - Torvalds 網路資源 Math is Fun: Common Core Standards: 基本數學.</description>
+      <description>&lt;p&gt;以前球隊在回防時, 教練總會說&amp;quot;快跑! 別回頭, 到定點再休息&amp;quot;.&lt;br&gt;
+關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!&lt;/p&gt;
+&lt;h1 id=&#34;week9-0303&#34;&gt;Week9 (03/03)&lt;/h1&gt;
+&lt;p&gt;228的4天連假讓這週過的特別快.&lt;/p&gt;
+&lt;h2 id=&#34;網路文章&#34;&gt;網路文章&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://ideas.ted.com/what-americans-can-learn-from-other-food-cultures/&#34;&gt;What Americans can learn from other food cultures&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.zdnet.com/article/google-breaks-sha-1-web-crypto-for-good-but-torvalds-plays-down-impact-on-git/&#34;&gt;Google breaks SHA-1 web crypto for good but Torvalds plays down impact on Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://security.googleblog.com/2017/02/announcing-first-sha1-collision.html&#34;&gt;Announcing the first SHA1 collision &lt;/a&gt;&lt;br&gt;
+Google 公怖與CWI Amsterdam合作生出了第一個SHA-1 collision, 對於使用SHA-1的Git來說會有什麼影響?&lt;br&gt;
+目前看來是影響不大, 主因如下:
+&lt;ol&gt;
+&lt;li&gt;Git remote 與 local 發生衝突時local並不會被override.&lt;/li&gt;
+&lt;li&gt;相較於Git, PDF檔是較容易被破解的.&lt;/li&gt;
+&lt;li&gt;Git可能會計劃使用SHA3-256為新的hash algorithm.&lt;br&gt;
+為什麼不選SHA256? &amp;ldquo;SHA256 acceleration is mainly an ARM thing&amp;rdquo; - Torvalds&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;網路資源&#34;&gt;網路資源&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.mathsisfun.com/links/core-index.html&#34;&gt;Math is Fun: Common Core Standards&lt;/a&gt;: 基本數學.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;讀書心得&#34;&gt;讀書心得&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.coursera.org/learn/learning-how-to-learn&#34;&gt;Learning How to Learn&lt;/a&gt; - Week1&lt;br&gt;
+這週以科學研究來看大腦對於學習的反應 &lt;br&gt;
+可以把學習看的很單純, 就是&amp;quot;不斷&amp;quot;的吸收及練習, &amp;ldquo;不斷&amp;quot;意指長遠的時間1年, 5年, 10年&amp;hellip;等, 而不是指當下不斷的行為.
+很多名人傳記都有提及他們的看書習慣, Ex: Steven Jobs and Elon Musk.
+&lt;ul&gt;
+&lt;li&gt;Think mode: focus, and diffuse.&lt;/li&gt;
+&lt;li&gt;After leaning and sleeping brain form many synapses on the dendrite in your brain that is how your brain upgrade after a sleep or nap.&lt;/li&gt;
+&lt;li&gt;Procrastination - The Pomodoro Technique: an intense 25 minutes followed by 5 minutes relaxation or a little reward.&lt;/li&gt;
+&lt;li&gt;Memory - long term memory and working memory are two major memory systems. Research has shown that if you try to glue things into your memory by repeating something twenty times in one evening, for example, it won’t stick nearly as well as if you practice it the same number of times over several days.&lt;/li&gt;
+&lt;li&gt;Sleep - When you sleep, your brain cells shrink, which allows toxins to be more easily washed away.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;week10-0310&#34;&gt;Week10 (03/10)&lt;/h1&gt;
+&lt;h2 id=&#34;網路文章-1&#34;&gt;網路文章&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.scotthyoung.com/blog/2015/01/19/speed-reading-redo/&#34;&gt;I Was Wrong About Speed Reading: Here are the Facts&lt;/a&gt;&lt;br&gt;
+Reading包含几種不同的方法: saccade, scan, and skim. 以前只知道scan and skim, 但&lt;a href=&#34;https://en.wikipedia.org/wiki/Saccade&#34;&gt;saccadé&lt;/a&gt;是法文, 意思跟scan似乎是一樣的.&lt;br&gt;
+在reading時有几個過程: fixate, saccade and process.&lt;br&gt;
+Subvocalization是必要的, 用來幫助理解(process).&lt;br&gt;
+從解剖學及神經學來看, 速讀是有極限的. 英文極限約500wpm, 超過這個速度還能讀懂文章, 我想對於文章內容很熟的成份居多.&lt;br&gt;
+文中提到的tips其實就是six-way paragraphs的方法.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>新章</title>
       <link>https://oopsmonk.github.io/posts/2017-02-28-2017month2/</link>
       <pubDate>Thu, 16 Feb 2017 15:48:32 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-02-28-2017month2/</guid>
-      <description>以前球隊在回防時, 教練總會說&amp;quot;快跑! 別回頭, 到定點再休息&amp;quot;.
-關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!
-Week7 (02/17) 發現minimal-mistakes上缺了繁中, 便開了個PR#838 沒想到很快就被merge, 效率真快.
-試玩BeautifulSoup 寫了個簡單的ck101Comics.py用來下載卡提諾×揪漫畫.
-網路文章 Diving Into Android &amp;lsquo;M&amp;rsquo; Doze &amp;amp; Diving into Doze Mode for Developers
-Android Doze在Nougat多了Light-Doze, Light-Doze的Maintenance Windows較短為了避免不同步問題, 當進入Deep-Doze(原本Marshmallow的Doze), Light-Doze會進入OVERRIDE不做任何事. 網路資源 E-book: Python for Informatics 讀書心得 Tuesdays with Morrie
-讀完The Classroom, 直到這章節都是在講Mitch離開大學後的生活及偶然聽到電視上提到Morrie, 師生俩如何再度搭上線. Morrie對Mitch有很深的情感, Mitch稱他為&amp;rsquo;Coach&amp;rsquo;. &amp;ldquo;Dying,&amp;rdquo; Morrie suddenly said, &amp;ldquo;is only one thing to be sad over, Mitch. Living unhappily is something else. So many of the people who come to visit me are unhappy.</description>
+      <description>&lt;p&gt;以前球隊在回防時, 教練總會說&amp;quot;快跑! 別回頭, 到定點再休息&amp;quot;.&lt;br&gt;
+關於人生, 喘息點在哪兒? 我想就在滴水穿石之間!&lt;/p&gt;
+&lt;h1 id=&#34;week7-0217&#34;&gt;Week7 (02/17)&lt;/h1&gt;
+&lt;p&gt;發現&lt;a href=&#34;https://github.com/mmistakes/minimal-mistakes&#34;&gt;minimal-mistakes&lt;/a&gt;上缺了繁中, 便開了個PR&lt;a href=&#34;https://github.com/mmistakes/minimal-mistakes/pull/838&#34;&gt;#838&lt;/a&gt; 沒想到很快就被merge, 效率真快.&lt;br&gt;
+試玩&lt;a href=&#34;https://www.crummy.com/software/BeautifulSoup/&#34;&gt;BeautifulSoup&lt;/a&gt; 寫了個簡單的&lt;a href=&#34;https://github.com/oopsmonk/PiPlayground/tree/master/ck101Comics&#34;&gt;ck101Comics.py&lt;/a&gt;用來下載卡提諾×揪漫畫.&lt;/p&gt;
+&lt;h2 id=&#34;網路文章&#34;&gt;網路文章&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://newcircle.com/s/post/1739/2015/06/12/diving-into-android-m-doze&#34;&gt;Diving Into Android &amp;lsquo;M&amp;rsquo; Doze&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://www.bignerdranch.com/blog/diving-into-doze-mode-for-developers/&#34;&gt;Diving into Doze Mode for Developers&lt;/a&gt;&lt;br&gt;
+Android Doze在Nougat多了Light-Doze, Light-Doze的Maintenance Windows較短為了避免不同步問題, 當進入Deep-Doze(原本Marshmallow的Doze), Light-Doze會進入OVERRIDE不做任何事.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;網路資源&#34;&gt;網路資源&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;E-book: &lt;a href=&#34;http://www.pythonlearn.com/book.php#python-for-informatics&#34;&gt;Python for Informatics&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;讀書心得&#34;&gt;讀書心得&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Tuesdays_with_Morrie&#34;&gt;Tuesdays with Morrie&lt;/a&gt;&lt;br&gt;
+讀完The Classroom, 直到這章節都是在講Mitch離開大學後的生活及偶然聽到電視上提到Morrie, 師生俩如何再度搭上線. Morrie對Mitch有很深的情感, Mitch稱他為&amp;rsquo;Coach&amp;rsquo;.
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Dying,&amp;rdquo; Morrie suddenly said, &amp;ldquo;is only one thing to be sad over, Mitch. Living unhappily is something else. So many of the people who come to visit me are unhappy.&amp;rdquo; - The Classroom, p35.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;論文學習&#34;&gt;論文學習&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cs.columbia.edu/~vatlidak/resources/POSIXmagazine.pdf&#34;&gt;POSIX Has Become Outdated&lt;/a&gt;&lt;br&gt;
+透過&lt;a href=&#34;https://columbia.github.io/libtrack/&#34;&gt;libtrack&lt;/a&gt;觀察Andorid, OS X, and Ubuntu, 發現為了UX(user experience)與符合modern workload, 不同的OS實現原本不足且鮮少使用的POSIX abstractions, 其中IPC及Asynchronus I/O的部份更是被取代. 最後結論提到新的POSIX standard 需要著重於graphics, IPC, and threading.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;week8-0224&#34;&gt;Week8 (02/24)&lt;/h1&gt;
+&lt;p&gt;照顧小孩真的很殺時間, 尤其是老婆出國時.&lt;br&gt;
+西班牙海鮮燉飯(Paella Marinera) 試了做一次, 覺得是道擺盤容易, 色彩豐富, 但想做的好吃要再練練的料理. 另外Tortilla de patatas整個失敗&amp;hellip;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

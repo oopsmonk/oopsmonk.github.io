@@ -9,242 +9,777 @@
       <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
       <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Jun 2022 13:01:48 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Jun 2022 13:01:48 +0800</lastBuildDate>
+    <atom:link href="https://oopsmonk.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Note-taking and file sharing with Syncthing and Joplin</title>
       <link>https://oopsmonk.github.io/posts/2022-06-05-syncthin-joplin/</link>
       <pubDate>Sun, 05 Jun 2022 13:01:48 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2022-06-05-syncthin-joplin/</guid>
-      <description>You can find many note-taking services, like, Evernote, Google Keep, Notion, Obsidian and online storage services such as, Dropbox, Google Drive, OneDrive, iCloud. They are easy to use and secure. But, secure is not equal to private! A way to keep privacy is host private services by self.
-Edward Snowden’s Privacy Tips: “Get Rid Of Dropbox,” Avoid Facebook And Google
-This is how I share/edit notes and files with different devices which service providers are unable to peek and analyze my private contents.</description>
+      <description>&lt;p&gt;You can find many note-taking services, like, Evernote, Google Keep, Notion, Obsidian and online storage services such as, Dropbox, Google Drive, OneDrive, iCloud. They are easy to use and secure. But, secure is not equal to private! A way to keep privacy is host private services by self.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://techcrunch.com/2014/10/11/edward-snowden-new-yorker-festival/&#34;&gt;Edward Snowden’s Privacy Tips: “Get Rid Of Dropbox,” Avoid Facebook And Google&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2022-06-05/Syncthing-Joplin-Setup.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This is how I share/edit notes and files with different devices which &lt;strong&gt;service providers are unable to peek and analyze my private contents&lt;/strong&gt;. Joplin and Syncthing in grey are optional in the diagram, for example notes can be written on the Raspberry Pi through &lt;a href=&#34;https://joplinapp.org/terminal/&#34;&gt;the terminal Joplin application&lt;/a&gt;, files can share between the Phone and the PC directly but my Raspberry Pi is online 24/7.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Install Perf on Ubuntu 20.04</title>
       <link>https://oopsmonk.github.io/posts/2022-04-28-perf/</link>
       <pubDate>Thu, 28 Apr 2022 18:27:21 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2022-04-28-perf/</guid>
-      <description>What is Perf? Perf or perf-event is a Linux profiler and is part of the Linux Kernel which can help you solve advanced performance and troubleshooting functions. It covers hardware level (CPU/PMU, Performance Monitoring Unit) features and software features (software counters, tracepoints) as well.
-Install on Ubuntu If perf has not installed on the system
-$ perf WARNING: perf not found for kernel 5.4.0-109 You may need to install the following packages for this specific kernel: linux-tools-5.</description>
+      <description>&lt;h1 id=&#34;what-is-perf&#34;&gt;What is Perf?&lt;/h1&gt;
+&lt;p&gt;Perf or perf-event is a Linux profiler and is part of the Linux Kernel which can help you solve advanced performance and troubleshooting functions. It covers hardware level (CPU/PMU, Performance Monitoring Unit) features and software features (software counters, tracepoints) as well.&lt;/p&gt;
+&lt;h1 id=&#34;install-on-ubuntu&#34;&gt;Install on Ubuntu&lt;/h1&gt;
+&lt;p&gt;If perf has not installed on the system&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ perf
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;WARNING: perf not found &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; kernel 5.4.0-109
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  You may need to install the following packages &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; this specific kernel:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    linux-tools-5.4.0-109-generic
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    linux-cloud-tools-5.4.0-109-generic
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  You may also want to install one of the following packages to keep up to date:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    linux-tools-generic
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    linux-cloud-tools-generic
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The perf is part of &lt;code&gt;linux-tools-generic&lt;/code&gt; package on Ubuntu:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Policy Configuration of SELinux and SEAndroid</title>
       <link>https://oopsmonk.github.io/posts/2017-11-17-policy-configuration-of-selinux-and-seandroid/</link>
       <pubDate>Fri, 17 Nov 2017 08:12:13 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-11-17-policy-configuration-of-selinux-and-seandroid/</guid>
-      <description>A Note for SELinux and SEAndroid policy configuration.
-SEAndroid Security-Enhanced Linux in Android
-SELinux for Android 8 - Treble mode
-SEAndroid安全機制中的文件安全上下文關聯分析 - file_context
-SEAndroid安全機制中的進程安全上下文關聯分析 - process
-Android 8 Treble mode: Kernel early mount PRODUCT_FULL_TREBLE, PRODUCT_FULL_TREBLE_OVERRIDE, BOARD_SEPOLICY_DIRS Android 4.3 ~ 6 TE macro define: external/sepolicy/te_macros
-Android 8 TE macro define: system/sepolicy/te_macros
-##################################### # domain_trans(olddomain, type, newdomain) # Allow a transition from olddomain to newdomain # upon executing a file labeled with type.</description>
+      <description>&lt;p&gt;A Note for SELinux and SEAndroid policy configuration.&lt;/p&gt;
+&lt;h2 id=&#34;seandroid&#34;&gt;SEAndroid&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://source.android.com/security/selinux/&#34;&gt;Security-Enhanced Linux in Android&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://source.android.com/security/selinux/images/SELinux_Treble.pdf&#34;&gt;SELinux for Android 8 - Treble mode&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://blog.csdn.net/luoshengyang/article/details/37749383&#34;&gt;SEAndroid安全機制中的文件安全上下文關聯分析&lt;/a&gt; - file_context&lt;br&gt;
+&lt;a href=&#34;http://blog.csdn.net/luoshengyang/article/details/38054645&#34;&gt;SEAndroid安全機制中的進程安全上下文關聯分析&lt;/a&gt; - process&lt;/p&gt;
+&lt;h3 id=&#34;android-8-treble-mode&#34;&gt;Android 8 Treble mode:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Kernel early mount&lt;/li&gt;
+&lt;li&gt;PRODUCT_FULL_TREBLE, PRODUCT_FULL_TREBLE_OVERRIDE, BOARD_SEPOLICY_DIRS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Android 4.3 ~ 6 TE macro define: external/sepolicy/te_macros&lt;br&gt;
+Android 8 TE macro define: system/sepolicy/te_macros&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#####################################                                                                                            
+# domain_trans(olddomain, type, newdomain)
+# Allow a transition from olddomain to newdomain
+# upon executing a file labeled with type.
+# This only allows the transition; it does not
+# cause it to occur automatically - use domain_auto_trans
+# if that is what you want.
+#
+define(`domain_trans&amp;#39;, `
+# Old domain may exec the file and transition to the new domain.
+allow $1 $2:file { getattr open read execute };
+allow $1 $3:process transition;
+# New domain is entered by executing the file.
+allow $3 $2:file { entrypoint open read execute getattr };
+# New domain can send SIGCHLD to its caller.
+ifelse($1, `init&amp;#39;, `&amp;#39;, `allow $3 $1:process sigchld;&amp;#39;)
+# Enable AT_SECURE, i.e. libc secure mode.
+dontaudit $1 $3:process noatsecure;
+# XXX dontaudit candidate but requires further study.
+allow $1 $3:process { siginh rlimitinh };
+&amp;#39;)
+
+#####################################
+# domain_auto_trans(olddomain, type, newdomain)
+# Automatically transition from olddomain to newdomain
+# upon executing a file labeled with type.
+#
+define(`domain_auto_trans&amp;#39;, `
+# Allow the necessary permissions.
+domain_trans($1,$2,$3)
+# Make the transition occur by default.
+type_transition $1 $2:process $3;
+&amp;#39;)
+
+#####################################
+# tmpfs_domain(domain)                                                                                                           
+# Define and allow access to a unique type for
+# this domain when creating tmpfs / shmem / ashmem files.
+define(`tmpfs_domain&amp;#39;, `
+type $1_tmpfs, file_type;
+type_transition $1 tmpfs:file $1_tmpfs;
+allow $1 $1_tmpfs:file { read write getattr };
+allow $1 tmpfs:dir { getattr search };
+&amp;#39;)
+
+#####################################
+# init_daemon_domain(domain)
+# Set up a transition from init to the daemon domain
+# upon executing its binary.
+define(`init_daemon_domain&amp;#39;, `                                                                                                   
+domain_auto_trans(init, $1_exec, $1)
+tmpfs_domain($1)
+&amp;#39;)
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;apol---selinux-policy-analysis-tool&#34;&gt;apol - SELinux policy analysis tool&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt install setools-gui
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;selinux&#34;&gt;SELinux&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.nsa.gov/resources/everyone/digital-media-center/publications/research-papers/assets/files/configuring-selinux-policy-report.pdf&#34;&gt;Configuring the SELinux Policy&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Faster R-CNN Use Caffe Framework</title>
       <link>https://oopsmonk.github.io/posts/2017-08-31-faster-r-cnn-use-caffe-framework/</link>
       <pubDate>Thu, 31 Aug 2017 10:00:10 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-08-31-faster-r-cnn-use-caffe-framework/</guid>
-      <description>Install caffe framework and run Faster R-CNN demo on Ubuntu 16.04.
-Test environment CPU: Intel(R) Core(TM) i3-4130 CPU @ 3.40GHz 4-Cores
-GPU: ASUSTeK GeForce GTX 1060 with 6GB Memory
-HD: WDC WD5000AAKX
-OS: Ubuntu 16.04
-Test Flow Install software requirement Video pre-processing: get jpeg images from source video Image Labeling Use Faster R-CNN to genrate trained model Run Faster R-CNN demo Requirement Hardware:
-Good graphic card with large memory (6GB memory is okay, but it has problem in VGG traing.</description>
+      <description>&lt;p&gt;Install caffe framework and run Faster R-CNN demo on Ubuntu 16.04.&lt;/p&gt;
+&lt;h3 id=&#34;test-environment&#34;&gt;Test environment&lt;/h3&gt;
+&lt;p&gt;CPU: Intel(R) Core(TM) i3-4130 CPU @ 3.40GHz 4-Cores&lt;br&gt;
+GPU: ASUSTeK GeForce GTX 1060 with 6GB Memory&lt;br&gt;
+HD: WDC WD5000AAKX&lt;br&gt;
+OS: Ubuntu 16.04&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2017-08-31/GPU_Info.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;test-flow&#34;&gt;Test Flow&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Install software requirement&lt;/li&gt;
+&lt;li&gt;Video pre-processing: get jpeg images from source video&lt;/li&gt;
+&lt;li&gt;Image Labeling&lt;/li&gt;
+&lt;li&gt;Use Faster R-CNN to genrate trained model&lt;/li&gt;
+&lt;li&gt;Run Faster R-CNN demo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;requirement&#34;&gt;Requirement&lt;/h3&gt;
+&lt;p&gt;Hardware:&lt;br&gt;
+Good graphic card with large memory (6GB memory is okay, but it has problem in VGG traing.)&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>[Paper] - An Evolutionary Study of Linux Memory Management for Fun and Profit</title>
       <link>https://oopsmonk.github.io/posts/2017-06-13-linux-memory-management/</link>
       <pubDate>Tue, 13 Jun 2017 14:47:22 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-06-13-linux-memory-management/</guid>
-      <description>Memory management主要的功能是page mapping, memory protection, and sharing, 但隨著時間不斷的演進已經算是kernel裡不小的subsystem.
-這份研究分析2009~2015年之間4587筆有關memory management(mm)的patches, Linux版本由v2.6.32.1 ~ v4.0-rc4.
-Source: An Evolutionary Study of Linux Memory Management for Fun and Profit
-Memory Bugs 5種bugs存在mm: memory error, checking, concurrency, logic and programming.
-透過heat map可清楚看到主要bug發生地方
-主要的bug fix在: Memory Allocation, Garbage Collection (GC), Virtual Memory Management.
-大部份memory leak並不是因為忘了free, 而是錯誤的page fault handling和 free page的計算.
-MM較大的問題是很難去track正確的狀態.
-Memory optimization 定義3種optimization patches
-data structure: 避免nested data structure. Scalability的實現, scalability問題是因為locking for atomic access to shared data structures.</description>
+      <description>&lt;p&gt;Memory management主要的功能是page mapping, memory protection, and sharing, 但隨著時間不斷的演進已經算是kernel裡不小的subsystem.&lt;br&gt;
+這份研究分析2009~2015年之間4587筆有關memory management(mm)的patches, Linux版本由v2.6.32.1 ~ v4.0-rc4.&lt;br&gt;
+Source: &lt;a href=&#34;https://www.usenix.org/system/files/conference/atc16/atc16_paper-huang.pdf&#34;&gt;An Evolutionary Study of Linux Memory Management for Fun and Profit&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;memory-bugs&#34;&gt;Memory Bugs&lt;/h2&gt;
+&lt;p&gt;5種bugs存在mm: memory error, checking, concurrency, logic and programming.&lt;br&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2017-06-13/Table2.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;透過heat map可清楚看到主要bug發生地方&lt;br&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2017-06-13/Figure6.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;主要的bug fix在: Memory Allocation, Garbage Collection (GC), Virtual Memory Management.&lt;br&gt;
+大部份memory leak並不是因為忘了free, 而是錯誤的page fault handling和 free page的計算.&lt;br&gt;
+MM較大的問題是很難去track正確的狀態.&lt;/p&gt;
+&lt;h2 id=&#34;memory-optimization&#34;&gt;Memory optimization&lt;/h2&gt;
+&lt;p&gt;定義3種optimization patches&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;data structure: 避免nested data structure. Scalability的實現, scalability問題是因為locking for atomic access to shared data structures.&lt;/li&gt;
+&lt;li&gt;memory policy: 使用合理的policy design (latency/throughput, sync/async, lazy/non-lazy, local/global, fairness/performance).&lt;/li&gt;
+&lt;li&gt;fast path: 加速頻繁使用的source code, reduction跟lockless optimization是廣泛被使用. Optimistic barrier是為了減少呼叫barrier/fence system call時的synchronous overheads. (Code reduction, lockless optimization, new function, state caching, inline, code shifting, group excution, optimistic barrier)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;mm常見的data-structure&#34;&gt;MM常見的Data structure&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Radix tree: In adress_space, 主要特色是有效率的存放(sparse)資料.&lt;/li&gt;
+&lt;li&gt;Red-black tree: In vm_area_struct, 可快速的search, insert, delete. 相較於&lt;a href=&#34;https://stackoverflow.com/questions/13852870/red-black-tree-over-avl-tree&#34;&gt;AVL&lt;/a&gt; 雖然在search上較快但需要額外的空間, insert/delete比較慢, rotation比較困難.&lt;/li&gt;
+&lt;li&gt;Bitmap: 通常用在RAM的page indexing.&lt;/li&gt;
+&lt;li&gt;List: 廣泛使用的DS, 例如LRU(Last Recently Used) list, 用來追蹤active/inactive pages.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2017-06-13/Table3.png&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Linux Graphic Stack相關的名詞</title>
       <link>https://oopsmonk.github.io/posts/2017-05-30-linux-graphic-stack/</link>
       <pubDate>Tue, 30 May 2017 14:46:40 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-05-30-linux-graphic-stack/</guid>
-      <description>Linux graphic 架構還滿複雜的, 在看時需要大略了解几個名詞及之間的關係.
-X Window System:
-目前來到第11版本所以叫X11, 是以X window System Core protocol為基礎的window system.
-wayland:
-由於X11太過複雜且在embbeded system中的效能不佳, 用來取代X window System Core protocol.
-weston (wayland compositor):
-以wayland protocol來實做的compositor做為參考的範例, 實用上會用Westeros, Clutter&amp;hellip;等.
-KMS/UMS:
-Kernel mode-setting 及User mode-setting.
-OpenGL: 由Khronos Group制定的跨平台graphic API.
-GLX:
-是一個extension, 做為OpenGL與X window system之間的橋樑. 就像embedded system的EGL, MacOS的AGL.
-DRM(Direct Rendering Manager):
-為了防止世界被破壞, 保護世界的和平. 防止同時使用graphic buffer.
-DRI(Direct Rendering Infrastructure):
-Mesa及DRM之間的橋樑. Ref: Introduction to the Direct Rendering Infrastructure
-CRTC (CRT Controller):
-Crtc is in charge of reading the framebuffer memory and routes the data to an encoder.</description>
+      <description>&lt;p&gt;Linux graphic 架構還滿複雜的, 在看時需要大略了解几個名詞及之間的關係.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/X_Window_System&#34;&gt;X Window System&lt;/a&gt;:&lt;br&gt;
+目前來到第11版本所以叫X11, 是以&lt;a href=&#34;https://en.wikipedia.org/wiki/X_Window_System_core_protocol&#34;&gt;X window System Core protocol&lt;/a&gt;為基礎的window system.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Wayland_(display_server_protocol)&#34;&gt;wayland&lt;/a&gt;:&lt;br&gt;
+由於X11太過複雜且在embbeded system中的效能不佳, 用來取代X window System Core protocol.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;weston (wayland compositor):&lt;br&gt;
+以wayland protocol來實做的compositor做為參考的範例, 實用上會用Westeros, Clutter&amp;hellip;等.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Mode_setting&#34;&gt;KMS/UMS&lt;/a&gt;:&lt;br&gt;
+Kernel mode-setting 及User mode-setting.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;OpenGL:
+由&lt;a href=&#34;https://en.wikipedia.org/wiki/Khronos_Group&#34;&gt;Khronos Group&lt;/a&gt;制定的跨平台graphic API.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GLX:&lt;br&gt;
+是一個extension, 做為OpenGL與X window system之間的橋樑. 就像embedded system的EGL, MacOS的AGL.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Direct_Rendering_Manager&#34;&gt;DRM(Direct Rendering Manager)&lt;/a&gt;:&lt;br&gt;
+為了防止世界被破壞, 保護世界的和平. 防止同時使用graphic buffer.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Direct_Rendering_Infrastructure&#34;&gt;DRI(Direct Rendering Infrastructure)&lt;/a&gt;:&lt;br&gt;
+Mesa及DRM之間的橋樑. Ref: &lt;a href=&#34;http://dri.sourceforge.net/doc/DRIintro.html&#34;&gt;Introduction to the Direct Rendering Infrastructure&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Video_display_controller&#34;&gt;CRTC (CRT Controller)&lt;/a&gt;:&lt;br&gt;
+Crtc is in charge of reading the framebuffer memory and routes the data to an encoder.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>在Shell使用vi-mode</title>
       <link>https://oopsmonk.github.io/posts/2017-03-28-vi-mode-in-shell/</link>
       <pubDate>Tue, 28 Mar 2017 15:36:08 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-03-28-vi-mode-in-shell/</guid>
-      <description>Vi用慣了, 那在shell也可以vi-style嗎? 答案是可以的!
-這個方法可使用在常用的shell, 例如bash, ksh, zsh, mksh.
-btw, mksh 是Android使用的shell, 但Ubuntu預設的dash 是不支援的.
-在shell中執行set -o vi 後按&amp;rsquo;i&amp;rsquo;進入insert mode, &amp;lsquo;ESC&amp;rsquo;為normal mode.
-回到原本的模式則是set -o emacs
-如下圖:
-Reference: Using vi-mode in your shell</description>
+      <description>&lt;p&gt;Vi用慣了, 那在shell也可以vi-style嗎? 答案是可以的!&lt;/p&gt;
+&lt;p&gt;這個方法可使用在常用的shell, 例如bash, ksh, zsh, mksh.&lt;br&gt;
+btw, mksh 是Android使用的shell, 但Ubuntu預設的dash 是不支援的.&lt;/p&gt;
+&lt;p&gt;在shell中執行&lt;strong&gt;set -o vi&lt;/strong&gt; 後按&amp;rsquo;i&amp;rsquo;進入insert mode, &amp;lsquo;ESC&amp;rsquo;為normal mode.&lt;br&gt;
+回到原本的模式則是&lt;strong&gt;set -o emacs&lt;/strong&gt;&lt;br&gt;
+如下圖:&lt;br&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2017-03-28/vi-mode-in-shell.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Reference: &lt;a href=&#34;https://opensource.com/article/17/3/fun-vi-mode-your-shell&#34;&gt;Using vi-mode in your shell&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>The First SHA1 Collision</title>
       <link>https://oopsmonk.github.io/posts/2017-03-03-the-first-sha1-collision/</link>
       <pubDate>Fri, 03 Mar 2017 09:44:13 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-03-03-the-first-sha1-collision/</guid>
-      <description>CWI Institute in Amsterdam and Google genrate two PDF documents with the same SHA-1 digest.
-Google security blog - Announcing the first SHA1 collision
-SHA-1 collistion and Git If a file A with X hash in local repository and with X hash in remote (SHA-1 collistion between local and remote), would overwrite the local version? Nope. If it has the same SHA1, it means that when we receive the object from the other end, we will not overwrite the object we already have.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.cwi.nl/&#34;&gt;CWI Institute in Amsterdam&lt;/a&gt; and Google genrate two PDF documents with the same SHA-1 digest.&lt;br&gt;
+Google security blog - &lt;a href=&#34;https://security.googleblog.com/2017/02/announcing-first-sha1-collision.html&#34;&gt;Announcing the first SHA1 collision&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;sha-1-collistion-and-git&#34;&gt;SHA-1 collistion and Git&lt;/h2&gt;
+&lt;h3 id=&#34;if-a-file-a-with-x-hash-in-local-repository-and-with-x-hash-in-remote-sha-1-collistion-between-local-and-remote-would-overwrite-the-local-version&#34;&gt;If a file A with X hash in local repository and with X hash in remote (SHA-1 collistion between local and remote), would overwrite the local version?&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Nope. If it has the same SHA1, it means that when we receive the object from the other end, we will &lt;em&gt;not&lt;/em&gt; overwrite the object we already have.&lt;br&gt;
+So you have two cases of collision:&lt;br&gt;
+the inadvertent kind, &amp;hellip;&lt;br&gt;
+The attacker kind &amp;hellip;&lt;br&gt;
+&amp;hellip;&lt;br&gt;
+So in this case, the collision is entirely a non-issue: you&amp;rsquo;ll get a &amp;ldquo;bad&amp;rdquo; repository that is different from what the attacker intended, but since you&amp;rsquo;ll never actually use his colliding object, it&amp;rsquo;s &lt;em&gt;literally&lt;/em&gt; no different from the attacker just not having found a collision at all, but just using the object you already had (ie it&amp;rsquo;s 100% equivalent to the &amp;ldquo;trivial&amp;rdquo; collision of the identical file generating the same SHA1).&lt;br&gt;
+See above. The only &lt;em&gt;dangerous&lt;/em&gt; kind of collision is the inadvertent kind, but that&amp;rsquo;s obviously also the very very unlikely kind.&lt;br&gt;
+Torvalds @ &lt;a href=&#34;http://marc.info/?l=git&amp;amp;m=115678778717621&amp;amp;w=2&#34;&gt;Git- Re: Starting to think about sha-256?&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Bash Quick Reference</title>
       <link>https://oopsmonk.github.io/posts/2014-12-04-bashquickref/</link>
       <pubDate>Thu, 04 Dec 2014 01:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2014-12-04-bashquickref/</guid>
-      <description>Advanced Bash-Scripting Guide
-sed
-awk
-Internal Variables #current parent pid $$ #last background process pid $! #last exit status $? #current instance pid, Bash 4.x above. $BASHPID Arithmetic Expansion a=12 b=$(($a + 10)) b=`expr $a + 1` b=$(expr $a + 1) let b=$a+3 #let b=$a + 3 #incorrect let &amp;#34;b = $a + 3&amp;#34; declare -i b=$a+$a Manipulating Strings String is a number if [[ $var =~ ^-?[0-9]+$ ]]; then echo &amp;#34;$var is a number&amp;#34; fi if [[ !</description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://tldp.org/LDP/abs/html/index.html&#34;&gt;Advanced Bash-Scripting Guide&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://www.grymoire.com/Unix/Sed.html&#34;&gt;sed&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://www.grymoire.com/Unix/Awk.html&#34;&gt;awk&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;internal-variableshttptldporgldpabshtmlinternalvariableshtml&#34;&gt;&lt;a href=&#34;http://tldp.org/LDP/abs/html/internalvariables.html&#34;&gt;Internal Variables&lt;/a&gt;&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#current parent pid&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$$
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#last background process pid&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$!
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#last exit status&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$?
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#current instance pid, Bash 4.x above.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$BASHPID
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;arithmetic-expansionhttptldporgldpabshtmlarithexphtml&#34;&gt;&lt;a href=&#34;http://tldp.org/LDP/abs/html/arithexp.html&#34;&gt;Arithmetic Expansion&lt;/a&gt;&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;a&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;b&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$((&lt;/span&gt;$a &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;b&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;expr $a + 1&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;b&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;expr $a + 1&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;let b&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;$a+3
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#let b=$a + 3 #incorrect &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;let &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;b = &lt;/span&gt;$a&lt;span style=&#34;color:#e6db74&#34;&gt; + 3&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;declare -i b&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;$a+$a
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;manipulating-stringshttpwwwthegeekstuffcom201007bash-string-manipulation&#34;&gt;&lt;a href=&#34;http://www.thegeekstuff.com/2010/07/bash-string-manipulation/&#34;&gt;Manipulating Strings&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;String is a number&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[[&lt;/span&gt; $var &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;~ ^-?&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;0-9&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;+$ &lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$var&lt;span style=&#34;color:#e6db74&#34;&gt; is a number&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[[&lt;/span&gt; ! $var &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;~ ^-?&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;0-9&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;+$ &lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$var&lt;span style=&#34;color:#e6db74&#34;&gt; is not a number&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Find String between two words or characters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;var&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello there are (123340) and (123)&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#last string between &amp;#39;(&amp;#39; and &amp;#39;)&amp;#39;.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;substr&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt; echo $var | sed &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s/.*(\(.*\)).*/\1/&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#String between &amp;#39;(&amp;#39; and &amp;#39;)&amp;#39;.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;substr&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt; echo $var | awk -v FS&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;(\(|\))&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{print $2 &amp;#34; &amp;#34; $4}&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#String between &amp;#39;there&amp;#39; and &amp;#39;and&amp;#39;.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;substr&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt; echo $var | awk -v FS&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;(there|and)&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{print $2}&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#String between &amp;#39;there&amp;#39; and &amp;#39;and&amp;#39;.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;substr&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt; echo $var | sed &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s/.*there\(.*\)and.*/\1/&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#String between &amp;#39;there&amp;#39; and &amp;#39;and&amp;#39;.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;substr&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt; echo $var | grep -o -P &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;(?&amp;lt;=there).*(?=and)&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;loop&#34;&gt;Loop&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;read variables&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#read from file&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;123, abc, hello world!&amp;#34;&lt;/span&gt; &amp;gt; /tmp/test
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;12 43, ddd, !&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; /tmp/test
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; IFS&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;,&amp;#39;&lt;/span&gt; read var1 var2 var3
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;var1=&lt;/span&gt;$var1&lt;span style=&#34;color:#e6db74&#34;&gt; var2=&lt;/span&gt;$var2&lt;span style=&#34;color:#e6db74&#34;&gt; var3=&lt;/span&gt;$var3&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt; &amp;lt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/tmp/test&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#read from variable&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;one, two, three&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; IFS&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;,&amp;#39;&lt;/span&gt; read var1 var2 var3
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;var1=&lt;/span&gt;$var1&lt;span style=&#34;color:#e6db74&#34;&gt; var2=&lt;/span&gt;$var2&lt;span style=&#34;color:#e6db74&#34;&gt; var3=&lt;/span&gt;$var3&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt; $x
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;iterate IP address&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#iterate class C ip address&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i in 192.168.100.&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;1..10&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$i&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#iterate class B ip address&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x in 192.168.&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;1..5&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i in $x.&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;1..10&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$i&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;infinite while loop&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; :
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;infinite loops [ CTRL+C to stop]&amp;#34;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    sleep &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;arrayhttpwwwlinuxjournalcomcontentbash-arrays&#34;&gt;&lt;a href=&#34;http://www.linuxjournal.com/content/bash-arrays&#34;&gt;Array&lt;/a&gt;&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Simple array&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;arrayA&lt;span style=&#34;color:#f92672&#34;&gt;=(&lt;/span&gt; Mon Tue Wed Thu Fri Sat Sun &lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;!arrayA[*]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# 0 1 2 3 4 5 6&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${#&lt;/span&gt;arrayA[*]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# 7&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;arrayA[*]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;     &lt;span style=&#34;color:#75715e&#34;&gt;# Mon Tue Wed Thu Fri Sat Sun&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;!arrayA[@]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# 0 1 2 3 4 5 6&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${#&lt;/span&gt;arrayA[@]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# 7&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;arrayA[@]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;     &lt;span style=&#34;color:#75715e&#34;&gt;# Mon Tue Wed Thu Fri Sat Sun&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;arrayA[2]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;     &lt;span style=&#34;color:#75715e&#34;&gt;# Wed&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$arrayA&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;          &lt;span style=&#34;color:#75715e&#34;&gt;# Mon&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;arrayA[20]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# null &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;arrayA&lt;span style=&#34;color:#f92672&#34;&gt;=(&lt;/span&gt; one two &lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;arrayA[*]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;     &lt;span style=&#34;color:#75715e&#34;&gt;# one two&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;arrayA&lt;span style=&#34;color:#f92672&#34;&gt;+=(&lt;/span&gt; three &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;four&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;arrayA[*]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;     &lt;span style=&#34;color:#75715e&#34;&gt;# one two three four&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Key/Value &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;declare -A arrayB&lt;span style=&#34;color:#f92672&#34;&gt;=(&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Mon&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Monday&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Tue&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Tuesday&amp;#34;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Wed&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Wednesday&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Thu&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Thursday&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Fri&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Friday&amp;#34;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Sat&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Saturday&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Sun&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Sunday&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;!arrayB[*]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# Thu Tue Wed Mon Fri Sat Sun&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${#&lt;/span&gt;arrayB[*]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# 7&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;arrayB[*]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;     &lt;span style=&#34;color:#75715e&#34;&gt;# Thursday Tuesday Wednesday Monday Friday Saturday Sunday&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;!arrayB[@]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# Thu Tue Wed Mon Fri Sat Sun&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${#&lt;/span&gt;arrayB[@]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# 7&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;arrayB[@]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;     &lt;span style=&#34;color:#75715e&#34;&gt;# Thursday Tuesday Wednesday Monday Friday Saturday Sunday&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;arrayB[2]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;     &lt;span style=&#34;color:#75715e&#34;&gt;# null&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$arrayB&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;          &lt;span style=&#34;color:#75715e&#34;&gt;# null&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;arrayB[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Tue&amp;#34;&lt;/span&gt;]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Tuesday&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;declare -A arrayB&lt;span style=&#34;color:#f92672&#34;&gt;=(&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;one&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;two&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;!arrayB[*]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# one two&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;arrayB[*]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;     &lt;span style=&#34;color:#75715e&#34;&gt;# 1 2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;arrayB&lt;span style=&#34;color:#f92672&#34;&gt;+=(&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;three&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;3&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;four&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;!arrayB[*]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# four one two three&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;arrayB[*]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;     &lt;span style=&#34;color:#75715e&#34;&gt;# 4 1 2 3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;arrayB&lt;span style=&#34;color:#f92672&#34;&gt;+=(&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;four&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;aa&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;five&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;5a1c&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;!arrayB[*]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# four one five two three&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;arrayB[*]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;     &lt;span style=&#34;color:#75715e&#34;&gt;# 4aa 1 5a1c 2 3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;io-redirectionhttpwwwtldporgldpabshtmlio-redirectionhtml&#34;&gt;&lt;a href=&#34;http://www.tldp.org/LDP/abs/html/io-redirection.html&#34;&gt;I/O redirection&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;forking-processes&#34;&gt;Forking Processes&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pid_perfix&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/tmp/proc-&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; doSomething&lt;span style=&#34;color:#f92672&#34;&gt;(){&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    local pid_file&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$pid_perfix$BASHPID&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;this is task &lt;/span&gt;$1&lt;span style=&#34;color:#e6db74&#34;&gt; : &lt;/span&gt;$pid_file&lt;span style=&#34;color:#e6db74&#34;&gt; &amp;#34;&lt;/span&gt; &amp;gt; $pid_file
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    sleep &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;w_pid&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; task in &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;1..5&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    doSomething $task &amp;amp;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    w_pid&lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$!&lt;span style=&#34;color:#e6db74&#34;&gt; &amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    sleep &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; p in $w_pid
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    wait $p
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#clean up&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; p in $w_pid
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;#del pid file &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    rm &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$pid_perfix$p&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;exit &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
-    
     <item>
       <title>Building MOC</title>
       <link>https://oopsmonk.github.io/posts/2013-08-23-mocbuilding/</link>
       <pubDate>Fri, 23 Aug 2013 01:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2013-08-23-mocbuilding/</guid>
-      <description>clone MOC svn repository to github Ref: Converting a Subversion repository to Git
-$ sudo apt-get install subversion git-svn $ mkdir moc-svn $ cd moc-svn $ svn co svn://daper.net/moc/trunk $ svn log -q | awk -F &amp;#39;|&amp;#39; &amp;#39;/^r/ {sub(&amp;#34;^ &amp;#34;, &amp;#34;&amp;#34;, $2); sub(&amp;#34; $&amp;#34;, &amp;#34;&amp;#34;, $2); print $2&amp;#34; = &amp;#34;$2&amp;#34; &amp;lt;&amp;#34;$2&amp;#34;&amp;gt;&amp;#34;}&amp;#39; | sort -u &amp;gt; authors-transform.txt $ cd .. $ mkdir moc-git $ git svn clone svn://daper.net/moc/trunk --no-metadata -A ./moc-svn/authors-transform.txt .</description>
+      <description>&lt;h2 id=&#34;clone-moc-svn-repository-to-github&#34;&gt;clone MOC svn repository to github&lt;/h2&gt;
+&lt;p&gt;Ref: &lt;a href=&#34;http://john.albin.net/git/convert-subversion-to-git&#34;&gt;Converting a Subversion repository to Git&lt;/a&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt-get install subversion git-svn  
+$ mkdir moc-svn  
+$ cd moc-svn  
+$ svn co svn://daper.net/moc/trunk  
+$ svn log -q | awk -F &amp;#39;|&amp;#39; &amp;#39;/^r/ {sub(&amp;#34;^ &amp;#34;, &amp;#34;&amp;#34;, $2); sub(&amp;#34; $&amp;#34;, &amp;#34;&amp;#34;, $2); print $2&amp;#34; = &amp;#34;$2&amp;#34; &amp;lt;&amp;#34;$2&amp;#34;&amp;gt;&amp;#34;}&amp;#39; | sort -u &amp;gt; authors-transform.txt  
+$ cd ..  
+$ mkdir moc-git  
+$ git svn clone svn://daper.net/moc/trunk --no-metadata -A ./moc-svn/authors-transform.txt ./moc-git  
+$ cd moc-git  
+$ git svn show-ignore &amp;gt; .gitignore  
+$ git add -f .gitignore  
+$ git commit -m &amp;#34;Convert svn:ignore to .gitignore.&amp;#34;  
+$ mkdir ../moc-bare  
+$ git clone --bare ../moc-bare  
+$ cd ../moc-bare/moc-git.git  
+#Create empty repository on GitHub.  
+$ git push --mirror https://github.com/oopsmonk/moc-git.git  
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;install-develop-package-for-moc-ubuntu&#34;&gt;install develop package for MOC (Ubuntu)&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt-get install build-essential libdb-dev gettext  
+
+Optional libraries:  
+
+Sound driver:
+ALSA - libasound2-dev
+JACK - libjack-dev
+
+Decoder:
+FLAC - libflac-dev
+MP3 - libmad0-dev, libid3tag0-dev
+sndfile, vorbis - libsndfile1-dev
+
+Network: libcurl4-gnutls-dev
+RCC: librcc-dev
+Resample : libsamplerate0-dev
+MIME magic: libmagic-dev
+After release 2.5 MOC will require libpopt.
+
+$ sudo apt-get install libasound2-dev libjack-dev \ 
+ libflac-dev libmad0-dev libid3tag0-dev libsndfile1-dev 
+$ sudo apt-get install libcurl4-gnutls-dev librcc-dev \
+ libsamplerate0-dev libmagic-dev libpopt
+
+-----------------------------------------------------------------------
+MOC will be compiled with:
+
+Decoder plugins:   flac mp3 sndfile vorbis
+Sound Drivers:     OSS ALSA JACK
+DEBUG:             yes
+RCC:               yes
+Network streams:   yes
+Resampling:        yes
+MIME magic:        yes
+-----------------------------------------------------------------------
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;install-develop-package-for-moc-raspberry-pi&#34;&gt;install develop package for MOC (Raspberry Pi)&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt-get install build-essential autoconf automake libtool
+$ sudo apt-get install libncurses5-dev libdb-dev gettext
+$ sudo apt-get install libasound2-dev libjack-dev libflac-dev \ 
+ libmad0-dev libid3tag0-dev libsndfile1-dev 
+$ sudo apt-get install libcurl4-gnutls-dev librcc-dev libsamplerate0-dev libmagic-dev
+
+Build libpopt
+$ wget http://rpm5.org/files/popt/popt-1.16.tar.gz
+$ tar xf popt-1.16.tar.gz  
+$ cd popt-1.16
+$ autoreconf  
+$ ./configure --prefix=/usr/lib --enable-shared
+$ make 
+$ sudo make install  
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;check-out-from-repository&#34;&gt;check out from repository&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$ svn co svn://daper.net/moc/trunk  moc-svn
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;build-step&#34;&gt;Build step&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$ cd moc-svn  
+$ autoreconf 
+$ ./configure --enable-debug --perfix=/path/to/dev  
+$ make &amp;amp;&amp;amp; make install  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;debugging&#34;&gt;Debugging&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$cd /path/to/dev
+$ ./bin/mocp --debug  
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
-    
     <item>
       <title>Redirect and Save iptables on Ubuntu 12.04</title>
       <link>https://oopsmonk.github.io/posts/2013-07-05-savingiptables/</link>
       <pubDate>Fri, 05 Jul 2013 01:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2013-07-05-savingiptables/</guid>
-      <description>Redirect port 8080 to 80
-sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080 Check iptables setting
-sudo iptables -t nat -L Save configure to iptables.rules
-sudo iptables-save &amp;gt; /etc/iptables.rules Save Solution #1 Configre /etc/network/interfaces
-iface eth0 inet dhcp pre-up iptables-restore &amp;lt; /etc/iptables.rules Save Solution #2 Configure /etc/network/if-pre-up.d/iptablesload
-#!/bin/sh iptables-restore &amp;lt; /etc/iptables.rules exit 0 Configure /etc/network/if-post-down.d/iptablessave
-#!/bin/sh iptables-save -c &amp;gt; /etc/iptables.rules if [ -f /etc/iptables.downrules ]; then iptables-restore &amp;lt; /etc/iptables.</description>
+      <description>&lt;p&gt;Redirect port 8080 to 80&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Check iptables setting&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo iptables -t nat -L  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Save configure to &lt;code&gt;iptables.rules&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo iptables-save &amp;gt; /etc/iptables.rules  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;save-solution-1&#34;&gt;Save Solution #1&lt;/h2&gt;
+&lt;p&gt;Configre &lt;code&gt;/etc/network/interfaces&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;iface eth0 inet dhcp  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    pre-up iptables-restore &amp;lt; /etc/iptables.rules  
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;save-solution-2&#34;&gt;Save Solution #2&lt;/h2&gt;
+&lt;p&gt;Configure &lt;code&gt;/etc/network/if-pre-up.d/iptablesload&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/sh
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;iptables-restore &amp;lt; /etc/iptables.rules
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;exit &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Configure &lt;code&gt;/etc/network/if-post-down.d/iptablessave&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/sh
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;iptables-save -c &amp;gt; /etc/iptables.rules
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; -f /etc/iptables.downrules &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    iptables-restore &amp;lt; /etc/iptables.downrules
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;exit &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Change permissions&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Install JDK1.4.2(32bit) on Ubuntu 12.04 LTS(64bit) </title>
       <link>https://oopsmonk.github.io/posts/2013-06-20-jdk1.4.2/</link>
       <pubDate>Thu, 20 Jun 2013 01:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2013-06-20-jdk1.4.2/</guid>
-      <description>Here is an error occurred if installed directly:
-install.sfx.XXX: not found
-Solution:
-install g++-mltilib and JDK $ sudo apt-get install g++-multilib $ chmod +x j2sdk-1_4_2_19-linux-i586.bin $ ./j2sdk-1_4_2_19-linux-i586.bin ..... Do you agree to the above license terms? [yes or no] yes Unpacking... Checksumming... 0 0 Extracting... UnZipSFX 5.40 of 28 November 1998, by Info-ZIP (Zip-Bugs@lists.wku.edu). creating: j2sdk1.4.2_19/ creating: j2sdk1.4.2_19/jre/ creating: j2sdk1.4.2_19/jre/bin/ inflating: j2sdk1.4.2_19/jre/bin/java inflating: j2sdk1.4.2_19/jre/bin/keytool inflating: j2sdk1.4.2_19/jre/bin/policytool .... Creating j2sdk1.4.2_19/lib/tools.jar Creating j2sdk1.</description>
+      <description>&lt;p&gt;Here is an error occurred if installed directly:&lt;br&gt;
+&lt;strong&gt;install.sfx.XXX: not found&lt;/strong&gt;&lt;br&gt;
+Solution:&lt;/p&gt;
+&lt;h2 id=&#34;install-g-mltilib-and-jdk&#34;&gt;install g++-mltilib and JDK&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt-get install g++-multilib  
+$ chmod +x j2sdk-1_4_2_19-linux-i586.bin  
+$ ./j2sdk-1_4_2_19-linux-i586.bin
+.....
+Do you agree to the above license terms? [yes or no]
+yes
+Unpacking...
+Checksumming...
+0
+0
+Extracting...
+UnZipSFX 5.40 of 28 November 1998, by Info-ZIP (Zip-Bugs@lists.wku.edu).
+   creating: j2sdk1.4.2_19/
+   creating: j2sdk1.4.2_19/jre/
+   creating: j2sdk1.4.2_19/jre/bin/
+  inflating: j2sdk1.4.2_19/jre/bin/java
+  inflating: j2sdk1.4.2_19/jre/bin/keytool
+  inflating: j2sdk1.4.2_19/jre/bin/policytool
+....
+Creating j2sdk1.4.2_19/lib/tools.jar
+Creating j2sdk1.4.2_19/jre/lib/rt.jar
+Creating j2sdk1.4.2_19/jre/lib/jsse.jar
+Creating j2sdk1.4.2_19/jre/lib/charsets.jar
+Creating j2sdk1.4.2_19/jre/lib/ext/localedata.jar
+Creating j2sdk1.4.2_19/jre/lib/plugin.jar
+Creating j2sdk1.4.2_19/jre/javaws/javaws.jar
+Done.  
+$ sudo mkdir -p /usr/lib/jvm  
+$ sudo mv j2sdk1.4.2_19 /usr/lib/jvm/java-1.4.2_19
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;java-environment-configuration&#34;&gt;Java environment configuration.&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ wget http://webupd8.googlecode.com/files/update-java-0.5b  
+$ chmod +x update-java-0.5b
+$ sudo ./update-java-0.5b  
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;select-java-142_19&#34;&gt;Select java-1.4.2_19&lt;/h3&gt;
+
+&lt;img src=&#34;https://lh4.googleusercontent.com/-yu8Tt-wDPSk/UcF0cdDphYI/AAAAAAAAAKo/EEGteLUHDfI/s800/java-update-v0.5.png&#34; &gt;
+
+&lt;h3 id=&#34;check-java-version&#34;&gt;Check java version&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ java -version
+java version &amp;#34;1.4.2_19&amp;#34;
+Java(TM) 2 Runtime Environment, Standard Edition (build 1.4.2_19-b04)
+Java HotSpot(TM) Client VM (build 1.4.2_19-b04, mixed mode)  
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
-    
     <item>
       <title>Remove the same files in two folders</title>
       <link>https://oopsmonk.github.io/posts/2013-06-19-comparermfileintwofolder/</link>
       <pubDate>Wed, 19 Jun 2013 01:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2013-06-19-comparermfileintwofolder/</guid>
-      <description>有時在整理照片或文件時, 需要比對2個資料匣, 把重覆的檔案拿掉.
-Dwonload Source Here
-function usage(){ echo &amp;#34;Find the same file in two folders and remove it.&amp;#34; echo &amp;#34;usage : ./comp-rm.sh target-dir source-dir&amp;#34; echo &amp;#34;remove the same files in target-dir.&amp;#34; } if [ $# -ne 2 ]; then usage exit 1 fi target_dir=$1 source_dir=$2 f_list1=$(find &amp;#34;$target_dir&amp;#34; -type f) f_list2=$(find &amp;#34;$source_dir&amp;#34; -type f) for i in $f_list1; do echo $f_list2 | grep $(basename $i) &amp;gt;/dev/null &amp;amp;&amp;amp; hit_str+=$i&amp;#34;;&amp;#34; done if [ -z $hit_str ]; then echo &amp;#34;list is empty.</description>
+      <description>&lt;p&gt;有時在整理照片或文件時, 需要比對2個資料匣, 把重覆的檔案拿掉.&lt;br&gt;
+&lt;a href=&#34;https://oopsmonk.github.io/resource/2013-06-19/comp-rm.sh&#34;&gt;&lt;strong&gt;Dwonload Source Here&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; usage&lt;span style=&#34;color:#f92672&#34;&gt;(){&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Find the same file in two folders and remove it.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;usage : ./comp-rm.sh target-dir source-dir&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;remove the same files in target-dir.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; $# -ne &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    usage
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    exit &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;target_dir&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;$1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;source_dir&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;$2
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;f_list1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;find &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$target_dir&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; -type f&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;f_list2&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;find &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$source_dir&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; -type f&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i in $f_list1; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo $f_list2 | grep &lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;basename $i&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt; &amp;gt;/dev/null &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; hit_str&lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt;$i&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; -z $hit_str &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;list is empty..&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    exit &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;export IFS&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;count&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; hit_file in $hit_str; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$hit_file&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    let count++
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Do you want to remove these files (&lt;/span&gt;$count&lt;span style=&#34;color:#e6db74&#34;&gt;)?&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;read -p &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Press &amp;#39;Ctrl+C&amp;#39; stop, &amp;#39;Enter&amp;#39; key to continue...&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; hit_file in $hit_str; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;removing... &lt;/span&gt;$hit_file&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    rm -f $hit_file
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;exit &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
-    
     <item>
       <title>How to split boot.img and get kernel config</title>
       <link>https://oopsmonk.github.io/posts/2012-09-12-how2splitbootimage/</link>
       <pubDate>Wed, 12 Sep 2012 00:00:00 +0000</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2012-09-12-how2splitbootimage/</guid>
-      <description>boot_cm9.img file from mk802_legacy-compatibility_v1.zip
-Device: Rikomagic MK802
-Script files : Split_bootimg.pl , extract-ikconfig ( in {kernel_source}/script )
-Split boot.img Copy boot_cm9.img, Split_bootimg.pl, extract-ikconfig into &amp;lsquo;split_boot&amp;rsquo;
-$ mkdir split_boot $ cd split_boot $ ./split_bootimg.pl boot_cm9.img Page size: 2048 (0x00000800) Kernel size: 8094708 (0x007b83f4) Ramdisk size: 178940 (0x0002bafc) Second size: 0 (0x00000000) Board name: Command line: console=ttyS0,115200 rw init=/init loglevel=8 Writing boot_cm9.img-kernel ... complete. Writing boot_cm9.img-ramdisk.gz ... complete. Get kernel image (boot_cm9.img-kernel) and ramdisk (boot_cm9.</description>
+      <description>&lt;p&gt;boot_cm9.img file from &lt;a href=&#34;http://www.androidfilehost.com/main/Allwinner_A10_Developers/christiantroy/misc/legacy/mk802_legacy-compatibility_v1.zip&#34;&gt;mk802_legacy-compatibility_v1.zip&lt;/a&gt;&lt;br&gt;
+Device: Rikomagic MK802&lt;br&gt;
+Script files : &lt;a href=&#34;http://zen-droid.googlecode.com/files/split_bootimg.pl&#34;&gt;Split_bootimg.pl&lt;/a&gt; , extract-ikconfig ( in {kernel_source}/script )&lt;/p&gt;
+&lt;h2 id=&#34;split-bootimg&#34;&gt;Split boot.img&lt;/h2&gt;
+&lt;p&gt;Copy boot_cm9.img, Split_bootimg.pl, extract-ikconfig into &amp;lsquo;split_boot&amp;rsquo;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ mkdir split_boot
+$ cd split_boot
+$ ./split_bootimg.pl boot_cm9.img
+Page size: 2048 (0x00000800)
+Kernel size: 8094708 (0x007b83f4)
+Ramdisk size: 178940 (0x0002bafc)
+Second size: 0 (0x00000000)
+Board name:
+Command line: console=ttyS0,115200 rw init=/init loglevel=8
+Writing boot_cm9.img-kernel ... complete.
+Writing boot_cm9.img-ramdisk.gz ... complete.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Get kernel image (&lt;strong&gt;boot_cm9.img-kernel&lt;/strong&gt;) and ramdisk (&lt;strong&gt;boot_cm9.img-ramdisk.gz&lt;/strong&gt;)&lt;/p&gt;
+&lt;h2 id=&#34;extract-kernel-config&#34;&gt;Extract kernel config&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ dd if=boot_cm9.img-kernel of=dd_uImage bs=1024 skip=1
+7903+1 records in
+7903+1 records out
+8093684 bytes (8.1 MB) copied, 0.0178518 s, 453 MB/s
+$./extract-ikconfig dd_uImage &amp;gt; kernel_config
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;extract-ramdisk&#34;&gt;Extract ramdisk&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ mkdir ramdisk
+$ cd ramdisk
+$ gzip -dc ../boot_cm9.img-ramdisk.gz | cpio -i
+6677 blocks
+$ tree .
+.
+├── data
+├── default.prop
+├── dev
+├── init
+├── init.goldfish.rc
+├── initlogo.rle
+├── init.rc
+├── init.sun4i.rc
+├── init.sun4i.usb.rc
+├── proc
+├── sbin
+│   ├── adbd
+│   └── ueventd -&amp;gt; ../init
+├── sys
+├── system
+├── ueventd.goldfish.rc
+├── ueventd.rc
+└── ueventd.sun4i.rc
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Reference:&lt;br&gt;
+&lt;a href=&#34;http://android-dls.com/wiki/index.php?title=HOWTO:_Unpack%2C_Edit%2C_and_Re-Pack_Boot_Images&#34;&gt;HOWTO: Unpack, Edit, and Re-Pack Boot Images&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>How to extract kernel config from uImage</title>
       <link>https://oopsmonk.github.io/posts/2012-08-21-how2extractkernelconfigfromuimage/</link>
       <pubDate>Tue, 21 Aug 2012 00:00:00 +0000</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2012-08-21-how2extractkernelconfigfromuimage/</guid>
-      <description>Get extract-ikconfig in kernel-source/scripts/ $mkdir extreact-uImage $cd extreact-uImage $cp {kernel-source}/scripts/extract-ikconfig . Dump uImage skip 1024 bytes $cp {uImage/what/you/want} uImage $dd if=uImage of=dd_uImage bs=1024 skip=1 $./extract-ikconfig dd_uImage &amp;gt; config </description>
+      <description>&lt;h3 id=&#34;get-extract-ikconfig-in-kernel-sourcescripts&#34;&gt;Get extract-ikconfig in kernel-source/scripts/&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$mkdir extreact-uImage
+$cd extreact-uImage
+$cp {kernel-source}/scripts/extract-ikconfig .
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;dump-uimage-skip-1024-bytes&#34;&gt;Dump uImage skip 1024 bytes&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$cp {uImage/what/you/want} uImage
+$dd if=uImage of=dd_uImage bs=1024 skip=1
+$./extract-ikconfig dd_uImage &amp;gt; config 
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
-    
     <item>
       <title>Build XBMC for Android on lubuntu 12.04</title>
       <link>https://oopsmonk.github.io/posts/2012-07-28-buildxbmc/</link>
       <pubDate>Sat, 28 Jul 2012 00:00:00 +0000</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2012-07-28-buildxbmc/</guid>
-      <description>Install required packages # sudo apt-get install build-essential default-jdk git curl autoconf \ unzip zip zlib1g-dev gawk gperf Getting the Android SDK and NDK http://developer.android.com/sdk/index.html
-SDK : android-sdk_r20.0.1-linux.tgz
-crystax-5 NDK with enabled support of C++ exceptions, RTTI and Standard C++ Library
-http://www.crystax.net/en/android/ndk/7#download
-NDK : android-ndk-r7-crystax-5.beta2-linux-x86.tar.bz2
-Installing Android SDK packages &amp;lt;android-sdk&amp;gt; : $HOME/XBMC_Project/android-sdk-linux
-# cd &amp;lt;android-sdk&amp;gt;/tools # ./android update sdk -u -t platform,platform-tool Setup the Android toolchain &amp;lt;android-ndk&amp;gt; : $HOME/XBMC_Project/android-ndk-r8b &amp;lt;android-toolchain&amp;gt; : $HOME/XBMC_Project/android_toolchain/android-9</description>
+      <description>&lt;h3 id=&#34;install-required-packages&#34;&gt;Install required packages&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# sudo apt-get install build-essential default-jdk git curl autoconf \
+ unzip zip zlib1g-dev gawk gperf
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;getting-the-android-sdk-and-ndk&#34;&gt;Getting the Android SDK and NDK&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://developer.android.com/sdk/index.html&#34;&gt;http://developer.android.com/sdk/index.html&lt;/a&gt;&lt;br&gt;
+SDK : &lt;a href=&#34;http://dl.google.com/android/android-sdk_r20.0.1-linux.tgz&#34;&gt;android-sdk_r20.0.1-linux.tgz&lt;/a&gt;&lt;br&gt;
+crystax-5 NDK with enabled support of C++ exceptions, RTTI and Standard C++ Library&lt;br&gt;
+&lt;a href=&#34;http://www.crystax.net/en/android/ndk/7#download&#34;&gt;http://www.crystax.net/en/android/ndk/7#download&lt;/a&gt;&lt;br&gt;
+NDK : &lt;a href=&#34;http://www.crystax.net/en/download/android-ndk-r7-crystax-5.beta2-linux-x86.tar.bz2&#34;&gt;android-ndk-r7-crystax-5.beta2-linux-x86.tar.bz2&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;installing-android-sdk-packages&#34;&gt;Installing Android SDK packages&lt;/h3&gt;
+&lt;p&gt;&amp;lt;android-sdk&amp;gt; : $HOME/XBMC_Project/android-sdk-linux&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# cd &amp;lt;android-sdk&amp;gt;/tools
+# ./android update sdk -u -t platform,platform-tool
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;setup-the-android-toolchain&#34;&gt;Setup the Android toolchain&lt;/h3&gt;
+&lt;p&gt;&amp;lt;android-ndk&amp;gt; :  $HOME/XBMC_Project/android-ndk-r8b
+&amp;lt;android-toolchain&amp;gt; :  $HOME/XBMC_Project/android_toolchain/android-9&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# cd &amp;lt;android-ndk&amp;gt;
+# ls platforms
+# cd build/tools
+# ./make-standalone-toolchain.sh --ndk-dir=../../ \
+  --install-dir=&amp;lt;android-toolchain&amp;gt;/android-9 --platform=android-9
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;create-a-new-debug-key-to-sign-debug-apks&#34;&gt;Create a (new) debug key to sign debug APKs&lt;/h3&gt;
+&lt;p&gt;All packages must be signed. The following command will generate a self-signed debug key. If the result is a cryptic error, it probably just means a debug key already existed, no cause for alarm.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Android Threads, Handlers and AsyncTask</title>
       <link>https://oopsmonk.github.io/posts/2012-06-14-androidthreadshandlersandasynctask/</link>
       <pubDate>Thu, 14 Jun 2012 00:00:00 +0000</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2012-06-14-androidthreadshandlersandasynctask/</guid>
-      <description>先看過Processes and Threads會有比較清楚的概念, 當Adnroid Application 啟動後, 系統會建一個主要的thread 稱 &amp;ldquo;main thread&amp;rdquo; or &amp;ldquo;UI thread&amp;rdquo;, 所有的components 皆跑在這個UI thread, system calls 也是透過UI thread dispatched給各個component, ex: onKeyDown, touch event.
-UI thread 如因大量運算或等待而blocked, 預設超過5秒ANR(Application Not Responding)就會發生.
-且Android UI components 並非thread-safe, 使用上要特別小心.
-所以:
-long time computation使用另外的thread, 不要寫在 UI Thread. 不要在UI thread 之外使用UI component method. 透過Thread, Handler and AsyncTask perform asynchronous processing, 避免UI thread block. Threads Android 提供以下的method, 可在其它的thread 下調用 UI thread.
-Activity.runOnUiThread(Runnable) View.post(Runnable) &amp;lt;-- used in example code.</description>
+      <description>&lt;p&gt;先看過&lt;a href=&#34;http://developer.android.com/guide/components/processes-and-threads.html&#34;&gt;Processes and Threads&lt;/a&gt;會有比較清楚的概念, 當Adnroid Application 啟動後, 系統會建一個主要的thread 稱 &amp;ldquo;main thread&amp;rdquo; or &amp;ldquo;UI thread&amp;rdquo;, 所有的components 皆跑在這個UI thread, system calls 也是透過UI thread dispatched給各個component, ex: onKeyDown, touch event.&lt;br&gt;
+UI thread 如因大量運算或等待而blocked, 預設超過5秒ANR(Application Not Responding)就會發生.&lt;br&gt;
+且Android UI components 並非thread-safe, 使用上要特別小心.&lt;br&gt;
+所以:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;long time computation使用另外的thread, 不要寫在 UI Thread.&lt;/li&gt;
+&lt;li&gt;不要在UI thread 之外使用UI component method.&lt;/li&gt;
+&lt;li&gt;透過Thread, Handler and AsyncTask perform asynchronous processing, 避免UI thread block.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;threadshttpdeveloperandroidcomreferencejavalangthreadhtml&#34;&gt;&lt;a href=&#34;http://developer.android.com/reference/java/lang/Thread.html&#34;&gt;Threads&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Android 提供以下的method, 可在其它的thread 下調用 UI thread.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Activity.&lt;span style=&#34;color:#a6e22e&#34;&gt;runOnUiThread&lt;/span&gt;(Runnable)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;View.&lt;span style=&#34;color:#a6e22e&#34;&gt;post&lt;/span&gt;(Runnable) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;--&lt;/span&gt; used in example code.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;View.&lt;span style=&#34;color:#a6e22e&#34;&gt;postDelayed&lt;/span&gt;(Runnable, &lt;span style=&#34;color:#66d9ef&#34;&gt;long&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;或是使用Handler or AsyncTasks class 達到同樣的效果.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,68 +1,140 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>git on oopsmonk</title>
+    <title>Git on oopsmonk</title>
     <link>https://oopsmonk.github.io/tags/git/</link>
-    <description>Recent content in git on oopsmonk</description>
+    <description>Recent content in Git on oopsmonk</description>
     <image>
       <title>oopsmonk</title>
       <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
       <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Mar 2017 09:44:13 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Mar 2017 09:44:13 +0800</lastBuildDate>
+    <atom:link href="https://oopsmonk.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The First SHA1 Collision</title>
       <link>https://oopsmonk.github.io/posts/2017-03-03-the-first-sha1-collision/</link>
       <pubDate>Fri, 03 Mar 2017 09:44:13 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-03-03-the-first-sha1-collision/</guid>
-      <description>CWI Institute in Amsterdam and Google genrate two PDF documents with the same SHA-1 digest.
-Google security blog - Announcing the first SHA1 collision
-SHA-1 collistion and Git If a file A with X hash in local repository and with X hash in remote (SHA-1 collistion between local and remote), would overwrite the local version? Nope. If it has the same SHA1, it means that when we receive the object from the other end, we will not overwrite the object we already have.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.cwi.nl/&#34;&gt;CWI Institute in Amsterdam&lt;/a&gt; and Google genrate two PDF documents with the same SHA-1 digest.&lt;br&gt;
+Google security blog - &lt;a href=&#34;https://security.googleblog.com/2017/02/announcing-first-sha1-collision.html&#34;&gt;Announcing the first SHA1 collision&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;sha-1-collistion-and-git&#34;&gt;SHA-1 collistion and Git&lt;/h2&gt;
+&lt;h3 id=&#34;if-a-file-a-with-x-hash-in-local-repository-and-with-x-hash-in-remote-sha-1-collistion-between-local-and-remote-would-overwrite-the-local-version&#34;&gt;If a file A with X hash in local repository and with X hash in remote (SHA-1 collistion between local and remote), would overwrite the local version?&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Nope. If it has the same SHA1, it means that when we receive the object from the other end, we will &lt;em&gt;not&lt;/em&gt; overwrite the object we already have.&lt;br&gt;
+So you have two cases of collision:&lt;br&gt;
+the inadvertent kind, &amp;hellip;&lt;br&gt;
+The attacker kind &amp;hellip;&lt;br&gt;
+&amp;hellip;&lt;br&gt;
+So in this case, the collision is entirely a non-issue: you&amp;rsquo;ll get a &amp;ldquo;bad&amp;rdquo; repository that is different from what the attacker intended, but since you&amp;rsquo;ll never actually use his colliding object, it&amp;rsquo;s &lt;em&gt;literally&lt;/em&gt; no different from the attacker just not having found a collision at all, but just using the object you already had (ie it&amp;rsquo;s 100% equivalent to the &amp;ldquo;trivial&amp;rdquo; collision of the identical file generating the same SHA1).&lt;br&gt;
+See above. The only &lt;em&gt;dangerous&lt;/em&gt; kind of collision is the inadvertent kind, but that&amp;rsquo;s obviously also the very very unlikely kind.&lt;br&gt;
+Torvalds @ &lt;a href=&#34;http://marc.info/?l=git&amp;amp;m=115678778717621&amp;amp;w=2&#34;&gt;Git- Re: Starting to think about sha-256?&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Using Git With Multiple SSH Keys and Accounts</title>
       <link>https://oopsmonk.github.io/posts/2014-12-12-multiplesshkeyswithgithub/</link>
       <pubDate>Fri, 12 Dec 2014 01:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2014-12-12-multiplesshkeyswithgithub/</guid>
-      <description>Generating SSH keys for GitHub Here are github account and work account.
-GitHub:
-SSH Key: github_id_rsa
-Account: oopsmonk
-Work:
-SSH Key: work_id_rsa
-Account: SamChen
-Add SSH config File Modify ~/.ssh/config
-# Default github Host github.com HostName github.com PreferredAuthentications publickey IdentityFile ~/.ssh/github_id_rsa # Work git server Host work.gitserver.com HostName work.gitserver.com PreferredAuthentications publickey IdentityFile ~/.ssh/work_id_rsa Git Repository Configuation GitHub Project: $ git clone https://github.com/abc/projectA.git $ cd projectA #github account $ git config user.</description>
+      <description>&lt;h2 id=&#34;generating-ssh-keys-for-githubhttpshelpgithubcomarticlesgenerating-ssh-keys&#34;&gt;&lt;a href=&#34;https://help.github.com/articles/generating-ssh-keys/&#34;&gt;Generating SSH keys for GitHub&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Here are github account and work account.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;GitHub:&lt;br&gt;
+SSH Key: github_id_rsa&lt;br&gt;
+Account: oopsmonk&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Work:&lt;br&gt;
+SSH Key: work_id_rsa&lt;br&gt;
+Account: SamChen&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;add-ssh-config-file&#34;&gt;Add SSH config File&lt;/h2&gt;
+&lt;p&gt;Modify &lt;strong&gt;&lt;code&gt;~/.ssh/config&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# Default github
+Host github.com
+    HostName github.com
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/github_id_rsa
+
+# Work git server
+Host work.gitserver.com
+    HostName work.gitserver.com
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/work_id_rsa
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;git-repository-configuation&#34;&gt;Git Repository Configuation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub Project:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ git clone https://github.com/abc/projectA.git  
+$ cd projectA
+#github account
+$ git config user.name &amp;#34;oopsmonk&amp;#34;
+$ git config user.email &amp;#34;oopsmonk@example.com.tw&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Working Project:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ git clone https://work.com.tw/repo/projectW.git  
+$ cd projectW
+#working account
+$ git config user.name &amp;#34;SamChen&amp;#34;
+$ git config user.email &amp;#34;SamChen@example.com.tw&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Now you can deal with git repositories using different accounts.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>GitHub SVN Upstream (on Ubuntu12.04)</title>
       <link>https://oopsmonk.github.io/posts/2013-08-26-git-svn-upstream/</link>
       <pubDate>Mon, 26 Aug 2013 01:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2013-08-26-git-svn-upstream/</guid>
-      <description>This is a git tutorial, create svn upstream on GitHub.
-Use MOC project as a example.
-#Checkout SVN and push to GitHub. Install packages
-$ sudo apt-get install subversion git-svn Create git repository (it will take a long time)
-$ git svn clone svn://daper.net/moc/trunk --no-metadata ./moc-svn-git $ cat moc-svn-git/.git/config [core] repositoryformatversion = 0 filemode = true bare = false logallrefupdates = true [svn-remote &amp;#34;svn&amp;#34;] noMetadata = 1 url = svn://daper.net/moc/trunk fetch = :refs/remotes/git-svn Update SVN repository</description>
+      <description>&lt;p&gt;This is a git tutorial, create svn upstream on GitHub.&lt;br&gt;
+Use &lt;a href=&#34;http://moc.daper.net/&#34;&gt;MOC&lt;/a&gt; project as a example.&lt;/p&gt;
+&lt;p&gt;#Checkout SVN and push to GitHub. &lt;br&gt;
+Install packages&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo apt-get install subversion git-svn
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Create git repository (it will take a long time)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ git svn clone svn://daper.net/moc/trunk --no-metadata ./moc-svn-git  
+$ cat moc-svn-git/.git/config  
+[core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+[svn-remote &amp;#34;svn&amp;#34;]
+        noMetadata = 1
+        url = svn://daper.net/moc/trunk
+        fetch = :refs/remotes/git-svn
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Update SVN repository&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Add Git SHA1 property in Apache ANT build.xml</title>
       <link>https://oopsmonk.github.io/posts/2013-06-13-getgitinfoinant/</link>
       <pubDate>Thu, 13 Jun 2013 01:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2013-06-13-getgitinfoinant/</guid>
-      <description>Create git.SHA1 property in build.xml file.
-&amp;lt;available file=&amp;#34;.git&amp;#34; type=&amp;#34;dir&amp;#34; property=&amp;#34;git.present&amp;#34;/&amp;gt; &amp;lt;target name=&amp;#34;git.info&amp;#34; description=&amp;#34;Store git info&amp;#34; if=&amp;#34;git.present&amp;#34;&amp;gt; &amp;lt;exec executable=&amp;#34;git&amp;#34; outputproperty=&amp;#34;git.SHA1&amp;#34; failifexecutionfails=&amp;#34;false&amp;#34; errorproperty=&amp;#34;&amp;#34;&amp;gt; &amp;lt;arg value=&amp;#34;log&amp;#34;/&amp;gt; &amp;lt;arg value=&amp;#34;--pretty=oneline&amp;#34;/&amp;gt; &amp;lt;arg value=&amp;#34;-n1&amp;#34;/&amp;gt; &amp;lt;/exec&amp;gt; &amp;lt;condition property=&amp;#34;git.version&amp;#34; value=&amp;#34;${git.SHA1}&amp;#34; else=&amp;#34;unknown&amp;#34;&amp;gt; &amp;lt;and&amp;gt; &amp;lt;isset property=&amp;#34;git.SHA1&amp;#34;/&amp;gt; &amp;lt;length string=&amp;#34;${git.SHA1}&amp;#34; trim=&amp;#34;yes&amp;#34; length=&amp;#34;0&amp;#34; when=&amp;#34;greater&amp;#34;/&amp;gt; &amp;lt;/and&amp;gt; &amp;lt;/condition&amp;gt; &amp;lt;echo message=&amp;#34;print git log : &amp;#34; /&amp;gt; &amp;lt;echo message=&amp;#34;${git.SHA1}&amp;#34; /&amp;gt; &amp;lt;/target&amp;gt; Reference:
-How to lookup the latest git commit hash from an ant build script</description>
+      <description>&lt;p&gt;Create &lt;code&gt;git.SHA1&lt;/code&gt; property in build.xml file.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;available&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;file=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.git&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;dir&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;property=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;git.present&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;target&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;git.info&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;description=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Store git info&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;if=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;git.present&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;exec&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;executable=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;git&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;outputproperty=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;git.SHA1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;failifexecutionfails=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;false&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;errorproperty=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;arg&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;value=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;log&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;arg&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;value=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;--pretty=oneline&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;arg&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;value=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;-n1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/exec&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;condition&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;property=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;git.version&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;value=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;${git.SHA1}&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;else=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;unknown&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;and&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;isset&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;property=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;git.SHA1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;length&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;string=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;${git.SHA1}&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;trim=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;yes&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;length=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;0&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;when=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;greater&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/and&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/condition&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;echo&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;message=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;print git log : &amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;echo&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;message=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;${git.SHA1}&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/target&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Reference:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/2974106/how-to-lookup-the-latest-git-commit-hash-from-an-ant-build-script&#34;&gt;How to lookup the latest git commit hash from an ant build script&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

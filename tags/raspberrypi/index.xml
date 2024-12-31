@@ -9,112 +9,340 @@
       <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
       <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Jun 2022 13:01:48 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/raspberrypi/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Jun 2022 13:01:48 +0800</lastBuildDate>
+    <atom:link href="https://oopsmonk.github.io/tags/raspberrypi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Note-taking and file sharing with Syncthing and Joplin</title>
       <link>https://oopsmonk.github.io/posts/2022-06-05-syncthin-joplin/</link>
       <pubDate>Sun, 05 Jun 2022 13:01:48 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2022-06-05-syncthin-joplin/</guid>
-      <description>You can find many note-taking services, like, Evernote, Google Keep, Notion, Obsidian and online storage services such as, Dropbox, Google Drive, OneDrive, iCloud. They are easy to use and secure. But, secure is not equal to private! A way to keep privacy is host private services by self.
-Edward Snowden’s Privacy Tips: “Get Rid Of Dropbox,” Avoid Facebook And Google
-This is how I share/edit notes and files with different devices which service providers are unable to peek and analyze my private contents.</description>
+      <description>&lt;p&gt;You can find many note-taking services, like, Evernote, Google Keep, Notion, Obsidian and online storage services such as, Dropbox, Google Drive, OneDrive, iCloud. They are easy to use and secure. But, secure is not equal to private! A way to keep privacy is host private services by self.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://techcrunch.com/2014/10/11/edward-snowden-new-yorker-festival/&#34;&gt;Edward Snowden’s Privacy Tips: “Get Rid Of Dropbox,” Avoid Facebook And Google&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2022-06-05/Syncthing-Joplin-Setup.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This is how I share/edit notes and files with different devices which &lt;strong&gt;service providers are unable to peek and analyze my private contents&lt;/strong&gt;. Joplin and Syncthing in grey are optional in the diagram, for example notes can be written on the Raspberry Pi through &lt;a href=&#34;https://joplinapp.org/terminal/&#34;&gt;the terminal Joplin application&lt;/a&gt;, files can share between the Phone and the PC directly but my Raspberry Pi is online 24/7.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>RaspberryPi3: GLMark2 using weston with DRM backend</title>
       <link>https://oopsmonk.github.io/posts/2017-06-05-raspberrypi3-glmark2-using-weston-with-drm-backend/</link>
       <pubDate>Mon, 05 Jun 2017 09:39:30 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-06-05-raspberrypi3-glmark2-using-weston-with-drm-backend/</guid>
-      <description>How to use weston with DRM backend in Raspbian, and gets benchmark score by GLMark2.
-With regards to hardware acceleration, We can enable VC4 driver through raspi-config.
-# update system and raspi-config script $ sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade $ sudo apt-get install raspi-config # enable Broadcom VC4 driver $ sudo raspi-config Advanced Options -&amp;gt; GL Driver -&amp;gt; GL (Full KMS) Test environment:
-2017-04-10-raspbian-jessie-lite HDMI 1080P 60Hz CPU/GPU use default settings(no overclock) Test packages:</description>
+      <description>&lt;p&gt;How to use weston with DRM backend in Raspbian, and gets benchmark score by GLMark2.&lt;br&gt;
+With regards to hardware acceleration, We can enable VC4 driver through &lt;code&gt;raspi-config&lt;/code&gt;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# update system and raspi-config script
+$ sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade  
+$ sudo apt-get install raspi-config
+
+# enable Broadcom VC4 driver 
+$ sudo raspi-config
+Advanced Options -&amp;gt; GL Driver -&amp;gt; GL (Full KMS)  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Test environment:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2017-04-10-raspbian-jessie-lite&lt;/li&gt;
+&lt;li&gt;HDMI 1080P 60Hz&lt;/li&gt;
+&lt;li&gt;CPU/GPU use default settings(no overclock)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Test packages:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>LibCEC on Raspberry Pi</title>
       <link>https://oopsmonk.github.io/posts/2015-11-03-libcec-on-raspberry-pi/</link>
       <pubDate>Tue, 03 Nov 2015 14:44:47 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2015-11-03-libcec-on-raspberry-pi/</guid>
-      <description>Install requirements sudo apt-get install build-essential autoconf liblockdev1-dev \ libudev-dev git libtool pkg-config cmake libxrandr-dev -y Python and Swing support (Optional)
-sudo apt-get install python-dev swig -y Checkout and build libcec source code The current version is libcec-3.0.1, but I got an error as follows:
-make[2]: *** No rule to make target &#39;1&#39;, needed by &#39;src/libcec/libcec.so.3.0.1&#39;. Stop. Using libcec-3.0.0 instead of libcec-3.0.1, it&amp;rsquo;s work properly.
-git clone https://github.com/Pulse-Eight/libcec.git cd libcec git checkout libcec-3.</description>
+      <description>&lt;h2 id=&#34;install-requirements&#34;&gt;Install requirements&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install build-essential autoconf liblockdev1-dev \
+libudev-dev git libtool pkg-config cmake libxrandr-dev -y  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Python and Swing support (Optional)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install python-dev swig -y  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;checkout-and-build-libcec-source-code&#34;&gt;Checkout and build libcec source code&lt;/h2&gt;
+&lt;p&gt;The current version is libcec-3.0.1, but I got an error as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;make[2]: *** No rule to make target &#39;1&#39;, needed by &#39;src/libcec/libcec.so.3.0.1&#39;.  Stop.  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Using libcec-3.0.0 instead of libcec-3.0.1, it&amp;rsquo;s work properly.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/Pulse-Eight/libcec.git  
+cd libcec
+git checkout libcec-3.0.0 -b cec3.0.0  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Checkout platform source&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>New Feature: Real-Time Monitoring</title>
       <link>https://oopsmonk.github.io/posts/2015-07-04-new-feature-real-time-monitoring/</link>
       <pubDate>Sat, 04 Jul 2015 17:37:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2015-07-04-new-feature-real-time-monitoring/</guid>
-      <description>Real-Time Monitor for rpi-monitor:
-Update system status every 5 seconds. Two HTML layouts: change different layout via click Real-Time on navigation bar. Project on github: rpi-monitor Layout 1(default):
-Layout 2:</description>
+      <description>&lt;p&gt;Real-Time Monitor for rpi-monitor:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Update system status every 5 seconds.&lt;/li&gt;
+&lt;li&gt;Two HTML layouts: change different layout via click &lt;code&gt;Real-Time&lt;/code&gt; on navigation bar.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;a target=&#34;_blank&#34; href=&#34;https://github.com/oopsmonk/rpi-monitor&#34;&gt;Project on github: rpi-monitor&lt;/a&gt;  
+
+&lt;p&gt;Layout 1(default):&lt;br&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2015-07-04/RealTime_s.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Layout 2:&lt;br&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2015-07-04/RealTime2_s.png&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Build A Blog with Jekyll and GitHub on Raspberry Pi</title>
       <link>https://oopsmonk.github.io/posts/2015-03-05-build-a-blog-with-jekyll-on-raspberry-pi/</link>
       <pubDate>Thu, 05 Mar 2015 23:30:11 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2015-03-05-build-a-blog-with-jekyll-on-raspberry-pi/</guid>
-      <description>I recently switched my blog from Google Blogger to GitHub Pages, here is how I built my blog. I&amp;rsquo;ll go through the following:
-Install Jekyll on Raspberry Pi Setup Jekyll Theme Post a new article Images minimization Commit to GitHub Using Jekyll and Minimal Mistake build a blog and host on GitHub and Raspberry Pi(or Ubuntu).
-Requirements:
-Raspberry Pi(or Ubuntu) GitHub account Jekyll 2.2+ Minimal Mistake Grunt If you have no idea with these things, here are useful resources:</description>
+      <description>&lt;p&gt;I recently switched my blog from &lt;a href=&#34;http://oopsmonk.blogspot.tw/&#34;&gt;Google Blogger&lt;/a&gt; to GitHub Pages, here is how I built my blog. I&amp;rsquo;ll go through the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install Jekyll on Raspberry Pi&lt;/li&gt;
+&lt;li&gt;Setup Jekyll Theme&lt;/li&gt;
+&lt;li&gt;Post a new article&lt;/li&gt;
+&lt;li&gt;Images minimization&lt;/li&gt;
+&lt;li&gt;Commit to GitHub&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Using Jekyll and Minimal Mistake build a blog and host on GitHub and Raspberry Pi(or Ubuntu).&lt;br&gt;
+Requirements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Raspberry Pi(or Ubuntu)&lt;/li&gt;
+&lt;li&gt;GitHub account&lt;/li&gt;
+&lt;li&gt;Jekyll 2.2+&lt;/li&gt;
+&lt;li&gt;Minimal Mistake&lt;/li&gt;
+&lt;li&gt;Grunt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you have no idea with these things, here are useful resources:&lt;br&gt;
+&lt;a href=&#34;http://jekyllbootstrap.com/lessons/jekyll-introduction.html&#34;&gt;How Jekyll Works&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://jekyllrb.com/docs/installation/&#34;&gt;Jekyll Installation&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://mmistakes.github.io/minimal-mistakes/theme-setup/&#34;&gt;Minimal Mistake Theme Setup&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub Pages&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://gruntjs.com/getting-started&#34;&gt;Getting started - Grunt&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Raspberry Pi Monitor</title>
       <link>https://oopsmonk.github.io/posts/2014-07-21-rpimonitor/</link>
       <pubDate>Mon, 21 Jul 2014 01:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2014-07-21-rpimonitor/</guid>
-      <description>Use RRDTool monitor Raspberry Pi, include CPU temperture, Memory usage, Disk I/O, Network I/O&amp;hellip;
-Install install packages
-$sudo apt-get install libcairo2-dev libpango1.0-dev libglib2.0-dev libxml2-dev \ librrd-dev python2.7-dev rrdtool python-rrdtool $wget https://pypi.python.org/packages/source/p/psutil/psutil-2.1.1.tar.gz $tar xf psutil-2.1.1.tar.gz $cd psutil-2.1.1 $sudo python setup.py install Download or clone rpi-monitor on github
-https://github.com/oopsmonk/rpi-monitor
-Setup Crontab By defualt, the cron.log is disabled in Raspbian. To enable it:
-sudo vi /etc/rsyslog.conf find the line and uncomment it.
-# cron.</description>
+      <description>&lt;p&gt;Use RRDTool monitor Raspberry Pi, include CPU temperture, Memory usage, Disk I/O, Network I/O&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
+&lt;p&gt;install packages&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$sudo apt-get install libcairo2-dev libpango1.0-dev libglib2.0-dev libxml2-dev \ 
+ librrd-dev python2.7-dev rrdtool python-rrdtool
+$wget https://pypi.python.org/packages/source/p/psutil/psutil-2.1.1.tar.gz
+$tar xf psutil-2.1.1.tar.gz
+$cd psutil-2.1.1
+$sudo python setup.py install
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Download or clone rpi-monitor on github&lt;br&gt;
+&lt;a href=&#34;https://github.com/oopsmonk/rpi-monitor&#34;&gt;https://github.com/oopsmonk/rpi-monitor&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;setup-crontab&#34;&gt;Setup Crontab&lt;/h2&gt;
+&lt;p&gt;By defualt, the &lt;code&gt;cron.log&lt;/code&gt; is disabled in &lt;a href=&#34;http://www.raspbian.org/&#34;&gt;Raspbian&lt;/a&gt;.
+To enable it:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo vi /etc/rsyslog.conf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;find the line and uncomment it.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# cron.*                          /var/log/cron.log
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Restart &lt;code&gt;rsyslog&lt;/code&gt; via:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Building MOC</title>
       <link>https://oopsmonk.github.io/posts/2013-08-23-mocbuilding/</link>
       <pubDate>Fri, 23 Aug 2013 01:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2013-08-23-mocbuilding/</guid>
-      <description>clone MOC svn repository to github Ref: Converting a Subversion repository to Git
-$ sudo apt-get install subversion git-svn $ mkdir moc-svn $ cd moc-svn $ svn co svn://daper.net/moc/trunk $ svn log -q | awk -F &amp;#39;|&amp;#39; &amp;#39;/^r/ {sub(&amp;#34;^ &amp;#34;, &amp;#34;&amp;#34;, $2); sub(&amp;#34; $&amp;#34;, &amp;#34;&amp;#34;, $2); print $2&amp;#34; = &amp;#34;$2&amp;#34; &amp;lt;&amp;#34;$2&amp;#34;&amp;gt;&amp;#34;}&amp;#39; | sort -u &amp;gt; authors-transform.txt $ cd .. $ mkdir moc-git $ git svn clone svn://daper.net/moc/trunk --no-metadata -A ./moc-svn/authors-transform.txt .</description>
+      <description>&lt;h2 id=&#34;clone-moc-svn-repository-to-github&#34;&gt;clone MOC svn repository to github&lt;/h2&gt;
+&lt;p&gt;Ref: &lt;a href=&#34;http://john.albin.net/git/convert-subversion-to-git&#34;&gt;Converting a Subversion repository to Git&lt;/a&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt-get install subversion git-svn  
+$ mkdir moc-svn  
+$ cd moc-svn  
+$ svn co svn://daper.net/moc/trunk  
+$ svn log -q | awk -F &amp;#39;|&amp;#39; &amp;#39;/^r/ {sub(&amp;#34;^ &amp;#34;, &amp;#34;&amp;#34;, $2); sub(&amp;#34; $&amp;#34;, &amp;#34;&amp;#34;, $2); print $2&amp;#34; = &amp;#34;$2&amp;#34; &amp;lt;&amp;#34;$2&amp;#34;&amp;gt;&amp;#34;}&amp;#39; | sort -u &amp;gt; authors-transform.txt  
+$ cd ..  
+$ mkdir moc-git  
+$ git svn clone svn://daper.net/moc/trunk --no-metadata -A ./moc-svn/authors-transform.txt ./moc-git  
+$ cd moc-git  
+$ git svn show-ignore &amp;gt; .gitignore  
+$ git add -f .gitignore  
+$ git commit -m &amp;#34;Convert svn:ignore to .gitignore.&amp;#34;  
+$ mkdir ../moc-bare  
+$ git clone --bare ../moc-bare  
+$ cd ../moc-bare/moc-git.git  
+#Create empty repository on GitHub.  
+$ git push --mirror https://github.com/oopsmonk/moc-git.git  
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;install-develop-package-for-moc-ubuntu&#34;&gt;install develop package for MOC (Ubuntu)&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt-get install build-essential libdb-dev gettext  
+
+Optional libraries:  
+
+Sound driver:
+ALSA - libasound2-dev
+JACK - libjack-dev
+
+Decoder:
+FLAC - libflac-dev
+MP3 - libmad0-dev, libid3tag0-dev
+sndfile, vorbis - libsndfile1-dev
+
+Network: libcurl4-gnutls-dev
+RCC: librcc-dev
+Resample : libsamplerate0-dev
+MIME magic: libmagic-dev
+After release 2.5 MOC will require libpopt.
+
+$ sudo apt-get install libasound2-dev libjack-dev \ 
+ libflac-dev libmad0-dev libid3tag0-dev libsndfile1-dev 
+$ sudo apt-get install libcurl4-gnutls-dev librcc-dev \
+ libsamplerate0-dev libmagic-dev libpopt
+
+-----------------------------------------------------------------------
+MOC will be compiled with:
+
+Decoder plugins:   flac mp3 sndfile vorbis
+Sound Drivers:     OSS ALSA JACK
+DEBUG:             yes
+RCC:               yes
+Network streams:   yes
+Resampling:        yes
+MIME magic:        yes
+-----------------------------------------------------------------------
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;install-develop-package-for-moc-raspberry-pi&#34;&gt;install develop package for MOC (Raspberry Pi)&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt-get install build-essential autoconf automake libtool
+$ sudo apt-get install libncurses5-dev libdb-dev gettext
+$ sudo apt-get install libasound2-dev libjack-dev libflac-dev \ 
+ libmad0-dev libid3tag0-dev libsndfile1-dev 
+$ sudo apt-get install libcurl4-gnutls-dev librcc-dev libsamplerate0-dev libmagic-dev
+
+Build libpopt
+$ wget http://rpm5.org/files/popt/popt-1.16.tar.gz
+$ tar xf popt-1.16.tar.gz  
+$ cd popt-1.16
+$ autoreconf  
+$ ./configure --prefix=/usr/lib --enable-shared
+$ make 
+$ sudo make install  
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;check-out-from-repository&#34;&gt;check out from repository&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$ svn co svn://daper.net/moc/trunk  moc-svn
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;build-step&#34;&gt;Build step&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$ cd moc-svn  
+$ autoreconf 
+$ ./configure --enable-debug --perfix=/path/to/dev  
+$ make &amp;amp;&amp;amp; make install  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;debugging&#34;&gt;Debugging&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$cd /path/to/dev
+$ ./bin/mocp --debug  
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
-    
     <item>
       <title>Remove the same files in two folders</title>
       <link>https://oopsmonk.github.io/posts/2013-06-19-comparermfileintwofolder/</link>
       <pubDate>Wed, 19 Jun 2013 01:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2013-06-19-comparermfileintwofolder/</guid>
-      <description>有時在整理照片或文件時, 需要比對2個資料匣, 把重覆的檔案拿掉.
-Dwonload Source Here
-function usage(){ echo &amp;#34;Find the same file in two folders and remove it.&amp;#34; echo &amp;#34;usage : ./comp-rm.sh target-dir source-dir&amp;#34; echo &amp;#34;remove the same files in target-dir.&amp;#34; } if [ $# -ne 2 ]; then usage exit 1 fi target_dir=$1 source_dir=$2 f_list1=$(find &amp;#34;$target_dir&amp;#34; -type f) f_list2=$(find &amp;#34;$source_dir&amp;#34; -type f) for i in $f_list1; do echo $f_list2 | grep $(basename $i) &amp;gt;/dev/null &amp;amp;&amp;amp; hit_str+=$i&amp;#34;;&amp;#34; done if [ -z $hit_str ]; then echo &amp;#34;list is empty.</description>
+      <description>&lt;p&gt;有時在整理照片或文件時, 需要比對2個資料匣, 把重覆的檔案拿掉.&lt;br&gt;
+&lt;a href=&#34;https://oopsmonk.github.io/resource/2013-06-19/comp-rm.sh&#34;&gt;&lt;strong&gt;Dwonload Source Here&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; usage&lt;span style=&#34;color:#f92672&#34;&gt;(){&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Find the same file in two folders and remove it.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;usage : ./comp-rm.sh target-dir source-dir&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;remove the same files in target-dir.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; $# -ne &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    usage
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    exit &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;target_dir&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;$1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;source_dir&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;$2
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;f_list1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;find &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$target_dir&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; -type f&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;f_list2&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;find &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$source_dir&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; -type f&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i in $f_list1; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo $f_list2 | grep &lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;basename $i&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt; &amp;gt;/dev/null &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; hit_str&lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt;$i&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; -z $hit_str &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;list is empty..&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    exit &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;export IFS&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;count&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; hit_file in $hit_str; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$hit_file&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    let count++
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Do you want to remove these files (&lt;/span&gt;$count&lt;span style=&#34;color:#e6db74&#34;&gt;)?&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;read -p &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Press &amp;#39;Ctrl+C&amp;#39; stop, &amp;#39;Enter&amp;#39; key to continue...&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; hit_file in $hit_str; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;removing... &lt;/span&gt;$hit_file&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    rm -f $hit_file
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;exit &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
-    
     <item>
       <title>Raspberry Pi Setup</title>
       <link>https://oopsmonk.github.io/posts/2013-06-15-rpisetup/</link>
       <pubDate>Sat, 15 Jun 2013 01:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2013-06-15-rpisetup/</guid>
-      <description>Install Raspbian &amp;ldquo;wheezy&amp;rdquo; image Download image from Raspberry Pi offical website
-Mount HOME to HDD Copy HOME data to disk $ sudo mkdir /media/new_home $ sudo mount /dev/sda1 /media/new_home $ sudo rsync -aXS /home/. /media/new_home/. $ sudo umount /media/new_home fstab #get disk UUID $ sudo blkid /dev/mmcblk0p1: SEC_TYPE=&amp;#34;msdos&amp;#34; LABEL=&amp;#34;boot&amp;#34; UUID=&amp;#34;936C-7122&amp;#34; TYPE=&amp;#34;vfat&amp;#34; /dev/mmcblk0p2: UUID=&amp;#34;c1198422-7a7c-4863-8a8f-45a1db26b4f2&amp;#34; TYPE=&amp;#34;ext4&amp;#34; /dev/sda1: UUID=&amp;#34;2cd990b5-6c27-4933-95d0-fd00b000fe77&amp;#34; TYPE=&amp;#34;ext4&amp;#34; #modify fstab $ echo &amp;#34;UUID=2cd880b5-6c27-4933-95d0-fd00b000fe77 /home ext4 defaults 0 2&amp;#34; | sudo tee --append /etc/fstab #mount HOMW without reboot.</description>
+      <description>&lt;h2 id=&#34;install-raspbian-wheezy-image&#34;&gt;Install Raspbian &amp;ldquo;wheezy&amp;rdquo; image&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.raspberrypi.org/downloads&#34;&gt;Download image from Raspberry Pi offical website&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;mount-home-to-hdd&#34;&gt;Mount HOME to HDD&lt;/h2&gt;
+&lt;h3 id=&#34;copy-home-data-to-disk&#34;&gt;Copy HOME data to disk&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo mkdir /media/new_home
+$ sudo mount /dev/sda1 /media/new_home
+$ sudo rsync -aXS /home/. /media/new_home/.
+$ sudo umount /media/new_home 
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;fstab&#34;&gt;fstab&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#get disk UUID
+$ sudo blkid
+/dev/mmcblk0p1: SEC_TYPE=&amp;#34;msdos&amp;#34; LABEL=&amp;#34;boot&amp;#34; UUID=&amp;#34;936C-7122&amp;#34; TYPE=&amp;#34;vfat&amp;#34;
+/dev/mmcblk0p2: UUID=&amp;#34;c1198422-7a7c-4863-8a8f-45a1db26b4f2&amp;#34; TYPE=&amp;#34;ext4&amp;#34;
+/dev/sda1: UUID=&amp;#34;2cd990b5-6c27-4933-95d0-fd00b000fe77&amp;#34; TYPE=&amp;#34;ext4&amp;#34;
+
+#modify fstab
+$ echo &amp;#34;UUID=2cd880b5-6c27-4933-95d0-fd00b000fe77    /home    ext4    defaults    0    2&amp;#34; | sudo tee --append /etc/fstab
+
+#mount HOMW without reboot.
+$ sudo mount -a
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;create-a-sudo-user&#34;&gt;Create a sudo user&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#create user with HOME directory 
+$ sudo useradd -m oopsmonk
+#add user to sudo group 
+$ sudo adduser oopsmonk sudo 
+#set password 
+$ sudo passwd oopsmonk 
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;install-necessary-packages&#34;&gt;Install necessary packages&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo aptitude full-upgrade -y
+$ sudo aptitude install tmux vim git python-setuptools -y
+$ sudo easy_install pip
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;samba-server&#34;&gt;SAMBA server&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo aptitude install samba
+$ sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.bak
+$ sudo vi /etc/samba/smb.conf
+enable sucurity user
+#   security = user
+[rpi]
+comment = raspberry-pi
+path = /home/oopsmonk/
+browseable = yes
+writable = yes
+read only = no
+
+#add smaba user and restart samba server
+$ sudo pdbedit -a -u oopsmonk
+$ sudo service samba restart
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;configre-default-editor&#34;&gt;Configre default editor&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ echo &amp;#34;export EDITOR=vim&amp;#34; &amp;gt;&amp;gt; ~/.bashrc
+$ echo &amp;#34;export GIT_EDITOR=vim&amp;#34; &amp;gt;&amp;gt; ~/.bashrc
+$ echo &amp;#34;export TERM=screen-256color&amp;#34; &amp;gt;&amp;gt; ~/.bashrc
+$ echo &amp;#34;alias tmux=&amp;#39;tmux -2&amp;#39;&amp;#34; &amp;gt;&amp;gt; ~/.bashrc
+$ source ~/.bashrc
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;boot-from-usb-disk&#34;&gt;Boot from USB Disk&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Use &lt;a href=&#34;http://en.wikipedia.org/wiki/Dd_(Unix)&#34;&gt;dd&lt;/a&gt; or &lt;a href=&#34;http://sourceforge.net/projects/win32diskimager/&#34;&gt;Win32DiskImager&lt;/a&gt; dump image to both SD card and USB Disk.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

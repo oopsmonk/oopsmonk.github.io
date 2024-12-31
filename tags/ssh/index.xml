@@ -1,33 +1,68 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>ssh on oopsmonk</title>
+    <title>Ssh on oopsmonk</title>
     <link>https://oopsmonk.github.io/tags/ssh/</link>
-    <description>Recent content in ssh on oopsmonk</description>
+    <description>Recent content in Ssh on oopsmonk</description>
     <image>
       <title>oopsmonk</title>
       <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
       <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Dec 2014 01:53:31 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Dec 2014 01:53:31 +0800</lastBuildDate>
+    <atom:link href="https://oopsmonk.github.io/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using Git With Multiple SSH Keys and Accounts</title>
       <link>https://oopsmonk.github.io/posts/2014-12-12-multiplesshkeyswithgithub/</link>
       <pubDate>Fri, 12 Dec 2014 01:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2014-12-12-multiplesshkeyswithgithub/</guid>
-      <description>Generating SSH keys for GitHub Here are github account and work account.
-GitHub:
-SSH Key: github_id_rsa
-Account: oopsmonk
-Work:
-SSH Key: work_id_rsa
-Account: SamChen
-Add SSH config File Modify ~/.ssh/config
-# Default github Host github.com HostName github.com PreferredAuthentications publickey IdentityFile ~/.ssh/github_id_rsa # Work git server Host work.gitserver.com HostName work.gitserver.com PreferredAuthentications publickey IdentityFile ~/.ssh/work_id_rsa Git Repository Configuation GitHub Project: $ git clone https://github.com/abc/projectA.git $ cd projectA #github account $ git config user.</description>
+      <description>&lt;h2 id=&#34;generating-ssh-keys-for-githubhttpshelpgithubcomarticlesgenerating-ssh-keys&#34;&gt;&lt;a href=&#34;https://help.github.com/articles/generating-ssh-keys/&#34;&gt;Generating SSH keys for GitHub&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Here are github account and work account.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;GitHub:&lt;br&gt;
+SSH Key: github_id_rsa&lt;br&gt;
+Account: oopsmonk&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Work:&lt;br&gt;
+SSH Key: work_id_rsa&lt;br&gt;
+Account: SamChen&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;add-ssh-config-file&#34;&gt;Add SSH config File&lt;/h2&gt;
+&lt;p&gt;Modify &lt;strong&gt;&lt;code&gt;~/.ssh/config&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# Default github
+Host github.com
+    HostName github.com
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/github_id_rsa
+
+# Work git server
+Host work.gitserver.com
+    HostName work.gitserver.com
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/work_id_rsa
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;git-repository-configuation&#34;&gt;Git Repository Configuation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub Project:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ git clone https://github.com/abc/projectA.git  
+$ cd projectA
+#github account
+$ git config user.name &amp;#34;oopsmonk&amp;#34;
+$ git config user.email &amp;#34;oopsmonk@example.com.tw&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Working Project:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ git clone https://work.com.tw/repo/projectW.git  
+$ cd projectW
+#working account
+$ git config user.name &amp;#34;SamChen&amp;#34;
+$ git config user.email &amp;#34;SamChen@example.com.tw&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Now you can deal with git repositories using different accounts.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

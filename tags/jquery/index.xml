@@ -1,28 +1,90 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>jQuery on oopsmonk</title>
+    <title>JQuery on oopsmonk</title>
     <link>https://oopsmonk.github.io/tags/jquery/</link>
-    <description>Recent content in jQuery on oopsmonk</description>
+    <description>Recent content in JQuery on oopsmonk</description>
     <image>
       <title>oopsmonk</title>
       <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
       <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Aug 2013 01:53:31 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Aug 2013 01:53:31 +0800</lastBuildDate>
+    <atom:link href="https://oopsmonk.github.io/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Web dev example : JSON &amp; jQuery Mobile &amp; Bottle</title>
       <link>https://oopsmonk.github.io/posts/2013-08-07-bottlejqueryjson/</link>
       <pubDate>Wed, 07 Aug 2013 01:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2013-08-07-bottlejqueryjson/</guid>
-      <description>Bottle is a fast, simple and lightweight WSGI micro web-framework for Python.
-jQuery Mobile base on jQuery for mobile device.
-jQuery vs. jQuery Mobile vs. jQuery UI
-Install bottle: $ sudo apt-get install python-setuptools $ easy_install bottle Demo server deployment file structure: BottlejQuery ├── bottleJQuery.py └── index.html run command: $ ./bottleJQuery.py connect to server: http://localhost:8080/bottle Building simple web server use bottle bottleJQuery.py #!/usr/bin/env python from bottle import route, static_file, debug, run, get, redirect from bottle import post, request import os, inspect, json #enable bottle debug debug(True) # WebApp route path routePath = &amp;#39;/bottle&amp;#39; # get directory of WebApp (bottleJQuery.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://bottlepy.org/docs/dev/&#34;&gt;Bottle&lt;/a&gt; is a fast, simple and lightweight WSGI micro web-framework for Python.&lt;br&gt;
+&lt;a href=&#34;http://jquerymobile.com/&#34;&gt;jQuery Mobile&lt;/a&gt; base on jQuery for mobile device.&lt;br&gt;
+&lt;a href=&#34;http://stackoverflow.com/questions/6636388/jquery-vs-jquery-mobile-vs-jquery-ui&#34;&gt;jQuery vs. jQuery Mobile vs. jQuery UI&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;install-bottle&#34;&gt;Install bottle:&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt-get install python-setuptools
+$ easy_install bottle
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;demo-server-deployment&#34;&gt;Demo server deployment&lt;/h2&gt;
+&lt;h3 id=&#34;file-structure&#34;&gt;file structure:&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;BottlejQuery
+├── bottleJQuery.py
+└── index.html
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;run-command&#34;&gt;run command:&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;$ ./bottleJQuery.py
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;connect-to-server&#34;&gt;connect to server:&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;http://localhost:8080/bottle  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;building-simple-web-server-use-bottle&#34;&gt;Building simple web server use bottle&lt;/h2&gt;
+&lt;h3 id=&#34;bottlejquerypy&#34;&gt;bottleJQuery.py&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/usr/bin/env python&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; bottle &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; route, static_file, debug, run, get, redirect
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; bottle &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; post, request
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; os&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; inspect&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; json
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#enable bottle debug&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;debug(&lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# WebApp route path&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;routePath &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/bottle&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# get directory of WebApp (bottleJQuery.py&amp;#39;s dir)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rootPath &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; os&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;path&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;dirname(os&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;path&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;abspath(inspect&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;getfile(inspect&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;currentframe())))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@route&lt;/span&gt;(routePath)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;rootHome&lt;/span&gt;():
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; redirect(routePath&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/index.html&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@route&lt;/span&gt;(routePath &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/&amp;lt;filename:re:.*\.html&amp;gt;&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;html_file&lt;/span&gt;(filename):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; static_file(filename, root&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;rootPath)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@get&lt;/span&gt;(routePath &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/jsontest&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;testJsonGET&lt;/span&gt;():
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;GET Header : &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt; dict(request&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;headers) &lt;span style=&#34;color:#75715e&#34;&gt;#for debug header&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Jone&amp;#34;&lt;/span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@post&lt;/span&gt;(routePath &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/jsontest&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;testJsonPost&lt;/span&gt;():
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;POST Header : &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt; dict(request&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;headers) &lt;span style=&#34;color:#75715e&#34;&gt;#for debug header&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; request&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;json
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;data : &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt; data 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; data &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;None&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; json&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;dumps({&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Status&amp;#39;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Failed!&amp;#34;&lt;/span&gt;})
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; json&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;dumps({&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Status&amp;#39;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Success!&amp;#34;&lt;/span&gt;})
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;run(host&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;localhost&amp;#39;&lt;/span&gt;, port&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;8080&lt;/span&gt;, reloader&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;test-get-request&#34;&gt;Test GET request:&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ curl -i -X GET http://localhost:8080/bottle/jsontest
+
+HTTP/1.0 200 OK
+Date: Wed, 07 Aug 2013 16:03:53 GMT
+Server: WSGIServer/0.1 Python/2.7.3
+Content-Length: 25
+Content-Type: application/json
+
+{&amp;#34;id&amp;#34;: 2, &amp;#34;name&amp;#34;: &amp;#34;Jone&amp;#34;}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;em&gt;bottle debug message:&lt;/em&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

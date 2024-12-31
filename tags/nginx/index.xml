@@ -9,60 +9,128 @@
       <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
       <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 May 2017 15:21:10 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 May 2017 15:21:10 +0800</lastBuildDate>
+    <atom:link href="https://oopsmonk.github.io/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Enable gzip compression in Nginx</title>
       <link>https://oopsmonk.github.io/posts/2017-05-19-enable-gzip-compression-in-nginx/</link>
       <pubDate>Fri, 19 May 2017 15:21:10 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-05-19-enable-gzip-compression-in-nginx/</guid>
-      <description>How to enable and test gzip in Nginx.
-Official document: ngx_http_gzip_module
-Enable gzip I use Raspberry Pi System Monitor to test gzip module.
-Modify /etc/nginx/sites-available/default to enable gzip.
-In this case I only change the RpiMonitor website in the server, you can apply it to global by /etc/nginx/nginx.conf
-location /rpi { proxy_pass http://127.0.0.1:9999/RpiMonitor; } Change to
-location /rpi { proxy_pass http://127.0.0.1:9999/RpiMonitor; gzip on; gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript; gzip_proxied any; } Then reload nginx.</description>
+      <description>&lt;p&gt;How to enable and test gzip in Nginx.&lt;/p&gt;
+&lt;p&gt;Official document: &lt;a href=&#34;http://nginx.org/en/docs/http/ngx_http_gzip_module.html&#34;&gt;ngx_http_gzip_module&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;enable-gzip&#34;&gt;Enable gzip&lt;/h2&gt;
+&lt;p&gt;I use &lt;a href=&#34;https://github.com/oopsmonk/rpi-monitor&#34;&gt;Raspberry Pi System Monitor&lt;/a&gt; to test gzip module.&lt;br&gt;
+Modify &lt;code&gt;/etc/nginx/sites-available/default&lt;/code&gt; to enable gzip.&lt;br&gt;
+In this case I only change the RpiMonitor website in the server, you can apply it to global by &lt;code&gt;/etc/nginx/nginx.conf&lt;/code&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;location /rpi {
+	proxy_pass http://127.0.0.1:9999/RpiMonitor;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Change to&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;location /rpi {
+	proxy_pass http://127.0.0.1:9999/RpiMonitor;
+	gzip on;
+	gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
+	gzip_proxied any;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then reload nginx.conf via &lt;code&gt;sudo nginx -s reload&lt;/code&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Drawing IP Geolocation on World Map</title>
       <link>https://oopsmonk.github.io/posts/2015-08-01-drawing-ip-geolocation-to-the-world-map/</link>
       <pubDate>Sat, 01 Aug 2015 20:28:47 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2015-08-01-drawing-ip-geolocation-to-the-world-map/</guid>
-      <description>I found some mystery visitors in nginx&amp;rsquo;s access log. I tried to figure out the location of those visitors and what they did.
-IP collection First copy nginx&amp;rsquo;s access log to a folder and save all logs into a single file.
-$ mkdir mysteryIPs &amp;amp;&amp;amp; cd $_ $ sudo cp /var/log/nginx/access.log.* . $ zcat access.log.* &amp;gt; access-gz.log $ cat access.log.1 &amp;gt;&amp;gt; access-gz.log $ cat access.log &amp;gt;&amp;gt; access-gz.log Remove LAN accesses from log file, for example my subnet IP rang is 192.</description>
+      <description>&lt;p&gt;I found some mystery visitors in nginx&amp;rsquo;s access log. I tried to figure out the location of those visitors and what they did.&lt;/p&gt;
+&lt;h2 id=&#34;ip-collection&#34;&gt;IP collection&lt;/h2&gt;
+&lt;p&gt;First copy nginx&amp;rsquo;s access log to a folder and save all logs into a single file.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ mkdir mysteryIPs &amp;amp;&amp;amp; cd $_
+$ sudo cp /var/log/nginx/access.log.* .
+$ zcat access.log.* &amp;gt; access-gz.log
+$ cat access.log.1 &amp;gt;&amp;gt; access-gz.log
+$ cat access.log &amp;gt;&amp;gt; access-gz.log
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Remove LAN accesses from log file, for example my subnet IP rang is 192.168.x.x&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Nginx Error - 413 Request Entity Too Large</title>
       <link>https://oopsmonk.github.io/posts/2013-06-05-nginxerror413/</link>
       <pubDate>Wed, 05 Jun 2013 01:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2013-06-05-nginxerror413/</guid>
-      <description>nginx version: nginx/1.1.19, OS: Ubuntu12.04
-Default nginx accepted body size limitation is 1MB.
-You can add client_max_body_size in nginx.conf.
-This parameter can put in http, server and location sections of configutation file.
-Enlarge body size to 10MB
-client_max_body_size 10M Or just disable it
-client_max_body_size 0 For example enlarge body size to 10MB
-Add to http section:
-$ sudo vi /etc/nginx/nginx.conf http { ## # Basic Settings ## sendfile on; tcp_nopush on; tcp_nodelay on; keepalive_timeout 65; types_hash_max_size 2048; client_max_body_size 10M; # server_tokens off; # server_names_hash_bucket_size 64; # server_name_in_redirect off; include /etc/nginx/mime.</description>
+      <description>&lt;p&gt;&lt;strong&gt;nginx version: nginx/1.1.19, OS: Ubuntu12.04&lt;/strong&gt;&lt;br&gt;
+Default nginx accepted body size limitation is 1MB.&lt;br&gt;
+You can add &lt;a href=&#34;http://wiki.nginx.org/HttpCoreModule#client_max_body_size&#34;&gt;client_max_body_size&lt;/a&gt; in &lt;code&gt;nginx.conf&lt;/code&gt;.&lt;br&gt;
+This parameter can put in &lt;code&gt;http&lt;/code&gt;, &lt;code&gt;server&lt;/code&gt; and &lt;code&gt;location&lt;/code&gt; sections of configutation file.&lt;br&gt;
+Enlarge body size to 10MB&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;client_max_body_size 10M  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or just disable it&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;client_max_body_size 0  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For example enlarge body size to 10MB&lt;br&gt;
+Add to &lt;code&gt;http&lt;/code&gt; section:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ sudo vi /etc/nginx/nginx.conf  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;http &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;##&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;# Basic Settings&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;##&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        sendfile on;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        tcp_nopush on;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        tcp_nodelay on;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        keepalive_timeout 65;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        types_hash_max_size 2048;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        client_max_body_size 10M;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;# server_tokens off;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;# server_names_hash_bucket_size 64;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;# server_name_in_redirect off;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        include /etc/nginx/mime.types;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        default_type application/octet-stream;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Or modify &lt;code&gt;server&lt;/code&gt; and &lt;code&gt;location&lt;/code&gt; section&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>uWSGI &amp; Nginx on Ubuntu</title>
       <link>https://oopsmonk.github.io/posts/2013-05-21-usinguwsgi/</link>
       <pubDate>Tue, 21 May 2013 08:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2013-05-21-usinguwsgi/</guid>
-      <description>Install uWSGI Configure uWSGI $ sudo apt-get install python-dev python-pip $ sudo pip uwsgi ################# uWSGI configuration ################# pcre = False kernel = Linux malloc = libc execinfo = False ifaddrs = True ssl = True matheval = False zlib = True locking = pthread_mutex plugin_dir = . timer = timerfd yaml = True json = False filemonitor = inotify routing = False debug = False zeromq = False capabilities = False xml = expat event = epoll ############## end of uWSGI configuration ############# *** uWSGI is ready, launch it with /usr/local/bin/uwsgi *** Successfully installed uwsgi Cleaning up.</description>
+      <description>&lt;h2 id=&#34;install-uwsgi&#34;&gt;Install uWSGI&lt;/h2&gt;
+&lt;h3 id=&#34;configure-uwsgi&#34;&gt;Configure uWSGI&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt-get install python-dev python-pip  
+$ sudo pip uwsgi  
+################# uWSGI configuration #################  
+pcre = False  
+kernel = Linux  
+malloc = libc  
+execinfo = False  
+ifaddrs = True  
+ssl = True  
+matheval = False  
+zlib = True  
+locking = pthread_mutex  
+plugin_dir = .  
+timer = timerfd  
+yaml = True  
+json = False  
+filemonitor = inotify  
+routing = False  
+debug = False  
+zeromq = False  
+capabilities = False  
+xml = expat  
+event = epoll  
+############## end of uWSGI configuration #############  
+*** uWSGI is ready, launch it with /usr/local/bin/uwsgi ***  
+Successfully installed uwsgi  
+Cleaning up...  
+$  
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;test-uwsgi&#34;&gt;Test uWSGI&lt;/h3&gt;
+&lt;p&gt;Create test file called &lt;code&gt;hello.py&lt;/code&gt;:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

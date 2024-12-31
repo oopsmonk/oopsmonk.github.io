@@ -9,27 +9,32 @@
       <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
       <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 Feb 2013 00:00:00 +0000</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/webdevs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Feb 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://oopsmonk.github.io/tags/webdevs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OpenNMS Architecture Introduction (Discovery &amp; Monitor)</title>
       <link>https://oopsmonk.github.io/posts/2013-02-03-opennmsarchitectureintroduction/</link>
       <pubDate>Sun, 03 Feb 2013 00:00:00 +0000</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2013-02-03-opennmsarchitectureintroduction/</guid>
-      <description>O.S. : Ubuntu12.04 LTS
-OpenNMS Version : 1.10.7
-OpenNMS base on TMN &amp;amp; FCAPS network management models.
-OpenNMS Block Diagram Discovery &amp;amp; Monitor daemons Eventd
-Event handling daemon
-Configuration files:
-eventconf.xml -&amp;gt; Defines the UEI (Universal Event Identifiers).
-eventd-configuration.xml -&amp;gt; Defines operating parameters for eventd such as timeouts, listener threads and listener port.
-events-archiver-configuation.xml -&amp;gt; Configuration for event archive daemon.
-events.archiver.properties -&amp;gt; Fine tune events archive subsystem.
-etc/events/*.xml -&amp;gt; Vendor UEI define files.</description>
+      <description>&lt;p&gt;O.S. : Ubuntu12.04 LTS&lt;br&gt;
+OpenNMS Version : 1.10.7&lt;/p&gt;
+&lt;p&gt;OpenNMS base on &lt;a href=&#34;http://en.wikipedia.org/wiki/Telecommunications_Management_Network&#34;&gt;TMN&lt;/a&gt; &amp;amp; &lt;a href=&#34;http://en.wikipedia.org/w/index.php?title=FCAPS&amp;amp;oldid=535214862&#34;&gt;FCAPS&lt;/a&gt; network management models.&lt;/p&gt;
+&lt;h3 id=&#34;opennms-block-diagram&#34;&gt;OpenNMS Block Diagram&lt;/h3&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2013-02-03/OpenNMSBlockArchitecture.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;discovery--monitor-daemons&#34;&gt;Discovery &amp;amp; Monitor daemons&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.opennms.org/wiki/Event_Configuration_How-To&#34;&gt;Eventd&lt;/a&gt;&lt;br&gt;
+Event handling daemon&lt;br&gt;
+Configuration files:&lt;br&gt;
+eventconf.xml -&amp;gt; Defines the UEI (Universal Event Identifiers).&lt;br&gt;
+eventd-configuration.xml -&amp;gt; Defines operating parameters for eventd such as timeouts, listener threads and listener port.&lt;br&gt;
+events-archiver-configuation.xml -&amp;gt; Configuration for event archive daemon.&lt;br&gt;
+events.archiver.properties -&amp;gt; Fine tune events archive subsystem.&lt;br&gt;
+etc/events/*.xml -&amp;gt; Vendor UEI define files.&lt;br&gt;
+Listening &amp;ldquo;eventsConfigChange&amp;rdquo; event.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

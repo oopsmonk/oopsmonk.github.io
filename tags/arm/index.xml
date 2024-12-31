@@ -9,22 +9,35 @@
       <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
       <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Nov 2017 19:14:00 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/arm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Nov 2017 19:14:00 +0800</lastBuildDate>
+    <atom:link href="https://oopsmonk.github.io/tags/arm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ARM Mali Profiling Metrics</title>
       <link>https://oopsmonk.github.io/posts/2017-11-01-arm-mali-profiling-metrics/</link>
       <pubDate>Wed, 01 Nov 2017 19:14:00 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-11-01-arm-mali-profiling-metrics/</guid>
-      <description>Some metrics for ARM Mali performance analysis in DS-5 Streamline or MGD.
-DS-5 Streamline Mali-470 (Utgard) GPU Bandwidth = (Words read, master + Words written, master) * Bus Width
-Overdraw = Fragments Passed Z/stencil count * Number of Cores / Resolution * FPS
-GPU Bandwidth = (38342943+38661456) * (128/8) = 1232070384 bytes/s = 1174.99 MB/s Overdraw = (79194586+79152584+79112550+79117609)/(1920x1080) = 152.67
-Mali-T820 (Midgard) Job Slots
-JS0: fragment shading. JS1: vertex, geometry, compute, and tiling.</description>
+      <description>&lt;p&gt;Some metrics for ARM Mali performance analysis in DS-5 Streamline or MGD.&lt;/p&gt;
+&lt;h1 id=&#34;ds-5-streamline&#34;&gt;DS-5 Streamline&lt;/h1&gt;
+&lt;h2 id=&#34;mali-470-utgard&#34;&gt;Mali-470 (Utgard)&lt;/h2&gt;
+&lt;p&gt;GPU Bandwidth = (Words read, master + Words written, master) * Bus Width&lt;br&gt;
+Overdraw = Fragments Passed Z/stencil count * Number of Cores / Resolution * FPS&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2017-11-01/Mali470MP4_750MHz_DS5.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;GPU Bandwidth = (38342943+38661456) * (128/8) = 1232070384 bytes/s = 1174.99 MB/s
+Overdraw = (79194586+79152584+79112550+79117609)/(1920x1080) = 152.67&lt;/p&gt;
+&lt;h2 id=&#34;mali-t820-midgard&#34;&gt;Mali-T820 (Midgard)&lt;/h2&gt;
+&lt;p&gt;Job Slots&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;JS0: fragment shading.&lt;/li&gt;
+&lt;li&gt;JS1: vertex, geometry, compute, and tiling.&lt;/li&gt;
+&lt;li&gt;JS2: vertex, geometry, and compute.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Fragment Percentage = (JS0 Active / GPU frequency) * 100&lt;br&gt;
+Vertex percentage = (JS1 Active / Frequency) * 100&lt;br&gt;
+Load Store CPI = Full Pipeline issues / Load Store Instruction Words Completed&lt;br&gt;
+GPU Bandwidth  = (External read beats + External write beats) * Bus Width&lt;br&gt;
+Overdraw = Fragment Threads Started * Number of Cores/ Resolution * FPS&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

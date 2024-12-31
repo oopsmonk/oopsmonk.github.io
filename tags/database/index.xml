@@ -9,21 +9,37 @@
       <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
       <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Jun 2013 01:53:31 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/database/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Jun 2013 01:53:31 +0800</lastBuildDate>
+    <atom:link href="https://oopsmonk.github.io/tags/database/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Connect Oracle 10g Database use JDBC</title>
       <link>https://oopsmonk.github.io/posts/2013-06-24-oracle10gpython/</link>
       <pubDate>Mon, 24 Jun 2013 01:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2013-06-24-oracle10gpython/</guid>
-      <description>install jayDeBeApi &amp;amp; jpype
-$ sudo apt-get install python-setuptools $ sudo easy_install JayDeBeApi $ sudo easy_install jpype Download Oracle JDBC Drivers ojdbc6.jar to local.
-import jpype import jaydebeapi jHome = jpype.getDefaultJVMPath() print jHome jpype.startJVM(jHome, &amp;#39;-Djava.class.path=/path/to/ojdbc6.jar&amp;#39;) conn = jaydebeapi.connect(&amp;#39;oracle.jdbc.driver.OracleDriver&amp;#39;, &amp;#39;jdbc:oracle:thin:user/password@DB_HOST_IP:1521:DB_NAME&amp;#39;) curs = conn.cursor() curs.execute(&amp;#34;select * from ACCOUNT&amp;#34;) acc = curs.fetchall() curs.close() conn.close() jpype.shutdownJVM() print acc Reference:
-https://pypi.python.org/pypi/JayDeBeApi
-http://wiki.python.org/moin/Oracle</description>
+      <description>&lt;p&gt;install jayDeBeApi &amp;amp; jpype&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo apt-get install python-setuptools  
+$ sudo easy_install JayDeBeApi  
+$ sudo easy_install jpype  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Download Oracle JDBC Drivers ojdbc6.jar to local.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; jpype
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; jaydebeapi
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;jHome &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; jpype&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;getDefaultJVMPath()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print jHome
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;jpype&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;startJVM(jHome, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;-Djava.class.path=/path/to/ojdbc6.jar&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;conn &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; jaydebeapi&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;connect(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;oracle.jdbc.driver.OracleDriver&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;jdbc:oracle:thin:user/password@DB_HOST_IP:1521:DB_NAME&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curs &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; conn&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;cursor()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curs&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;execute(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;select * from ACCOUNT&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;acc &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; curs&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;fetchall()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curs&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;close()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;conn&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;close()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;jpype&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;shutdownJVM()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print acc
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Reference:&lt;br&gt;
+&lt;a href=&#34;https://pypi.python.org/pypi/JayDeBeApi&#34;&gt;https://pypi.python.org/pypi/JayDeBeApi&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://wiki.python.org/moin/Oracle&#34;&gt;http://wiki.python.org/moin/Oracle&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -9,29 +9,84 @@
       <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
       <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 31 Jul 2015 17:50:40 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/chromium/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 Jul 2015 17:50:40 +0800</lastBuildDate>
+    <atom:link href="https://oopsmonk.github.io/tags/chromium/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dependency src specified more than once</title>
       <link>https://oopsmonk.github.io/posts/2015-07-31-dependency-src-specified-more-than-once/</link>
       <pubDate>Fri, 31 Jul 2015 17:50:40 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2015-07-31-dependency-src-specified-more-than-once/</guid>
-      <description>This problem appered when I was checking out older tag from the Chromium project.
-Working with Release Branches
-~/chromium_build/src$ git fetch --tags ~/chromium_build/src$ git checkout -b tag_35.0.1849.0 35.0.1849.0 ~/chromium_build/src$ gclient sync --with_branch_heads --jobs 16 Error log:
-Syncing projects: 100% ( 1/ 1) src src (ERROR) ---------------------------------------- [0:00:00] Started. ________ running &#39;git reset --hard HEAD&#39; in &#39;/home/sam.chen/chromium_source/src&#39; [0:00:00] HEAD is now at 77bd011 Publish DEPS for Chromium 35.0.1849.0 [0:00:00] _____ src : Attempting rebase onto 77bd011602b1799f715591e697806c55e7ef8b7f.</description>
+      <description>&lt;p&gt;This problem appered when I was checking out older tag from the Chromium project.&lt;br&gt;
+&lt;a href=&#34;https://www.chromium.org/developers/how-tos/get-the-code/working-with-release-branches&#34;&gt;Working with Release Branches&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;~/chromium_build/src$ git fetch --tags
+~/chromium_build/src$ git checkout -b tag_35.0.1849.0 35.0.1849.0
+~/chromium_build/src$ gclient sync --with_branch_heads --jobs 16
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Error log:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Syncing projects: 100% ( 1/ 1) src
+
+src (ERROR)
+----------------------------------------
+[0:00:00] Started.
+
+________ running &#39;git reset --hard HEAD&#39; in &#39;/home/sam.chen/chromium_source/src&#39;
+[0:00:00] HEAD is now at 77bd011 Publish DEPS for Chromium 35.0.1849.0
+[0:00:00] _____ src : Attempting rebase onto 77bd011602b1799f715591e697806c55e7ef8b7f...
+[0:00:00] Current branch tag_35.0.1849.0 is up to date.
+[0:00:00]
+----------------------------------------
+Error: 1&amp;gt; Dependency src specified more than once:
+1&amp;gt;   src(https://chromium.googlesource.com/chromium/src.git) [https://chromium.googlesource.com/chromium/src.git]
+1&amp;gt; vs
+1&amp;gt;   src(https://chromium.googlesource.com/chromium/src.git) -&amp;gt; src(https://chromium.googlesource.com/chromium/src.git@ae69ae7642
+35ccaac55fc44a3b5f3276ff34cb58) [https://chromium.googlesource.com/chromium/src.git@ae69ae764235ccaac55fc44a3b5f3276ff34cb58]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You need to edit the &lt;code&gt;.DEPS.git&lt;/code&gt; file, remove the entry &amp;lsquo;src&amp;rsquo; and then &lt;code&gt;gcient sync --with_branch_heads&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Build Android WebView From The Chromium Projects</title>
       <link>https://oopsmonk.github.io/posts/2015-07-31-build-android-webview-from-the-chromium-projects/</link>
       <pubDate>Fri, 31 Jul 2015 17:28:39 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2015-07-31-build-android-webview-from-the-chromium-projects/</guid>
-      <description>First, check out and install the depot_tools package. $ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git $ export PATH=$PATH:/path/to/depot_tools Checkout source code $ mkdir ~/chromium_build &amp;amp;&amp;amp; cd $_ ~/chromium_build$ fetch --nohooks android //Configure GYP ~/chromium_build$ echo &amp;quot;{ &#39;GYP_DEFINES&#39;: &#39;OS=android&#39;, }&amp;quot; &amp;gt; chromium.gyp_env //Update projects from gyp files. //You may need to run this again when you have added new files, updated gyp files, or sync&#39;ed your repository. ~/chromium_build$ gclient runhooks Environment setup ~/chromium_build$ sudo apt-get install openjdk-7-jdk //config default JDK ~/chromium_build$ sudo update-alternatives --config javac ~/chromium_build$ sudo update-alternatives --config java ~/chromium_build$ sudo update-alternatives --config javaws ~/chromium_build$ sudo update-alternatives --config javap ~/chromium_build$ sudo update-alternatives --config jar ~/chromium_build$ sudo update-alternatives --config jarsigner //install build dependencies ~/chromium_build$ src/build/install-build-deps-android.</description>
+      <description>&lt;h2 id=&#34;first-check-out-and-install-the-depot_toolshttpscommondatastoragegoogleapiscomchrome-infra-docsflatdepot_toolsdocshtmldepot_tools_tutorialhtml_setting_up-package&#34;&gt;First, check out and install the &lt;a href=&#34;https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html#_setting_up&#34;&gt;depot_tools&lt;/a&gt; package.&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+$ export PATH=$PATH:/path/to/depot_tools
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;checkout-source-code&#34;&gt;Checkout source code&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$ mkdir ~/chromium_build &amp;amp;&amp;amp; cd $_
+~/chromium_build$ fetch --nohooks android 
+//Configure GYP
+~/chromium_build$ echo &amp;quot;{ &#39;GYP_DEFINES&#39;: &#39;OS=android&#39;, }&amp;quot; &amp;gt; chromium.gyp_env
+//Update projects from gyp files. 
+//You may need to run this again when you have added new files, updated gyp files, or sync&#39;ed your repository.
+~/chromium_build$ gclient runhooks
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;environment-setup&#34;&gt;Environment setup&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;~/chromium_build$ sudo apt-get install openjdk-7-jdk
+//config default JDK
+~/chromium_build$ sudo update-alternatives --config javac
+~/chromium_build$ sudo update-alternatives --config java
+~/chromium_build$ sudo update-alternatives --config javaws
+~/chromium_build$ sudo update-alternatives --config javap
+~/chromium_build$ sudo update-alternatives --config jar
+~/chromium_build$ sudo update-alternatives --config jarsigner
+//install build dependencies
+~/chromium_build$ src/build/install-build-deps-android.sh 
+// Install Google Play Services
+~/chromium_build$ src/third_party/android_tools/sdk/tools/android update sdk --no-ui --filter 57
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;build&#34;&gt;Build&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;~/chromium_build$ cd ~/chromium_build/src
+//Full browser
+~/chromium_build/src$ ninja -C out/Debug chrome_public_apk
+//WebView
+~/chromium_build/src$ ninja -C out/Debug android_webview_apk
+//sync source
+~/chromium_build/src$ gclient sync
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Android APK location: &lt;code&gt;~/chromium_source/src/out/Debug/apks/&lt;/code&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -9,215 +9,506 @@
       <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
       <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Dec 2017 11:54:18 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Dec 2017 11:54:18 +0800</lastBuildDate>
+    <atom:link href="https://oopsmonk.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sepolicy for Android Treble</title>
       <link>https://oopsmonk.github.io/posts/2017-12-20-sepolicy-for-android-treble/</link>
       <pubDate>Wed, 20 Dec 2017 11:54:18 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-12-20-sepolicy-for-android-treble/</guid>
-      <description>A Note about sepolicy in Android Oreo.
-First thing first SELinux documents:
-SELinux for Android 8.0 What is SELinux? What is SEAndroid? SELinux Policy Concepts and Overview Android sepolicy files Policy path: /system/sepolicy BOARD_SEPOLICY_DIR (device/$VENDOR/$DEVICE/sepolicy/, device/$VENDOR/$DEVICE/common/sepolicy/) Policy Macros: system/sepolicy/public/te_macros system/sepolicy/public/global_macros system/sepolicy/public/ioctl_macros system/sepolicy/public/neverallow_macros system/sepolicy/private/mls_macros system/sepolicy/reqd_mask/mls_macros Security Context: file_contexts, labeling files infilesystem. property_contexts, labeling android system/vendor properties genfs_contexts, Pre-file labeling for /proc files, generic filesystem security contexts. seapp_contexts, used by zygote and installd via libselinux, mapping app UID andseinfofor /data/data directory hwservice_contexts, for hwservice manager to check vndservice_contestx, for vndservice manager to check service_contexts, for service manager to check Type Enforcement *.</description>
+      <description>&lt;p&gt;A Note about sepolicy in Android Oreo.&lt;/p&gt;
+&lt;h1 id=&#34;first-thing-first&#34;&gt;First thing first&lt;/h1&gt;
+&lt;p&gt;SELinux documents:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://source.android.com/security/selinux/images/SELinux_Treble.pdf&#34;&gt;SELinux for Android 8.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/security-enhanced_linux/&#34;&gt;What is SELinux?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://source.android.com/security/selinux/&#34;&gt;What is SEAndroid?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cse.psu.edu/~trj1/cse543-f07/slides/03-PolicyConcepts.pdf&#34;&gt;SELinux Policy Concepts and Overview&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;android-sepolicy-files&#34;&gt;Android sepolicy files&lt;/h1&gt;
+&lt;h2 id=&#34;policy-path&#34;&gt;Policy path:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;/system/sepolicy&lt;/li&gt;
+&lt;li&gt;BOARD_SEPOLICY_DIR (device/$VENDOR/$DEVICE/sepolicy/, device/$VENDOR/$DEVICE/common/sepolicy/)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;policy-macros&#34;&gt;Policy Macros:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;system/sepolicy/public/te_macros&lt;/li&gt;
+&lt;li&gt;system/sepolicy/public/global_macros&lt;/li&gt;
+&lt;li&gt;system/sepolicy/public/ioctl_macros&lt;/li&gt;
+&lt;li&gt;system/sepolicy/public/neverallow_macros&lt;/li&gt;
+&lt;li&gt;system/sepolicy/private/mls_macros&lt;/li&gt;
+&lt;li&gt;system/sepolicy/reqd_mask/mls_macros&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;security-context&#34;&gt;Security Context:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;file_contexts, labeling files infilesystem.&lt;/li&gt;
+&lt;li&gt;property_contexts, labeling android system/vendor properties&lt;/li&gt;
+&lt;li&gt;genfs_contexts, Pre-file labeling for /proc files, generic filesystem security contexts.&lt;/li&gt;
+&lt;li&gt;seapp_contexts, used by zygote and installd via libselinux, mapping app UID andseinfofor /data/data directory&lt;/li&gt;
+&lt;li&gt;hwservice_contexts, for hwservice manager to check&lt;/li&gt;
+&lt;li&gt;vndservice_contestx, for vndservice manager to check&lt;/li&gt;
+&lt;li&gt;service_contexts, for service manager to check&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;type-enforcement&#34;&gt;Type Enforcement&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;*.te&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;composing-policy-for-android-trebel&#34;&gt;Composing Policy for Android trebel&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Add domains for a service&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Policy Configuration of SELinux and SEAndroid</title>
       <link>https://oopsmonk.github.io/posts/2017-11-17-policy-configuration-of-selinux-and-seandroid/</link>
       <pubDate>Fri, 17 Nov 2017 08:12:13 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-11-17-policy-configuration-of-selinux-and-seandroid/</guid>
-      <description>A Note for SELinux and SEAndroid policy configuration.
-SEAndroid Security-Enhanced Linux in Android
-SELinux for Android 8 - Treble mode
-SEAndroid安全機制中的文件安全上下文關聯分析 - file_context
-SEAndroid安全機制中的進程安全上下文關聯分析 - process
-Android 8 Treble mode: Kernel early mount PRODUCT_FULL_TREBLE, PRODUCT_FULL_TREBLE_OVERRIDE, BOARD_SEPOLICY_DIRS Android 4.3 ~ 6 TE macro define: external/sepolicy/te_macros
-Android 8 TE macro define: system/sepolicy/te_macros
-##################################### # domain_trans(olddomain, type, newdomain) # Allow a transition from olddomain to newdomain # upon executing a file labeled with type.</description>
+      <description>&lt;p&gt;A Note for SELinux and SEAndroid policy configuration.&lt;/p&gt;
+&lt;h2 id=&#34;seandroid&#34;&gt;SEAndroid&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://source.android.com/security/selinux/&#34;&gt;Security-Enhanced Linux in Android&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://source.android.com/security/selinux/images/SELinux_Treble.pdf&#34;&gt;SELinux for Android 8 - Treble mode&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://blog.csdn.net/luoshengyang/article/details/37749383&#34;&gt;SEAndroid安全機制中的文件安全上下文關聯分析&lt;/a&gt; - file_context&lt;br&gt;
+&lt;a href=&#34;http://blog.csdn.net/luoshengyang/article/details/38054645&#34;&gt;SEAndroid安全機制中的進程安全上下文關聯分析&lt;/a&gt; - process&lt;/p&gt;
+&lt;h3 id=&#34;android-8-treble-mode&#34;&gt;Android 8 Treble mode:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Kernel early mount&lt;/li&gt;
+&lt;li&gt;PRODUCT_FULL_TREBLE, PRODUCT_FULL_TREBLE_OVERRIDE, BOARD_SEPOLICY_DIRS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Android 4.3 ~ 6 TE macro define: external/sepolicy/te_macros&lt;br&gt;
+Android 8 TE macro define: system/sepolicy/te_macros&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#####################################                                                                                            
+# domain_trans(olddomain, type, newdomain)
+# Allow a transition from olddomain to newdomain
+# upon executing a file labeled with type.
+# This only allows the transition; it does not
+# cause it to occur automatically - use domain_auto_trans
+# if that is what you want.
+#
+define(`domain_trans&amp;#39;, `
+# Old domain may exec the file and transition to the new domain.
+allow $1 $2:file { getattr open read execute };
+allow $1 $3:process transition;
+# New domain is entered by executing the file.
+allow $3 $2:file { entrypoint open read execute getattr };
+# New domain can send SIGCHLD to its caller.
+ifelse($1, `init&amp;#39;, `&amp;#39;, `allow $3 $1:process sigchld;&amp;#39;)
+# Enable AT_SECURE, i.e. libc secure mode.
+dontaudit $1 $3:process noatsecure;
+# XXX dontaudit candidate but requires further study.
+allow $1 $3:process { siginh rlimitinh };
+&amp;#39;)
+
+#####################################
+# domain_auto_trans(olddomain, type, newdomain)
+# Automatically transition from olddomain to newdomain
+# upon executing a file labeled with type.
+#
+define(`domain_auto_trans&amp;#39;, `
+# Allow the necessary permissions.
+domain_trans($1,$2,$3)
+# Make the transition occur by default.
+type_transition $1 $2:process $3;
+&amp;#39;)
+
+#####################################
+# tmpfs_domain(domain)                                                                                                           
+# Define and allow access to a unique type for
+# this domain when creating tmpfs / shmem / ashmem files.
+define(`tmpfs_domain&amp;#39;, `
+type $1_tmpfs, file_type;
+type_transition $1 tmpfs:file $1_tmpfs;
+allow $1 $1_tmpfs:file { read write getattr };
+allow $1 tmpfs:dir { getattr search };
+&amp;#39;)
+
+#####################################
+# init_daemon_domain(domain)
+# Set up a transition from init to the daemon domain
+# upon executing its binary.
+define(`init_daemon_domain&amp;#39;, `                                                                                                   
+domain_auto_trans(init, $1_exec, $1)
+tmpfs_domain($1)
+&amp;#39;)
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;apol---selinux-policy-analysis-tool&#34;&gt;apol - SELinux policy analysis tool&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt install setools-gui
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;selinux&#34;&gt;SELinux&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.nsa.gov/resources/everyone/digital-media-center/publications/research-papers/assets/files/configuring-selinux-policy-report.pdf&#34;&gt;Configuring the SELinux Policy&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Building Different Android Version Using schroot</title>
       <link>https://oopsmonk.github.io/posts/2017-10-24-building-different-android-version/</link>
       <pubDate>Tue, 24 Oct 2017 10:07:29 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-10-24-building-different-android-version/</guid>
-      <description>I have a build environment with make4.1 and JDK8 for Android N/O, but JDK6 and make3.81 are required by Android KitKat.
-Here is a way to create a clean environment for Android KK.
-Create a new environment in current Ubuntu 16.04 install schroot and debootstrap
-sudo apt install schroot debootstrap
-if xenial no exist, update to latest version of debootstrap
-ls -l /usr/share/debootstrap/scripts/xenial
-Configure new environment edit /etc/schroot/schroot.conf
-[Build_KK] description=ubuntu16.04 Android_KK type=directory directory=/srv/chroot/Build_KK users=oopsmonk groups=oopsmonk root-groups=root profile=default Adding Mount points edit /etc/schroot/default/fstab</description>
+      <description>&lt;p&gt;I have a build environment with make4.1 and JDK8 for Android N/O, but JDK6 and make3.81 are required by Android KitKat.&lt;br&gt;
+Here is a way to create a clean environment for Android KK.&lt;/p&gt;
+&lt;h2 id=&#34;create-a-new-environment-in-current-ubuntu-1604&#34;&gt;Create a new environment in current Ubuntu 16.04&lt;/h2&gt;
+&lt;p&gt;install schroot and debootstrap&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo apt install schroot debootstrap&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;if xenial no exist, update to latest version of debootstrap&lt;br&gt;
+&lt;code&gt;ls -l /usr/share/debootstrap/scripts/xenial&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;configure-new-environment&#34;&gt;Configure new environment&lt;/h3&gt;
+&lt;p&gt;edit &lt;code&gt;/etc/schroot/schroot.conf&lt;/code&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[Build_KK]
+description=ubuntu16.04 Android_KK
+type=directory
+directory=/srv/chroot/Build_KK
+users=oopsmonk
+groups=oopsmonk
+root-groups=root
+profile=default
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;adding-mount-points&#34;&gt;Adding Mount points&lt;/h3&gt;
+&lt;p&gt;edit &lt;code&gt;/etc/schroot/default/fstab&lt;/code&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Android USB Media Transfer Protocol(MPT)</title>
       <link>https://oopsmonk.github.io/posts/2017-04-18-android-usb-media-transfer-protocol/</link>
       <pubDate>Tue, 18 Apr 2017 11:55:32 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-04-18-android-usb-media-transfer-protocol/</guid>
-      <description>Study USB MTP Device and Host mode in Android M.
-Source Code Cross Reference: Android 6.0.1_r10
-MTP Device Mode Enable device mode:
-Settings -&amp;gt; Developer options -&amp;gt; Select USB Configuration -&amp;gt; MTP
-UsbDeviceManager: Setting USB config to mtp
-device/lge/hammerhead/init.hammerhead.usb.rc : on property:sys.usb.config=mtp
-system/core/rootdir/init.usb.configfs.rc: on property:sys.usb.config=mtp &amp;amp;&amp;amp; property:sys.usb.configfs=1
-USB plug to PC:
-MtpReceiver: listen to android.hardware.usb.action.USB_STATE and bring up MtpService
-UsbDeviceManager: get uevent USB_STATE=CONFIGURED from kernel
-MtpService: create MtpDatabase MtpDatabase: create volume and storage path</description>
+      <description>&lt;p&gt;Study USB MTP Device and Host mode in Android M.&lt;br&gt;
+Source Code Cross Reference: &lt;a href=&#34;http://androidxref.com/6.0.1_r10/&#34;&gt;Android 6.0.1_r10&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;mtp-device-mode&#34;&gt;MTP Device Mode&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Enable device mode:&lt;/strong&gt;&lt;br&gt;
+Settings -&amp;gt; Developer options -&amp;gt; Select USB Configuration -&amp;gt; MTP&lt;br&gt;
+UsbDeviceManager: Setting USB config to mtp&lt;br&gt;
+device/lge/hammerhead/init.hammerhead.usb.rc : on property:sys.usb.config=mtp&lt;br&gt;
+system/core/rootdir/init.usb.configfs.rc: on property:sys.usb.config=mtp &amp;amp;&amp;amp; property:sys.usb.configfs=1&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;USB plug to PC:&lt;/strong&gt;&lt;br&gt;
+MtpReceiver: listen to android.hardware.usb.action.USB_STATE and bring up MtpService&lt;br&gt;
+UsbDeviceManager: get uevent USB_STATE=CONFIGURED from kernel&lt;br&gt;
+MtpService: create MtpDatabase
+MtpDatabase: create volume and storage path&lt;br&gt;
+MtpService: starting MTP server in MTP mode&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Android Adoptable Storage</title>
       <link>https://oopsmonk.github.io/posts/2017-02-13-android-adoptable-storage/</link>
       <pubDate>Mon, 13 Feb 2017 10:08:28 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2017-02-13-android-adoptable-storage/</guid>
-      <description>A study of adoptable storage in Android Marshmallow and Nougat.
-How to Setup a Private Disk (External USB Storage) Android adoptable storage allow APP install to external storage that can reserve more internal space for other APPs.
-Create Adoptable Storage Using Settings GUI Settings -&amp;gt; Storage &amp;amp; USB -&amp;gt; Portable storage -&amp;gt; Settings -&amp;gt; Format as internal
-Use sm (Storage Manager) Command Find disk id # sm list-disks disk:8,16 disk:8,0 Format as internal # sm partition disk:8,0 private # sm list-volumes all public:8,17 mounted 629C-FBAF emulated:8,2 unmounted null private mounted null emulated mounted null private:8,2 mounted 3f538e6e-e6a9-4163-ac1e-e4c6602b3c34 Now, it&amp;rsquo;s a private storage in system.</description>
+      <description>&lt;p&gt;A study of adoptable storage in Android Marshmallow and Nougat.&lt;/p&gt;
+&lt;h1 id=&#34;how-to-setup-a-private-disk-external-usb-storage&#34;&gt;How to Setup a Private Disk (External USB Storage)&lt;/h1&gt;
+&lt;p&gt;Android adoptable storage allow APP install to external storage that can reserve more internal space for other APPs.&lt;/p&gt;
+&lt;h3 id=&#34;create-adoptable-storage-using-settings-gui&#34;&gt;Create Adoptable Storage Using Settings GUI&lt;/h3&gt;
+&lt;p&gt;Settings -&amp;gt; Storage &amp;amp; USB -&amp;gt; Portable storage -&amp;gt; Settings -&amp;gt; Format as internal&lt;/p&gt;
+&lt;h3 id=&#34;use-sm-storage-manager-command&#34;&gt;Use sm (Storage Manager) Command&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Find disk id&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# sm list-disks  
+disk:8,16  
+disk:8,0  
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Format as internal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# sm partition disk:8,0 private
+# sm list-volumes all
+public:8,17 mounted 629C-FBAF
+emulated:8,2 unmounted null
+private mounted null
+emulated mounted null
+private:8,2 mounted 3f538e6e-e6a9-4163-ac1e-e4c6602b3c34
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now, it&amp;rsquo;s a private storage in system.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Android Media Framework</title>
       <link>https://oopsmonk.github.io/posts/2016-06-16-android-media-framework/</link>
       <pubDate>Thu, 16 Jun 2016 15:45:54 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2016-06-16-android-media-framework/</guid>
-      <description>Android APIs for media playback: MediaPlayer and MediaCodec.
-MediaPlayer mediaPlayer.setDataSource(path); //fd or url mediaPlayer.setDisplay(SurfaceHolder sh); //SurfaceView or VideoView mediaPlayer.prepare(); // MediaPlayer.start(); // MediaCodec /* init use MediaExtractor to get mime data create decoder by mime type configure decoder by video format and surface view */ MediaExtractor mExtractor; MediaCodec mDecoder; mExtractor = new MediaExtractor(); mExtractor.setDataSource(filePath); MediaFormat format = mExtractor.getTrackFormat(track_index); String mime = format.getString(MediaFormat.KEY_MIME); if mime.startsWith(&amp;#34;video/&amp;#34;) mExtractor.selectTrack(track_index); mDecoder = MediaCodec.createDecoderByType(mime); mDecoder.configure(format, surface, null, 0 /* Decoder */); mDecoder.</description>
+      <description>&lt;p&gt;Android APIs for media playback: MediaPlayer and MediaCodec.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MediaPlayer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mediaPlayer.&lt;span style=&#34;color:#a6e22e&#34;&gt;setDataSource&lt;/span&gt;(path);    &lt;span style=&#34;color:#75715e&#34;&gt;//fd or url&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mediaPlayer.&lt;span style=&#34;color:#a6e22e&#34;&gt;setDisplay&lt;/span&gt;(SurfaceHolder sh);  &lt;span style=&#34;color:#75715e&#34;&gt;//SurfaceView or VideoView  &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mediaPlayer.&lt;span style=&#34;color:#a6e22e&#34;&gt;prepare&lt;/span&gt;(); &lt;span style=&#34;color:#75715e&#34;&gt;// &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;MediaPlayer.&lt;span style=&#34;color:#a6e22e&#34;&gt;start&lt;/span&gt;(); &lt;span style=&#34;color:#75715e&#34;&gt;//&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;MediaCodec&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/* init  
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;use MediaExtractor to get mime data  
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;create decoder by mime type 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;configure decoder by video format and surface view  
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;*/&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;MediaExtractor mExtractor;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;MediaCodec mDecoder;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mExtractor &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; MediaExtractor();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mExtractor.&lt;span style=&#34;color:#a6e22e&#34;&gt;setDataSource&lt;/span&gt;(filePath);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;MediaFormat format &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mExtractor.&lt;span style=&#34;color:#a6e22e&#34;&gt;getTrackFormat&lt;/span&gt;(track_index);  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;String mime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; format.&lt;span style=&#34;color:#a6e22e&#34;&gt;getString&lt;/span&gt;(MediaFormat.&lt;span style=&#34;color:#a6e22e&#34;&gt;KEY_MIME&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; mime.&lt;span style=&#34;color:#a6e22e&#34;&gt;startsWith&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;video/&amp;#34;&lt;/span&gt;)  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    mExtractor.&lt;span style=&#34;color:#a6e22e&#34;&gt;selectTrack&lt;/span&gt;(track_index);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    mDecoder &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; MediaCodec.&lt;span style=&#34;color:#a6e22e&#34;&gt;createDecoderByType&lt;/span&gt;(mime);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    mDecoder.&lt;span style=&#34;color:#a6e22e&#34;&gt;configure&lt;/span&gt;(format, surface, &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;, 0 &lt;span style=&#34;color:#75715e&#34;&gt;/* Decoder */&lt;/span&gt;);  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    mDecoder.&lt;span style=&#34;color:#a6e22e&#34;&gt;start&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/*run
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;start decode video, fill / empty buffer  
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/taehwandev/MediaCodecExample&#34;&gt;MediaCodecExample&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Android build error on Ubuntu 16.04 LTS</title>
       <link>https://oopsmonk.github.io/posts/2016-06-07-android-build-error-on-ubuntu-16-04-lts/</link>
       <pubDate>Tue, 07 Jun 2016 13:21:48 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2016-06-07-android-build-error-on-ubuntu-16-04-lts/</guid>
-      <description>After update system from Ubuntu 14.04 to 16.04, I got some problems, when I was building Android source code.
-openjdk-7-jdk is gone Add PPA for OpenJDK7
-sudo add-apt-repository ppa:openjdk-r/ppa sudo apt remove openjdk-* icedtea-* icedtea6-* sudo apt update &amp;amp;&amp;amp; sudo apt install openjdk-7-jdk git ccache automake lzop bison gperf build-essential zip curl zlib1g-dev zlib1g-dev:i386 g++-multilib python-networkx libxml2-utils bzip2 libbz2-dev libbz2-1.0 libghc-bzlib-dev squashfs-tools pngcrush schedtool dpkg-dev liblz4-tool make optipng maven If you have other java version in system, make sure your java version is correct.</description>
+      <description>&lt;p&gt;After update system from Ubuntu 14.04 to 16.04, I got some problems, when I was building Android source code.&lt;/p&gt;
+&lt;h2 id=&#34;openjdk-7-jdk-is-gone&#34;&gt;&lt;strong&gt;openjdk-7-jdk is gone&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Add PPA for OpenJDK7&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo add-apt-repository ppa:openjdk-r/ppa  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt remove openjdk-* icedtea-* icedtea6-*  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt update &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt install openjdk-7-jdk git ccache automake lzop bison gperf build-essential zip curl zlib1g-dev zlib1g-dev:i386 g++-multilib python-networkx libxml2-utils bzip2 libbz2-dev libbz2-1.0 libghc-bzlib-dev squashfs-tools pngcrush schedtool dpkg-dev liblz4-tool make optipng maven  
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you have other java version in system, make sure your java version is correct.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Android Full Disk Encryption Workflow (default encryption)</title>
       <link>https://oopsmonk.github.io/posts/2016-04-29-android-full-disk-encryption-workflow/</link>
       <pubDate>Fri, 29 Apr 2016 09:51:48 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2016-04-29-android-full-disk-encryption-workflow/</guid>
-      <description>This study is based on Android Marshmallow.
-Android full disk encryption use dm-crypt, which works with block devices. Please refer to the following docs for more detail:
-Full Disk Encryption
-How to setup full disk encryption Android support forceencrypt and encryptable encryption flags, and only support ext4 and f2fs file systems.
-Setup forceencrypt fstab.bullhead:
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/userdata /data ext4 noatime,nosuid,nodev,barrier=1,data=ordered,nomblk_io_submit,noauto_da_alloc,errors=panic wait,check,forceencrypt=/dev/block/platform/soc.0/f9824900.sdhci/by-name/metadata Setup encryptable fstab.hammerhead:
-/dev/block/platform/msm_sdcc.1/by-name/userdata /data ext4 noatime,nosuid,nodev,barrier=1,data=ordered,nomblk_io_submit,noauto_da_alloc,errors=panic wait,check,encryptable=/dev/block/platform/msm_sdcc.1/by-name/metadata Related Properties and source code location Related source code:</description>
+      <description>&lt;p&gt;This study is based on Android Marshmallow.&lt;br&gt;
+Android full disk encryption use dm-crypt, which works with block devices. Please refer to the following docs for more detail:&lt;br&gt;
+&lt;a href=&#34;https://source.android.com/security/encryption/&#34;&gt;Full Disk Encryption&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;how-to-setup-full-disk-encryption&#34;&gt;How to setup full disk encryption&lt;/h2&gt;
+&lt;p&gt;Android support &lt;strong&gt;forceencrypt&lt;/strong&gt; and &lt;strong&gt;encryptable&lt;/strong&gt; encryption flags, and only support ext4 and f2fs file systems.&lt;/p&gt;
+&lt;p&gt;Setup forceencrypt &lt;a href=&#34;http://androidxref.com/6.0.1_r10/xref/device/lge/bullhead/fstab.bullhead#8&#34;&gt;fstab.bullhead&lt;/a&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/dev/block/platform/soc.0/f9824900.sdhci/by-name/userdata     /data           ext4    noatime,nosuid,nodev,barrier=1,data=ordered,nomblk_io_submit,noauto_da_alloc,errors=panic wait,check,forceencrypt=/dev/block/platform/soc.0/f9824900.sdhci/by-name/metadata 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Setup encryptable &lt;a href=&#34;http://androidxref.com/6.0.1_r10/xref/device/lge/hammerhead/fstab.hammerhead#7&#34;&gt;fstab.hammerhead&lt;/a&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/dev/block/platform/msm_sdcc.1/by-name/userdata     /data           ext4    noatime,nosuid,nodev,barrier=1,data=ordered,nomblk_io_submit,noauto_da_alloc,errors=panic wait,check,encryptable=/dev/block/platform/msm_sdcc.1/by-name/metadata 
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;related-properties-and-source-code-location&#34;&gt;Related Properties and source code location&lt;/h2&gt;
+&lt;p&gt;Related source code:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Dependency src specified more than once</title>
       <link>https://oopsmonk.github.io/posts/2015-07-31-dependency-src-specified-more-than-once/</link>
       <pubDate>Fri, 31 Jul 2015 17:50:40 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2015-07-31-dependency-src-specified-more-than-once/</guid>
-      <description>This problem appered when I was checking out older tag from the Chromium project.
-Working with Release Branches
-~/chromium_build/src$ git fetch --tags ~/chromium_build/src$ git checkout -b tag_35.0.1849.0 35.0.1849.0 ~/chromium_build/src$ gclient sync --with_branch_heads --jobs 16 Error log:
-Syncing projects: 100% ( 1/ 1) src src (ERROR) ---------------------------------------- [0:00:00] Started. ________ running &#39;git reset --hard HEAD&#39; in &#39;/home/sam.chen/chromium_source/src&#39; [0:00:00] HEAD is now at 77bd011 Publish DEPS for Chromium 35.0.1849.0 [0:00:00] _____ src : Attempting rebase onto 77bd011602b1799f715591e697806c55e7ef8b7f.</description>
+      <description>&lt;p&gt;This problem appered when I was checking out older tag from the Chromium project.&lt;br&gt;
+&lt;a href=&#34;https://www.chromium.org/developers/how-tos/get-the-code/working-with-release-branches&#34;&gt;Working with Release Branches&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;~/chromium_build/src$ git fetch --tags
+~/chromium_build/src$ git checkout -b tag_35.0.1849.0 35.0.1849.0
+~/chromium_build/src$ gclient sync --with_branch_heads --jobs 16
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Error log:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Syncing projects: 100% ( 1/ 1) src
+
+src (ERROR)
+----------------------------------------
+[0:00:00] Started.
+
+________ running &#39;git reset --hard HEAD&#39; in &#39;/home/sam.chen/chromium_source/src&#39;
+[0:00:00] HEAD is now at 77bd011 Publish DEPS for Chromium 35.0.1849.0
+[0:00:00] _____ src : Attempting rebase onto 77bd011602b1799f715591e697806c55e7ef8b7f...
+[0:00:00] Current branch tag_35.0.1849.0 is up to date.
+[0:00:00]
+----------------------------------------
+Error: 1&amp;gt; Dependency src specified more than once:
+1&amp;gt;   src(https://chromium.googlesource.com/chromium/src.git) [https://chromium.googlesource.com/chromium/src.git]
+1&amp;gt; vs
+1&amp;gt;   src(https://chromium.googlesource.com/chromium/src.git) -&amp;gt; src(https://chromium.googlesource.com/chromium/src.git@ae69ae7642
+35ccaac55fc44a3b5f3276ff34cb58) [https://chromium.googlesource.com/chromium/src.git@ae69ae764235ccaac55fc44a3b5f3276ff34cb58]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You need to edit the &lt;code&gt;.DEPS.git&lt;/code&gt; file, remove the entry &amp;lsquo;src&amp;rsquo; and then &lt;code&gt;gcient sync --with_branch_heads&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Build Android WebView From The Chromium Projects</title>
       <link>https://oopsmonk.github.io/posts/2015-07-31-build-android-webview-from-the-chromium-projects/</link>
       <pubDate>Fri, 31 Jul 2015 17:28:39 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2015-07-31-build-android-webview-from-the-chromium-projects/</guid>
-      <description>First, check out and install the depot_tools package. $ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git $ export PATH=$PATH:/path/to/depot_tools Checkout source code $ mkdir ~/chromium_build &amp;amp;&amp;amp; cd $_ ~/chromium_build$ fetch --nohooks android //Configure GYP ~/chromium_build$ echo &amp;quot;{ &#39;GYP_DEFINES&#39;: &#39;OS=android&#39;, }&amp;quot; &amp;gt; chromium.gyp_env //Update projects from gyp files. //You may need to run this again when you have added new files, updated gyp files, or sync&#39;ed your repository. ~/chromium_build$ gclient runhooks Environment setup ~/chromium_build$ sudo apt-get install openjdk-7-jdk //config default JDK ~/chromium_build$ sudo update-alternatives --config javac ~/chromium_build$ sudo update-alternatives --config java ~/chromium_build$ sudo update-alternatives --config javaws ~/chromium_build$ sudo update-alternatives --config javap ~/chromium_build$ sudo update-alternatives --config jar ~/chromium_build$ sudo update-alternatives --config jarsigner //install build dependencies ~/chromium_build$ src/build/install-build-deps-android.</description>
+      <description>&lt;h2 id=&#34;first-check-out-and-install-the-depot_toolshttpscommondatastoragegoogleapiscomchrome-infra-docsflatdepot_toolsdocshtmldepot_tools_tutorialhtml_setting_up-package&#34;&gt;First, check out and install the &lt;a href=&#34;https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html#_setting_up&#34;&gt;depot_tools&lt;/a&gt; package.&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+$ export PATH=$PATH:/path/to/depot_tools
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;checkout-source-code&#34;&gt;Checkout source code&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$ mkdir ~/chromium_build &amp;amp;&amp;amp; cd $_
+~/chromium_build$ fetch --nohooks android 
+//Configure GYP
+~/chromium_build$ echo &amp;quot;{ &#39;GYP_DEFINES&#39;: &#39;OS=android&#39;, }&amp;quot; &amp;gt; chromium.gyp_env
+//Update projects from gyp files. 
+//You may need to run this again when you have added new files, updated gyp files, or sync&#39;ed your repository.
+~/chromium_build$ gclient runhooks
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;environment-setup&#34;&gt;Environment setup&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;~/chromium_build$ sudo apt-get install openjdk-7-jdk
+//config default JDK
+~/chromium_build$ sudo update-alternatives --config javac
+~/chromium_build$ sudo update-alternatives --config java
+~/chromium_build$ sudo update-alternatives --config javaws
+~/chromium_build$ sudo update-alternatives --config javap
+~/chromium_build$ sudo update-alternatives --config jar
+~/chromium_build$ sudo update-alternatives --config jarsigner
+//install build dependencies
+~/chromium_build$ src/build/install-build-deps-android.sh 
+// Install Google Play Services
+~/chromium_build$ src/third_party/android_tools/sdk/tools/android update sdk --no-ui --filter 57
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;build&#34;&gt;Build&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;~/chromium_build$ cd ~/chromium_build/src
+//Full browser
+~/chromium_build/src$ ninja -C out/Debug chrome_public_apk
+//WebView
+~/chromium_build/src$ ninja -C out/Debug android_webview_apk
+//sync source
+~/chromium_build/src$ gclient sync
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Android APK location: &lt;code&gt;~/chromium_source/src/out/Debug/apks/&lt;/code&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>How to split boot.img and get kernel config</title>
       <link>https://oopsmonk.github.io/posts/2012-09-12-how2splitbootimage/</link>
       <pubDate>Wed, 12 Sep 2012 00:00:00 +0000</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2012-09-12-how2splitbootimage/</guid>
-      <description>boot_cm9.img file from mk802_legacy-compatibility_v1.zip
-Device: Rikomagic MK802
-Script files : Split_bootimg.pl , extract-ikconfig ( in {kernel_source}/script )
-Split boot.img Copy boot_cm9.img, Split_bootimg.pl, extract-ikconfig into &amp;lsquo;split_boot&amp;rsquo;
-$ mkdir split_boot $ cd split_boot $ ./split_bootimg.pl boot_cm9.img Page size: 2048 (0x00000800) Kernel size: 8094708 (0x007b83f4) Ramdisk size: 178940 (0x0002bafc) Second size: 0 (0x00000000) Board name: Command line: console=ttyS0,115200 rw init=/init loglevel=8 Writing boot_cm9.img-kernel ... complete. Writing boot_cm9.img-ramdisk.gz ... complete. Get kernel image (boot_cm9.img-kernel) and ramdisk (boot_cm9.</description>
+      <description>&lt;p&gt;boot_cm9.img file from &lt;a href=&#34;http://www.androidfilehost.com/main/Allwinner_A10_Developers/christiantroy/misc/legacy/mk802_legacy-compatibility_v1.zip&#34;&gt;mk802_legacy-compatibility_v1.zip&lt;/a&gt;&lt;br&gt;
+Device: Rikomagic MK802&lt;br&gt;
+Script files : &lt;a href=&#34;http://zen-droid.googlecode.com/files/split_bootimg.pl&#34;&gt;Split_bootimg.pl&lt;/a&gt; , extract-ikconfig ( in {kernel_source}/script )&lt;/p&gt;
+&lt;h2 id=&#34;split-bootimg&#34;&gt;Split boot.img&lt;/h2&gt;
+&lt;p&gt;Copy boot_cm9.img, Split_bootimg.pl, extract-ikconfig into &amp;lsquo;split_boot&amp;rsquo;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ mkdir split_boot
+$ cd split_boot
+$ ./split_bootimg.pl boot_cm9.img
+Page size: 2048 (0x00000800)
+Kernel size: 8094708 (0x007b83f4)
+Ramdisk size: 178940 (0x0002bafc)
+Second size: 0 (0x00000000)
+Board name:
+Command line: console=ttyS0,115200 rw init=/init loglevel=8
+Writing boot_cm9.img-kernel ... complete.
+Writing boot_cm9.img-ramdisk.gz ... complete.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Get kernel image (&lt;strong&gt;boot_cm9.img-kernel&lt;/strong&gt;) and ramdisk (&lt;strong&gt;boot_cm9.img-ramdisk.gz&lt;/strong&gt;)&lt;/p&gt;
+&lt;h2 id=&#34;extract-kernel-config&#34;&gt;Extract kernel config&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ dd if=boot_cm9.img-kernel of=dd_uImage bs=1024 skip=1
+7903+1 records in
+7903+1 records out
+8093684 bytes (8.1 MB) copied, 0.0178518 s, 453 MB/s
+$./extract-ikconfig dd_uImage &amp;gt; kernel_config
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;extract-ramdisk&#34;&gt;Extract ramdisk&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ mkdir ramdisk
+$ cd ramdisk
+$ gzip -dc ../boot_cm9.img-ramdisk.gz | cpio -i
+6677 blocks
+$ tree .
+.
+├── data
+├── default.prop
+├── dev
+├── init
+├── init.goldfish.rc
+├── initlogo.rle
+├── init.rc
+├── init.sun4i.rc
+├── init.sun4i.usb.rc
+├── proc
+├── sbin
+│   ├── adbd
+│   └── ueventd -&amp;gt; ../init
+├── sys
+├── system
+├── ueventd.goldfish.rc
+├── ueventd.rc
+└── ueventd.sun4i.rc
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Reference:&lt;br&gt;
+&lt;a href=&#34;http://android-dls.com/wiki/index.php?title=HOWTO:_Unpack%2C_Edit%2C_and_Re-Pack_Boot_Images&#34;&gt;HOWTO: Unpack, Edit, and Re-Pack Boot Images&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>How to extract kernel config from uImage</title>
       <link>https://oopsmonk.github.io/posts/2012-08-21-how2extractkernelconfigfromuimage/</link>
       <pubDate>Tue, 21 Aug 2012 00:00:00 +0000</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2012-08-21-how2extractkernelconfigfromuimage/</guid>
-      <description>Get extract-ikconfig in kernel-source/scripts/ $mkdir extreact-uImage $cd extreact-uImage $cp {kernel-source}/scripts/extract-ikconfig . Dump uImage skip 1024 bytes $cp {uImage/what/you/want} uImage $dd if=uImage of=dd_uImage bs=1024 skip=1 $./extract-ikconfig dd_uImage &amp;gt; config </description>
+      <description>&lt;h3 id=&#34;get-extract-ikconfig-in-kernel-sourcescripts&#34;&gt;Get extract-ikconfig in kernel-source/scripts/&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$mkdir extreact-uImage
+$cd extreact-uImage
+$cp {kernel-source}/scripts/extract-ikconfig .
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;dump-uimage-skip-1024-bytes&#34;&gt;Dump uImage skip 1024 bytes&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$cp {uImage/what/you/want} uImage
+$dd if=uImage of=dd_uImage bs=1024 skip=1
+$./extract-ikconfig dd_uImage &amp;gt; config 
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
-    
     <item>
       <title>XBMC for Android on MK802</title>
       <link>https://oopsmonk.github.io/posts/2012-07-29-xbmc4androidonmk802/</link>
       <pubDate>Sun, 29 Jul 2012 00:00:00 +0000</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2012-07-29-xbmc4androidonmk802/</guid>
-      <description>XBMC announced XBMC for Android.
-不過並不打算放上Google Play, 需要自行compile及打包, 方法可參考:
-Build XBMC for Android on lubuntu 12.04
-在此記錄一下目前在MK802跑起來的情況.
-MK802介紹可參考:
-Android 4.0 mini PC 最小的主機MK802
-CPU : Allwinner A10 - ARM Cortex A8 SoC
-GPU : ARM Mali 400
-RAM : 1GB
-以公定價$79USD及讓人跌破眼鏡的入手價, 拿來玩真是夠本了.
-這次是要用Android 手機來控制 XBMC, 因為MK802沒有IR只能用滑鼠操作上有些不便.
-Google Play上有Official XBMC Remote可直接下載來用.
-中文設定: 切換到Appearance -&amp;gt; Setting -&amp;gt; International -&amp;gt; Language
-為了能透過HTTP連到MK802的XBMC, 需要將&amp;quot;網站伺服&amp;quot;的功能打開, 設定port number
-接著查看IP, 設定手機上的XBMC Remote如下:
-連線成功就會出現控制選項
-用手機上&amp;quot;Remote Control&amp;quot; Navigation, 測試播放USB裡的影片</description>
+      <description>&lt;p&gt;XBMC announced &lt;a href=&#34;http://xbmc.org/theuni/2012/07/13/xbmc-for-android/&#34;&gt;XBMC for Android&lt;/a&gt;.&lt;br&gt;
+不過並不打算放上Google Play, 需要自行compile及打包, 方法可參考:&lt;br&gt;
+&lt;a href=&#34;https://oopsmonk.github.io/blog/2012/07/28/BuildXBMC&#34;&gt;Build XBMC for Android on lubuntu 12.04&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在此記錄一下目前在MK802跑起來的情況.&lt;br&gt;
+MK802介紹可參考:&lt;br&gt;
+&lt;a href=&#34;http://dacota.pixnet.net/blog/post/30077383&#34;&gt;Android 4.0 mini PC 最小的主機MK802&lt;/a&gt;&lt;br&gt;
+CPU : Allwinner A10 - ARM Cortex A8 SoC&lt;br&gt;
+GPU : ARM Mali 400&lt;br&gt;
+RAM : 1GB&lt;br&gt;
+以公定價$79USD及讓人跌破眼鏡的入手價, 拿來玩真是夠本了.&lt;br&gt;
+這次是要用Android 手機來控制 XBMC, 因為MK802沒有IR只能用滑鼠操作上有些不便.&lt;br&gt;
+Google Play上有&lt;a href=&#34;https://play.google.com/store/apps/details?id=org.xbmc.android.remote&amp;amp;hl=zh_TW&#34;&gt;Official XBMC Remote&lt;/a&gt;可直接下載來用.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2012-07-29/DSCN1987_re_note.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;中文設定: 切換到Appearance -&amp;gt; Setting -&amp;gt; International -&amp;gt; Language&lt;br&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2012-07-29/DSCN1995_re.jpg&#34;&gt;&lt;br&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2012-07-29/DSCN2003_re.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;為了能透過HTTP連到MK802的XBMC, 需要將&amp;quot;網站伺服&amp;quot;的功能打開, 設定port number&lt;br&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2012-07-29/DSCN2004_re.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;接著查看IP, 設定手機上的XBMC Remote如下:&lt;br&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2012-07-29/DSCN2005_re_note.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;連線成功就會出現控制選項&lt;br&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2012-07-29/DSCN2006_re.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;用手機上&amp;quot;Remote Control&amp;quot; Navigation, 測試播放USB裡的影片&lt;br&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2012-07-29/DSCN2008_re.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;影片開播後選手機上的&amp;quot;Now Playing&amp;quot;, 可以做seek, FF/FB功能, 音量控制是使用手機上的音量鍵.&lt;br&gt;
+(當初還因為無法控制音量煩腦, 沒想到直接用就可以&amp;hellip;冏)&lt;br&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2012-07-29/DSCN2011_re.jpg&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Build XBMC for Android on lubuntu 12.04</title>
       <link>https://oopsmonk.github.io/posts/2012-07-28-buildxbmc/</link>
       <pubDate>Sat, 28 Jul 2012 00:00:00 +0000</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2012-07-28-buildxbmc/</guid>
-      <description>Install required packages # sudo apt-get install build-essential default-jdk git curl autoconf \ unzip zip zlib1g-dev gawk gperf Getting the Android SDK and NDK http://developer.android.com/sdk/index.html
-SDK : android-sdk_r20.0.1-linux.tgz
-crystax-5 NDK with enabled support of C++ exceptions, RTTI and Standard C++ Library
-http://www.crystax.net/en/android/ndk/7#download
-NDK : android-ndk-r7-crystax-5.beta2-linux-x86.tar.bz2
-Installing Android SDK packages &amp;lt;android-sdk&amp;gt; : $HOME/XBMC_Project/android-sdk-linux
-# cd &amp;lt;android-sdk&amp;gt;/tools # ./android update sdk -u -t platform,platform-tool Setup the Android toolchain &amp;lt;android-ndk&amp;gt; : $HOME/XBMC_Project/android-ndk-r8b &amp;lt;android-toolchain&amp;gt; : $HOME/XBMC_Project/android_toolchain/android-9</description>
+      <description>&lt;h3 id=&#34;install-required-packages&#34;&gt;Install required packages&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# sudo apt-get install build-essential default-jdk git curl autoconf \
+ unzip zip zlib1g-dev gawk gperf
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;getting-the-android-sdk-and-ndk&#34;&gt;Getting the Android SDK and NDK&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://developer.android.com/sdk/index.html&#34;&gt;http://developer.android.com/sdk/index.html&lt;/a&gt;&lt;br&gt;
+SDK : &lt;a href=&#34;http://dl.google.com/android/android-sdk_r20.0.1-linux.tgz&#34;&gt;android-sdk_r20.0.1-linux.tgz&lt;/a&gt;&lt;br&gt;
+crystax-5 NDK with enabled support of C++ exceptions, RTTI and Standard C++ Library&lt;br&gt;
+&lt;a href=&#34;http://www.crystax.net/en/android/ndk/7#download&#34;&gt;http://www.crystax.net/en/android/ndk/7#download&lt;/a&gt;&lt;br&gt;
+NDK : &lt;a href=&#34;http://www.crystax.net/en/download/android-ndk-r7-crystax-5.beta2-linux-x86.tar.bz2&#34;&gt;android-ndk-r7-crystax-5.beta2-linux-x86.tar.bz2&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;installing-android-sdk-packages&#34;&gt;Installing Android SDK packages&lt;/h3&gt;
+&lt;p&gt;&amp;lt;android-sdk&amp;gt; : $HOME/XBMC_Project/android-sdk-linux&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# cd &amp;lt;android-sdk&amp;gt;/tools
+# ./android update sdk -u -t platform,platform-tool
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;setup-the-android-toolchain&#34;&gt;Setup the Android toolchain&lt;/h3&gt;
+&lt;p&gt;&amp;lt;android-ndk&amp;gt; :  $HOME/XBMC_Project/android-ndk-r8b
+&amp;lt;android-toolchain&amp;gt; :  $HOME/XBMC_Project/android_toolchain/android-9&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# cd &amp;lt;android-ndk&amp;gt;
+# ls platforms
+# cd build/tools
+# ./make-standalone-toolchain.sh --ndk-dir=../../ \
+  --install-dir=&amp;lt;android-toolchain&amp;gt;/android-9 --platform=android-9
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;create-a-new-debug-key-to-sign-debug-apks&#34;&gt;Create a (new) debug key to sign debug APKs&lt;/h3&gt;
+&lt;p&gt;All packages must be signed. The following command will generate a self-signed debug key. If the result is a cryptic error, it probably just means a debug key already existed, no cause for alarm.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Android Threads, Handlers and AsyncTask</title>
       <link>https://oopsmonk.github.io/posts/2012-06-14-androidthreadshandlersandasynctask/</link>
       <pubDate>Thu, 14 Jun 2012 00:00:00 +0000</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2012-06-14-androidthreadshandlersandasynctask/</guid>
-      <description>先看過Processes and Threads會有比較清楚的概念, 當Adnroid Application 啟動後, 系統會建一個主要的thread 稱 &amp;ldquo;main thread&amp;rdquo; or &amp;ldquo;UI thread&amp;rdquo;, 所有的components 皆跑在這個UI thread, system calls 也是透過UI thread dispatched給各個component, ex: onKeyDown, touch event.
-UI thread 如因大量運算或等待而blocked, 預設超過5秒ANR(Application Not Responding)就會發生.
-且Android UI components 並非thread-safe, 使用上要特別小心.
-所以:
-long time computation使用另外的thread, 不要寫在 UI Thread. 不要在UI thread 之外使用UI component method. 透過Thread, Handler and AsyncTask perform asynchronous processing, 避免UI thread block. Threads Android 提供以下的method, 可在其它的thread 下調用 UI thread.
-Activity.runOnUiThread(Runnable) View.post(Runnable) &amp;lt;-- used in example code.</description>
+      <description>&lt;p&gt;先看過&lt;a href=&#34;http://developer.android.com/guide/components/processes-and-threads.html&#34;&gt;Processes and Threads&lt;/a&gt;會有比較清楚的概念, 當Adnroid Application 啟動後, 系統會建一個主要的thread 稱 &amp;ldquo;main thread&amp;rdquo; or &amp;ldquo;UI thread&amp;rdquo;, 所有的components 皆跑在這個UI thread, system calls 也是透過UI thread dispatched給各個component, ex: onKeyDown, touch event.&lt;br&gt;
+UI thread 如因大量運算或等待而blocked, 預設超過5秒ANR(Application Not Responding)就會發生.&lt;br&gt;
+且Android UI components 並非thread-safe, 使用上要特別小心.&lt;br&gt;
+所以:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;long time computation使用另外的thread, 不要寫在 UI Thread.&lt;/li&gt;
+&lt;li&gt;不要在UI thread 之外使用UI component method.&lt;/li&gt;
+&lt;li&gt;透過Thread, Handler and AsyncTask perform asynchronous processing, 避免UI thread block.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;threadshttpdeveloperandroidcomreferencejavalangthreadhtml&#34;&gt;&lt;a href=&#34;http://developer.android.com/reference/java/lang/Thread.html&#34;&gt;Threads&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Android 提供以下的method, 可在其它的thread 下調用 UI thread.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Activity.&lt;span style=&#34;color:#a6e22e&#34;&gt;runOnUiThread&lt;/span&gt;(Runnable)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;View.&lt;span style=&#34;color:#a6e22e&#34;&gt;post&lt;/span&gt;(Runnable) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;--&lt;/span&gt; used in example code.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;View.&lt;span style=&#34;color:#a6e22e&#34;&gt;postDelayed&lt;/span&gt;(Runnable, &lt;span style=&#34;color:#66d9ef&#34;&gt;long&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;或是使用Handler or AsyncTasks class 達到同樣的效果.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

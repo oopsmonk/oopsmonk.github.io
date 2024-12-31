@@ -9,30 +9,28 @@
       <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
       <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Aug 2023 14:15:05 +0800</lastBuildDate><atom:link href="https://oopsmonk.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Aug 2023 14:15:05 +0800</lastBuildDate>
+    <atom:link href="https://oopsmonk.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Extend Volume Size on AWS EC2</title>
       <link>https://oopsmonk.github.io/posts/2023-08-11-ec2-extend-volume-size/</link>
       <pubDate>Fri, 11 Aug 2023 14:15:05 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2023-08-11-ec2-extend-volume-size/</guid>
       <description>Extend EBS size on EC2 instance</description>
     </item>
-    
     <item>
       <title>AWS S3 Download Bucket Folder</title>
       <link>https://oopsmonk.github.io/posts/2013-05-28-aws-s3-folderdownload/</link>
       <pubDate>Tue, 28 May 2013 01:53:31 +0800</pubDate>
-      
       <guid>https://oopsmonk.github.io/posts/2013-05-28-aws-s3-folderdownload/</guid>
-      <description>Currently, AWS web console not provide folder downloading. We can use s3cmd or s3Browser for this purpose.
-s3Browser is a freeware Windows client for S3 and CloudFront.
-s3cmd download Bucket folder:
-s3cmd sync s3://bucketname/folder /local/folder For download files using s3Browser, here is a tutorial.
-Uploading and Downloading Files to and from Amazon S3</description>
+      <description>&lt;p&gt;Currently, AWS web console not provide folder downloading. We can use &lt;a href=&#34;http://s3tools.org/s3cmd&#34;&gt;s3cmd&lt;/a&gt; or &lt;a href=&#34;http://s3browser.com/&#34;&gt;s3Browser&lt;/a&gt; for this purpose.&lt;br&gt;
+&lt;a href=&#34;http://s3browser.com/&#34;&gt;s3Browser&lt;/a&gt; is a freeware Windows client for S3 and CloudFront.&lt;br&gt;
+s3cmd download Bucket folder:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;s3cmd sync s3://bucketname/folder /local/folder  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;For download files using s3Browser, here is a tutorial.&lt;br&gt;
+&lt;a href=&#34;http://s3browser.com/how-to-upload-and-download-files.php&#34;&gt;Uploading and Downloading Files to and from Amazon S3&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
