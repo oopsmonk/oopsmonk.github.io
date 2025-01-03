@@ -11,8 +11,25 @@
     </image>
     <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Jan 2024 10:39:45 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 20 Oct 2024 10:44:48 +0800</lastBuildDate>
     <atom:link href="https://oopsmonk.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Littlest JupyterHub - TLJH</title>
+      <link>https://oopsmonk.github.io/posts/2024-10-20-thelittlestjupyterhub/</link>
+      <pubDate>Sun, 20 Oct 2024 10:44:48 +0800</pubDate>
+      <guid>https://oopsmonk.github.io/posts/2024-10-20-thelittlestjupyterhub/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://jupyter.org/&#34;&gt;Jupyter&lt;/a&gt; project is a free software, open standards, and web services for interactive computing across all programming languages.
+It provides:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://jupyter-notebook.readthedocs.io/en/latest/&#34;&gt;Jupyter Notebook&lt;/a&gt;: the classic notebook interface&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jupyterlab.readthedocs.io/en/latest/&#34;&gt;JupyterLab&lt;/a&gt;: the next-generation notebook interface&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/voila-dashboards/voila&#34;&gt;Voilà&lt;/a&gt;: share your results with a secure, stand-alone web applications.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jupyterhub.readthedocs.io/en/stable/&#34;&gt;JupyterHub&lt;/a&gt;: the multi-user server for Jupyter Notebook and JupyterLab&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://tljh.jupyter.org/en/latest/index.html&#34;&gt;The littlest JupyterHub(TLJH)&lt;/a&gt;: the simplest JupyterHub for a small group running on a single machine.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://z2jh.jupyter.org/en/latest/&#34;&gt;Zero to JupyterHub with Kubernetes(Z2JH)&lt;/a&gt;: Provides user-friendly steps to deploy JupyterHub on a cloud using &lt;a href=&#34;https://kubernetes.io/&#34;&gt;Kubernetes&lt;/a&gt; and &lt;a href=&#34;https://helm.sh/&#34;&gt;Helm&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I was confused by the JupyterHub and TLJH since they can run on a single server with the multiple users feature but after reading &lt;a href=&#34;https://words.yuvi.in/post/the-littlest-jupyterhub/&#34;&gt;The Littlest Jupyterhub by Yuvi&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>ARM AMBA</title>
       <link>https://oopsmonk.github.io/posts/2024-01-17-arm-amba/</link>
