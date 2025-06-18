@@ -16,3 +16,16 @@ git submodule update --init --recursive
 hugo new posts/my-post.md
 hugo server
 ```
+
+Update Theme
+
+```bash
+git submodule update --remote --merge
+```
+
+or
+
+```bash
+cd themes/PaperMod
+git pull origin master
+```
