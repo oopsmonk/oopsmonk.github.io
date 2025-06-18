@@ -9,7 +9,7 @@
       <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
       <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
     </image>
-    <generator>Hugo -- 0.140.2</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Oct 2024 10:44:48 +0800</lastBuildDate>
     <atom:link href="https://oopsmonk.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
@@ -39,17 +39,17 @@ It provides:&lt;/p&gt;
 &lt;h3 id=&#34;requirements&#34;&gt;Requirements&lt;/h3&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
 libreadline-dev libsqlite3-dev wget curl llvm
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;install-pyenvhttpsgithubcomyyuupyenvblobmasterreadmemd&#34;&gt;&lt;a href=&#34;https://github.com/yyuu/pyenv/blob/master/README.md&#34;&gt;install pyenv&lt;/a&gt;&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;install-pyenv&#34;&gt;&lt;a href=&#34;https://github.com/yyuu/pyenv/blob/master/README.md&#34;&gt;install pyenv&lt;/a&gt;&lt;/h3&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ cd ~
 $ git clone git://github.com/yyuu/pyenv.git .pyenv
 $ echo &amp;#39;export PYENV_ROOT=&amp;#34;$HOME/.pyenv&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc
 $ echo &amp;#39;export PATH=&amp;#34;$PYENV_ROOT/bin:$PATH&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc
 $ echo &amp;#39;eval &amp;#34;$(pyenv init -)&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;install-pyenv-virtualenvhttpsgithubcomyyuupyenv-virtualenvblobmasterreadmemd&#34;&gt;&lt;a href=&#34;https://github.com/yyuu/pyenv-virtualenv/blob/master/README.md&#34;&gt;install pyenv-virtualenv&lt;/a&gt;&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;install-pyenv-virtualenv&#34;&gt;&lt;a href=&#34;https://github.com/yyuu/pyenv-virtualenv/blob/master/README.md&#34;&gt;install pyenv-virtualenv&lt;/a&gt;&lt;/h3&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv 
 $ echo &amp;#39;eval &amp;#34;$(pyenv virtualenv-init -)&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc
 $ exec $SHELL
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;common-usage-command-referencehttpsrawgithubusercontentcomyyuupyenvmastercommandsmd&#34;&gt;Common Usage (&lt;a href=&#34;https://raw.githubusercontent.com/yyuu/pyenv/master/COMMANDS.md&#34;&gt;Command Reference&lt;/a&gt;)&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;common-usage-command-reference&#34;&gt;Common Usage (&lt;a href=&#34;https://raw.githubusercontent.com/yyuu/pyenv/master/COMMANDS.md&#34;&gt;Command Reference&lt;/a&gt;)&lt;/h2&gt;
 &lt;h3 id=&#34;list-all-available-versions&#34;&gt;List all available versions&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;$ pyenv version -l  
 &lt;/code&gt;&lt;/pre&gt;

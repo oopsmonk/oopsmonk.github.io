@@ -9,10 +9,52 @@
       <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
       <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
     </image>
-    <generator>Hugo -- 0.140.2</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Oct 2024 10:44:48 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jan 2025 16:31:09 +0800</lastBuildDate>
     <atom:link href="https://oopsmonk.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lenovo ThinkPad fan control via ThinkFan on Ubuntu</title>
+      <link>https://oopsmonk.github.io/posts/2025-01-31-thinkfan/</link>
+      <pubDate>Fri, 31 Jan 2025 16:31:09 +0800</pubDate>
+      <guid>https://oopsmonk.github.io/posts/2025-01-31-thinkfan/</guid>
+      <description>&lt;p&gt;The default fan control is annoying, Thinkfan is a simple, lightweight fan control program.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/vmatare/thinkfan&#34;&gt;vmatare/thinkfan&lt;/a&gt;- The minimalist fan control program&lt;/p&gt;
+&lt;h2 id=&#34;setup-thinkfan&#34;&gt;Setup Thinkfan&lt;/h2&gt;
+&lt;h3 id=&#34;install-thinkfan-and-lm-sensors&#34;&gt;Install Thinkfan and lm-sensors&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install lm-sensors thinkfan
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;read-the-doc&#34;&gt;Read the doc&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ man thinkfan.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;check-thermal-devices&#34;&gt;Check thermal devices&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;hwmon-style&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ find /sys/devices -type f -name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;temp*_input&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon4/temp6_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon4/temp3_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon4/temp7_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon4/temp4_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon4/temp8_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon4/temp1_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon4/temp5_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon4/temp2_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp6_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp13_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp3_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp10_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp7_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp4_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp11_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp8_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp1_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp5_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp12_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp9_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp2_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/pci0000:00/0000:00:06.0/0000:02:00.0/nvme/nvme0/hwmon3/temp1_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/pci0000:00/0000:00:06.0/0000:02:00.0/nvme/nvme0/hwmon3/temp2_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/virtual/thermal/thermal_zone0/hwmon1/temp1_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/virtual/thermal/thermal_zone9/hwmon6/temp1_input
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;/proc/acpi/ibm/thermal&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Littlest JupyterHub - TLJH</title>
       <link>https://oopsmonk.github.io/posts/2024-10-20-thelittlestjupyterhub/</link>
@@ -35,11 +77,10 @@ It provides:&lt;/p&gt;
       <link>https://oopsmonk.github.io/posts/2024-01-17-arm-amba/</link>
       <pubDate>Wed, 17 Jan 2024 10:39:45 +0800</pubDate>
       <guid>https://oopsmonk.github.io/posts/2024-01-17-arm-amba/</guid>
-      <description>&lt;h2 id=&#34;advanced-microcontroller-bus-architectureambahttpswwwarmcomenarchitecturesystem-architecturesamba&#34;&gt;Advanced Microcontroller Bus Architecture(&lt;a href=&#34;https://www.arm.com/en/architecture/system-architectures/amba&#34;&gt;AMBA&lt;/a&gt;)&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;advanced-microcontroller-bus-architectureamba&#34;&gt;Advanced Microcontroller Bus Architecture(&lt;a href=&#34;https://www.arm.com/en/architecture/system-architectures/amba&#34;&gt;AMBA&lt;/a&gt;)&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;2024-01-17&lt;/strong&gt;
-AMBA 5 is the latest generation of the freely available &lt;code&gt;AMBA protocol specifications&lt;/code&gt;. It introduces the &lt;code&gt;Coherent Hub Interface&lt;/code&gt; (CHI) architecture, which defines the interfaces to connect fully coherent processors and high-performance interconnects. AMBA 5 also introduces the AXI5, ACE5 and AHB5 protocols, which extend prior generations to include a number of performances and scalability features, and to align and complement CHI.&lt;/p&gt;
-&lt;/blockquote&gt;
+AMBA 5 is the latest generation of the freely available &lt;code&gt;AMBA protocol specifications&lt;/code&gt;. It introduces the &lt;code&gt;Coherent Hub Interface&lt;/code&gt; (CHI) architecture, which defines the interfaces to connect fully coherent processors and high-performance interconnects. AMBA 5 also introduces the AXI5, ACE5 and AHB5 protocols, which extend prior generations to include a number of performances and scalability features, and to align and complement CHI.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://oopsmonk.github.io/images/2024-01-17/AMBA-System-Diagram.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;AMBA 5 Protocols&lt;/p&gt;</description>
     </item>
@@ -301,7 +342,7 @@ L2 data ratio: $CacheL2DataRefill/$CacheL2DataAccess&lt;/p&gt;
       <description>&lt;p&gt;Android, Algorithms&lt;/p&gt;
 &lt;h1 id=&#34;week1-0105&#34;&gt;Week1 (01/05)&lt;/h1&gt;
 &lt;h2 id=&#34;讀書心得&#34;&gt;讀書心得&lt;/h2&gt;
-&lt;h3 id=&#34;algorithms-on-graphs---week5httpswwwcourseraorglearnalgorithms-on-graphs&#34;&gt;&lt;a href=&#34;https://www.coursera.org/learn/algorithms-on-graphs&#34;&gt;Algorithms on Graphs - Week5&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;algorithms-on-graphs---week5&#34;&gt;&lt;a href=&#34;https://www.coursera.org/learn/algorithms-on-graphs&#34;&gt;Algorithms on Graphs - Week5&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;給出座標上n個點:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;找出最短路徑(the shortest path)&lt;/li&gt;
@@ -332,7 +373,7 @@ return X
 &lt;p&gt;對於晶片廠來說Android決解了軟體開發的問題, 也加速了ODM/OEM的開發時程.&lt;br&gt;
 沒錯&amp;hellip;但對於手機/電視之外的應用..存在些問題.&lt;br&gt;
 另外差異化及客制帶來些不定時炸彈.&lt;/p&gt;
-&lt;h2 id=&#34;sepolicy-for-android-trebleblog20171220sepolicy-for-android-treble&#34;&gt;&lt;a href=&#34;https://oopsmonk.github.io/blog/2017/12/20/sepolicy-for-android-treble&#34;&gt;Sepolicy for Android Treble&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;sepolicy-for-android-treble&#34;&gt;&lt;a href=&#34;https://oopsmonk.github.io/blog/2017/12/20/sepolicy-for-android-treble&#34;&gt;Sepolicy for Android Treble&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;使用numpy-array修改pixel-values&#34;&gt;使用numpy array修改pixel values.&lt;/h2&gt;
 &lt;script src=&#34;https://gist.github.com/oopsmonk/8da2a513882b4f9a8ce9cbffbc63193a.js&#34;&gt;&lt;/script&gt;
 &lt;h2 id=&#34;網路資源&#34;&gt;網路資源&lt;/h2&gt;
@@ -1310,7 +1351,7 @@ Error: 1&amp;gt; Dependency src specified more than once:
       <link>https://oopsmonk.github.io/posts/2015-07-31-build-android-webview-from-the-chromium-projects/</link>
       <pubDate>Fri, 31 Jul 2015 17:28:39 +0800</pubDate>
       <guid>https://oopsmonk.github.io/posts/2015-07-31-build-android-webview-from-the-chromium-projects/</guid>
-      <description>&lt;h2 id=&#34;first-check-out-and-install-the-depot_toolshttpscommondatastoragegoogleapiscomchrome-infra-docsflatdepot_toolsdocshtmldepot_tools_tutorialhtml_setting_up-package&#34;&gt;First, check out and install the &lt;a href=&#34;https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html#_setting_up&#34;&gt;depot_tools&lt;/a&gt; package.&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;first-check-out-and-install-the-depot_-package&#34;&gt;First, check out and install the &lt;a href=&#34;https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html#_setting_up&#34;&gt;depot_tools&lt;/a&gt; package.&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;$ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
 $ export PATH=$PATH:/path/to/depot_tools
 &lt;/code&gt;&lt;/pre&gt;
@@ -1510,7 +1551,7 @@ Requirements:&lt;/p&gt;
       <link>https://oopsmonk.github.io/posts/2014-12-12-multiplesshkeyswithgithub/</link>
       <pubDate>Fri, 12 Dec 2014 01:53:31 +0800</pubDate>
       <guid>https://oopsmonk.github.io/posts/2014-12-12-multiplesshkeyswithgithub/</guid>
-      <description>&lt;h2 id=&#34;generating-ssh-keys-for-githubhttpshelpgithubcomarticlesgenerating-ssh-keys&#34;&gt;&lt;a href=&#34;https://help.github.com/articles/generating-ssh-keys/&#34;&gt;Generating SSH keys for GitHub&lt;/a&gt;&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;generating-ssh-keys-for-github&#34;&gt;&lt;a href=&#34;https://help.github.com/articles/generating-ssh-keys/&#34;&gt;Generating SSH keys for GitHub&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Here are github account and work account.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1565,17 +1606,17 @@ $ git config user.email &amp;#34;SamChen@example.com.tw&amp;#34;
 &lt;h3 id=&#34;requirements&#34;&gt;Requirements&lt;/h3&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
 libreadline-dev libsqlite3-dev wget curl llvm
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;install-pyenvhttpsgithubcomyyuupyenvblobmasterreadmemd&#34;&gt;&lt;a href=&#34;https://github.com/yyuu/pyenv/blob/master/README.md&#34;&gt;install pyenv&lt;/a&gt;&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;install-pyenv&#34;&gt;&lt;a href=&#34;https://github.com/yyuu/pyenv/blob/master/README.md&#34;&gt;install pyenv&lt;/a&gt;&lt;/h3&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ cd ~
 $ git clone git://github.com/yyuu/pyenv.git .pyenv
 $ echo &amp;#39;export PYENV_ROOT=&amp;#34;$HOME/.pyenv&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc
 $ echo &amp;#39;export PATH=&amp;#34;$PYENV_ROOT/bin:$PATH&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc
 $ echo &amp;#39;eval &amp;#34;$(pyenv init -)&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;install-pyenv-virtualenvhttpsgithubcomyyuupyenv-virtualenvblobmasterreadmemd&#34;&gt;&lt;a href=&#34;https://github.com/yyuu/pyenv-virtualenv/blob/master/README.md&#34;&gt;install pyenv-virtualenv&lt;/a&gt;&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;install-pyenv-virtualenv&#34;&gt;&lt;a href=&#34;https://github.com/yyuu/pyenv-virtualenv/blob/master/README.md&#34;&gt;install pyenv-virtualenv&lt;/a&gt;&lt;/h3&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv 
 $ echo &amp;#39;eval &amp;#34;$(pyenv virtualenv-init -)&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc
 $ exec $SHELL
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;common-usage-command-referencehttpsrawgithubusercontentcomyyuupyenvmastercommandsmd&#34;&gt;Common Usage (&lt;a href=&#34;https://raw.githubusercontent.com/yyuu/pyenv/master/COMMANDS.md&#34;&gt;Command Reference&lt;/a&gt;)&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;common-usage-command-reference&#34;&gt;Common Usage (&lt;a href=&#34;https://raw.githubusercontent.com/yyuu/pyenv/master/COMMANDS.md&#34;&gt;Command Reference&lt;/a&gt;)&lt;/h2&gt;
 &lt;h3 id=&#34;list-all-available-versions&#34;&gt;List all available versions&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;$ pyenv version -l  
 &lt;/code&gt;&lt;/pre&gt;
@@ -1683,7 +1724,7 @@ system (set by /home/oopsmonk/.pyenv/version)
       <description>&lt;p&gt;&lt;a href=&#34;http://tldp.org/LDP/abs/html/index.html&#34;&gt;Advanced Bash-Scripting Guide&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;http://www.grymoire.com/Unix/Sed.html&#34;&gt;sed&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;http://www.grymoire.com/Unix/Awk.html&#34;&gt;awk&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;internal-variableshttptldporgldpabshtmlinternalvariableshtml&#34;&gt;&lt;a href=&#34;http://tldp.org/LDP/abs/html/internalvariables.html&#34;&gt;Internal Variables&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;internal-variables&#34;&gt;&lt;a href=&#34;http://tldp.org/LDP/abs/html/internalvariables.html&#34;&gt;Internal Variables&lt;/a&gt;&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#current parent pid&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$$
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#last background process pid&lt;/span&gt;
@@ -1692,7 +1733,7 @@ system (set by /home/oopsmonk/.pyenv/version)
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$?
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#current instance pid, Bash 4.x above.&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$BASHPID
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;arithmetic-expansionhttptldporgldpabshtmlarithexphtml&#34;&gt;&lt;a href=&#34;http://tldp.org/LDP/abs/html/arithexp.html&#34;&gt;Arithmetic Expansion&lt;/a&gt;&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;arithmetic-expansion&#34;&gt;&lt;a href=&#34;http://tldp.org/LDP/abs/html/arithexp.html&#34;&gt;Arithmetic Expansion&lt;/a&gt;&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;a&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;b&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$((&lt;/span&gt;$a &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;))&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
@@ -1704,7 +1745,7 @@ system (set by /home/oopsmonk/.pyenv/version)
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;let &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;b = &lt;/span&gt;$a&lt;span style=&#34;color:#e6db74&#34;&gt; + 3&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;declare -i b&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;$a+$a
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;manipulating-stringshttpwwwthegeekstuffcom201007bash-string-manipulation&#34;&gt;&lt;a href=&#34;http://www.thegeekstuff.com/2010/07/bash-string-manipulation/&#34;&gt;Manipulating Strings&lt;/a&gt;&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;manipulating-strings&#34;&gt;&lt;a href=&#34;http://www.thegeekstuff.com/2010/07/bash-string-manipulation/&#34;&gt;Manipulating Strings&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;String is a number&lt;/li&gt;
 &lt;/ul&gt;
@@ -1775,7 +1816,7 @@ system (set by /home/oopsmonk/.pyenv/version)
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;infinite loops [ CTRL+C to stop]&amp;#34;&lt;/span&gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    sleep &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;arrayhttpwwwlinuxjournalcomcontentbash-arrays&#34;&gt;&lt;a href=&#34;http://www.linuxjournal.com/content/bash-arrays&#34;&gt;Array&lt;/a&gt;&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;array&#34;&gt;&lt;a href=&#34;http://www.linuxjournal.com/content/bash-arrays&#34;&gt;Array&lt;/a&gt;&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Simple array&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;arrayA&lt;span style=&#34;color:#f92672&#34;&gt;=(&lt;/span&gt; Mon Tue Wed Thu Fri Sat Sun &lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
@@ -1823,7 +1864,7 @@ system (set by /home/oopsmonk/.pyenv/version)
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;arrayB&lt;span style=&#34;color:#f92672&#34;&gt;+=(&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;four&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;aa&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;five&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;5a1c&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;!arrayB[*]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# four one five two three&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;arrayB[*]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;     &lt;span style=&#34;color:#75715e&#34;&gt;# 4aa 1 5a1c 2 3&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;io-redirectionhttpwwwtldporgldpabshtmlio-redirectionhtml&#34;&gt;&lt;a href=&#34;http://www.tldp.org/LDP/abs/html/io-redirection.html&#34;&gt;I/O redirection&lt;/a&gt;&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;io-redirection&#34;&gt;&lt;a href=&#34;http://www.tldp.org/LDP/abs/html/io-redirection.html&#34;&gt;I/O redirection&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;forking-processes&#34;&gt;Forking Processes&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pid_perfix&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/tmp/proc-&amp;#34;&lt;/span&gt;
@@ -2845,7 +2886,7 @@ UI thread 如因大量運算或等待而blocked, 預設超過5秒ANR(Application
 &lt;li&gt;不要在UI thread 之外使用UI component method.&lt;/li&gt;
 &lt;li&gt;透過Thread, Handler and AsyncTask perform asynchronous processing, 避免UI thread block.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;threadshttpdeveloperandroidcomreferencejavalangthreadhtml&#34;&gt;&lt;a href=&#34;http://developer.android.com/reference/java/lang/Thread.html&#34;&gt;Threads&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;threads&#34;&gt;&lt;a href=&#34;http://developer.android.com/reference/java/lang/Thread.html&#34;&gt;Threads&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Android 提供以下的method, 可在其它的thread 下調用 UI thread.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Activity.&lt;span style=&#34;color:#a6e22e&#34;&gt;runOnUiThread&lt;/span&gt;(Runnable)
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;View.&lt;span style=&#34;color:#a6e22e&#34;&gt;post&lt;/span&gt;(Runnable) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;--&lt;/span&gt; used in example code.

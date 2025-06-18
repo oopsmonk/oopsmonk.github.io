@@ -9,7 +9,7 @@
       <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
       <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
     </image>
-    <generator>Hugo -- 0.140.2</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 20 Dec 2017 11:54:18 +0800</lastBuildDate>
     <atom:link href="https://oopsmonk.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
@@ -318,7 +318,7 @@ Error: 1&amp;gt; Dependency src specified more than once:
       <link>https://oopsmonk.github.io/posts/2015-07-31-build-android-webview-from-the-chromium-projects/</link>
       <pubDate>Fri, 31 Jul 2015 17:28:39 +0800</pubDate>
       <guid>https://oopsmonk.github.io/posts/2015-07-31-build-android-webview-from-the-chromium-projects/</guid>
-      <description>&lt;h2 id=&#34;first-check-out-and-install-the-depot_toolshttpscommondatastoragegoogleapiscomchrome-infra-docsflatdepot_toolsdocshtmldepot_tools_tutorialhtml_setting_up-package&#34;&gt;First, check out and install the &lt;a href=&#34;https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html#_setting_up&#34;&gt;depot_tools&lt;/a&gt; package.&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;first-check-out-and-install-the-depot_-package&#34;&gt;First, check out and install the &lt;a href=&#34;https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html#_setting_up&#34;&gt;depot_tools&lt;/a&gt; package.&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;$ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
 $ export PATH=$PATH:/path/to/depot_tools
 &lt;/code&gt;&lt;/pre&gt;
@@ -503,7 +503,7 @@ UI thread 如因大量運算或等待而blocked, 預設超過5秒ANR(Application
 &lt;li&gt;不要在UI thread 之外使用UI component method.&lt;/li&gt;
 &lt;li&gt;透過Thread, Handler and AsyncTask perform asynchronous processing, 避免UI thread block.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;threadshttpdeveloperandroidcomreferencejavalangthreadhtml&#34;&gt;&lt;a href=&#34;http://developer.android.com/reference/java/lang/Thread.html&#34;&gt;Threads&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;threads&#34;&gt;&lt;a href=&#34;http://developer.android.com/reference/java/lang/Thread.html&#34;&gt;Threads&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Android 提供以下的method, 可在其它的thread 下調用 UI thread.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Activity.&lt;span style=&#34;color:#a6e22e&#34;&gt;runOnUiThread&lt;/span&gt;(Runnable)
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;View.&lt;span style=&#34;color:#a6e22e&#34;&gt;post&lt;/span&gt;(Runnable) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;--&lt;/span&gt; used in example code.

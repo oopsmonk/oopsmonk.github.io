@@ -9,10 +9,52 @@
       <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
       <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
     </image>
-    <generator>Hugo -- 0.140.2</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 May 2023 12:00:25 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jan 2025 16:31:09 +0800</lastBuildDate>
     <atom:link href="https://oopsmonk.github.io/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lenovo ThinkPad fan control via ThinkFan on Ubuntu</title>
+      <link>https://oopsmonk.github.io/posts/2025-01-31-thinkfan/</link>
+      <pubDate>Fri, 31 Jan 2025 16:31:09 +0800</pubDate>
+      <guid>https://oopsmonk.github.io/posts/2025-01-31-thinkfan/</guid>
+      <description>&lt;p&gt;The default fan control is annoying, Thinkfan is a simple, lightweight fan control program.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/vmatare/thinkfan&#34;&gt;vmatare/thinkfan&lt;/a&gt;- The minimalist fan control program&lt;/p&gt;
+&lt;h2 id=&#34;setup-thinkfan&#34;&gt;Setup Thinkfan&lt;/h2&gt;
+&lt;h3 id=&#34;install-thinkfan-and-lm-sensors&#34;&gt;Install Thinkfan and lm-sensors&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install lm-sensors thinkfan
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;read-the-doc&#34;&gt;Read the doc&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ man thinkfan.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;check-thermal-devices&#34;&gt;Check thermal devices&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;hwmon-style&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ find /sys/devices -type f -name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;temp*_input&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon4/temp6_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon4/temp3_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon4/temp7_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon4/temp4_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon4/temp8_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon4/temp1_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon4/temp5_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon4/temp2_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp6_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp13_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp3_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp10_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp7_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp4_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp11_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp8_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp1_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp5_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp12_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp9_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp2_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/pci0000:00/0000:00:06.0/0000:02:00.0/nvme/nvme0/hwmon3/temp1_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/pci0000:00/0000:00:06.0/0000:02:00.0/nvme/nvme0/hwmon3/temp2_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/virtual/thermal/thermal_zone0/hwmon1/temp1_input
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/sys/devices/virtual/thermal/thermal_zone9/hwmon6/temp1_input
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;/proc/acpi/ibm/thermal&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Browser Graphics Are Broken</title>
       <link>https://oopsmonk.github.io/posts/2023-05-25-browser-graphics-are-broken/</link>

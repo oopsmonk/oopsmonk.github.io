@@ -9,7 +9,7 @@
       <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
       <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
     </image>
-    <generator>Hugo -- 0.140.2</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 31 Jul 2015 17:50:40 +0800</lastBuildDate>
     <atom:link href="https://oopsmonk.github.io/tags/chromium/index.xml" rel="self" type="application/rss+xml" />
@@ -50,7 +50,7 @@ Error: 1&amp;gt; Dependency src specified more than once:
       <link>https://oopsmonk.github.io/posts/2015-07-31-build-android-webview-from-the-chromium-projects/</link>
       <pubDate>Fri, 31 Jul 2015 17:28:39 +0800</pubDate>
       <guid>https://oopsmonk.github.io/posts/2015-07-31-build-android-webview-from-the-chromium-projects/</guid>
-      <description>&lt;h2 id=&#34;first-check-out-and-install-the-depot_toolshttpscommondatastoragegoogleapiscomchrome-infra-docsflatdepot_toolsdocshtmldepot_tools_tutorialhtml_setting_up-package&#34;&gt;First, check out and install the &lt;a href=&#34;https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html#_setting_up&#34;&gt;depot_tools&lt;/a&gt; package.&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;first-check-out-and-install-the-depot_-package&#34;&gt;First, check out and install the &lt;a href=&#34;https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html#_setting_up&#34;&gt;depot_tools&lt;/a&gt; package.&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;$ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
 $ export PATH=$PATH:/path/to/depot_tools
 &lt;/code&gt;&lt;/pre&gt;

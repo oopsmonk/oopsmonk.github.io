@@ -9,7 +9,7 @@
       <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
       <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
     </image>
-    <generator>Hugo -- 0.140.2</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 01 Dec 2018 11:35:58 +0800</lastBuildDate>
     <atom:link href="https://oopsmonk.github.io/tags/%E6%BB%B4%E6%B0%B4%E7%A9%BF%E7%9F%B3/index.xml" rel="self" type="application/rss+xml" />
@@ -211,7 +211,7 @@ L2 data ratio: $CacheL2DataRefill/$CacheL2DataAccess&lt;/p&gt;
       <description>&lt;p&gt;Android, Algorithms&lt;/p&gt;
 &lt;h1 id=&#34;week1-0105&#34;&gt;Week1 (01/05)&lt;/h1&gt;
 &lt;h2 id=&#34;讀書心得&#34;&gt;讀書心得&lt;/h2&gt;
-&lt;h3 id=&#34;algorithms-on-graphs---week5httpswwwcourseraorglearnalgorithms-on-graphs&#34;&gt;&lt;a href=&#34;https://www.coursera.org/learn/algorithms-on-graphs&#34;&gt;Algorithms on Graphs - Week5&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;algorithms-on-graphs---week5&#34;&gt;&lt;a href=&#34;https://www.coursera.org/learn/algorithms-on-graphs&#34;&gt;Algorithms on Graphs - Week5&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;給出座標上n個點:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;找出最短路徑(the shortest path)&lt;/li&gt;
@@ -242,7 +242,7 @@ return X
 &lt;p&gt;對於晶片廠來說Android決解了軟體開發的問題, 也加速了ODM/OEM的開發時程.&lt;br&gt;
 沒錯&amp;hellip;但對於手機/電視之外的應用..存在些問題.&lt;br&gt;
 另外差異化及客制帶來些不定時炸彈.&lt;/p&gt;
-&lt;h2 id=&#34;sepolicy-for-android-trebleblog20171220sepolicy-for-android-treble&#34;&gt;&lt;a href=&#34;https://oopsmonk.github.io/blog/2017/12/20/sepolicy-for-android-treble&#34;&gt;Sepolicy for Android Treble&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;sepolicy-for-android-treble&#34;&gt;&lt;a href=&#34;https://oopsmonk.github.io/blog/2017/12/20/sepolicy-for-android-treble&#34;&gt;Sepolicy for Android Treble&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;使用numpy-array修改pixel-values&#34;&gt;使用numpy array修改pixel values.&lt;/h2&gt;
 &lt;script src=&#34;https://gist.github.com/oopsmonk/8da2a513882b4f9a8ce9cbffbc63193a.js&#34;&gt;&lt;/script&gt;
 &lt;h2 id=&#34;網路資源&#34;&gt;網路資源&lt;/h2&gt;

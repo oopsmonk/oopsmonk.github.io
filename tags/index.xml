@@ -9,10 +9,24 @@
       <url>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</url>
       <link>https://oopsmonk.github.io/images/bio-oopsmonk.jpg</link>
     </image>
-    <generator>Hugo -- 0.140.2</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Oct 2024 10:44:48 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jan 2025 16:31:09 +0800</lastBuildDate>
     <atom:link href="https://oopsmonk.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux</title>
+      <link>https://oopsmonk.github.io/tags/linux/</link>
+      <pubDate>Fri, 31 Jan 2025 16:31:09 +0800</pubDate>
+      <guid>https://oopsmonk.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ubuntu</title>
+      <link>https://oopsmonk.github.io/tags/ubuntu/</link>
+      <pubDate>Fri, 31 Jan 2025 16:31:09 +0800</pubDate>
+      <guid>https://oopsmonk.github.io/tags/ubuntu/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Python</title>
       <link>https://oopsmonk.github.io/tags/python/</link>
@@ -42,24 +56,10 @@
       <description></description>
     </item>
     <item>
-      <title>Ubuntu</title>
-      <link>https://oopsmonk.github.io/tags/ubuntu/</link>
-      <pubDate>Thu, 25 May 2023 12:00:25 +0800</pubDate>
-      <guid>https://oopsmonk.github.io/tags/ubuntu/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Vim</title>
       <link>https://oopsmonk.github.io/tags/vim/</link>
       <pubDate>Sat, 06 May 2023 22:23:26 +0800</pubDate>
       <guid>https://oopsmonk.github.io/tags/vim/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linux</title>
-      <link>https://oopsmonk.github.io/tags/linux/</link>
-      <pubDate>Sun, 05 Jun 2022 13:01:48 +0800</pubDate>
-      <guid>https://oopsmonk.github.io/tags/linux/</guid>
       <description></description>
     </item>
     <item>
