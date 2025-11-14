@@ -2,7 +2,7 @@
 title: "Note-taking and file sharing with Syncthing and Joplin"
 date: 2022-06-05T13:01:48+08:00
 tags: ["RaspberryPi", "Linux"]
-disableHLJS: true # to disable highlightjs
+# disableHLJS: true # to disable highlightjs
 disableShare: false
 disableHLJS: false
 hideSummary: false

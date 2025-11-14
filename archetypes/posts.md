@@ -8,9 +8,9 @@ tags: ["Note"]
 draft: false
 hidemeta: false
 # comments: false
-disableHLJS: true # to disable highlightjs
-disableShare: false
+# disableHLJS: true # to disable highlightjs
 disableHLJS: false
+disableShare: false
 hideSummary: false
 # cover:
 #     image: "<image path/url>" # image path/url

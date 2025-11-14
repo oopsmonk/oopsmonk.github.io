@@ -8,7 +8,7 @@ tags: ["AWS"]
 draft: false
 hidemeta: false
 # comments: false
-disableHLJS: true # to disable highlightjs
+# disableHLJS: true # to disable highlightjs
 disableShare: false
 disableHLJS: false
 hideSummary: false
