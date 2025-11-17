@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Jun 2012 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Nov 2025 17:34:35 +0800</lastBuildDate>
     <atom:link href="https://oopsmonk.github.io/tags/events/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ARM Unlocked Taipei 2025</title>
+      <link>https://oopsmonk.github.io/posts/2025-11-13-arm-unlocked-taipei/</link>
+      <pubDate>Fri, 14 Nov 2025 17:34:35 +0800</pubDate>
+      <guid>https://oopsmonk.github.io/posts/2025-11-13-arm-unlocked-taipei/</guid>
+      <description>ARM Total Design, Arm Compute Subsystems (CSS), Synopsys, Siemens EDA</description>
+    </item>
     <item>
       <title>COMPUTEX TAIPEI 2012</title>
       <link>https://oopsmonk.github.io/posts/2012-06-10-computextaipei/</link>

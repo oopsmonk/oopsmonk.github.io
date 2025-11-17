@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 31 Jan 2025 16:31:09 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 14 Nov 2025 17:34:35 +0800</lastBuildDate>
     <atom:link href="https://oopsmonk.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ARM</title>
+      <link>https://oopsmonk.github.io/tags/arm/</link>
+      <pubDate>Fri, 14 Nov 2025 17:34:35 +0800</pubDate>
+      <guid>https://oopsmonk.github.io/tags/arm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Events</title>
+      <link>https://oopsmonk.github.io/tags/events/</link>
+      <pubDate>Fri, 14 Nov 2025 17:34:35 +0800</pubDate>
+      <guid>https://oopsmonk.github.io/tags/events/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Linux</title>
       <link>https://oopsmonk.github.io/tags/linux/</link>
@@ -32,13 +46,6 @@
       <link>https://oopsmonk.github.io/tags/python/</link>
       <pubDate>Sun, 20 Oct 2024 10:44:48 +0800</pubDate>
       <guid>https://oopsmonk.github.io/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ARM</title>
-      <link>https://oopsmonk.github.io/tags/arm/</link>
-      <pubDate>Wed, 17 Jan 2024 10:39:45 +0800</pubDate>
-      <guid>https://oopsmonk.github.io/tags/arm/</guid>
       <description></description>
     </item>
     <item>
@@ -165,13 +172,6 @@
       <link>https://oopsmonk.github.io/tags/webdevs/</link>
       <pubDate>Sun, 03 Feb 2013 00:00:00 +0000</pubDate>
       <guid>https://oopsmonk.github.io/tags/webdevs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Events</title>
-      <link>https://oopsmonk.github.io/tags/events/</link>
-      <pubDate>Sun, 10 Jun 2012 00:00:00 +0000</pubDate>
-      <guid>https://oopsmonk.github.io/tags/events/</guid>
       <description></description>
     </item>
   </channel>
